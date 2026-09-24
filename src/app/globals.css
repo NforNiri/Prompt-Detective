@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Noir theme. The full palette and tile styles land with the game UI (runbook Day 3). */
+:root {
+  --background: #0b0d10;
+  --foreground: #e8e6e1;
+  --muted: #9a9ca3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}

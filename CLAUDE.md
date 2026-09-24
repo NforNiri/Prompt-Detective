@@ -32,3 +32,6 @@ Daily AI image puzzle. Players guess the 4 hidden prompt words (WHO, DOING, WHER
 
 ## Definition of done for any task
 Typecheck, lint and unit tests pass. The behavior is checked in the browser at 375px. The DebugPanel shows the new logs and events.
+
+## Next.js 16 notes
+@AGENTS.md
