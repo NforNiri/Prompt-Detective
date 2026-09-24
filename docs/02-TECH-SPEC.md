@@ -7,6 +7,7 @@
 | Hosting | Vercel Hobby | Free |
 | DB + storage | Supabase free tier (Postgres + public Storage bucket) | Free |
 | Analytics + flags | PostHog Cloud free tier | Free |
+| Traffic analytics | Vercel Web Analytics (`@vercel/analytics`): page views and Web Vitals only, cookieless. Game events stay in PostHog | Free (Hobby) |
 | Validation | zod | Free |
 | Tests | Vitest (unit), Playwright (smoke e2e) | Free |
 
@@ -167,7 +168,7 @@ PostHog dashboards: funnel (viewed -> first guess -> completed -> shared), reten
 - Answers never appear in the client bundle or in the puzzle endpoint.
 - Image filenames are random UUIDs, so future images cannot be found by guessing filenames.
 - IPs are stored only as a salted SHA-256 hash (`IP_HASH_SALT`).
-- Security headers are set in next.config: a strict CSP (self, the Supabase storage host, the PostHog host), `X-Content-Type-Options`, `Referrer-Policy`.
+- Security headers are set in next.config: a strict CSP (self, the Supabase storage host, the PostHog host; Vercel Analytics loads from the same origin at /_vercel/insights), `X-Content-Type-Options`, `Referrer-Policy`.
 - Every input is validated with zod. Guesses are length-limited and restricted to letters, digits, spaces, apostrophes and hyphens (digits so answers like "3d render" and "8-bit" work).
 
 ## Env vars
