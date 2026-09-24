@@ -1,0 +1,100 @@
+{
+  "id": 2,
+  "publishDate": "2026-10-05",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "an astronaut baking bread in a cozy kitchen, pixar style 3d render, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "astronaut",
+      "accepted": [
+        "astronaut",
+        "spaceman",
+        "cosmonaut",
+        "space man"
+      ],
+      "hot": [
+        "pilot",
+        "alien",
+        "robot",
+        "space suit"
+      ],
+      "warm": [
+        "space",
+        "scientist",
+        "explorer",
+        "person",
+        "man"
+      ]
+    },
+    "doing": {
+      "answer": "baking bread",
+      "accepted": [
+        "baking bread",
+        "baking",
+        "making bread",
+        "kneading",
+        "kneading dough",
+        "bread"
+      ],
+      "hot": [
+        "cooking",
+        "dough",
+        "making dough",
+        "loaf",
+        "oven"
+      ],
+      "warm": [
+        "food",
+        "chef",
+        "eating",
+        "kitchen",
+        "flour"
+      ]
+    },
+    "where": {
+      "answer": "kitchen",
+      "accepted": [
+        "kitchen",
+        "cozy kitchen",
+        "home kitchen"
+      ],
+      "hot": [
+        "bakery",
+        "pantry",
+        "restaurant"
+      ],
+      "warm": [
+        "house",
+        "home",
+        "room",
+        "indoors",
+        "cabin"
+      ]
+    },
+    "style": {
+      "answer": "3d render",
+      "accepted": [
+        "3d render",
+        "3d",
+        "render",
+        "cgi",
+        "3d animation",
+        "pixar"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "cartoon",
+        "disney"
+      ],
+      "warm": [
+        "digital",
+        "computer",
+        "cute",
+        "movie",
+        "toy"
+      ]
+    }
+  }
+}

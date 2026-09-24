@@ -1,0 +1,101 @@
+{
+  "id": 3,
+  "publishDate": "2026-10-06",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "an old fisherman reading a newspaper on a crowded subway train, black and white photograph, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "fisherman",
+      "accepted": [
+        "fisherman",
+        "old fisherman",
+        "fisher",
+        "sailor"
+      ],
+      "hot": [
+        "captain",
+        "old man",
+        "grandpa",
+        "grandfather"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "elder",
+        "beard",
+        "worker"
+      ]
+    },
+    "doing": {
+      "answer": "reading a newspaper",
+      "accepted": [
+        "reading a newspaper",
+        "reading",
+        "newspaper",
+        "reading the paper",
+        "reading news"
+      ],
+      "hot": [
+        "paper",
+        "magazine",
+        "book",
+        "reading a book"
+      ],
+      "warm": [
+        "sitting",
+        "waiting",
+        "commuting",
+        "looking",
+        "news"
+      ]
+    },
+    "where": {
+      "answer": "subway",
+      "accepted": [
+        "subway",
+        "subway train",
+        "metro",
+        "underground",
+        "tube"
+      ],
+      "hot": [
+        "train",
+        "tram",
+        "railway",
+        "station"
+      ],
+      "warm": [
+        "bus",
+        "city",
+        "transport",
+        "commute",
+        "tunnel"
+      ]
+    },
+    "style": {
+      "answer": "black and white photograph",
+      "accepted": [
+        "black and white photograph",
+        "black and white",
+        "black and white photo",
+        "monochrome",
+        "bw"
+      ],
+      "hot": [
+        "photograph",
+        "photo",
+        "photography",
+        "grayscale",
+        "greyscale"
+      ],
+      "warm": [
+        "film",
+        "vintage",
+        "noir",
+        "old",
+        "camera"
+      ]
+    }
+  }
+}

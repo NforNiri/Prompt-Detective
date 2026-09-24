@@ -1,0 +1,100 @@
+{
+  "id": 1,
+  "publishDate": "2026-10-04",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a golden retriever riding a bicycle on a beach at sunset, watercolor painting, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "golden retriever",
+      "accepted": [
+        "golden retriever",
+        "retriever",
+        "dog",
+        "puppy"
+      ],
+      "hot": [
+        "labrador",
+        "lab",
+        "hound",
+        "spaniel"
+      ],
+      "warm": [
+        "animal",
+        "pet",
+        "pup",
+        "canine",
+        "wolf"
+      ]
+    },
+    "doing": {
+      "answer": "riding a bicycle",
+      "accepted": [
+        "riding a bicycle",
+        "bicycle",
+        "bike",
+        "cycling",
+        "riding a bike",
+        "biking"
+      ],
+      "hot": [
+        "pedaling",
+        "riding",
+        "tricycle",
+        "scooter"
+      ],
+      "warm": [
+        "driving",
+        "racing",
+        "wheel",
+        "travel",
+        "moving"
+      ]
+    },
+    "where": {
+      "answer": "beach",
+      "accepted": [
+        "beach",
+        "seashore",
+        "shore",
+        "seaside",
+        "coast"
+      ],
+      "hot": [
+        "sand",
+        "ocean",
+        "sea",
+        "boardwalk"
+      ],
+      "warm": [
+        "water",
+        "island",
+        "summer",
+        "wave",
+        "sunset"
+      ]
+    },
+    "style": {
+      "answer": "watercolor",
+      "accepted": [
+        "watercolor",
+        "watercolour",
+        "watercolor painting",
+        "aquarelle"
+      ],
+      "hot": [
+        "painting",
+        "gouache",
+        "ink wash",
+        "pastel"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "illustration",
+        "drawing",
+        "soft"
+      ]
+    }
+  }
+}

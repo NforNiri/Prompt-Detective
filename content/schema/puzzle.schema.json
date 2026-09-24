@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prompt Detective Puzzle",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "publishDate",
+    "difficulty",
+    "locale",
+    "prompt",
+    "slots"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "publishDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "difficulty": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "locale": {
+      "enum": [
+        "en",
+        "he"
+      ]
+    },
+    "prompt": {
+      "type": "string",
+      "minLength": 10
+    },
+    "slots": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "who",
+        "doing",
+        "where",
+        "style"
+      ],
+      "properties": {
+        "who": {
+          "$ref": "#/$defs/slot"
+        },
+        "doing": {
+          "$ref": "#/$defs/slot"
+        },
+        "where": {
+          "$ref": "#/$defs/slot"
+        },
+        "style": {
+          "$ref": "#/$defs/slot"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "slot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "answer",
+        "accepted",
+        "hot",
+        "warm"
+      ],
+      "properties": {
+        "answer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "accepted": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "minItems": 2,
+          "maxItems": 6
+        },
+        "hot": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "minItems": 3,
+          "maxItems": 8
+        },
+        "warm": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "minItems": 5,
+          "maxItems": 12
+        }
+      }
+    }
+  }
+}
