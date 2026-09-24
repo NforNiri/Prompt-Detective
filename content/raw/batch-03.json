@@ -1,0 +1,1102 @@
+[
+  {
+    "id": 24,
+    "publishDate": "2026-10-27",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a gorilla lifting weights in a gym, graffiti, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "gorilla",
+        "accepted": [
+          "gorilla",
+          "silverback",
+          "ape",
+          "great ape"
+        ],
+        "hot": [
+          "monkey",
+          "chimpanzee",
+          "chimp",
+          "orangutan",
+          "baboon",
+          "king kong"
+        ],
+        "warm": [
+          "animal",
+          "primate",
+          "bear",
+          "beast",
+          "muscles",
+          "jungle"
+        ]
+      },
+      "doing": {
+        "answer": "lifting weights",
+        "accepted": [
+          "lifting weights",
+          "weightlifting",
+          "lifting",
+          "bodybuilding",
+          "pumping iron",
+          "working out"
+        ],
+        "hot": [
+          "exercising",
+          "training",
+          "squatting",
+          "barbell",
+          "dumbbell",
+          "bench press"
+        ],
+        "warm": [
+          "sport",
+          "strong",
+          "flexing",
+          "fitness",
+          "muscles",
+          "sweating"
+        ]
+      },
+      "where": {
+        "answer": "gym",
+        "accepted": [
+          "gym",
+          "fitness center",
+          "weight room",
+          "fitness club",
+          "health club",
+          "gymnasium"
+        ],
+        "hot": [
+          "boxing ring",
+          "locker room",
+          "sports hall",
+          "studio",
+          "basement"
+        ],
+        "warm": [
+          "building",
+          "room",
+          "club",
+          "stadium",
+          "garage",
+          "school"
+        ]
+      },
+      "style": {
+        "answer": "graffiti",
+        "accepted": [
+          "graffiti",
+          "grafitti",
+          "street art",
+          "mural",
+          "spray paint",
+          "graffiti art"
+        ],
+        "hot": [
+          "urban art",
+          "wall art",
+          "painting",
+          "stencil",
+          "pop art"
+        ],
+        "warm": [
+          "urban",
+          "wall",
+          "paint",
+          "colorful",
+          "hip hop",
+          "city"
+        ]
+      }
+    }
+  },
+  {
+    "id": 25,
+    "publishDate": "2026-10-28",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a mermaid combing her hair on a rock in the sea, paper cutout, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "mermaid",
+        "accepted": [
+          "mermaid",
+          "siren",
+          "sea maiden"
+        ],
+        "hot": [
+          "fish",
+          "fairy",
+          "princess",
+          "nymph",
+          "sea creature"
+        ],
+        "warm": [
+          "woman",
+          "girl",
+          "ocean",
+          "fantasy",
+          "tail",
+          "myth"
+        ]
+      },
+      "doing": {
+        "answer": "combing her hair",
+        "accepted": [
+          "combing her hair",
+          "combing hair",
+          "brushing hair",
+          "brushing her hair",
+          "combing"
+        ],
+        "hot": [
+          "brushing",
+          "grooming",
+          "singing",
+          "looking in a mirror",
+          "styling hair"
+        ],
+        "warm": [
+          "sitting",
+          "relaxing",
+          "posing",
+          "hair",
+          "mirror",
+          "waiting"
+        ]
+      },
+      "where": {
+        "answer": "rock in the sea",
+        "accepted": [
+          "rock in the sea",
+          "rock",
+          "sea rock",
+          "rocky shore",
+          "boulder"
+        ],
+        "hot": [
+          "reef",
+          "cliff",
+          "coast",
+          "island",
+          "shore"
+        ],
+        "warm": [
+          "ocean",
+          "sea",
+          "waves",
+          "beach",
+          "water",
+          "moon"
+        ]
+      },
+      "style": {
+        "answer": "paper cutout",
+        "accepted": [
+          "paper cutout",
+          "paper cut",
+          "papercut",
+          "paper art",
+          "cut paper",
+          "layered paper"
+        ],
+        "hot": [
+          "papercraft",
+          "origami",
+          "collage",
+          "paper",
+          "craft",
+          "shadow box"
+        ],
+        "warm": [
+          "layers",
+          "handmade",
+          "scissors",
+          "3d",
+          "kids",
+          "crafty"
+        ]
+      }
+    }
+  },
+  {
+    "id": 26,
+    "publishDate": "2026-10-29",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a bear having a picnic in a flower meadow, embroidery, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "bear",
+        "accepted": [
+          "bear",
+          "brown bear",
+          "grizzly",
+          "grizzly bear"
+        ],
+        "hot": [
+          "teddy bear",
+          "panda",
+          "polar bear",
+          "black bear",
+          "wolf"
+        ],
+        "warm": [
+          "animal",
+          "dog",
+          "cub",
+          "furry",
+          "beast",
+          "mammal"
+        ]
+      },
+      "doing": {
+        "answer": "having a picnic",
+        "accepted": [
+          "having a picnic",
+          "picnic",
+          "picnicking",
+          "eating lunch",
+          "eating a picnic"
+        ],
+        "hot": [
+          "eating",
+          "lunch",
+          "sandwich",
+          "eating honey",
+          "honey"
+        ],
+        "warm": [
+          "sitting",
+          "relaxing",
+          "food",
+          "basket",
+          "hungry",
+          "snack"
+        ]
+      },
+      "where": {
+        "answer": "meadow",
+        "accepted": [
+          "meadow",
+          "field",
+          "grassland",
+          "flower meadow",
+          "grassy field"
+        ],
+        "hot": [
+          "park",
+          "garden",
+          "hill",
+          "prairie",
+          "countryside",
+          "lawn"
+        ],
+        "warm": [
+          "grass",
+          "flowers",
+          "nature",
+          "forest",
+          "outdoors",
+          "summer"
+        ]
+      },
+      "style": {
+        "answer": "embroidery",
+        "accepted": [
+          "embroidery",
+          "embroidered",
+          "needlework",
+          "cross stitch",
+          "cross-stitch",
+          "stitching"
+        ],
+        "hot": [
+          "sewing",
+          "textile",
+          "tapestry",
+          "fabric",
+          "knitting",
+          "quilt"
+        ],
+        "warm": [
+          "thread",
+          "craft",
+          "handmade",
+          "cloth",
+          "cute",
+          "yarn"
+        ]
+      }
+    }
+  },
+  {
+    "id": 27,
+    "publishDate": "2026-10-30",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a detective inspecting clues with a magnifying glass in a dark alley, film noir, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "detective",
+        "accepted": [
+          "detective",
+          "private eye",
+          "investigator",
+          "sleuth",
+          "inspector",
+          "gumshoe"
+        ],
+        "hot": [
+          "policeman",
+          "cop",
+          "spy",
+          "agent",
+          "officer"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "trench coat",
+          "hat",
+          "mystery",
+          "stranger"
+        ]
+      },
+      "doing": {
+        "answer": "inspecting clues",
+        "accepted": [
+          "inspecting clues",
+          "inspecting",
+          "investigating",
+          "examining",
+          "magnifying glass",
+          "searching for clues"
+        ],
+        "hot": [
+          "looking",
+          "searching",
+          "magnifier",
+          "observing",
+          "studying",
+          "clues"
+        ],
+        "warm": [
+          "holding",
+          "standing",
+          "thinking",
+          "walking",
+          "waiting",
+          "crouching"
+        ]
+      },
+      "where": {
+        "answer": "dark alley",
+        "accepted": [
+          "dark alley",
+          "alley",
+          "alleyway",
+          "back alley",
+          "side street"
+        ],
+        "hot": [
+          "street",
+          "city street",
+          "lane",
+          "passage",
+          "doorway"
+        ],
+        "warm": [
+          "city",
+          "night",
+          "rain",
+          "shadows",
+          "building",
+          "dumpster"
+        ]
+      },
+      "style": {
+        "answer": "film noir",
+        "accepted": [
+          "film noir",
+          "noir",
+          "noir film",
+          "noir movie",
+          "neo noir"
+        ],
+        "hot": [
+          "black and white",
+          "monochrome",
+          "old movie",
+          "detective movie",
+          "1940s"
+        ],
+        "warm": [
+          "movie",
+          "film",
+          "dark",
+          "shadows",
+          "vintage",
+          "cinematic"
+        ]
+      }
+    }
+  },
+  {
+    "id": 28,
+    "publishDate": "2026-10-31",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a gondolier rowing a gondola along a venice canal, pointillism, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "gondolier",
+        "accepted": [
+          "gondolier",
+          "boatman",
+          "rower",
+          "oarsman"
+        ],
+        "hot": [
+          "sailor",
+          "fisherman",
+          "ferryman",
+          "captain",
+          "boater"
+        ],
+        "warm": [
+          "man",
+          "italian",
+          "venetian",
+          "person",
+          "hat",
+          "singer"
+        ]
+      },
+      "doing": {
+        "answer": "rowing a gondola",
+        "accepted": [
+          "rowing a gondola",
+          "rowing",
+          "paddling",
+          "steering a gondola",
+          "punting",
+          "rowing a boat"
+        ],
+        "hot": [
+          "sailing",
+          "boating",
+          "gondola",
+          "floating",
+          "steering"
+        ],
+        "warm": [
+          "singing",
+          "standing",
+          "traveling",
+          "cruising",
+          "water",
+          "moving"
+        ]
+      },
+      "where": {
+        "answer": "venice canal",
+        "accepted": [
+          "venice canal",
+          "canal",
+          "venice",
+          "grand canal",
+          "venetian canal",
+          "waterway"
+        ],
+        "hot": [
+          "river",
+          "italy",
+          "harbor",
+          "lagoon",
+          "bridge"
+        ],
+        "warm": [
+          "water",
+          "city",
+          "europe",
+          "street",
+          "lake",
+          "town"
+        ]
+      },
+      "style": {
+        "answer": "pointillism",
+        "accepted": [
+          "pointillism",
+          "pointillist",
+          "dots",
+          "dot painting",
+          "seurat",
+          "stippling"
+        ],
+        "hot": [
+          "impressionism",
+          "dotted",
+          "pixel art",
+          "post impressionism",
+          "mosaic"
+        ],
+        "warm": [
+          "painting",
+          "colorful",
+          "art",
+          "french",
+          "classic",
+          "points"
+        ]
+      }
+    }
+  },
+  {
+    "id": 29,
+    "publishDate": "2026-11-01",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a rabbit planting carrots in a vegetable garden, watercolor, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "rabbit",
+        "accepted": [
+          "rabbit",
+          "bunny",
+          "hare",
+          "bunny rabbit",
+          "jackrabbit"
+        ],
+        "hot": [
+          "hamster",
+          "guinea pig",
+          "mouse",
+          "squirrel",
+          "kangaroo"
+        ],
+        "warm": [
+          "animal",
+          "pet",
+          "rodent",
+          "ears",
+          "easter",
+          "cute"
+        ]
+      },
+      "doing": {
+        "answer": "planting carrots",
+        "accepted": [
+          "planting carrots",
+          "planting",
+          "gardening",
+          "growing carrots",
+          "harvesting carrots",
+          "picking carrots"
+        ],
+        "hot": [
+          "digging",
+          "carrots",
+          "farming",
+          "watering",
+          "harvesting"
+        ],
+        "warm": [
+          "eating",
+          "working",
+          "vegetables",
+          "food",
+          "plants",
+          "hopping"
+        ]
+      },
+      "where": {
+        "answer": "vegetable garden",
+        "accepted": [
+          "vegetable garden",
+          "garden",
+          "veggie garden",
+          "vegetable patch",
+          "allotment",
+          "kitchen garden"
+        ],
+        "hot": [
+          "farm",
+          "field",
+          "backyard",
+          "greenhouse",
+          "yard"
+        ],
+        "warm": [
+          "soil",
+          "dirt",
+          "outdoors",
+          "countryside",
+          "flowers",
+          "village"
+        ]
+      },
+      "style": {
+        "answer": "watercolor",
+        "accepted": [
+          "watercolor",
+          "watercolour",
+          "watercolor painting",
+          "aquarelle"
+        ],
+        "hot": [
+          "painting",
+          "gouache",
+          "ink wash",
+          "pastel"
+        ],
+        "warm": [
+          "paint",
+          "art",
+          "illustration",
+          "drawing",
+          "soft"
+        ]
+      }
+    }
+  },
+  {
+    "id": 30,
+    "publishDate": "2026-11-02",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a sloth hanging from a ceiling lamp in an office, 3d render, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "sloth",
+        "accepted": [
+          "sloth",
+          "three-toed sloth",
+          "tree sloth"
+        ],
+        "hot": [
+          "koala",
+          "monkey",
+          "lemur",
+          "raccoon",
+          "bear"
+        ],
+        "warm": [
+          "animal",
+          "lazy",
+          "slow",
+          "mammal",
+          "furry",
+          "jungle"
+        ]
+      },
+      "doing": {
+        "answer": "hanging",
+        "accepted": [
+          "hanging",
+          "hanging from a lamp",
+          "dangling",
+          "hanging upside down",
+          "swinging",
+          "hanging on"
+        ],
+        "hot": [
+          "climbing",
+          "holding on",
+          "sleeping",
+          "clinging"
+        ],
+        "warm": [
+          "resting",
+          "relaxing",
+          "stuck",
+          "lazing",
+          "waiting",
+          "falling"
+        ]
+      },
+      "where": {
+        "answer": "office",
+        "accepted": [
+          "office",
+          "workplace",
+          "cubicle",
+          "open office",
+          "corporate office",
+          "office room"
+        ],
+        "hot": [
+          "desk",
+          "meeting room",
+          "classroom",
+          "library",
+          "workspace"
+        ],
+        "warm": [
+          "building",
+          "room",
+          "work",
+          "business",
+          "computer",
+          "job"
+        ]
+      },
+      "style": {
+        "answer": "3d render",
+        "accepted": [
+          "3d render",
+          "3d",
+          "render",
+          "cgi",
+          "3d animation",
+          "3d rendering"
+        ],
+        "hot": [
+          "animation",
+          "animated",
+          "cartoon",
+          "claymation",
+          "toy"
+        ],
+        "warm": [
+          "digital",
+          "computer",
+          "cute",
+          "movie",
+          "plastic",
+          "smooth"
+        ]
+      }
+    }
+  },
+  {
+    "id": 31,
+    "publishDate": "2026-11-03",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a firefighter rescuing a kitten from a tall tree, pencil sketch, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "firefighter",
+        "accepted": [
+          "firefighter",
+          "fireman",
+          "fire fighter",
+          "firewoman"
+        ],
+        "hot": [
+          "rescuer",
+          "policeman",
+          "paramedic",
+          "soldier",
+          "lifeguard"
+        ],
+        "warm": [
+          "hero",
+          "man",
+          "worker",
+          "helmet",
+          "person",
+          "uniform"
+        ]
+      },
+      "doing": {
+        "answer": "rescuing a cat",
+        "accepted": [
+          "rescuing a cat",
+          "rescuing",
+          "saving a cat",
+          "saving",
+          "rescue",
+          "rescuing a kitten"
+        ],
+        "hot": [
+          "climbing",
+          "holding a cat",
+          "helping",
+          "catching",
+          "reaching"
+        ],
+        "warm": [
+          "cat",
+          "kitten",
+          "working",
+          "climbing a ladder",
+          "holding",
+          "ladder"
+        ]
+      },
+      "where": {
+        "answer": "tree",
+        "accepted": [
+          "tree",
+          "treetop",
+          "tree branch",
+          "oak tree",
+          "big tree",
+          "tall tree"
+        ],
+        "hot": [
+          "branch",
+          "forest",
+          "park",
+          "ladder"
+        ],
+        "warm": [
+          "backyard",
+          "yard",
+          "garden",
+          "neighborhood",
+          "street",
+          "leaves"
+        ]
+      },
+      "style": {
+        "answer": "pencil sketch",
+        "accepted": [
+          "pencil sketch",
+          "sketch",
+          "pencil",
+          "pencil drawing",
+          "graphite",
+          "sketching"
+        ],
+        "hot": [
+          "drawing",
+          "charcoal",
+          "line art",
+          "ink drawing",
+          "doodle"
+        ],
+        "warm": [
+          "art",
+          "black and white",
+          "paper",
+          "hand drawn",
+          "grey",
+          "rough"
+        ]
+      }
+    }
+  },
+  {
+    "id": 32,
+    "publishDate": "2026-11-04",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a wizard brewing a potion in a cave, pixel art, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "wizard",
+        "accepted": [
+          "wizard",
+          "sorcerer",
+          "mage",
+          "magician",
+          "warlock"
+        ],
+        "hot": [
+          "witch",
+          "druid",
+          "alchemist",
+          "monk",
+          "old man"
+        ],
+        "warm": [
+          "man",
+          "beard",
+          "hat",
+          "fantasy",
+          "elf",
+          "hermit"
+        ]
+      },
+      "doing": {
+        "answer": "brewing a potion",
+        "accepted": [
+          "brewing a potion",
+          "brewing",
+          "making a potion",
+          "stirring a cauldron",
+          "potion making",
+          "stirring"
+        ],
+        "hot": [
+          "cooking",
+          "casting a spell",
+          "mixing",
+          "potion",
+          "magic"
+        ],
+        "warm": [
+          "boiling",
+          "soup",
+          "spell",
+          "cauldron",
+          "witchcraft",
+          "chemistry"
+        ]
+      },
+      "where": {
+        "answer": "cave",
+        "accepted": [
+          "cave",
+          "cavern",
+          "grotto",
+          "underground cave"
+        ],
+        "hot": [
+          "dungeon",
+          "tunnel",
+          "mine",
+          "lair",
+          "cellar"
+        ],
+        "warm": [
+          "underground",
+          "dark",
+          "rock",
+          "mountain",
+          "castle",
+          "tower"
+        ]
+      },
+      "style": {
+        "answer": "pixel art",
+        "accepted": [
+          "pixel art",
+          "pixel",
+          "8-bit",
+          "8 bit",
+          "pixelated",
+          "16-bit"
+        ],
+        "hot": [
+          "retro game",
+          "video game",
+          "sprite",
+          "retro",
+          "arcade game"
+        ],
+        "warm": [
+          "game",
+          "arcade",
+          "digital",
+          "blocky",
+          "old school",
+          "computer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 33,
+    "publishDate": "2026-11-05",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a chef flipping pancakes in a diner, oil painting, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "chef",
+        "accepted": [
+          "chef",
+          "cook",
+          "head chef",
+          "line cook"
+        ],
+        "hot": [
+          "baker",
+          "waiter",
+          "butcher",
+          "dishwasher"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "kitchen",
+          "hat",
+          "food",
+          "worker"
+        ]
+      },
+      "doing": {
+        "answer": "flipping pancakes",
+        "accepted": [
+          "flipping pancakes",
+          "flipping",
+          "making pancakes",
+          "cooking pancakes",
+          "pancakes",
+          "tossing pancakes"
+        ],
+        "hot": [
+          "cooking",
+          "frying",
+          "making breakfast",
+          "flipping burgers",
+          "juggling"
+        ],
+        "warm": [
+          "breakfast",
+          "eating",
+          "pan",
+          "food",
+          "throwing",
+          "baking"
+        ]
+      },
+      "where": {
+        "answer": "diner",
+        "accepted": [
+          "diner",
+          "american diner",
+          "roadside diner",
+          "greasy spoon"
+        ],
+        "hot": [
+          "restaurant",
+          "cafe",
+          "kitchen",
+          "cafeteria",
+          "bar"
+        ],
+        "warm": [
+          "breakfast",
+          "counter",
+          "city",
+          "building",
+          "coffee",
+          "booth"
+        ]
+      },
+      "style": {
+        "answer": "oil painting",
+        "accepted": [
+          "oil painting",
+          "oil",
+          "oil on canvas",
+          "oil paint"
+        ],
+        "hot": [
+          "painting",
+          "acrylic",
+          "classical painting",
+          "renaissance",
+          "canvas"
+        ],
+        "warm": [
+          "paint",
+          "art",
+          "realism",
+          "classic",
+          "brushstrokes",
+          "museum",
+          "old master"
+        ]
+      }
+    }
+  }
+]

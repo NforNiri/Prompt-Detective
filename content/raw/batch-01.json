@@ -1,0 +1,1101 @@
+[
+  {
+    "id": 4,
+    "publishDate": "2026-10-07",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a knight in armor knitting a scarf by the fireplace in a castle hall, oil painting, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "knight",
+        "accepted": [
+          "knight",
+          "armored knight",
+          "knight in armor",
+          "paladin"
+        ],
+        "hot": [
+          "soldier",
+          "warrior",
+          "guard",
+          "squire",
+          "king"
+        ],
+        "warm": [
+          "man",
+          "armor",
+          "medieval",
+          "sword",
+          "helmet",
+          "prince",
+          "hero"
+        ]
+      },
+      "doing": {
+        "answer": "knitting a scarf",
+        "accepted": [
+          "knitting a scarf",
+          "knitting",
+          "knitting scarf",
+          "knit"
+        ],
+        "hot": [
+          "crocheting",
+          "sewing",
+          "weaving",
+          "making a scarf",
+          "yarn"
+        ],
+        "warm": [
+          "crafting",
+          "scarf",
+          "wool",
+          "needles",
+          "relaxing",
+          "sitting",
+          "hobby"
+        ]
+      },
+      "where": {
+        "answer": "castle",
+        "accepted": [
+          "castle",
+          "castle hall",
+          "great hall",
+          "fortress"
+        ],
+        "hot": [
+          "palace",
+          "throne room",
+          "fireplace",
+          "tower"
+        ],
+        "warm": [
+          "medieval",
+          "stone",
+          "room",
+          "house",
+          "fire",
+          "keep"
+        ]
+      },
+      "style": {
+        "answer": "oil painting",
+        "accepted": [
+          "oil painting",
+          "oil",
+          "oil on canvas",
+          "oil paint"
+        ],
+        "hot": [
+          "painting",
+          "acrylic",
+          "classical painting",
+          "renaissance",
+          "canvas"
+        ],
+        "warm": [
+          "paint",
+          "art",
+          "realism",
+          "classic",
+          "brushstrokes",
+          "museum",
+          "old master"
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "publishDate": "2026-10-08",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a raccoon skateboarding in an empty swimming pool, pixel art, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "raccoon",
+        "accepted": [
+          "raccoon",
+          "racoon",
+          "trash panda"
+        ],
+        "hot": [
+          "possum",
+          "opossum",
+          "badger",
+          "red panda",
+          "ferret",
+          "skunk"
+        ],
+        "warm": [
+          "animal",
+          "bandit",
+          "mammal",
+          "cat",
+          "fox",
+          "bear",
+          "rodent"
+        ]
+      },
+      "doing": {
+        "answer": "skateboarding",
+        "accepted": [
+          "skateboarding",
+          "skateboard",
+          "skating",
+          "riding a skateboard"
+        ],
+        "hot": [
+          "doing a trick",
+          "ollie",
+          "kickflip",
+          "jumping",
+          "surfing",
+          "rollerblading"
+        ],
+        "warm": [
+          "riding",
+          "sport",
+          "trick",
+          "rolling",
+          "balancing",
+          "flying",
+          "playing"
+        ]
+      },
+      "where": {
+        "answer": "empty swimming pool",
+        "accepted": [
+          "empty swimming pool",
+          "empty pool",
+          "swimming pool",
+          "pool",
+          "drained pool"
+        ],
+        "hot": [
+          "skatepark",
+          "skate park",
+          "bowl",
+          "ramp"
+        ],
+        "warm": [
+          "backyard",
+          "concrete",
+          "park",
+          "yard",
+          "street",
+          "summer"
+        ]
+      },
+      "style": {
+        "answer": "pixel art",
+        "accepted": [
+          "pixel art",
+          "pixel",
+          "8-bit",
+          "8 bit",
+          "pixelated",
+          "16-bit"
+        ],
+        "hot": [
+          "retro game",
+          "video game",
+          "sprite",
+          "retro",
+          "arcade game"
+        ],
+        "warm": [
+          "game",
+          "arcade",
+          "digital",
+          "blocky",
+          "old school",
+          "computer"
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "publishDate": "2026-10-09",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a tiger surfing a giant wave on the open ocean, ukiyo-e, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "tiger",
+        "accepted": [
+          "tiger",
+          "bengal tiger",
+          "tigress"
+        ],
+        "hot": [
+          "big cat",
+          "lion",
+          "leopard",
+          "jaguar",
+          "panther",
+          "cheetah"
+        ],
+        "warm": [
+          "cat",
+          "animal",
+          "predator",
+          "stripes",
+          "beast",
+          "wildcat"
+        ]
+      },
+      "doing": {
+        "answer": "surfing",
+        "accepted": [
+          "surfing",
+          "surfing a wave",
+          "riding a wave",
+          "surf"
+        ],
+        "hot": [
+          "bodyboarding",
+          "sailing",
+          "wakeboarding",
+          "riding",
+          "balancing"
+        ],
+        "warm": [
+          "swimming",
+          "floating",
+          "jumping",
+          "standing",
+          "wave",
+          "water"
+        ]
+      },
+      "where": {
+        "answer": "ocean",
+        "accepted": [
+          "ocean",
+          "sea",
+          "open sea",
+          "waves",
+          "ocean waves"
+        ],
+        "hot": [
+          "storm",
+          "beach",
+          "coast",
+          "bay",
+          "harbor"
+        ],
+        "warm": [
+          "water",
+          "lake",
+          "river",
+          "island",
+          "mountain",
+          "boat"
+        ]
+      },
+      "style": {
+        "answer": "ukiyo-e",
+        "accepted": [
+          "ukiyo-e",
+          "ukiyoe",
+          "ukiyo e",
+          "woodblock print",
+          "woodblock",
+          "japanese woodblock"
+        ],
+        "hot": [
+          "japanese print",
+          "japanese art",
+          "printmaking",
+          "hokusai",
+          "woodcut"
+        ],
+        "warm": [
+          "japanese",
+          "print",
+          "traditional",
+          "asian",
+          "ink",
+          "edo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "publishDate": "2026-10-10",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a beekeeper harvesting honey in a lavender field, art nouveau, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "beekeeper",
+        "accepted": [
+          "beekeeper",
+          "bee keeper",
+          "apiarist",
+          "honey farmer"
+        ],
+        "hot": [
+          "farmer",
+          "gardener",
+          "bee",
+          "astronaut",
+          "hazmat"
+        ],
+        "warm": [
+          "woman",
+          "man",
+          "person",
+          "worker",
+          "suit",
+          "veil",
+          "honey"
+        ]
+      },
+      "doing": {
+        "answer": "harvesting honey",
+        "accepted": [
+          "harvesting honey",
+          "collecting honey",
+          "gathering honey",
+          "honey",
+          "harvesting"
+        ],
+        "hot": [
+          "beekeeping",
+          "holding a honeycomb",
+          "honeycomb",
+          "checking a hive",
+          "collecting"
+        ],
+        "warm": [
+          "working",
+          "farming",
+          "picking",
+          "holding",
+          "smoking",
+          "bees",
+          "gardening"
+        ]
+      },
+      "where": {
+        "answer": "lavender field",
+        "accepted": [
+          "lavender field",
+          "lavender",
+          "lavender farm",
+          "field of lavender"
+        ],
+        "hot": [
+          "flower field",
+          "meadow",
+          "field",
+          "farm",
+          "provence"
+        ],
+        "warm": [
+          "garden",
+          "flowers",
+          "countryside",
+          "purple",
+          "hill",
+          "summer",
+          "france"
+        ]
+      },
+      "style": {
+        "answer": "art nouveau",
+        "accepted": [
+          "art nouveau",
+          "nouveau",
+          "mucha",
+          "jugendstil"
+        ],
+        "hot": [
+          "art deco",
+          "poster",
+          "decorative",
+          "victorian",
+          "vintage poster"
+        ],
+        "warm": [
+          "vintage",
+          "ornate",
+          "floral",
+          "illustration",
+          "elegant",
+          "retro",
+          "old"
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "publishDate": "2026-10-11",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a cow playing guitar on a farm, cartoon, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "cow",
+        "accepted": [
+          "cow",
+          "cattle",
+          "dairy cow",
+          "calf"
+        ],
+        "hot": [
+          "bull",
+          "ox",
+          "buffalo",
+          "yak",
+          "goat"
+        ],
+        "warm": [
+          "animal",
+          "farm animal",
+          "sheep",
+          "horse",
+          "pig",
+          "milk"
+        ]
+      },
+      "doing": {
+        "answer": "playing guitar",
+        "accepted": [
+          "playing guitar",
+          "guitar",
+          "playing the guitar",
+          "playing a guitar",
+          "strumming"
+        ],
+        "hot": [
+          "singing",
+          "playing music",
+          "banjo",
+          "ukulele",
+          "music",
+          "playing"
+        ],
+        "warm": [
+          "dancing",
+          "performing",
+          "song",
+          "concert",
+          "instrument",
+          "band"
+        ]
+      },
+      "where": {
+        "answer": "farm",
+        "accepted": [
+          "farm",
+          "barn",
+          "farmyard",
+          "barnyard",
+          "ranch"
+        ],
+        "hot": [
+          "field",
+          "meadow",
+          "countryside",
+          "pasture",
+          "stable"
+        ],
+        "warm": [
+          "grass",
+          "village",
+          "hay",
+          "fence",
+          "outdoors",
+          "hill"
+        ]
+      },
+      "style": {
+        "answer": "cartoon",
+        "accepted": [
+          "cartoon",
+          "cartoonish",
+          "toon",
+          "animated cartoon",
+          "kids cartoon"
+        ],
+        "hot": [
+          "animation",
+          "animated",
+          "comic",
+          "illustration",
+          "drawing"
+        ],
+        "warm": [
+          "kids",
+          "cute",
+          "funny",
+          "art",
+          "colorful",
+          "simple"
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "publishDate": "2026-10-12",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "an old woman feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "grandmother",
+        "accepted": [
+          "grandmother",
+          "grandma",
+          "old woman",
+          "granny",
+          "elderly woman",
+          "old lady"
+        ],
+        "hot": [
+          "woman",
+          "lady",
+          "old man",
+          "nun",
+          "witch"
+        ],
+        "warm": [
+          "person",
+          "elder",
+          "senior",
+          "mother",
+          "widow",
+          "retiree"
+        ]
+      },
+      "doing": {
+        "answer": "feeding pigeons",
+        "accepted": [
+          "feeding pigeons",
+          "feeding birds",
+          "feeding the pigeons",
+          "feeding the birds",
+          "feeding"
+        ],
+        "hot": [
+          "throwing bread",
+          "birdwatching",
+          "breadcrumbs",
+          "pigeon"
+        ],
+        "warm": [
+          "sitting",
+          "eating",
+          "walking",
+          "birds",
+          "resting",
+          "bread"
+        ]
+      },
+      "where": {
+        "answer": "town square",
+        "accepted": [
+          "town square",
+          "square",
+          "plaza",
+          "piazza",
+          "city square",
+          "market square"
+        ],
+        "hot": [
+          "park",
+          "street",
+          "courtyard",
+          "fountain",
+          "market"
+        ],
+        "warm": [
+          "city",
+          "town",
+          "village",
+          "europe",
+          "bench",
+          "downtown"
+        ]
+      },
+      "style": {
+        "answer": "pencil sketch",
+        "accepted": [
+          "pencil sketch",
+          "sketch",
+          "pencil",
+          "pencil drawing",
+          "graphite",
+          "sketching"
+        ],
+        "hot": [
+          "drawing",
+          "charcoal",
+          "line art",
+          "ink drawing",
+          "doodle"
+        ],
+        "warm": [
+          "art",
+          "black and white",
+          "paper",
+          "hand drawn",
+          "grey",
+          "rough"
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "publishDate": "2026-10-13",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a robot walking a dog on a rainy city street, comic book, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "robot",
+        "accepted": [
+          "robot",
+          "android",
+          "droid",
+          "cyborg",
+          "bot"
+        ],
+        "hot": [
+          "machine",
+          "automaton",
+          "mech",
+          "ai",
+          "humanoid"
+        ],
+        "warm": [
+          "metal",
+          "computer",
+          "alien",
+          "man",
+          "toy",
+          "tin man"
+        ]
+      },
+      "doing": {
+        "answer": "walking a dog",
+        "accepted": [
+          "walking a dog",
+          "walking the dog",
+          "dog walking",
+          "walking dog",
+          "walking"
+        ],
+        "hot": [
+          "dog",
+          "leash",
+          "strolling",
+          "taking a walk",
+          "pet"
+        ],
+        "warm": [
+          "running",
+          "holding",
+          "raining",
+          "umbrella",
+          "commuting",
+          "jogging"
+        ]
+      },
+      "where": {
+        "answer": "rainy street",
+        "accepted": [
+          "rainy street",
+          "street",
+          "city street",
+          "road",
+          "sidewalk",
+          "rainy city"
+        ],
+        "hot": [
+          "city",
+          "alley",
+          "downtown",
+          "crosswalk",
+          "avenue"
+        ],
+        "warm": [
+          "rain",
+          "town",
+          "night",
+          "puddle",
+          "urban",
+          "traffic"
+        ]
+      },
+      "style": {
+        "answer": "comic book",
+        "accepted": [
+          "comic book",
+          "comic",
+          "graphic novel",
+          "comic art",
+          "comic book art"
+        ],
+        "hot": [
+          "cartoon",
+          "pop art",
+          "manga",
+          "superhero",
+          "illustration"
+        ],
+        "warm": [
+          "drawing",
+          "ink",
+          "bold",
+          "halftone",
+          "retro",
+          "panel"
+        ]
+      }
+    }
+  },
+  {
+    "id": 11,
+    "publishDate": "2026-10-14",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a snail driving a race car on a race track, claymation, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "snail",
+        "accepted": [
+          "snail",
+          "garden snail",
+          "escargot"
+        ],
+        "hot": [
+          "slug",
+          "turtle",
+          "shell",
+          "caterpillar",
+          "worm"
+        ],
+        "warm": [
+          "bug",
+          "insect",
+          "animal",
+          "slow",
+          "creature",
+          "critter"
+        ]
+      },
+      "doing": {
+        "answer": "driving a race car",
+        "accepted": [
+          "driving a race car",
+          "racing",
+          "driving",
+          "race car",
+          "driving a car",
+          "car racing"
+        ],
+        "hot": [
+          "speeding",
+          "race",
+          "competing",
+          "riding",
+          "car"
+        ],
+        "warm": [
+          "winning",
+          "going fast",
+          "moving",
+          "sport",
+          "wheel",
+          "speed"
+        ]
+      },
+      "where": {
+        "answer": "race track",
+        "accepted": [
+          "race track",
+          "racetrack",
+          "track",
+          "circuit",
+          "raceway",
+          "speedway"
+        ],
+        "hot": [
+          "road",
+          "stadium",
+          "highway",
+          "finish line",
+          "arena"
+        ],
+        "warm": [
+          "street",
+          "asphalt",
+          "crowd",
+          "grandstand",
+          "pit",
+          "course"
+        ]
+      },
+      "style": {
+        "answer": "claymation",
+        "accepted": [
+          "claymation",
+          "clay",
+          "clay animation",
+          "stop motion",
+          "plasticine",
+          "clay model"
+        ],
+        "hot": [
+          "animation",
+          "puppet",
+          "3d",
+          "sculpture",
+          "toy"
+        ],
+        "warm": [
+          "cartoon",
+          "handmade",
+          "cute",
+          "model",
+          "figurine",
+          "kids"
+        ]
+      }
+    }
+  },
+  {
+    "id": 12,
+    "publishDate": "2026-10-15",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "an owl holding a lantern in a forest at night, stained glass, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "owl",
+        "accepted": [
+          "owl",
+          "barn owl",
+          "snowy owl",
+          "great horned owl",
+          "owlet"
+        ],
+        "hot": [
+          "hawk",
+          "eagle",
+          "falcon",
+          "raven",
+          "parrot"
+        ],
+        "warm": [
+          "bird",
+          "animal",
+          "feathers",
+          "night bird",
+          "wise",
+          "nocturnal"
+        ]
+      },
+      "doing": {
+        "answer": "holding a lantern",
+        "accepted": [
+          "holding a lantern",
+          "lantern",
+          "carrying a lantern",
+          "holding a lamp",
+          "holding lantern"
+        ],
+        "hot": [
+          "lamp",
+          "holding a light",
+          "candle",
+          "torch",
+          "glowing"
+        ],
+        "warm": [
+          "light",
+          "holding",
+          "carrying",
+          "flying",
+          "perching",
+          "standing",
+          "guiding"
+        ]
+      },
+      "where": {
+        "answer": "forest",
+        "accepted": [
+          "forest",
+          "woods",
+          "woodland",
+          "dark forest",
+          "night forest"
+        ],
+        "hot": [
+          "jungle",
+          "trees",
+          "grove",
+          "swamp",
+          "park"
+        ],
+        "warm": [
+          "night",
+          "nature",
+          "moon",
+          "branch",
+          "mountain",
+          "outdoors"
+        ]
+      },
+      "style": {
+        "answer": "stained glass",
+        "accepted": [
+          "stained glass",
+          "stained glass window",
+          "glass",
+          "church window",
+          "leaded glass"
+        ],
+        "hot": [
+          "mosaic",
+          "window",
+          "colored glass",
+          "gothic",
+          "cathedral"
+        ],
+        "warm": [
+          "church",
+          "colorful",
+          "religious",
+          "medieval",
+          "glowing",
+          "art"
+        ]
+      }
+    }
+  },
+  {
+    "id": 13,
+    "publishDate": "2026-10-16",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a skeleton playing a keytar on a city rooftop at night, synthwave, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "skeleton",
+        "accepted": [
+          "skeleton",
+          "bones",
+          "living skeleton"
+        ],
+        "hot": [
+          "skull",
+          "zombie",
+          "ghost",
+          "undead",
+          "mummy",
+          "corpse"
+        ],
+        "warm": [
+          "death",
+          "halloween",
+          "monster",
+          "spooky",
+          "dead",
+          "reaper"
+        ]
+      },
+      "doing": {
+        "answer": "playing a keytar",
+        "accepted": [
+          "playing a keytar",
+          "keytar",
+          "playing keyboard",
+          "playing a keyboard",
+          "playing synth",
+          "playing a synthesizer"
+        ],
+        "hot": [
+          "playing music",
+          "keyboard",
+          "synthesizer",
+          "piano",
+          "playing piano",
+          "guitar"
+        ],
+        "warm": [
+          "music",
+          "dancing",
+          "performing",
+          "singing",
+          "concert",
+          "jamming",
+          "dj"
+        ]
+      },
+      "where": {
+        "answer": "rooftop",
+        "accepted": [
+          "rooftop",
+          "roof",
+          "city rooftop",
+          "building roof",
+          "roof top"
+        ],
+        "hot": [
+          "skyscraper",
+          "balcony",
+          "terrace",
+          "city",
+          "skyline"
+        ],
+        "warm": [
+          "night",
+          "building",
+          "sky",
+          "neon",
+          "downtown",
+          "tower"
+        ]
+      },
+      "style": {
+        "answer": "synthwave",
+        "accepted": [
+          "synthwave",
+          "retrowave",
+          "outrun",
+          "synth wave",
+          "80s",
+          "neon 80s"
+        ],
+        "hot": [
+          "vaporwave",
+          "neon",
+          "cyberpunk",
+          "80s retro",
+          "retro",
+          "miami"
+        ],
+        "warm": [
+          "purple",
+          "synth",
+          "electronic",
+          "sunset",
+          "vintage",
+          "music",
+          "futuristic"
+        ]
+      }
+    }
+  }
+]

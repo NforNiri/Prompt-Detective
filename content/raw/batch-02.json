@@ -1,0 +1,1112 @@
+[
+  {
+    "id": 14,
+    "publishDate": "2026-10-17",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a blacksmith forging a sword in a forge, cubism, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "blacksmith",
+        "accepted": [
+          "blacksmith",
+          "smith",
+          "ironsmith",
+          "metalworker",
+          "black smith"
+        ],
+        "hot": [
+          "welder",
+          "armorer",
+          "craftsman",
+          "ironworker",
+          "viking"
+        ],
+        "warm": [
+          "man",
+          "worker",
+          "muscles",
+          "hammer",
+          "medieval",
+          "dwarf",
+          "apron"
+        ]
+      },
+      "doing": {
+        "answer": "forging a sword",
+        "accepted": [
+          "forging a sword",
+          "forging",
+          "hammering",
+          "smithing",
+          "making a sword",
+          "forging metal"
+        ],
+        "hot": [
+          "sword",
+          "anvil",
+          "hitting",
+          "working metal",
+          "welding",
+          "crafting"
+        ],
+        "warm": [
+          "working",
+          "building",
+          "fire",
+          "sparks",
+          "iron",
+          "hammer"
+        ]
+      },
+      "where": {
+        "answer": "forge",
+        "accepted": [
+          "forge",
+          "smithy",
+          "workshop",
+          "blacksmith shop",
+          "foundry"
+        ],
+        "hot": [
+          "garage",
+          "factory",
+          "barn",
+          "shed",
+          "furnace"
+        ],
+        "warm": [
+          "fire",
+          "room",
+          "village",
+          "medieval",
+          "cave",
+          "basement"
+        ]
+      },
+      "style": {
+        "answer": "cubism",
+        "accepted": [
+          "cubism",
+          "cubist",
+          "cubist painting",
+          "picasso"
+        ],
+        "hot": [
+          "abstract",
+          "geometric",
+          "modern art",
+          "futurism",
+          "collage"
+        ],
+        "warm": [
+          "modern",
+          "shapes",
+          "painting",
+          "art",
+          "angular",
+          "fragmented",
+          "surreal"
+        ]
+      }
+    }
+  },
+  {
+    "id": 15,
+    "publishDate": "2026-10-18",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a dinosaur eating ice cream at a playground, crayon drawing, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "dinosaur",
+        "accepted": [
+          "dinosaur",
+          "dino",
+          "t-rex",
+          "t rex",
+          "trex",
+          "tyrannosaurus"
+        ],
+        "hot": [
+          "dragon",
+          "lizard",
+          "raptor",
+          "crocodile",
+          "reptile"
+        ],
+        "warm": [
+          "monster",
+          "animal",
+          "prehistoric",
+          "beast",
+          "creature",
+          "green"
+        ]
+      },
+      "doing": {
+        "answer": "eating ice cream",
+        "accepted": [
+          "eating ice cream",
+          "ice cream",
+          "licking ice cream",
+          "eating an ice cream",
+          "eating icecream",
+          "ice cream cone"
+        ],
+        "hot": [
+          "eating",
+          "licking",
+          "dessert",
+          "cone",
+          "gelato",
+          "popsicle"
+        ],
+        "warm": [
+          "food",
+          "snack",
+          "treat",
+          "sweet",
+          "hungry",
+          "sugar"
+        ]
+      },
+      "where": {
+        "answer": "playground",
+        "accepted": [
+          "playground",
+          "play ground",
+          "play area",
+          "jungle gym",
+          "playpark"
+        ],
+        "hot": [
+          "park",
+          "swings",
+          "slide",
+          "schoolyard",
+          "sandbox"
+        ],
+        "warm": [
+          "school",
+          "garden",
+          "yard",
+          "kids",
+          "outdoors",
+          "grass"
+        ]
+      },
+      "style": {
+        "answer": "crayon drawing",
+        "accepted": [
+          "crayon drawing",
+          "crayon",
+          "kids drawing",
+          "childrens drawing",
+          "child's drawing",
+          "children's drawing"
+        ],
+        "hot": [
+          "drawing",
+          "colored pencil",
+          "pastel",
+          "doodle",
+          "finger painting",
+          "chalk"
+        ],
+        "warm": [
+          "kids",
+          "childish",
+          "art",
+          "colorful",
+          "simple",
+          "scribble"
+        ]
+      }
+    }
+  },
+  {
+    "id": 16,
+    "publishDate": "2026-10-19",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a girl flying a kite on a grassy hilltop, anime, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "girl",
+        "accepted": [
+          "girl",
+          "little girl",
+          "young girl",
+          "schoolgirl"
+        ],
+        "hot": [
+          "child",
+          "kid",
+          "daughter",
+          "boy",
+          "teenager",
+          "woman"
+        ],
+        "warm": [
+          "person",
+          "student",
+          "human",
+          "friend",
+          "young",
+          "youth"
+        ]
+      },
+      "doing": {
+        "answer": "flying a kite",
+        "accepted": [
+          "flying a kite",
+          "kite",
+          "kite flying",
+          "flying kite",
+          "kiting"
+        ],
+        "hot": [
+          "flying",
+          "holding a string",
+          "running",
+          "playing"
+        ],
+        "warm": [
+          "wind",
+          "jumping",
+          "standing",
+          "looking up",
+          "sky",
+          "holding"
+        ]
+      },
+      "where": {
+        "answer": "hilltop",
+        "accepted": [
+          "hilltop",
+          "hill",
+          "hillside",
+          "grassy hill",
+          "top of a hill",
+          "hill top"
+        ],
+        "hot": [
+          "meadow",
+          "mountain",
+          "field",
+          "cliff",
+          "grassland"
+        ],
+        "warm": [
+          "grass",
+          "countryside",
+          "outdoors",
+          "nature",
+          "clouds",
+          "valley"
+        ]
+      },
+      "style": {
+        "answer": "anime",
+        "accepted": [
+          "anime",
+          "manga",
+          "japanese animation",
+          "ghibli",
+          "anime style"
+        ],
+        "hot": [
+          "cartoon",
+          "animation",
+          "animated",
+          "cel shaded",
+          "japanese"
+        ],
+        "warm": [
+          "drawing",
+          "illustration",
+          "cute",
+          "art",
+          "colorful",
+          "kawaii"
+        ]
+      }
+    }
+  },
+  {
+    "id": 17,
+    "publishDate": "2026-10-20",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a whale floating in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "whale",
+        "accepted": [
+          "whale",
+          "blue whale",
+          "humpback",
+          "humpback whale",
+          "sperm whale"
+        ],
+        "hot": [
+          "orca",
+          "dolphin",
+          "shark",
+          "killer whale",
+          "narwhal"
+        ],
+        "warm": [
+          "fish",
+          "sea creature",
+          "animal",
+          "ocean",
+          "mammal",
+          "giant"
+        ]
+      },
+      "doing": {
+        "answer": "flying",
+        "accepted": [
+          "flying",
+          "floating",
+          "levitating",
+          "soaring",
+          "swimming in the sky",
+          "hovering"
+        ],
+        "hot": [
+          "swimming",
+          "drifting",
+          "gliding",
+          "diving",
+          "jumping"
+        ],
+        "warm": [
+          "moving",
+          "sleeping",
+          "singing",
+          "dreaming",
+          "falling",
+          "rising"
+        ]
+      },
+      "where": {
+        "answer": "city at night",
+        "accepted": [
+          "city at night",
+          "city",
+          "night city",
+          "cityscape",
+          "skyline",
+          "city skyline"
+        ],
+        "hot": [
+          "town",
+          "buildings",
+          "downtown",
+          "skyscrapers",
+          "rooftops"
+        ],
+        "warm": [
+          "night",
+          "sky",
+          "streets",
+          "lights",
+          "stars",
+          "moon"
+        ]
+      },
+      "style": {
+        "answer": "chalk drawing",
+        "accepted": [
+          "chalk drawing",
+          "chalk",
+          "chalkboard",
+          "blackboard",
+          "chalk art",
+          "chalk on blackboard"
+        ],
+        "hot": [
+          "pastel",
+          "sidewalk chalk",
+          "crayon",
+          "drawing",
+          "sketch"
+        ],
+        "warm": [
+          "school",
+          "dark",
+          "hand drawn",
+          "art",
+          "dusty",
+          "classroom"
+        ]
+      }
+    }
+  },
+  {
+    "id": 18,
+    "publishDate": "2026-10-21",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a deer drinking water from a mountain lake, low poly, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "deer",
+        "accepted": [
+          "deer",
+          "stag",
+          "buck",
+          "doe",
+          "fawn"
+        ],
+        "hot": [
+          "elk",
+          "moose",
+          "reindeer",
+          "antelope",
+          "caribou"
+        ],
+        "warm": [
+          "animal",
+          "antlers",
+          "horse",
+          "goat",
+          "wildlife",
+          "forest animal"
+        ]
+      },
+      "doing": {
+        "answer": "drinking water",
+        "accepted": [
+          "drinking water",
+          "drinking",
+          "drinking from a lake",
+          "sipping",
+          "drink"
+        ],
+        "hot": [
+          "bending down",
+          "grazing",
+          "eating",
+          "lapping",
+          "looking at reflection"
+        ],
+        "warm": [
+          "standing",
+          "resting",
+          "thirsty",
+          "water",
+          "looking",
+          "relaxing"
+        ]
+      },
+      "where": {
+        "answer": "mountain lake",
+        "accepted": [
+          "mountain lake",
+          "lake",
+          "alpine lake",
+          "lakeside",
+          "lake shore"
+        ],
+        "hot": [
+          "pond",
+          "river",
+          "mountains",
+          "stream",
+          "lagoon"
+        ],
+        "warm": [
+          "forest",
+          "water",
+          "nature",
+          "valley",
+          "snow",
+          "wilderness"
+        ]
+      },
+      "style": {
+        "answer": "low poly",
+        "accepted": [
+          "low poly",
+          "lowpoly",
+          "low-poly",
+          "polygon",
+          "polygonal",
+          "polygon art"
+        ],
+        "hot": [
+          "geometric",
+          "3d",
+          "3d render",
+          "faceted",
+          "origami",
+          "crystal"
+        ],
+        "warm": [
+          "digital",
+          "shapes",
+          "video game",
+          "computer",
+          "angular",
+          "modern"
+        ]
+      }
+    }
+  },
+  {
+    "id": 19,
+    "publishDate": "2026-10-22",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "an octopus playing drums on the sea floor, mosaic, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "octopus",
+        "accepted": [
+          "octopus",
+          "octopi",
+          "octopuses"
+        ],
+        "hot": [
+          "squid",
+          "kraken",
+          "jellyfish",
+          "cuttlefish",
+          "tentacles"
+        ],
+        "warm": [
+          "sea creature",
+          "fish",
+          "animal",
+          "monster",
+          "crab",
+          "ocean"
+        ]
+      },
+      "doing": {
+        "answer": "playing drums",
+        "accepted": [
+          "playing drums",
+          "drums",
+          "drumming",
+          "playing the drums",
+          "drum"
+        ],
+        "hot": [
+          "playing music",
+          "percussion",
+          "playing",
+          "banging",
+          "music"
+        ],
+        "warm": [
+          "dancing",
+          "band",
+          "singing",
+          "performing",
+          "concert",
+          "rhythm"
+        ]
+      },
+      "where": {
+        "answer": "sea floor",
+        "accepted": [
+          "sea floor",
+          "seafloor",
+          "ocean floor",
+          "underwater",
+          "bottom of the sea",
+          "seabed"
+        ],
+        "hot": [
+          "ocean",
+          "sea",
+          "reef",
+          "coral reef",
+          "deep sea"
+        ],
+        "warm": [
+          "water",
+          "beach",
+          "sand",
+          "aquarium",
+          "shipwreck",
+          "deep"
+        ]
+      },
+      "style": {
+        "answer": "mosaic",
+        "accepted": [
+          "mosaic",
+          "tile mosaic",
+          "roman mosaic",
+          "tiles",
+          "tile art"
+        ],
+        "hot": [
+          "stained glass",
+          "pixel art",
+          "ceramic",
+          "pottery",
+          "fresco"
+        ],
+        "warm": [
+          "ancient",
+          "roman",
+          "greek",
+          "stone",
+          "pattern",
+          "colorful"
+        ]
+      }
+    }
+  },
+  {
+    "id": 20,
+    "publishDate": "2026-10-23",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a flamingo sipping a cocktail on the deck of an ocean liner, art deco, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "flamingo",
+        "accepted": [
+          "flamingo",
+          "pink flamingo",
+          "flamingos"
+        ],
+        "hot": [
+          "heron",
+          "stork",
+          "crane",
+          "pelican",
+          "swan",
+          "ibis"
+        ],
+        "warm": [
+          "bird",
+          "pink",
+          "animal",
+          "feathers",
+          "tropical",
+          "duck"
+        ]
+      },
+      "doing": {
+        "answer": "sipping a cocktail",
+        "accepted": [
+          "sipping a cocktail",
+          "drinking a cocktail",
+          "cocktail",
+          "drinking",
+          "sipping",
+          "drinking a martini"
+        ],
+        "hot": [
+          "martini",
+          "drink",
+          "toasting",
+          "having a drink",
+          "relaxing"
+        ],
+        "warm": [
+          "party",
+          "glass",
+          "celebrating",
+          "standing",
+          "posing",
+          "vacation"
+        ]
+      },
+      "where": {
+        "answer": "ocean liner",
+        "accepted": [
+          "ocean liner",
+          "cruise ship",
+          "ship",
+          "liner",
+          "steamship",
+          "ship deck"
+        ],
+        "hot": [
+          "boat",
+          "yacht",
+          "ferry",
+          "deck",
+          "titanic"
+        ],
+        "warm": [
+          "ocean",
+          "sea",
+          "travel",
+          "harbor",
+          "water",
+          "cruise"
+        ]
+      },
+      "style": {
+        "answer": "art deco",
+        "accepted": [
+          "art deco",
+          "deco",
+          "artdeco",
+          "1920s",
+          "twenties"
+        ],
+        "hot": [
+          "art nouveau",
+          "gatsby",
+          "vintage poster",
+          "retro",
+          "geometric"
+        ],
+        "warm": [
+          "vintage",
+          "gold",
+          "elegant",
+          "old",
+          "poster",
+          "luxury"
+        ]
+      }
+    }
+  },
+  {
+    "id": 21,
+    "publishDate": "2026-10-24",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a conductor leading an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "conductor",
+        "accepted": [
+          "conductor",
+          "maestro",
+          "orchestra conductor",
+          "bandleader",
+          "music director"
+        ],
+        "hot": [
+          "musician",
+          "composer",
+          "pianist",
+          "violinist",
+          "magician"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "performer",
+          "artist",
+          "tuxedo",
+          "music"
+        ]
+      },
+      "doing": {
+        "answer": "conducting an orchestra",
+        "accepted": [
+          "conducting an orchestra",
+          "conducting",
+          "leading an orchestra",
+          "conducting music",
+          "waving a baton"
+        ],
+        "hot": [
+          "orchestra",
+          "baton",
+          "directing",
+          "leading",
+          "performing"
+        ],
+        "warm": [
+          "music",
+          "waving",
+          "dancing",
+          "pointing",
+          "playing",
+          "concert"
+        ]
+      },
+      "where": {
+        "answer": "concert hall",
+        "accepted": [
+          "concert hall",
+          "opera house",
+          "auditorium",
+          "symphony hall",
+          "theater",
+          "theatre"
+        ],
+        "hot": [
+          "stage",
+          "opera",
+          "hall",
+          "music hall",
+          "amphitheater"
+        ],
+        "warm": [
+          "building",
+          "room",
+          "audience",
+          "venue",
+          "seats",
+          "show"
+        ]
+      },
+      "style": {
+        "answer": "bauhaus",
+        "accepted": [
+          "bauhaus",
+          "bauhaus style",
+          "bauhaus design"
+        ],
+        "hot": [
+          "geometric",
+          "modernism",
+          "constructivism",
+          "minimalism",
+          "mid century",
+          "de stijl"
+        ],
+        "warm": [
+          "abstract",
+          "shapes",
+          "poster",
+          "modern",
+          "german",
+          "primary colors",
+          "circles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 22,
+    "publishDate": "2026-10-25",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a kitten sleeping in a flower pot, photograph, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "kitten",
+        "accepted": [
+          "kitten",
+          "kitty",
+          "cat",
+          "baby cat",
+          "tabby"
+        ],
+        "hot": [
+          "puppy",
+          "bunny",
+          "hamster",
+          "fox",
+          "lion cub"
+        ],
+        "warm": [
+          "animal",
+          "pet",
+          "baby",
+          "fur",
+          "cute",
+          "dog"
+        ]
+      },
+      "doing": {
+        "answer": "sleeping",
+        "accepted": [
+          "sleeping",
+          "asleep",
+          "napping",
+          "taking a nap",
+          "dozing",
+          "sleep"
+        ],
+        "hot": [
+          "resting",
+          "lying down",
+          "curled up",
+          "relaxing",
+          "dreaming"
+        ],
+        "warm": [
+          "sitting",
+          "hiding",
+          "yawning",
+          "lazy",
+          "tired",
+          "cozy"
+        ]
+      },
+      "where": {
+        "answer": "flower pot",
+        "accepted": [
+          "flower pot",
+          "flowerpot",
+          "pot",
+          "plant pot",
+          "planter",
+          "clay pot"
+        ],
+        "hot": [
+          "garden",
+          "basket",
+          "bucket",
+          "vase",
+          "window box"
+        ],
+        "warm": [
+          "flowers",
+          "plants",
+          "porch",
+          "windowsill",
+          "balcony",
+          "soil"
+        ]
+      },
+      "style": {
+        "answer": "photograph",
+        "accepted": [
+          "photograph",
+          "photo",
+          "photography",
+          "realistic",
+          "photorealistic",
+          "close-up photo"
+        ],
+        "hot": [
+          "picture",
+          "camera",
+          "snapshot",
+          "portrait",
+          "close-up"
+        ],
+        "warm": [
+          "real life",
+          "natural",
+          "hd",
+          "macro",
+          "detailed",
+          "sharp"
+        ]
+      }
+    }
+  },
+  {
+    "id": 23,
+    "publishDate": "2026-10-26",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a pirate digging for treasure on a desert island, cartoon, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "pirate",
+        "accepted": [
+          "pirate",
+          "pirate captain",
+          "buccaneer",
+          "corsair",
+          "privateer"
+        ],
+        "hot": [
+          "captain",
+          "sailor",
+          "viking",
+          "parrot",
+          "bandit"
+        ],
+        "warm": [
+          "man",
+          "eyepatch",
+          "sea",
+          "treasure",
+          "hat",
+          "beard",
+          "hook"
+        ]
+      },
+      "doing": {
+        "answer": "digging for treasure",
+        "accepted": [
+          "digging for treasure",
+          "digging",
+          "treasure hunting",
+          "digging a hole",
+          "shoveling",
+          "looking for treasure"
+        ],
+        "hot": [
+          "treasure",
+          "shovel",
+          "searching",
+          "finding treasure",
+          "hunting"
+        ],
+        "warm": [
+          "working",
+          "exploring",
+          "gold",
+          "map",
+          "sand",
+          "chest"
+        ]
+      },
+      "where": {
+        "answer": "desert island",
+        "accepted": [
+          "desert island",
+          "island",
+          "tropical island",
+          "deserted island",
+          "small island",
+          "islet"
+        ],
+        "hot": [
+          "beach",
+          "shore",
+          "coast",
+          "lagoon",
+          "palm tree"
+        ],
+        "warm": [
+          "ocean",
+          "sea",
+          "sand",
+          "tropical",
+          "jungle",
+          "paradise"
+        ]
+      },
+      "style": {
+        "answer": "cartoon",
+        "accepted": [
+          "cartoon",
+          "cartoonish",
+          "toon",
+          "animated cartoon",
+          "kids cartoon"
+        ],
+        "hot": [
+          "animation",
+          "animated",
+          "comic",
+          "illustration",
+          "drawing"
+        ],
+        "warm": [
+          "kids",
+          "cute",
+          "funny",
+          "art",
+          "colorful",
+          "simple"
+        ]
+      }
+    }
+  }
+]
