@@ -1,0 +1,111 @@
+{
+  "id": 26,
+  "publishDate": "2026-10-29",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a bear having a picnic in a flower meadow, embroidery, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "bear",
+      "accepted": [
+        "bear",
+        "brown bear",
+        "grizzly",
+        "grizzly bear"
+      ],
+      "hot": [
+        "teddy bear",
+        "panda",
+        "polar bear",
+        "black bear",
+        "wolf"
+      ],
+      "warm": [
+        "animal",
+        "dog",
+        "cub",
+        "furry",
+        "beast",
+        "mammal"
+      ]
+    },
+    "doing": {
+      "answer": "having a picnic",
+      "accepted": [
+        "having a picnic",
+        "picnic",
+        "picnicking",
+        "eating lunch",
+        "eating a picnic"
+      ],
+      "hot": [
+        "eating",
+        "lunch",
+        "sandwich",
+        "eating honey",
+        "honey"
+      ],
+      "warm": [
+        "sitting",
+        "relaxing",
+        "food",
+        "basket",
+        "hungry",
+        "snack"
+      ]
+    },
+    "where": {
+      "answer": "meadow",
+      "accepted": [
+        "meadow",
+        "field",
+        "grassland",
+        "flower meadow",
+        "grassy field"
+      ],
+      "hot": [
+        "park",
+        "garden",
+        "hill",
+        "prairie",
+        "countryside",
+        "lawn"
+      ],
+      "warm": [
+        "grass",
+        "flowers",
+        "nature",
+        "forest",
+        "outdoors",
+        "summer"
+      ]
+    },
+    "style": {
+      "answer": "embroidery",
+      "accepted": [
+        "embroidery",
+        "embroidered",
+        "needlework",
+        "cross stitch",
+        "cross-stitch",
+        "stitching"
+      ],
+      "hot": [
+        "sewing",
+        "textile",
+        "tapestry",
+        "fabric",
+        "knitting",
+        "quilt"
+      ],
+      "warm": [
+        "thread",
+        "craft",
+        "handmade",
+        "cloth",
+        "cute",
+        "yarn"
+      ]
+    }
+  }
+}

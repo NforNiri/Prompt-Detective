@@ -548,7 +548,7 @@
     "publishDate": "2026-10-12",
     "difficulty": 2,
     "locale": "en",
-    "prompt": "an old woman feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
+    "prompt": "a grandmother feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "grandmother",
@@ -659,7 +659,7 @@
     "publishDate": "2026-10-13",
     "difficulty": 2,
     "locale": "en",
-    "prompt": "a robot walking a dog on a rainy city street, comic book, no text, no letters, no watermark",
+    "prompt": "a robot walking a dog on a rainy street, comic book, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "robot",

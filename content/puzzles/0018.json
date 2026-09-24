@@ -1,0 +1,111 @@
+{
+  "id": 18,
+  "publishDate": "2026-10-21",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a deer drinking water from a mountain lake, low poly, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "deer",
+      "accepted": [
+        "deer",
+        "stag",
+        "buck",
+        "doe",
+        "fawn"
+      ],
+      "hot": [
+        "elk",
+        "moose",
+        "reindeer",
+        "antelope",
+        "caribou"
+      ],
+      "warm": [
+        "animal",
+        "antlers",
+        "horse",
+        "goat",
+        "wildlife",
+        "forest animal"
+      ]
+    },
+    "doing": {
+      "answer": "drinking water",
+      "accepted": [
+        "drinking water",
+        "drinking",
+        "drinking from a lake",
+        "sipping",
+        "drink"
+      ],
+      "hot": [
+        "bending down",
+        "grazing",
+        "eating",
+        "lapping",
+        "looking at reflection"
+      ],
+      "warm": [
+        "standing",
+        "resting",
+        "thirsty",
+        "water",
+        "looking",
+        "relaxing"
+      ]
+    },
+    "where": {
+      "answer": "mountain lake",
+      "accepted": [
+        "mountain lake",
+        "lake",
+        "alpine lake",
+        "lakeside",
+        "lake shore"
+      ],
+      "hot": [
+        "pond",
+        "river",
+        "mountains",
+        "stream",
+        "lagoon"
+      ],
+      "warm": [
+        "forest",
+        "water",
+        "nature",
+        "valley",
+        "snow",
+        "wilderness"
+      ]
+    },
+    "style": {
+      "answer": "low poly",
+      "accepted": [
+        "low poly",
+        "lowpoly",
+        "low-poly",
+        "polygon",
+        "polygonal",
+        "polygon art"
+      ],
+      "hot": [
+        "geometric",
+        "3d",
+        "3d render",
+        "faceted",
+        "origami",
+        "crystal"
+      ],
+      "warm": [
+        "digital",
+        "shapes",
+        "video game",
+        "computer",
+        "angular",
+        "modern"
+      ]
+    }
+  }
+}

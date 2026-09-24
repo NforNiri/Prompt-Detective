@@ -339,7 +339,7 @@
     "publishDate": "2026-10-20",
     "difficulty": 2,
     "locale": "en",
-    "prompt": "a whale floating in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
+    "prompt": "a whale flying in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "whale",
@@ -780,7 +780,7 @@
     "publishDate": "2026-10-24",
     "difficulty": 5,
     "locale": "en",
-    "prompt": "a conductor leading an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
+    "prompt": "a conductor conducting an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "conductor",

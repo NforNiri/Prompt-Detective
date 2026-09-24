@@ -1,0 +1,109 @@
+{
+  "id": 25,
+  "publishDate": "2026-10-28",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a mermaid combing her hair on a rock in the sea, paper cutout, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "mermaid",
+      "accepted": [
+        "mermaid",
+        "siren",
+        "sea maiden"
+      ],
+      "hot": [
+        "fish",
+        "fairy",
+        "princess",
+        "nymph",
+        "sea creature"
+      ],
+      "warm": [
+        "woman",
+        "girl",
+        "ocean",
+        "fantasy",
+        "tail",
+        "myth"
+      ]
+    },
+    "doing": {
+      "answer": "combing her hair",
+      "accepted": [
+        "combing her hair",
+        "combing hair",
+        "brushing hair",
+        "brushing her hair",
+        "combing"
+      ],
+      "hot": [
+        "brushing",
+        "grooming",
+        "singing",
+        "looking in a mirror",
+        "styling hair"
+      ],
+      "warm": [
+        "sitting",
+        "relaxing",
+        "posing",
+        "hair",
+        "mirror",
+        "waiting"
+      ]
+    },
+    "where": {
+      "answer": "rock in the sea",
+      "accepted": [
+        "rock in the sea",
+        "rock",
+        "sea rock",
+        "rocky shore",
+        "boulder"
+      ],
+      "hot": [
+        "reef",
+        "cliff",
+        "coast",
+        "island",
+        "shore"
+      ],
+      "warm": [
+        "ocean",
+        "sea",
+        "waves",
+        "beach",
+        "water",
+        "moon"
+      ]
+    },
+    "style": {
+      "answer": "paper cutout",
+      "accepted": [
+        "paper cutout",
+        "paper cut",
+        "papercut",
+        "paper art",
+        "cut paper",
+        "layered paper"
+      ],
+      "hot": [
+        "papercraft",
+        "origami",
+        "collage",
+        "paper",
+        "craft",
+        "shadow box"
+      ],
+      "warm": [
+        "layers",
+        "handmade",
+        "scissors",
+        "3d",
+        "kids",
+        "crafty"
+      ]
+    }
+  }
+}

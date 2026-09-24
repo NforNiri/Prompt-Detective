@@ -1,0 +1,109 @@
+{
+  "id": 30,
+  "publishDate": "2026-11-02",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a sloth hanging from a ceiling lamp in an office, 3d render, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "sloth",
+      "accepted": [
+        "sloth",
+        "three-toed sloth",
+        "tree sloth"
+      ],
+      "hot": [
+        "koala",
+        "monkey",
+        "lemur",
+        "raccoon",
+        "bear"
+      ],
+      "warm": [
+        "animal",
+        "lazy",
+        "slow",
+        "mammal",
+        "furry",
+        "jungle"
+      ]
+    },
+    "doing": {
+      "answer": "hanging",
+      "accepted": [
+        "hanging",
+        "hanging from a lamp",
+        "dangling",
+        "hanging upside down",
+        "swinging",
+        "hanging on"
+      ],
+      "hot": [
+        "climbing",
+        "holding on",
+        "sleeping",
+        "clinging"
+      ],
+      "warm": [
+        "resting",
+        "relaxing",
+        "stuck",
+        "lazing",
+        "waiting",
+        "falling"
+      ]
+    },
+    "where": {
+      "answer": "office",
+      "accepted": [
+        "office",
+        "workplace",
+        "cubicle",
+        "open office",
+        "corporate office",
+        "office room"
+      ],
+      "hot": [
+        "desk",
+        "meeting room",
+        "classroom",
+        "library",
+        "workspace"
+      ],
+      "warm": [
+        "building",
+        "room",
+        "work",
+        "business",
+        "computer",
+        "job"
+      ]
+    },
+    "style": {
+      "answer": "3d render",
+      "accepted": [
+        "3d render",
+        "3d",
+        "render",
+        "cgi",
+        "3d animation",
+        "3d rendering"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "cartoon",
+        "claymation",
+        "toy"
+      ],
+      "warm": [
+        "digital",
+        "computer",
+        "cute",
+        "movie",
+        "plastic",
+        "smooth"
+      ]
+    }
+  }
+}

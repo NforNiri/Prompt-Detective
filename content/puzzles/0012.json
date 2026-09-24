@@ -1,0 +1,110 @@
+{
+  "id": 12,
+  "publishDate": "2026-10-15",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "an owl holding a lantern in a forest at night, stained glass, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "owl",
+      "accepted": [
+        "owl",
+        "barn owl",
+        "snowy owl",
+        "great horned owl",
+        "owlet"
+      ],
+      "hot": [
+        "hawk",
+        "eagle",
+        "falcon",
+        "raven",
+        "parrot"
+      ],
+      "warm": [
+        "bird",
+        "animal",
+        "feathers",
+        "night bird",
+        "wise",
+        "nocturnal"
+      ]
+    },
+    "doing": {
+      "answer": "holding a lantern",
+      "accepted": [
+        "holding a lantern",
+        "lantern",
+        "carrying a lantern",
+        "holding a lamp",
+        "holding lantern"
+      ],
+      "hot": [
+        "lamp",
+        "holding a light",
+        "candle",
+        "torch",
+        "glowing"
+      ],
+      "warm": [
+        "light",
+        "holding",
+        "carrying",
+        "flying",
+        "perching",
+        "standing",
+        "guiding"
+      ]
+    },
+    "where": {
+      "answer": "forest",
+      "accepted": [
+        "forest",
+        "woods",
+        "woodland",
+        "dark forest",
+        "night forest"
+      ],
+      "hot": [
+        "jungle",
+        "trees",
+        "grove",
+        "swamp",
+        "park"
+      ],
+      "warm": [
+        "night",
+        "nature",
+        "moon",
+        "branch",
+        "mountain",
+        "outdoors"
+      ]
+    },
+    "style": {
+      "answer": "stained glass",
+      "accepted": [
+        "stained glass",
+        "stained glass window",
+        "glass",
+        "church window",
+        "leaded glass"
+      ],
+      "hot": [
+        "mosaic",
+        "window",
+        "colored glass",
+        "gothic",
+        "cathedral"
+      ],
+      "warm": [
+        "church",
+        "colorful",
+        "religious",
+        "medieval",
+        "glowing",
+        "art"
+      ]
+    }
+  }
+}

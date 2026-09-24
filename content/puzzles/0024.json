@@ -1,0 +1,113 @@
+{
+  "id": 24,
+  "publishDate": "2026-10-27",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a gorilla lifting weights in a gym, graffiti, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "gorilla",
+      "accepted": [
+        "gorilla",
+        "silverback",
+        "ape",
+        "great ape"
+      ],
+      "hot": [
+        "monkey",
+        "chimpanzee",
+        "chimp",
+        "orangutan",
+        "baboon",
+        "king kong"
+      ],
+      "warm": [
+        "animal",
+        "primate",
+        "bear",
+        "beast",
+        "muscles",
+        "jungle"
+      ]
+    },
+    "doing": {
+      "answer": "lifting weights",
+      "accepted": [
+        "lifting weights",
+        "weightlifting",
+        "lifting",
+        "bodybuilding",
+        "pumping iron",
+        "working out"
+      ],
+      "hot": [
+        "exercising",
+        "training",
+        "squatting",
+        "barbell",
+        "dumbbell",
+        "bench press"
+      ],
+      "warm": [
+        "sport",
+        "strong",
+        "flexing",
+        "fitness",
+        "muscles",
+        "sweating"
+      ]
+    },
+    "where": {
+      "answer": "gym",
+      "accepted": [
+        "gym",
+        "fitness center",
+        "weight room",
+        "fitness club",
+        "health club",
+        "gymnasium"
+      ],
+      "hot": [
+        "boxing ring",
+        "locker room",
+        "sports hall",
+        "studio",
+        "basement"
+      ],
+      "warm": [
+        "building",
+        "room",
+        "club",
+        "stadium",
+        "garage",
+        "school"
+      ]
+    },
+    "style": {
+      "answer": "graffiti",
+      "accepted": [
+        "graffiti",
+        "grafitti",
+        "street art",
+        "mural",
+        "spray paint",
+        "graffiti art"
+      ],
+      "hot": [
+        "urban art",
+        "wall art",
+        "painting",
+        "stencil",
+        "pop art"
+      ],
+      "warm": [
+        "urban",
+        "wall",
+        "paint",
+        "colorful",
+        "hip hop",
+        "city"
+      ]
+    }
+  }
+}

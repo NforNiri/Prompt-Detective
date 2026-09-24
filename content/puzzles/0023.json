@@ -1,0 +1,112 @@
+{
+  "id": 23,
+  "publishDate": "2026-10-26",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a pirate digging for treasure on a desert island, cartoon, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "pirate",
+      "accepted": [
+        "pirate",
+        "pirate captain",
+        "buccaneer",
+        "corsair",
+        "privateer"
+      ],
+      "hot": [
+        "captain",
+        "sailor",
+        "viking",
+        "parrot",
+        "bandit"
+      ],
+      "warm": [
+        "man",
+        "eyepatch",
+        "sea",
+        "treasure",
+        "hat",
+        "beard",
+        "hook"
+      ]
+    },
+    "doing": {
+      "answer": "digging for treasure",
+      "accepted": [
+        "digging for treasure",
+        "digging",
+        "treasure hunting",
+        "digging a hole",
+        "shoveling",
+        "looking for treasure"
+      ],
+      "hot": [
+        "treasure",
+        "shovel",
+        "searching",
+        "finding treasure",
+        "hunting"
+      ],
+      "warm": [
+        "working",
+        "exploring",
+        "gold",
+        "map",
+        "sand",
+        "chest"
+      ]
+    },
+    "where": {
+      "answer": "desert island",
+      "accepted": [
+        "desert island",
+        "island",
+        "tropical island",
+        "deserted island",
+        "small island",
+        "islet"
+      ],
+      "hot": [
+        "beach",
+        "shore",
+        "coast",
+        "lagoon",
+        "palm tree"
+      ],
+      "warm": [
+        "ocean",
+        "sea",
+        "sand",
+        "tropical",
+        "jungle",
+        "paradise"
+      ]
+    },
+    "style": {
+      "answer": "cartoon",
+      "accepted": [
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
+      ],
+      "warm": [
+        "kids",
+        "cute",
+        "funny",
+        "art",
+        "colorful",
+        "simple"
+      ]
+    }
+  }
+}

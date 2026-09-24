@@ -1,0 +1,112 @@
+{
+  "id": 14,
+  "publishDate": "2026-10-17",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a blacksmith forging a sword in a forge, cubism, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "blacksmith",
+      "accepted": [
+        "blacksmith",
+        "smith",
+        "ironsmith",
+        "metalworker",
+        "black smith"
+      ],
+      "hot": [
+        "welder",
+        "armorer",
+        "craftsman",
+        "ironworker",
+        "viking"
+      ],
+      "warm": [
+        "man",
+        "worker",
+        "muscles",
+        "hammer",
+        "medieval",
+        "dwarf",
+        "apron"
+      ]
+    },
+    "doing": {
+      "answer": "forging a sword",
+      "accepted": [
+        "forging a sword",
+        "forging",
+        "hammering",
+        "smithing",
+        "making a sword",
+        "forging metal"
+      ],
+      "hot": [
+        "sword",
+        "anvil",
+        "hitting",
+        "working metal",
+        "welding",
+        "crafting"
+      ],
+      "warm": [
+        "working",
+        "building",
+        "fire",
+        "sparks",
+        "iron",
+        "hammer"
+      ]
+    },
+    "where": {
+      "answer": "forge",
+      "accepted": [
+        "forge",
+        "smithy",
+        "workshop",
+        "blacksmith shop",
+        "foundry"
+      ],
+      "hot": [
+        "garage",
+        "factory",
+        "barn",
+        "shed",
+        "furnace"
+      ],
+      "warm": [
+        "fire",
+        "room",
+        "village",
+        "medieval",
+        "cave",
+        "basement"
+      ]
+    },
+    "style": {
+      "answer": "cubism",
+      "accepted": [
+        "cubism",
+        "cubist",
+        "cubist painting",
+        "picasso"
+      ],
+      "hot": [
+        "abstract",
+        "geometric",
+        "modern art",
+        "futurism",
+        "collage"
+      ],
+      "warm": [
+        "modern",
+        "shapes",
+        "painting",
+        "art",
+        "angular",
+        "fragmented",
+        "surreal"
+      ]
+    }
+  }
+}

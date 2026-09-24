@@ -1,0 +1,108 @@
+{
+  "id": 29,
+  "publishDate": "2026-11-01",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a rabbit planting carrots in a vegetable garden, watercolor, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "rabbit",
+      "accepted": [
+        "rabbit",
+        "bunny",
+        "hare",
+        "bunny rabbit",
+        "jackrabbit"
+      ],
+      "hot": [
+        "hamster",
+        "guinea pig",
+        "mouse",
+        "squirrel",
+        "kangaroo"
+      ],
+      "warm": [
+        "animal",
+        "pet",
+        "rodent",
+        "ears",
+        "easter",
+        "cute"
+      ]
+    },
+    "doing": {
+      "answer": "planting carrots",
+      "accepted": [
+        "planting carrots",
+        "planting",
+        "gardening",
+        "growing carrots",
+        "harvesting carrots",
+        "picking carrots"
+      ],
+      "hot": [
+        "digging",
+        "carrots",
+        "farming",
+        "watering",
+        "harvesting"
+      ],
+      "warm": [
+        "eating",
+        "working",
+        "vegetables",
+        "food",
+        "plants",
+        "hopping"
+      ]
+    },
+    "where": {
+      "answer": "vegetable garden",
+      "accepted": [
+        "vegetable garden",
+        "garden",
+        "veggie garden",
+        "vegetable patch",
+        "allotment",
+        "kitchen garden"
+      ],
+      "hot": [
+        "farm",
+        "field",
+        "backyard",
+        "greenhouse",
+        "yard"
+      ],
+      "warm": [
+        "soil",
+        "dirt",
+        "outdoors",
+        "countryside",
+        "flowers",
+        "village"
+      ]
+    },
+    "style": {
+      "answer": "watercolor",
+      "accepted": [
+        "watercolor",
+        "watercolour",
+        "watercolor painting",
+        "aquarelle"
+      ],
+      "hot": [
+        "painting",
+        "gouache",
+        "ink wash",
+        "pastel"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "illustration",
+        "drawing",
+        "soft"
+      ]
+    }
+  }
+}

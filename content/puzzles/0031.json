@@ -1,0 +1,110 @@
+{
+  "id": 31,
+  "publishDate": "2026-11-03",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a firefighter rescuing a cat from a tall tree, pencil sketch, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "firefighter",
+      "accepted": [
+        "firefighter",
+        "fireman",
+        "fire fighter",
+        "firewoman"
+      ],
+      "hot": [
+        "rescuer",
+        "policeman",
+        "paramedic",
+        "soldier",
+        "lifeguard"
+      ],
+      "warm": [
+        "hero",
+        "man",
+        "worker",
+        "helmet",
+        "person",
+        "uniform"
+      ]
+    },
+    "doing": {
+      "answer": "rescuing a cat",
+      "accepted": [
+        "rescuing a cat",
+        "rescuing",
+        "saving a cat",
+        "saving",
+        "rescue",
+        "rescuing a kitten"
+      ],
+      "hot": [
+        "climbing",
+        "holding a cat",
+        "helping",
+        "catching",
+        "reaching"
+      ],
+      "warm": [
+        "cat",
+        "kitten",
+        "working",
+        "climbing a ladder",
+        "holding",
+        "ladder"
+      ]
+    },
+    "where": {
+      "answer": "tree",
+      "accepted": [
+        "tree",
+        "treetop",
+        "tree branch",
+        "oak tree",
+        "big tree",
+        "tall tree"
+      ],
+      "hot": [
+        "branch",
+        "forest",
+        "park",
+        "ladder"
+      ],
+      "warm": [
+        "backyard",
+        "yard",
+        "garden",
+        "neighborhood",
+        "street",
+        "leaves"
+      ]
+    },
+    "style": {
+      "answer": "pencil sketch",
+      "accepted": [
+        "pencil sketch",
+        "sketch",
+        "pencil",
+        "pencil drawing",
+        "graphite",
+        "sketching"
+      ],
+      "hot": [
+        "drawing",
+        "charcoal",
+        "line art",
+        "ink drawing",
+        "doodle"
+      ],
+      "warm": [
+        "art",
+        "black and white",
+        "paper",
+        "hand drawn",
+        "grey",
+        "rough"
+      ]
+    }
+  }
+}

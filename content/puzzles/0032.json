@@ -1,0 +1,110 @@
+{
+  "id": 32,
+  "publishDate": "2026-11-04",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a wizard brewing a potion in a cave, pixel art, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "wizard",
+      "accepted": [
+        "wizard",
+        "sorcerer",
+        "mage",
+        "magician",
+        "warlock"
+      ],
+      "hot": [
+        "witch",
+        "druid",
+        "alchemist",
+        "monk",
+        "old man"
+      ],
+      "warm": [
+        "man",
+        "beard",
+        "hat",
+        "fantasy",
+        "elf",
+        "hermit"
+      ]
+    },
+    "doing": {
+      "answer": "brewing a potion",
+      "accepted": [
+        "brewing a potion",
+        "brewing",
+        "making a potion",
+        "stirring a cauldron",
+        "potion making",
+        "stirring"
+      ],
+      "hot": [
+        "cooking",
+        "casting a spell",
+        "mixing",
+        "potion",
+        "magic"
+      ],
+      "warm": [
+        "boiling",
+        "soup",
+        "spell",
+        "cauldron",
+        "witchcraft",
+        "chemistry"
+      ]
+    },
+    "where": {
+      "answer": "cave",
+      "accepted": [
+        "cave",
+        "cavern",
+        "grotto",
+        "underground cave"
+      ],
+      "hot": [
+        "dungeon",
+        "tunnel",
+        "mine",
+        "lair",
+        "cellar"
+      ],
+      "warm": [
+        "underground",
+        "dark",
+        "rock",
+        "mountain",
+        "castle",
+        "tower"
+      ]
+    },
+    "style": {
+      "answer": "pixel art",
+      "accepted": [
+        "pixel art",
+        "pixel",
+        "8-bit",
+        "8 bit",
+        "pixelated",
+        "16-bit"
+      ],
+      "hot": [
+        "retro game",
+        "video game",
+        "sprite",
+        "retro",
+        "arcade game"
+      ],
+      "warm": [
+        "game",
+        "arcade",
+        "digital",
+        "blocky",
+        "old school",
+        "computer"
+      ]
+    }
+  }
+}

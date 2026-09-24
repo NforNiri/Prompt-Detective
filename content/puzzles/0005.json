@@ -1,0 +1,110 @@
+{
+  "id": 5,
+  "publishDate": "2026-10-08",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a raccoon skateboarding in an empty swimming pool, pixel art, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "raccoon",
+      "accepted": [
+        "raccoon",
+        "racoon",
+        "trash panda"
+      ],
+      "hot": [
+        "possum",
+        "opossum",
+        "badger",
+        "red panda",
+        "ferret",
+        "skunk"
+      ],
+      "warm": [
+        "animal",
+        "bandit",
+        "mammal",
+        "cat",
+        "fox",
+        "bear",
+        "rodent"
+      ]
+    },
+    "doing": {
+      "answer": "skateboarding",
+      "accepted": [
+        "skateboarding",
+        "skateboard",
+        "skating",
+        "riding a skateboard"
+      ],
+      "hot": [
+        "doing a trick",
+        "ollie",
+        "kickflip",
+        "jumping",
+        "surfing",
+        "rollerblading"
+      ],
+      "warm": [
+        "riding",
+        "sport",
+        "trick",
+        "rolling",
+        "balancing",
+        "flying",
+        "playing"
+      ]
+    },
+    "where": {
+      "answer": "empty swimming pool",
+      "accepted": [
+        "empty swimming pool",
+        "empty pool",
+        "swimming pool",
+        "pool",
+        "drained pool"
+      ],
+      "hot": [
+        "skatepark",
+        "skate park",
+        "bowl",
+        "ramp"
+      ],
+      "warm": [
+        "backyard",
+        "concrete",
+        "park",
+        "yard",
+        "street",
+        "summer"
+      ]
+    },
+    "style": {
+      "answer": "pixel art",
+      "accepted": [
+        "pixel art",
+        "pixel",
+        "8-bit",
+        "8 bit",
+        "pixelated",
+        "16-bit"
+      ],
+      "hot": [
+        "retro game",
+        "video game",
+        "sprite",
+        "retro",
+        "arcade game"
+      ],
+      "warm": [
+        "game",
+        "arcade",
+        "digital",
+        "blocky",
+        "old school",
+        "computer"
+      ]
+    }
+  }
+}

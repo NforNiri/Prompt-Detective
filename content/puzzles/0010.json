@@ -1,0 +1,110 @@
+{
+  "id": 10,
+  "publishDate": "2026-10-13",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a robot walking a dog on a rainy street, comic book, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "robot",
+      "accepted": [
+        "robot",
+        "android",
+        "droid",
+        "cyborg",
+        "bot"
+      ],
+      "hot": [
+        "machine",
+        "automaton",
+        "mech",
+        "ai",
+        "humanoid"
+      ],
+      "warm": [
+        "metal",
+        "computer",
+        "alien",
+        "man",
+        "toy",
+        "tin man"
+      ]
+    },
+    "doing": {
+      "answer": "walking a dog",
+      "accepted": [
+        "walking a dog",
+        "walking the dog",
+        "dog walking",
+        "walking dog",
+        "walking"
+      ],
+      "hot": [
+        "dog",
+        "leash",
+        "strolling",
+        "taking a walk",
+        "pet"
+      ],
+      "warm": [
+        "running",
+        "holding",
+        "raining",
+        "umbrella",
+        "commuting",
+        "jogging"
+      ]
+    },
+    "where": {
+      "answer": "rainy street",
+      "accepted": [
+        "rainy street",
+        "street",
+        "city street",
+        "road",
+        "sidewalk",
+        "rainy city"
+      ],
+      "hot": [
+        "city",
+        "alley",
+        "downtown",
+        "crosswalk",
+        "avenue"
+      ],
+      "warm": [
+        "rain",
+        "town",
+        "night",
+        "puddle",
+        "urban",
+        "traffic"
+      ]
+    },
+    "style": {
+      "answer": "comic book",
+      "accepted": [
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
+      ],
+      "hot": [
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
+      ],
+      "warm": [
+        "drawing",
+        "ink",
+        "bold",
+        "halftone",
+        "retro",
+        "panel"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": 4,
+  "publishDate": "2026-10-07",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a knight in armor knitting a scarf by the fireplace in a castle hall, oil painting, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "knight",
+      "accepted": [
+        "knight",
+        "armored knight",
+        "knight in armor",
+        "paladin"
+      ],
+      "hot": [
+        "soldier",
+        "warrior",
+        "guard",
+        "squire",
+        "king"
+      ],
+      "warm": [
+        "man",
+        "armor",
+        "medieval",
+        "sword",
+        "helmet",
+        "prince",
+        "hero"
+      ]
+    },
+    "doing": {
+      "answer": "knitting a scarf",
+      "accepted": [
+        "knitting a scarf",
+        "knitting",
+        "knitting scarf",
+        "knit"
+      ],
+      "hot": [
+        "crocheting",
+        "sewing",
+        "weaving",
+        "making a scarf",
+        "yarn"
+      ],
+      "warm": [
+        "crafting",
+        "scarf",
+        "wool",
+        "needles",
+        "relaxing",
+        "sitting",
+        "hobby"
+      ]
+    },
+    "where": {
+      "answer": "castle",
+      "accepted": [
+        "castle",
+        "castle hall",
+        "great hall",
+        "fortress"
+      ],
+      "hot": [
+        "palace",
+        "throne room",
+        "fireplace",
+        "tower"
+      ],
+      "warm": [
+        "medieval",
+        "stone",
+        "room",
+        "house",
+        "fire",
+        "keep"
+      ]
+    },
+    "style": {
+      "answer": "oil painting",
+      "accepted": [
+        "oil painting",
+        "oil",
+        "oil on canvas",
+        "oil paint"
+      ],
+      "hot": [
+        "painting",
+        "acrylic",
+        "classical painting",
+        "renaissance",
+        "canvas"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "realism",
+        "classic",
+        "brushstrokes",
+        "museum",
+        "old master"
+      ]
+    }
+  }
+}

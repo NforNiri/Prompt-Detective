@@ -1,0 +1,111 @@
+{
+  "id": 28,
+  "publishDate": "2026-10-31",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a gondolier rowing a gondola along a venice canal, pointillism, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "gondolier",
+      "accepted": [
+        "gondolier",
+        "boatman",
+        "rower",
+        "oarsman"
+      ],
+      "hot": [
+        "sailor",
+        "fisherman",
+        "ferryman",
+        "captain",
+        "boater"
+      ],
+      "warm": [
+        "man",
+        "italian",
+        "venetian",
+        "person",
+        "hat",
+        "singer"
+      ]
+    },
+    "doing": {
+      "answer": "rowing a gondola",
+      "accepted": [
+        "rowing a gondola",
+        "rowing",
+        "paddling",
+        "steering a gondola",
+        "punting",
+        "rowing a boat"
+      ],
+      "hot": [
+        "sailing",
+        "boating",
+        "gondola",
+        "floating",
+        "steering"
+      ],
+      "warm": [
+        "singing",
+        "standing",
+        "traveling",
+        "cruising",
+        "water",
+        "moving"
+      ]
+    },
+    "where": {
+      "answer": "venice canal",
+      "accepted": [
+        "venice canal",
+        "canal",
+        "venice",
+        "grand canal",
+        "venetian canal",
+        "waterway"
+      ],
+      "hot": [
+        "river",
+        "italy",
+        "harbor",
+        "lagoon",
+        "bridge"
+      ],
+      "warm": [
+        "water",
+        "city",
+        "europe",
+        "street",
+        "lake",
+        "town"
+      ]
+    },
+    "style": {
+      "answer": "pointillism",
+      "accepted": [
+        "pointillism",
+        "pointillist",
+        "dots",
+        "dot painting",
+        "seurat",
+        "stippling"
+      ],
+      "hot": [
+        "impressionism",
+        "dotted",
+        "pixel art",
+        "post impressionism",
+        "mosaic"
+      ],
+      "warm": [
+        "painting",
+        "colorful",
+        "art",
+        "french",
+        "classic",
+        "points"
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": 22,
+  "publishDate": "2026-10-25",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a kitten sleeping in a flower pot, photograph, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "kitten",
+      "accepted": [
+        "kitten",
+        "kitty",
+        "cat",
+        "baby cat",
+        "tabby"
+      ],
+      "hot": [
+        "puppy",
+        "bunny",
+        "hamster",
+        "fox",
+        "lion cub"
+      ],
+      "warm": [
+        "animal",
+        "pet",
+        "baby",
+        "fur",
+        "cute",
+        "dog"
+      ]
+    },
+    "doing": {
+      "answer": "sleeping",
+      "accepted": [
+        "sleeping",
+        "asleep",
+        "napping",
+        "taking a nap",
+        "dozing",
+        "sleep"
+      ],
+      "hot": [
+        "resting",
+        "lying down",
+        "curled up",
+        "relaxing",
+        "dreaming"
+      ],
+      "warm": [
+        "sitting",
+        "hiding",
+        "yawning",
+        "lazy",
+        "tired",
+        "cozy"
+      ]
+    },
+    "where": {
+      "answer": "flower pot",
+      "accepted": [
+        "flower pot",
+        "flowerpot",
+        "pot",
+        "plant pot",
+        "planter",
+        "clay pot"
+      ],
+      "hot": [
+        "garden",
+        "basket",
+        "bucket",
+        "vase",
+        "window box"
+      ],
+      "warm": [
+        "flowers",
+        "plants",
+        "porch",
+        "windowsill",
+        "balcony",
+        "soil"
+      ]
+    },
+    "style": {
+      "answer": "photograph",
+      "accepted": [
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
+      ],
+      "hot": [
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
+      ],
+      "warm": [
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
+      ]
+    }
+  }
+}

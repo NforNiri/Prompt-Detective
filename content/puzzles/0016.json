@@ -1,0 +1,109 @@
+{
+  "id": 16,
+  "publishDate": "2026-10-19",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a girl flying a kite on a grassy hilltop, anime, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "girl",
+      "accepted": [
+        "girl",
+        "little girl",
+        "young girl",
+        "schoolgirl"
+      ],
+      "hot": [
+        "child",
+        "kid",
+        "daughter",
+        "boy",
+        "teenager",
+        "woman"
+      ],
+      "warm": [
+        "person",
+        "student",
+        "human",
+        "friend",
+        "young",
+        "youth"
+      ]
+    },
+    "doing": {
+      "answer": "flying a kite",
+      "accepted": [
+        "flying a kite",
+        "kite",
+        "kite flying",
+        "flying kite",
+        "kiting"
+      ],
+      "hot": [
+        "flying",
+        "holding a string",
+        "running",
+        "playing"
+      ],
+      "warm": [
+        "wind",
+        "jumping",
+        "standing",
+        "looking up",
+        "sky",
+        "holding"
+      ]
+    },
+    "where": {
+      "answer": "hilltop",
+      "accepted": [
+        "hilltop",
+        "hill",
+        "hillside",
+        "grassy hill",
+        "top of a hill",
+        "hill top"
+      ],
+      "hot": [
+        "meadow",
+        "mountain",
+        "field",
+        "cliff",
+        "grassland"
+      ],
+      "warm": [
+        "grass",
+        "countryside",
+        "outdoors",
+        "nature",
+        "clouds",
+        "valley"
+      ]
+    },
+    "style": {
+      "answer": "anime",
+      "accepted": [
+        "anime",
+        "manga",
+        "japanese animation",
+        "ghibli",
+        "anime style"
+      ],
+      "hot": [
+        "cartoon",
+        "animation",
+        "animated",
+        "cel shaded",
+        "japanese"
+      ],
+      "warm": [
+        "drawing",
+        "illustration",
+        "cute",
+        "art",
+        "colorful",
+        "kawaii"
+      ]
+    }
+  }
+}

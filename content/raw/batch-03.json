@@ -777,7 +777,7 @@
     "publishDate": "2026-11-03",
     "difficulty": 2,
     "locale": "en",
-    "prompt": "a firefighter rescuing a kitten from a tall tree, pencil sketch, no text, no letters, no watermark",
+    "prompt": "a firefighter rescuing a cat from a tall tree, pencil sketch, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "firefighter",

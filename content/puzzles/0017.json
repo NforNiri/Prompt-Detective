@@ -1,0 +1,112 @@
+{
+  "id": 17,
+  "publishDate": "2026-10-20",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a whale flying in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "whale",
+      "accepted": [
+        "whale",
+        "blue whale",
+        "humpback",
+        "humpback whale",
+        "sperm whale"
+      ],
+      "hot": [
+        "orca",
+        "dolphin",
+        "shark",
+        "killer whale",
+        "narwhal"
+      ],
+      "warm": [
+        "fish",
+        "sea creature",
+        "animal",
+        "ocean",
+        "mammal",
+        "giant"
+      ]
+    },
+    "doing": {
+      "answer": "flying",
+      "accepted": [
+        "flying",
+        "floating",
+        "levitating",
+        "soaring",
+        "swimming in the sky",
+        "hovering"
+      ],
+      "hot": [
+        "swimming",
+        "drifting",
+        "gliding",
+        "diving",
+        "jumping"
+      ],
+      "warm": [
+        "moving",
+        "sleeping",
+        "singing",
+        "dreaming",
+        "falling",
+        "rising"
+      ]
+    },
+    "where": {
+      "answer": "city at night",
+      "accepted": [
+        "city at night",
+        "city",
+        "night city",
+        "cityscape",
+        "skyline",
+        "city skyline"
+      ],
+      "hot": [
+        "town",
+        "buildings",
+        "downtown",
+        "skyscrapers",
+        "rooftops"
+      ],
+      "warm": [
+        "night",
+        "sky",
+        "streets",
+        "lights",
+        "stars",
+        "moon"
+      ]
+    },
+    "style": {
+      "answer": "chalk drawing",
+      "accepted": [
+        "chalk drawing",
+        "chalk",
+        "chalkboard",
+        "blackboard",
+        "chalk art",
+        "chalk on blackboard"
+      ],
+      "hot": [
+        "pastel",
+        "sidewalk chalk",
+        "crayon",
+        "drawing",
+        "sketch"
+      ],
+      "warm": [
+        "school",
+        "dark",
+        "hand drawn",
+        "art",
+        "dusty",
+        "classroom"
+      ]
+    }
+  }
+}

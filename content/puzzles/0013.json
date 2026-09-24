@@ -1,0 +1,114 @@
+{
+  "id": 13,
+  "publishDate": "2026-10-16",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a skeleton playing a keytar on a city rooftop at night, synthwave, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "skeleton",
+      "accepted": [
+        "skeleton",
+        "bones",
+        "living skeleton"
+      ],
+      "hot": [
+        "skull",
+        "zombie",
+        "ghost",
+        "undead",
+        "mummy",
+        "corpse"
+      ],
+      "warm": [
+        "death",
+        "halloween",
+        "monster",
+        "spooky",
+        "dead",
+        "reaper"
+      ]
+    },
+    "doing": {
+      "answer": "playing a keytar",
+      "accepted": [
+        "playing a keytar",
+        "keytar",
+        "playing keyboard",
+        "playing a keyboard",
+        "playing synth",
+        "playing a synthesizer"
+      ],
+      "hot": [
+        "playing music",
+        "keyboard",
+        "synthesizer",
+        "piano",
+        "playing piano",
+        "guitar"
+      ],
+      "warm": [
+        "music",
+        "dancing",
+        "performing",
+        "singing",
+        "concert",
+        "jamming",
+        "dj"
+      ]
+    },
+    "where": {
+      "answer": "rooftop",
+      "accepted": [
+        "rooftop",
+        "roof",
+        "city rooftop",
+        "building roof",
+        "roof top"
+      ],
+      "hot": [
+        "skyscraper",
+        "balcony",
+        "terrace",
+        "city",
+        "skyline"
+      ],
+      "warm": [
+        "night",
+        "building",
+        "sky",
+        "neon",
+        "downtown",
+        "tower"
+      ]
+    },
+    "style": {
+      "answer": "synthwave",
+      "accepted": [
+        "synthwave",
+        "retrowave",
+        "outrun",
+        "synth wave",
+        "80s",
+        "neon 80s"
+      ],
+      "hot": [
+        "vaporwave",
+        "neon",
+        "cyberpunk",
+        "80s retro",
+        "retro",
+        "miami"
+      ],
+      "warm": [
+        "purple",
+        "synth",
+        "electronic",
+        "sunset",
+        "vintage",
+        "music",
+        "futuristic"
+      ]
+    }
+  }
+}

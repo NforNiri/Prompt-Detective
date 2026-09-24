@@ -1,0 +1,114 @@
+{
+  "id": 15,
+  "publishDate": "2026-10-18",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a dinosaur eating ice cream at a playground, crayon drawing, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "dinosaur",
+      "accepted": [
+        "dinosaur",
+        "dino",
+        "t-rex",
+        "t rex",
+        "trex",
+        "tyrannosaurus"
+      ],
+      "hot": [
+        "dragon",
+        "lizard",
+        "raptor",
+        "crocodile",
+        "reptile"
+      ],
+      "warm": [
+        "monster",
+        "animal",
+        "prehistoric",
+        "beast",
+        "creature",
+        "green"
+      ]
+    },
+    "doing": {
+      "answer": "eating ice cream",
+      "accepted": [
+        "eating ice cream",
+        "ice cream",
+        "licking ice cream",
+        "eating an ice cream",
+        "eating icecream",
+        "ice cream cone"
+      ],
+      "hot": [
+        "eating",
+        "licking",
+        "dessert",
+        "cone",
+        "gelato",
+        "popsicle"
+      ],
+      "warm": [
+        "food",
+        "snack",
+        "treat",
+        "sweet",
+        "hungry",
+        "sugar"
+      ]
+    },
+    "where": {
+      "answer": "playground",
+      "accepted": [
+        "playground",
+        "play ground",
+        "play area",
+        "jungle gym",
+        "playpark"
+      ],
+      "hot": [
+        "park",
+        "swings",
+        "slide",
+        "schoolyard",
+        "sandbox"
+      ],
+      "warm": [
+        "school",
+        "garden",
+        "yard",
+        "kids",
+        "outdoors",
+        "grass"
+      ]
+    },
+    "style": {
+      "answer": "crayon drawing",
+      "accepted": [
+        "crayon drawing",
+        "crayon",
+        "kids drawing",
+        "childrens drawing",
+        "child's drawing",
+        "children's drawing"
+      ],
+      "hot": [
+        "drawing",
+        "colored pencil",
+        "pastel",
+        "doodle",
+        "finger painting",
+        "chalk"
+      ],
+      "warm": [
+        "kids",
+        "childish",
+        "art",
+        "colorful",
+        "simple",
+        "scribble"
+      ]
+    }
+  }
+}

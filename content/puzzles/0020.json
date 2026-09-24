@@ -1,0 +1,110 @@
+{
+  "id": 20,
+  "publishDate": "2026-10-23",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a flamingo sipping a cocktail on the deck of an ocean liner, art deco, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "flamingo",
+      "accepted": [
+        "flamingo",
+        "pink flamingo",
+        "flamingos"
+      ],
+      "hot": [
+        "heron",
+        "stork",
+        "crane",
+        "pelican",
+        "swan",
+        "ibis"
+      ],
+      "warm": [
+        "bird",
+        "pink",
+        "animal",
+        "feathers",
+        "tropical",
+        "duck"
+      ]
+    },
+    "doing": {
+      "answer": "sipping a cocktail",
+      "accepted": [
+        "sipping a cocktail",
+        "drinking a cocktail",
+        "cocktail",
+        "drinking",
+        "sipping",
+        "drinking a martini"
+      ],
+      "hot": [
+        "martini",
+        "drink",
+        "toasting",
+        "having a drink",
+        "relaxing"
+      ],
+      "warm": [
+        "party",
+        "glass",
+        "celebrating",
+        "standing",
+        "posing",
+        "vacation"
+      ]
+    },
+    "where": {
+      "answer": "ocean liner",
+      "accepted": [
+        "ocean liner",
+        "cruise ship",
+        "ship",
+        "liner",
+        "steamship",
+        "ship deck"
+      ],
+      "hot": [
+        "boat",
+        "yacht",
+        "ferry",
+        "deck",
+        "titanic"
+      ],
+      "warm": [
+        "ocean",
+        "sea",
+        "travel",
+        "harbor",
+        "water",
+        "cruise"
+      ]
+    },
+    "style": {
+      "answer": "art deco",
+      "accepted": [
+        "art deco",
+        "deco",
+        "artdeco",
+        "1920s",
+        "twenties"
+      ],
+      "hot": [
+        "art nouveau",
+        "gatsby",
+        "vintage poster",
+        "retro",
+        "geometric"
+      ],
+      "warm": [
+        "vintage",
+        "gold",
+        "elegant",
+        "old",
+        "poster",
+        "luxury"
+      ]
+    }
+  }
+}

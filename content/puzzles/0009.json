@@ -1,0 +1,111 @@
+{
+  "id": 9,
+  "publishDate": "2026-10-12",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a grandmother feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "grandmother",
+      "accepted": [
+        "grandmother",
+        "grandma",
+        "old woman",
+        "granny",
+        "elderly woman",
+        "old lady"
+      ],
+      "hot": [
+        "woman",
+        "lady",
+        "old man",
+        "nun",
+        "witch"
+      ],
+      "warm": [
+        "person",
+        "elder",
+        "senior",
+        "mother",
+        "widow",
+        "retiree"
+      ]
+    },
+    "doing": {
+      "answer": "feeding pigeons",
+      "accepted": [
+        "feeding pigeons",
+        "feeding birds",
+        "feeding the pigeons",
+        "feeding the birds",
+        "feeding"
+      ],
+      "hot": [
+        "throwing bread",
+        "birdwatching",
+        "breadcrumbs",
+        "pigeon"
+      ],
+      "warm": [
+        "sitting",
+        "eating",
+        "walking",
+        "birds",
+        "resting",
+        "bread"
+      ]
+    },
+    "where": {
+      "answer": "town square",
+      "accepted": [
+        "town square",
+        "square",
+        "plaza",
+        "piazza",
+        "city square",
+        "market square"
+      ],
+      "hot": [
+        "park",
+        "street",
+        "courtyard",
+        "fountain",
+        "market"
+      ],
+      "warm": [
+        "city",
+        "town",
+        "village",
+        "europe",
+        "bench",
+        "downtown"
+      ]
+    },
+    "style": {
+      "answer": "pencil sketch",
+      "accepted": [
+        "pencil sketch",
+        "sketch",
+        "pencil",
+        "pencil drawing",
+        "graphite",
+        "sketching"
+      ],
+      "hot": [
+        "drawing",
+        "charcoal",
+        "line art",
+        "ink drawing",
+        "doodle"
+      ],
+      "warm": [
+        "art",
+        "black and white",
+        "paper",
+        "hand drawn",
+        "grey",
+        "rough"
+      ]
+    }
+  }
+}

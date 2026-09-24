@@ -1,0 +1,110 @@
+{
+  "id": 11,
+  "publishDate": "2026-10-14",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a snail driving a race car on a race track, claymation, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "snail",
+      "accepted": [
+        "snail",
+        "garden snail",
+        "escargot"
+      ],
+      "hot": [
+        "slug",
+        "turtle",
+        "shell",
+        "caterpillar",
+        "worm"
+      ],
+      "warm": [
+        "bug",
+        "insect",
+        "animal",
+        "slow",
+        "creature",
+        "critter"
+      ]
+    },
+    "doing": {
+      "answer": "driving a race car",
+      "accepted": [
+        "driving a race car",
+        "racing",
+        "driving",
+        "race car",
+        "driving a car",
+        "car racing"
+      ],
+      "hot": [
+        "speeding",
+        "race",
+        "competing",
+        "riding",
+        "car"
+      ],
+      "warm": [
+        "winning",
+        "going fast",
+        "moving",
+        "sport",
+        "wheel",
+        "speed"
+      ]
+    },
+    "where": {
+      "answer": "race track",
+      "accepted": [
+        "race track",
+        "racetrack",
+        "track",
+        "circuit",
+        "raceway",
+        "speedway"
+      ],
+      "hot": [
+        "road",
+        "stadium",
+        "highway",
+        "finish line",
+        "arena"
+      ],
+      "warm": [
+        "street",
+        "asphalt",
+        "crowd",
+        "grandstand",
+        "pit",
+        "course"
+      ]
+    },
+    "style": {
+      "answer": "claymation",
+      "accepted": [
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
+      ],
+      "hot": [
+        "animation",
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
+      ],
+      "warm": [
+        "cartoon",
+        "handmade",
+        "cute",
+        "model",
+        "figurine",
+        "kids"
+      ]
+    }
+  }
+}

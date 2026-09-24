@@ -1,0 +1,110 @@
+{
+  "id": 21,
+  "publishDate": "2026-10-24",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a conductor conducting an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "conductor",
+      "accepted": [
+        "conductor",
+        "maestro",
+        "orchestra conductor",
+        "bandleader",
+        "music director"
+      ],
+      "hot": [
+        "musician",
+        "composer",
+        "pianist",
+        "violinist",
+        "magician"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "performer",
+        "artist",
+        "tuxedo",
+        "music"
+      ]
+    },
+    "doing": {
+      "answer": "conducting an orchestra",
+      "accepted": [
+        "conducting an orchestra",
+        "conducting",
+        "leading an orchestra",
+        "conducting music",
+        "waving a baton"
+      ],
+      "hot": [
+        "orchestra",
+        "baton",
+        "directing",
+        "leading",
+        "performing"
+      ],
+      "warm": [
+        "music",
+        "waving",
+        "dancing",
+        "pointing",
+        "playing",
+        "concert"
+      ]
+    },
+    "where": {
+      "answer": "concert hall",
+      "accepted": [
+        "concert hall",
+        "opera house",
+        "auditorium",
+        "symphony hall",
+        "theater",
+        "theatre"
+      ],
+      "hot": [
+        "stage",
+        "opera",
+        "hall",
+        "music hall",
+        "amphitheater"
+      ],
+      "warm": [
+        "building",
+        "room",
+        "audience",
+        "venue",
+        "seats",
+        "show"
+      ]
+    },
+    "style": {
+      "answer": "bauhaus",
+      "accepted": [
+        "bauhaus",
+        "bauhaus style",
+        "bauhaus design"
+      ],
+      "hot": [
+        "geometric",
+        "modernism",
+        "constructivism",
+        "minimalism",
+        "mid century",
+        "de stijl"
+      ],
+      "warm": [
+        "abstract",
+        "shapes",
+        "poster",
+        "modern",
+        "german",
+        "primary colors",
+        "circles"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": 33,
+  "publishDate": "2026-11-05",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a chef flipping pancakes in a diner, oil painting, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "chef",
+      "accepted": [
+        "chef",
+        "cook",
+        "head chef",
+        "line cook"
+      ],
+      "hot": [
+        "baker",
+        "waiter",
+        "butcher",
+        "dishwasher"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "kitchen",
+        "hat",
+        "food",
+        "worker"
+      ]
+    },
+    "doing": {
+      "answer": "flipping pancakes",
+      "accepted": [
+        "flipping pancakes",
+        "flipping",
+        "making pancakes",
+        "cooking pancakes",
+        "pancakes",
+        "tossing pancakes"
+      ],
+      "hot": [
+        "cooking",
+        "frying",
+        "making breakfast",
+        "flipping burgers",
+        "juggling"
+      ],
+      "warm": [
+        "breakfast",
+        "eating",
+        "pan",
+        "food",
+        "throwing",
+        "baking"
+      ]
+    },
+    "where": {
+      "answer": "diner",
+      "accepted": [
+        "diner",
+        "american diner",
+        "roadside diner",
+        "greasy spoon"
+      ],
+      "hot": [
+        "restaurant",
+        "cafe",
+        "kitchen",
+        "cafeteria",
+        "bar"
+      ],
+      "warm": [
+        "breakfast",
+        "counter",
+        "city",
+        "building",
+        "coffee",
+        "booth"
+      ]
+    },
+    "style": {
+      "answer": "oil painting",
+      "accepted": [
+        "oil painting",
+        "oil",
+        "oil on canvas",
+        "oil paint"
+      ],
+      "hot": [
+        "painting",
+        "acrylic",
+        "classical painting",
+        "renaissance",
+        "canvas"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "realism",
+        "classic",
+        "brushstrokes",
+        "museum",
+        "old master"
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": 8,
+  "publishDate": "2026-10-11",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a cow playing guitar on a farm, cartoon, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "cow",
+      "accepted": [
+        "cow",
+        "cattle",
+        "dairy cow",
+        "calf"
+      ],
+      "hot": [
+        "bull",
+        "ox",
+        "buffalo",
+        "yak",
+        "goat"
+      ],
+      "warm": [
+        "animal",
+        "farm animal",
+        "sheep",
+        "horse",
+        "pig",
+        "milk"
+      ]
+    },
+    "doing": {
+      "answer": "playing guitar",
+      "accepted": [
+        "playing guitar",
+        "guitar",
+        "playing the guitar",
+        "playing a guitar",
+        "strumming"
+      ],
+      "hot": [
+        "singing",
+        "playing music",
+        "banjo",
+        "ukulele",
+        "music",
+        "playing"
+      ],
+      "warm": [
+        "dancing",
+        "performing",
+        "song",
+        "concert",
+        "instrument",
+        "band"
+      ]
+    },
+    "where": {
+      "answer": "farm",
+      "accepted": [
+        "farm",
+        "barn",
+        "farmyard",
+        "barnyard",
+        "ranch"
+      ],
+      "hot": [
+        "field",
+        "meadow",
+        "countryside",
+        "pasture",
+        "stable"
+      ],
+      "warm": [
+        "grass",
+        "village",
+        "hay",
+        "fence",
+        "outdoors",
+        "hill"
+      ]
+    },
+    "style": {
+      "answer": "cartoon",
+      "accepted": [
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
+      ],
+      "warm": [
+        "kids",
+        "cute",
+        "funny",
+        "art",
+        "colorful",
+        "simple"
+      ]
+    }
+  }
+}

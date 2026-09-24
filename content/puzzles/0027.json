@@ -1,0 +1,112 @@
+{
+  "id": 27,
+  "publishDate": "2026-10-30",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a detective inspecting clues with a magnifying glass in a dark alley, film noir, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "detective",
+      "accepted": [
+        "detective",
+        "private eye",
+        "investigator",
+        "sleuth",
+        "inspector",
+        "gumshoe"
+      ],
+      "hot": [
+        "policeman",
+        "cop",
+        "spy",
+        "agent",
+        "officer"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "trench coat",
+        "hat",
+        "mystery",
+        "stranger"
+      ]
+    },
+    "doing": {
+      "answer": "inspecting clues",
+      "accepted": [
+        "inspecting clues",
+        "inspecting",
+        "investigating",
+        "examining",
+        "magnifying glass",
+        "searching for clues"
+      ],
+      "hot": [
+        "looking",
+        "searching",
+        "magnifier",
+        "observing",
+        "studying",
+        "clues"
+      ],
+      "warm": [
+        "holding",
+        "standing",
+        "thinking",
+        "walking",
+        "waiting",
+        "crouching"
+      ]
+    },
+    "where": {
+      "answer": "dark alley",
+      "accepted": [
+        "dark alley",
+        "alley",
+        "alleyway",
+        "back alley",
+        "side street"
+      ],
+      "hot": [
+        "street",
+        "city street",
+        "lane",
+        "passage",
+        "doorway"
+      ],
+      "warm": [
+        "city",
+        "night",
+        "rain",
+        "shadows",
+        "building",
+        "dumpster"
+      ]
+    },
+    "style": {
+      "answer": "film noir",
+      "accepted": [
+        "film noir",
+        "noir",
+        "noir film",
+        "noir movie",
+        "neo noir"
+      ],
+      "hot": [
+        "black and white",
+        "monochrome",
+        "old movie",
+        "detective movie",
+        "1940s"
+      ],
+      "warm": [
+        "movie",
+        "film",
+        "dark",
+        "shadows",
+        "vintage",
+        "cinematic"
+      ]
+    }
+  }
+}

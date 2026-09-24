@@ -1,0 +1,108 @@
+{
+  "id": 6,
+  "publishDate": "2026-10-09",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a tiger surfing a giant wave on the open ocean, ukiyo-e, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "tiger",
+      "accepted": [
+        "tiger",
+        "bengal tiger",
+        "tigress"
+      ],
+      "hot": [
+        "big cat",
+        "lion",
+        "leopard",
+        "jaguar",
+        "panther",
+        "cheetah"
+      ],
+      "warm": [
+        "cat",
+        "animal",
+        "predator",
+        "stripes",
+        "beast",
+        "wildcat"
+      ]
+    },
+    "doing": {
+      "answer": "surfing",
+      "accepted": [
+        "surfing",
+        "surfing a wave",
+        "riding a wave",
+        "surf"
+      ],
+      "hot": [
+        "bodyboarding",
+        "sailing",
+        "wakeboarding",
+        "riding",
+        "balancing"
+      ],
+      "warm": [
+        "swimming",
+        "floating",
+        "jumping",
+        "standing",
+        "wave",
+        "water"
+      ]
+    },
+    "where": {
+      "answer": "ocean",
+      "accepted": [
+        "ocean",
+        "sea",
+        "open sea",
+        "waves",
+        "ocean waves"
+      ],
+      "hot": [
+        "storm",
+        "beach",
+        "coast",
+        "bay",
+        "harbor"
+      ],
+      "warm": [
+        "water",
+        "lake",
+        "river",
+        "island",
+        "mountain",
+        "boat"
+      ]
+    },
+    "style": {
+      "answer": "ukiyo-e",
+      "accepted": [
+        "ukiyo-e",
+        "ukiyoe",
+        "ukiyo e",
+        "woodblock print",
+        "woodblock",
+        "japanese woodblock"
+      ],
+      "hot": [
+        "japanese print",
+        "japanese art",
+        "printmaking",
+        "hokusai",
+        "woodcut"
+      ],
+      "warm": [
+        "japanese",
+        "print",
+        "traditional",
+        "asian",
+        "ink",
+        "edo"
+      ]
+    }
+  }
+}
