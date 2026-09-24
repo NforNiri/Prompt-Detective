@@ -48,3 +48,4 @@ next-env.d.ts
 
 # content: raw generated images live outside git (see docs/04-CONTENT-PIPELINE.md)
 /content/images/
+!.env.example
