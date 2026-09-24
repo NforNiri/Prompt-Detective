@@ -104,7 +104,7 @@ GET `/api/puzzle?date=2026-10-04`
 - 404: no puzzle for that date.
 
 POST `/api/guess`
-- Body: `{ puzzleId: int, date: string, slot: SlotKey, guess: string(1..40, /^[\p{L}\s'-]+$/u), deviceId: uuid, guessIndex: int(1..12) }`
+- Body: `{ puzzleId: int, date: string, slot: SlotKey, guess: string(1..40, /^[\p{L}\p{N}\s'-]+$/u), deviceId: uuid, guessIndex: int(1..12) }`
 - Checks: the date window as above, puzzleId must match the date, rate limit of 30 guesses per minute per ip_hash.
 - 200: `{ tier: "solved"|"hot"|"warm"|"cold", typo: boolean, answer?: string }`. `answer` is present only when tier is solved.
 - 429: rate limited.
@@ -120,7 +120,7 @@ POST `/api/reveal`
 ## Matching engine (src/lib/game/match.ts)
 ```
 normalize(s):
-  NFKC -> lowercase -> trim -> strip chars not in [\p{L}\s'-] -> collapse spaces
+  NFKC -> lowercase -> trim -> strip chars not in [\p{L}\p{N}\s'-] -> collapse spaces
   -> drop a leading article (a|an|the)
 singularize(s): naive English rules on the last word: ies->y, (s|x|z|ch|sh)es->base, s->base (not for "ss")
 variants(s) = { normalize(s), singularize(normalize(s)) }
@@ -168,7 +168,7 @@ PostHog dashboards: funnel (viewed -> first guess -> completed -> shared), reten
 - Image filenames are random UUIDs, so future images cannot be found by guessing filenames.
 - IPs are stored only as a salted SHA-256 hash (`IP_HASH_SALT`).
 - Security headers are set in next.config: a strict CSP (self, the Supabase storage host, the PostHog host), `X-Content-Type-Options`, `Referrer-Policy`.
-- Every input is validated with zod. Guesses are length-limited and restricted to letters.
+- Every input is validated with zod. Guesses are length-limited and restricted to letters, digits, spaces, apostrophes and hyphens (digits so answers like "3d render" and "8-bit" work).
 
 ## Env vars
 ```
@@ -182,7 +182,7 @@ NEXT_PUBLIC_LAUNCH_DATE=2026-10-04   # puzzle #1 date, used for display only
 
 ## Tests
 Unit (Vitest), with at least 90% coverage of `src/lib/game`:
-- normalize: case, articles, punctuation, unicode, Hebrew letters pass through.
+- normalize: case, articles, punctuation, unicode, Hebrew letters and digits pass through.
 - singularize: foxes, cities, glasses (unchanged), chess (unchanged).
 - matchGuess: every tier, typo tolerance on and off by length, hot beats warm, accepted beats hot.
 - share: the exact output string for a won game, a lost game, and a game with a hint.

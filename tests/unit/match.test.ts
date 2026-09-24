@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { compileSlot, compileSlots, levenshtein, matchGuess } from "@/lib/game/match";
 import type { Slot } from "@/lib/game/types";
-import { puzzle1 } from "./fixtures";
+import { puzzle1, puzzle2 } from "./fixtures";
 
 const { who, doing, where, style } = puzzle1.slots;
 
@@ -39,6 +39,14 @@ describe("matchGuess on puzzle 0001", () => {
   it("treats empty or punctuation-only guesses as cold", () => {
     expect(matchGuess("!!!", who)).toEqual({ tier: "cold", typo: false });
     expect(matchGuess("", who)).toEqual({ tier: "cold", typo: false });
+  });
+});
+
+describe("answers with digits", () => {
+  it("solves puzzle 0002 STYLE with 3d", () => {
+    expect(matchGuess("3D render", puzzle2.slots.style)).toEqual({ tier: "solved", typo: false });
+    expect(matchGuess("3d", puzzle2.slots.style).tier).toBe("solved");
+    expect(matchGuess("3d animation", puzzle2.slots.style).tier).toBe("solved");
   });
 });
 

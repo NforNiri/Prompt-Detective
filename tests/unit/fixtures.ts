@@ -5,3 +5,4 @@ import { puzzleSchema } from "@/lib/game/types";
 
 export const rawPuzzles = [raw0001, raw0002, raw0003];
 export const puzzle1 = puzzleSchema.parse(raw0001);
+export const puzzle2 = puzzleSchema.parse(raw0002);

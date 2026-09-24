@@ -13,6 +13,9 @@ export type Tier = z.infer<typeof tierSchema>;
 
 export const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
+/** Allowed characters in a guess. Keep in sync with the character class in normalize.ts. */
+export const GUESS_PATTERN = /^[\p{L}\p{N}\s'-]+$/u;
+
 const tierWordSchema = z.string().min(1).max(40);
 
 export const slotSchema = z.strictObject({

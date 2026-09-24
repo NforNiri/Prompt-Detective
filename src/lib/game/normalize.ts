@@ -1,5 +1,5 @@
 const SMART_APOSTROPHES = /[\u2018\u2019\u02BC]/g;
-const DISALLOWED_CHARS = /[^\p{L}\s'-]/gu;
+const DISALLOWED_CHARS = /[^\p{L}\p{N}\s'-]/gu;
 const LEADING_ARTICLE = /^(?:a|an|the)\s+/;
 
 // Plural-only nouns that the suffix rules below would break.
@@ -20,7 +20,7 @@ const INVARIANT_WORDS = new Set([
 ]);
 
 /**
- * NFKC -> lowercase -> trim -> strip chars outside [\p{L}\s'-] -> collapse spaces
+ * NFKC -> lowercase -> trim -> strip chars outside [\p{L}\p{N}\s'-] -> collapse spaces
  * -> drop a leading article. Phone keyboards type curly apostrophes, so those
  * become straight ones first.
  */

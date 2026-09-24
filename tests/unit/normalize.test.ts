@@ -33,6 +33,12 @@ describe("normalize", () => {
     expect(normalize("cafe\u0301")).toBe("café");
   });
 
+  it("keeps digits", () => {
+    expect(normalize("3D Render")).toBe("3d render");
+    expect(normalize("8-bit")).toBe("8-bit");
+    expect(normalize("the 1920s")).toBe("1920s");
+  });
+
   it("passes Hebrew letters through", () => {
     expect(normalize("שועל")).toBe("שועל");
     expect(normalize("  שועל   ים ")).toBe("שועל ים");
