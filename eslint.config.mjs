@@ -13,9 +13,9 @@ const eslintConfig = defineConfig([
     },
   },
   {
-    // The logger is the one place allowed to write to the console (its test spies on it).
+    // The logger is the one place allowed to write to the console. Tests spy on it.
     // CLI scripts write to stdout/stderr directly.
-    files: ["src/lib/logger.ts", "tests/unit/logger.test.ts", "scripts/**"],
+    files: ["src/lib/logger.ts", "tests/unit/**", "scripts/**"],
     rules: { "no-console": "off" },
   },
   globalIgnores([
