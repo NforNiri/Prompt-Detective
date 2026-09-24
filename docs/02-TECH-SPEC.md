@@ -61,6 +61,7 @@ create table public.puzzles (
   image_path    text not null,                    -- random uuid filename in bucket
   difficulty    smallint not null check (difficulty between 1 and 5),
   slots         jsonb not null,                   -- answers + tiers, server only
+  prompt        text not null,                    -- full image prompt, shown by /api/reveal
   locale        text not null default 'en',
   created_at    timestamptz not null default now()
 );
@@ -83,7 +84,12 @@ alter table public.puzzles   enable row level security;
 alter table public.guess_log enable row level security;
 -- No policies on purpose: anon and authenticated roles get nothing.
 -- Only the server (service role) reads and writes.
+
+-- Public bucket for puzzle images. Filenames are random UUIDs.
+insert into storage.buckets (id, name, public) values ('puzzles', 'puzzles', true)
+on conflict (id) do nothing;
 ```
+The `prompt` column was added on Day 2: /api/reveal returns the full prompt, and the other columns cannot rebuild it. The reveal response strips the generation-only suffix "no text, no letters, no watermark".
 `guess_log` is design data as well as telemetry. It powers the "most common wrong guesses" section of the case study and shows which tier lists need tuning.
 
 ## Slot JSON shape (inside puzzles.slots, and in content/puzzles/*.json)
@@ -179,6 +185,7 @@ IP_HASH_SALT=
 NEXT_PUBLIC_POSTHOG_KEY=
 NEXT_PUBLIC_POSTHOG_HOST=
 NEXT_PUBLIC_LAUNCH_DATE=2026-10-04   # puzzle #1 date, used for display only
+DEV_TODAY=                           # development only: pin the server date (YYYY-MM-DD) to play pre-launch puzzles; ignored in production
 ```
 
 ## Tests

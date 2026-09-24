@@ -87,3 +87,53 @@ export interface Stats {
   /** Guesses used (including the hint) in won games -> count. */
   distribution: Record<number, number>;
 }
+
+// ---- API contracts (docs/02-TECH-SPEC.md "API contracts") ----
+
+const dateStringSchema = z.string().regex(DATE_PATTERN);
+const puzzleIdSchema = z.number().int().min(1);
+
+export const puzzleQuerySchema = z.object({ date: dateStringSchema });
+
+export const guessRequestSchema = z.object({
+  puzzleId: puzzleIdSchema,
+  date: dateStringSchema,
+  slot: slotKeySchema,
+  guess: z.string().min(1).max(40).regex(GUESS_PATTERN),
+  deviceId: z.uuid(),
+  guessIndex: z.number().int().min(1).max(12),
+});
+export type GuessRequest = z.infer<typeof guessRequestSchema>;
+
+export const hintRequestSchema = z.object({
+  puzzleId: puzzleIdSchema,
+  date: dateStringSchema,
+  slot: slotKeySchema,
+  deviceId: z.uuid(),
+});
+export type HintRequest = z.infer<typeof hintRequestSchema>;
+
+export const revealRequestSchema = z.object({
+  puzzleId: puzzleIdSchema,
+  date: dateStringSchema,
+  deviceId: z.uuid(),
+});
+export type RevealRequest = z.infer<typeof revealRequestSchema>;
+
+export interface GuessResponse extends MatchResult {
+  /** Present only when tier is "solved". */
+  answer?: string;
+}
+
+export interface HintResponse {
+  firstLetter: string;
+}
+
+export interface RevealResponse {
+  prompt: string;
+  answers: Record<SlotKey, string>;
+}
+
+export interface ApiErrorBody {
+  error: { code: string; message: string };
+}

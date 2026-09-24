@@ -106,3 +106,19 @@ export function createLogger(namespace: string): Logger {
     error: (message, data) => write("error", namespace, message, data),
   };
 }
+
+export interface RequestLogEntry {
+  route: string;
+  status: number;
+  ms: number;
+  puzzleId: number | null;
+  code?: string;
+}
+
+/**
+ * Server side: one JSON line per API request. The type allows no guess text,
+ * IP or answers, so they cannot end up in the logs.
+ */
+export function logRequest(entry: RequestLogEntry): void {
+  console.info(JSON.stringify({ ts: new Date().toISOString(), ...entry }));
+}
