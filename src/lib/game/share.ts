@@ -42,7 +42,7 @@ export function buildShareRows(state: GameState): Record<SlotKey, string> {
  * Prompt Detective #12  7/10
  * WHO    🟩
  * ...
- * prompt-detective.vercel.app
+ * prompt-detective-puce.vercel.app
  */
 export function buildShareText({ puzzleId, state, url, strings }: ShareInput): string {
   if (state.status === "playing") throw new Error("buildShareText: game is not finished");

@@ -2,9 +2,10 @@ import { describe, expect, it } from "vitest";
 import { buildShareRows, buildShareText, type ShareStrings } from "@/lib/game/share";
 import type { GameState, GuessRecord } from "@/lib/game/types";
 import { en } from "@/lib/i18n/en";
+import { SITE_URL } from "@/lib/site";
 
 const strings: ShareStrings = { title: en.appName, slotLabels: en.slots };
-const url = "prompt-detective.vercel.app";
+const url = SITE_URL;
 
 function game(guesses: GuessRecord[], overrides: Partial<GameState> = {}): GameState {
   return { guesses, hintUsed: null, hintAt: null, status: "won", budget: 10, ...overrides };
@@ -28,7 +29,7 @@ describe("buildShareText", () => {
         "DOING  ⬛🟩",
         "WHERE  🟧🟩",
         "STYLE  🟧🟩",
-        "prompt-detective.vercel.app",
+        "prompt-detective-puce.vercel.app",
       ].join("\n"),
     );
   });
@@ -54,7 +55,7 @@ describe("buildShareText", () => {
         "DOING  ⬛🟧🟧🟨",
         "WHERE",
         "STYLE  ⬛🟨🟧",
-        "prompt-detective.vercel.app",
+        "prompt-detective-puce.vercel.app",
       ].join("\n"),
     );
   });
@@ -77,7 +78,7 @@ describe("buildShareText", () => {
         "DOING  🟩",
         "WHERE  🟩",
         "STYLE  ⬛💡🟩",
-        "prompt-detective.vercel.app",
+        "prompt-detective-puce.vercel.app",
       ].join("\n"),
     );
   });

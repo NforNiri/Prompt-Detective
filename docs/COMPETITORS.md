@@ -16,11 +16,11 @@ Verdict: usable, with low to moderate risk. No game with players or press uses t
 | GitHub akileshjayakumar/the-prompt-detective: teaches the CO-STAR prompt framework by diagnosing bad prompts | https://github.com/akileshjayakumar/the-prompt-detective , thepromptdetective.vercel.app (not visited) | Educational game, different mechanic | Low |
 | GitHub julesbly/prompt-detective: interrogate three AI suspects in a museum theft, built for an AI course | https://github.com/julesbly/prompt-detective | Different genre | Low |
 | GitHub WillbsoluteVodka/prompt-detective: classroom "reverse prompt engineering practice page" with Student A / Student B inputs | https://github.com/WillbsoluteVodka/prompt-detective , https://prompt-detective-sage.vercel.app | Similar idea, classroom tool, no daily puzzle | Low |
-| GitHub NforNiri/Prompt-Detective, deployed at prompt-detective-puce.vercel.app | https://github.com/NforNiri/Prompt-Detective | Appears to be this project's own repo. Please confirm | None if ours |
+| GitHub NforNiri/Prompt-Detective, deployed at prompt-detective-puce.vercel.app | https://github.com/NforNiri/Prompt-Detective | This project. Confirmed by Niri | None |
 
 Not found: no "Prompt Detective" result on itch.io search (https://itch.io/search?q=prompt+detective), Product Hunt search (https://www.producthunt.com/search?q=prompt%20detective), or in a web search for Google Play / App Store listings. GitHub search returned 14 repos, all with 0 or 1 stars (https://github.com/search?q=%22prompt+detective%22&type=repositories).
 
-Vercel subdomain: `prompt-detective.vercel.app` is taken (live page, not a DEPLOYMENT_NOT_FOUND 404). We need another subdomain or a custom domain. `prompt-detective-puce.vercel.app` appears to already be ours.
+Vercel subdomain: `prompt-detective.vercel.app` is taken (live page, not a DEPLOYMENT_NOT_FOUND 404). We need another subdomain or a custom domain. Decision (2026-09-24): keep `prompt-detective-puce.vercel.app`, the address Vercel assigned to this project.
 
 Backup names:
 - Promptography: one web search found no game or app with this name. Looks free, but it is harder to spell and says less about the game.

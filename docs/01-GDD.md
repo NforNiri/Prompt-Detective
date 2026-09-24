@@ -57,9 +57,9 @@ WHO    [green]
 DOING  [yellow][green]
 WHERE  [grey][yellow][orange][green]
 STYLE  [grey][hint][green]
-prompt-detective.vercel.app
+prompt-detective-puce.vercel.app
 ```
-The free Vercel subdomain is used because the budget is $0. A custom domain is optional later.
+The free Vercel subdomain is used because the budget is $0. `prompt-detective.vercel.app` belongs to another project, so the game lives at `prompt-detective-puce.vercel.app`. A custom domain is optional later.
 Each bracket is a colored square emoji in the real output. The grid shows how the player got there without spoiling the answers.
 
 ## UX flow
