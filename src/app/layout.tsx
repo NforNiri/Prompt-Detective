@@ -1,12 +1,18 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { Geist } from "next/font/google";
+import { Courier_Prime, Geist } from "next/font/google";
 import { en } from "@/lib/i18n/en";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const courierPrime = Courier_Prime({
+  variable: "--font-courier-prime",
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -21,7 +27,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" dir="ltr" className={`${geistSans.variable} h-full antialiased`}>
+    <html lang="en" dir="ltr" className={`${geistSans.variable} ${courierPrime.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
         {children}
         {/* Page views and Web Vitals only. Game events go through track() to PostHog. */}
