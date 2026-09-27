@@ -23,7 +23,7 @@ const puzzle: PublicPuzzle = {
 };
 
 function loaded(saved: SavedGame | null = null, budget = 10): GameModel {
-  return gameReducer(initialModel(), { type: "LOADED", puzzle, saved, budget, firstVisit: false, storageOk: true });
+  return gameReducer(initialModel(), { type: "LOADED", puzzle, saved, budget, firstVisit: false, storageOk: true, now: 1000 });
 }
 
 function run(model: GameModel, ...actions: GameAction[]): GameModel {
@@ -48,7 +48,7 @@ describe("loading", () => {
     expect(initialModel().phase).toBe("loading");
     const model = loaded();
     expect(model).toMatchObject({ phase: "ready", puzzle, selectedSlot: "who" });
-    expect(model.game).toEqual(newGame(10));
+    expect(model.game).toEqual(newGame(10, 1000));
   });
 
   it("restores a saved game and selects the first unsolved slot", () => {

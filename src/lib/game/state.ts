@@ -28,6 +28,8 @@ export interface SavedGame extends GameState {
   solved: Partial<Record<SlotKey, string>>;
   hintLetter: string | null;
   reveal: RevealResponse | null;
+  /** Epoch ms when this puzzle was first opened. For duration_sec; null for games saved before Day 4. */
+  startedAt: number | null;
 }
 
 const slotRecord = <T extends z.ZodType>(value: T) =>
@@ -47,6 +49,7 @@ export const savedGameSchema: z.ZodType<SavedGame> = z.object({
       answers: z.object({ who: z.string(), doing: z.string(), where: z.string(), style: z.string() }),
     })
     .nullable(),
+  startedAt: z.number().nullable().default(null),
 });
 
 export type Pending = { kind: "guess"; slot: SlotKey; guess: string } | { kind: "hint"; slot: SlotKey } | null;
@@ -76,7 +79,16 @@ export interface GameModel {
 }
 
 export type GameAction =
-  | { type: "LOADED"; puzzle: PublicPuzzle; saved: SavedGame | null; budget: number; firstVisit: boolean; storageOk: boolean }
+  | {
+      type: "LOADED";
+      puzzle: PublicPuzzle;
+      saved: SavedGame | null;
+      budget: number;
+      firstVisit: boolean;
+      storageOk: boolean;
+      /** Epoch ms, injected so the reducer stays pure. */
+      now: number;
+    }
   | { type: "LOAD_FAILED"; reason: LoadError }
   | { type: "SELECT_SLOT"; slot: SlotKey }
   | { type: "SUBMIT_GUESS"; guess: string }
@@ -88,8 +100,18 @@ export type GameAction =
   | { type: "REVEAL"; reveal: RevealResponse }
   | { type: "DISMISS_NOTICE" };
 
-export function newGame(budget: number = DEFAULT_BUDGET): SavedGame {
-  return { guesses: [], hintUsed: null, hintAt: null, status: "playing", budget, solved: {}, hintLetter: null, reveal: null };
+export function newGame(budget: number = DEFAULT_BUDGET, startedAt: number | null = null): SavedGame {
+  return {
+    guesses: [],
+    hintUsed: null,
+    hintAt: null,
+    status: "playing",
+    budget,
+    solved: {},
+    hintLetter: null,
+    reveal: null,
+    startedAt,
+  };
 }
 
 export function initialModel(): GameModel {
@@ -158,7 +180,7 @@ export function canUseHint(model: GameModel): boolean {
 export function gameReducer(model: GameModel, action: GameAction): GameModel {
   switch (action.type) {
     case "LOADED": {
-      const game = action.saved ?? newGame(action.budget);
+      const game = action.saved ?? newGame(action.budget, action.now);
       const selectedSlot = game.solved.who ? nextUnsolvedSlot(game.solved, "who") : "who";
       return {
         ...model,

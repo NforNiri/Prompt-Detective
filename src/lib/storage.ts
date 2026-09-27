@@ -50,6 +50,16 @@ export function writeString(key: string, value: string): void {
   }
 }
 
+export function removeKey(key: string): void {
+  memory.delete(key);
+  if (!storageAvailable()) return;
+  try {
+    window.localStorage.removeItem(key);
+  } catch {
+    // Nothing to clean up if storage refuses.
+  }
+}
+
 /** Parses and validates a stored JSON value. Corrupt or outdated values read as null. */
 export function readJson<T>(key: string, schema: z.ZodType<T>): T | null {
   const raw = readString(key);

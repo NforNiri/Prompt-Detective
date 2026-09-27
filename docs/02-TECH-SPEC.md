@@ -155,8 +155,8 @@ Precompute the variant sets once per puzzle load (a Map per slot) so each lookup
 | guess_submitted | puzzle_id, slot, tier, guess_index, typo |
 | hint_used | puzzle_id, slot, guess_index |
 | slot_solved | puzzle_id, slot, guess_index |
-| puzzle_completed | puzzle_id, result (won/lost), guesses_used, hint_used, budget, duration_sec |
-| share_clicked | puzzle_id, method (native/clipboard), result |
+| puzzle_completed | puzzle_id, result (won/lost), guesses_used, hint_used, budget, duration_sec (from first open of the puzzle; null for games saved before Day 4) |
+| share_clicked | puzzle_id, method (native/clipboard), result (shared/copied/cancelled/failed) |
 | stats_opened | puzzle_id |
 | howto_completed | skipped (bool), panel_reached |
 

@@ -44,6 +44,8 @@ describe("storage with localStorage available", () => {
     expect(storage.storageAvailable()).toBe(true);
     storage.writeJson("pd:test", { a: 1 });
     expect(storage.readJson("pd:test", z.object({ a: z.number() }))).toEqual({ a: 1 });
+    storage.removeKey("pd:test");
+    expect(storage.readString("pd:test")).toBeNull();
   });
 
   it("reads corrupt or outdated values as null", async () => {
@@ -74,6 +76,8 @@ describe("storage with localStorage blocked", () => {
     expect(() => storage.writeJson("pd:game:1", { a: 1 })).not.toThrow();
     expect(storage.readJson("pd:game:1", z.object({ a: z.number() }))).toEqual({ a: 1 });
     expect(storage.getDeviceId()).toBe(storage.getDeviceId());
+    expect(() => storage.removeKey("pd:game:1")).not.toThrow();
+    expect(storage.readString("pd:game:1")).toBeNull();
   });
 
   it("falls back to memory when storage starts failing mid-session", async () => {

@@ -1,7 +1,18 @@
+import { z } from "zod";
 import type { GameState, Stats } from "./types";
 
 export const DISTRIBUTION_MIN = 4;
 export const DISTRIBUTION_MAX = 10;
+
+/** Validates `pd:stats` read from storage. */
+export const statsSchema: z.ZodType<Stats> = z.object({
+  played: z.number().int().min(0),
+  won: z.number().int().min(0),
+  currentStreak: z.number().int().min(0),
+  maxStreak: z.number().int().min(0),
+  lastPlayedPuzzleId: z.number().int().nullable(),
+  distribution: z.record(z.coerce.number(), z.number().int().min(0)),
+});
 
 export function emptyStats(): Stats {
   const distribution: Record<number, number> = {};
