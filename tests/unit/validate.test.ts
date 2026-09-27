@@ -110,8 +110,8 @@ describe("validatePuzzles", () => {
 
   it("treats missing images as warnings, or errors when required", () => {
     const imageIds = new Set([1, 2]);
-    expect(run(base(), { imageIds }).warnings).toContain("image 0003.png is missing");
-    expect(run(base(), { imageIds, requireImages: true }).errors).toEqual(["image 0003.png is missing"]);
+    expect(run(base(), { imageIds }).warnings).toContain("image for 0003 is missing");
+    expect(run(base(), { imageIds, requireImages: true }).errors).toEqual(["image for 0003 is missing"]);
     expect(run(base()).warnings.some((w) => w.includes("image"))).toBe(false);
   });
 

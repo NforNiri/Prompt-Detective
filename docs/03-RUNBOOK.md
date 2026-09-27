@@ -60,7 +60,7 @@ ACCEPTANCE: `content:validate` passes on 33 puzzles. The GET puzzle response con
 
 ## Day 3 (Tue): Playable game UI
 HUMAN (2.5h)
-1. Render images for puzzles 1 to 30 in Nano Banana. Save them as `content/images/NNNN.png`.
+1. Render images for puzzles 1 to 30 in Nano Banana. Save them as `content/images/NNNN.png` or `.jpg` (16:9 is fine).
 2. Don't QA yet. Just generate. QA is batched tomorrow, because context switching is expensive.
 
 CLAUDE CODE: session 3

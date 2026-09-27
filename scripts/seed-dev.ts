@@ -1,6 +1,6 @@
 // npm run db:seed-dev [-- 1 2 3 4]
 // Upserts puzzles (default 1-3) into Supabase for local play before the real upload
-// script (Day 5). Uses content/images/NNNN.png when it exists, otherwise a generated
+// script (Day 5). Uses content/images/NNNN.(png|jpg|webp) when it exists, otherwise a generated
 // placeholder card. The file name includes a content hash so a new image gets a new URL.
 // The upload script later overwrites these rows by id.
 import { createHash } from "node:crypto";
@@ -10,24 +10,27 @@ import sharp from "sharp";
 import { puzzleSchema } from "../src/lib/game/types";
 
 const BUCKET = "puzzles";
+const MAX_WIDTH = 1376;
+const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp"];
 
 function placeholderSvg(id: number): string {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1376" height="768" viewBox="0 0 1376 768">
   <defs><radialGradient id="lamp" cx="50%" cy="38%" r="65%">
     <stop offset="0" stop-color="#2a2418"/><stop offset="1" stop-color="#0b0d10"/></radialGradient></defs>
-  <rect width="1024" height="1024" fill="url(#lamp)"/>
+  <rect width="1376" height="768" fill="url(#lamp)"/>
   <g fill="none" stroke="#e2b45c" stroke-width="28" stroke-linecap="round">
-    <circle cx="470" cy="420" r="150"/><path d="M580 530l170 170"/></g>
-  <text x="512" y="820" text-anchor="middle" font-family="Courier New, monospace" font-size="72" font-weight="700" fill="#ebe8e1">CASE #${id}</text>
-  <text x="512" y="890" text-anchor="middle" font-family="Courier New, monospace" font-size="40" fill="#a3a6ad">placeholder image</text>
+    <circle cx="650" cy="300" r="120"/><path d="M738 388l136 136"/></g>
+  <text x="688" y="640" text-anchor="middle" font-family="Courier New, monospace" font-size="72" font-weight="700" fill="#ebe8e1">CASE #${id}</text>
+  <text x="688" y="700" text-anchor="middle" font-family="Courier New, monospace" font-size="40" fill="#a3a6ad">placeholder image</text>
 </svg>`;
 }
 
 async function imageFor(id: number, file: string): Promise<{ webp: Buffer; source: string }> {
-  const real = `content/images/${file}.png`;
-  const input = existsSync(real) ? readFileSync(real) : Buffer.from(placeholderSvg(id));
-  const webp = await sharp(input).resize(1024, 1024, { fit: "cover" }).webp({ quality: 82 }).toBuffer();
-  return { webp, source: existsSync(real) ? real : "placeholder" };
+  const real = IMAGE_EXTENSIONS.map((ext) => `content/images/${file}.${ext}`).find((p) => existsSync(p));
+  const input = real ? readFileSync(real) : Buffer.from(placeholderSvg(id));
+  // Keep the aspect ratio: the game shows the whole image in a 16:9 frame.
+  const webp = await sharp(input).resize({ width: MAX_WIDTH, withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
+  return { webp, source: real ?? "placeholder" };
 }
 
 async function main() {

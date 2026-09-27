@@ -137,7 +137,7 @@ export function validatePuzzles(sources: readonly PuzzleSource[], options: Valid
     }
 
     if (options.imageIds && !options.imageIds.has(p.id)) {
-      report(options.requireImages ? "error" : "warning", `image ${String(p.id).padStart(4, "0")}.png is missing`);
+      report(options.requireImages ? "error" : "warning", `image for ${String(p.id).padStart(4, "0")} is missing`);
     }
   });
 

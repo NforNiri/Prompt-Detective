@@ -23,7 +23,7 @@ const sources = files.map((file) => {
 const imageIds = new Set(
   existsSync(IMAGE_DIR)
     ? readdirSync(IMAGE_DIR)
-        .map((f) => /^(\d{4})\.png$/.exec(f)?.[1])
+        .map((f) => /^(\d{4})\.(?:png|jpe?g|webp)$/i.exec(f)?.[1])
         .filter((id): id is string => id !== undefined)
         .map(Number)
     : [],

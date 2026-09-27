@@ -6,7 +6,7 @@ Goal: 60 QA'd puzzles before launch, which covers about 8 weeks of runway. Budge
 ```
 1. SPEC     Claude drafts puzzle JSON in batches of 10       (content/puzzles/NNNN.json)
 2. LINT     scripts/validate-puzzles.ts                      (schema + rules below)
-3. RENDER   Nano Banana generates the image from the prompt  (content/images/NNNN.png)
+3. RENDER   Nano Banana generates the image from the prompt  (content/images/NNNN.png or .jpg)
 4. QA       Human checks the image against the 4 slots       (pass / regenerate / rewrite slot)
 5. SHIP     scripts/upload-puzzles.ts                        (webp -> bucket -> upsert row)
 ```
@@ -44,9 +44,9 @@ Then split the array into one file per puzzle with a small script (Claude Code w
 
 ## Step 3: Nano Banana render
 Image prompt = the `prompt` field. The "no text" suffix matters: text in the image would leak the answers.
-Output: square, 1024x1024 or larger.
+Output: 16:9 landscape, 1376x768 or larger (the Gemini app default). The game shows the whole image in a 16:9 frame, so nothing is cropped. Square crops were dropped on Day 3 because they cut off clues at the edges.
 
-Access, with $0 budget: generate in the Gemini app manually and save as `content/images/NNNN.png`. At about 2 minutes per image including retries, 60 images take about 2 hours. Split this across two evenings. If the Gemini API is available on your current plan, Claude Code can write a batch script instead. Check the current model name in Google AI Studio before scripting.
+Access, with $0 budget: generate in the Gemini app manually and save as `content/images/NNNN.png` (or .jpg, as the Gemini app downloads). At about 2 minutes per image including retries, 60 images take about 2 hours. Split this across two evenings. If the Gemini API is available on your current plan, Claude Code can write a batch script instead. Check the current model name in Google AI Studio before scripting.
 
 ## Step 4: QA checklist (per image, about 30 seconds)
 - [ ] WHO is obvious within 2 seconds.
@@ -72,7 +72,7 @@ Warnings:
 Output: a colored console table (puzzle, status, issues) and a non-zero exit code on errors, so it can run in CI.
 
 ## Step 5: Upload (scripts/upload-puzzles.ts)
-- Converts PNG to WebP (sharp, quality 82, max 1024px, target under 200KB).
+- Converts PNG or JPEG to WebP (sharp, quality 82, max 1376px wide, aspect kept, target under 200KB).
 - Uploads to bucket `puzzles/` as `{uuid}.webp`.
 - Upserts the row by `id`. It is idempotent: re-running updates the row and replaces the image.
 - Supports `--dry-run` and `--only=0012,0013`.
