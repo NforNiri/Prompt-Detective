@@ -1,10 +1,14 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import { useGame } from "@/hooks/useGame";
+import { track } from "@/lib/analytics";
+import { howtoCompleted } from "@/lib/game/events";
 import { canUseHint, guessesLeft, type Notice } from "@/lib/game/state";
+import { guessesUsed } from "@/lib/game/stats";
 import { en } from "@/lib/i18n/en";
 import type { SlotKey } from "@/lib/game/types";
+import { DebugPanel } from "./DebugPanel";
 import { EndScreen } from "./EndScreen";
 import { GuessCounter } from "./GuessCounter";
 import { GuessHistory } from "./GuessHistory";
@@ -14,6 +18,10 @@ import { HintButton } from "./HintButton";
 import { HowToPlayModal } from "./HowToPlayModal";
 import { ImageCard } from "./ImageCard";
 import { SlotTiles } from "./SlotTiles";
+import { StatsModal } from "./StatsModal";
+
+const noSubscribe = () => () => {};
+const readDebugParam = () => new URLSearchParams(window.location.search).get("debug") === "1";
 
 function noticeText(notice: Notice | null): string | null {
   if (!notice) return null;
@@ -34,14 +42,21 @@ function noticeText(notice: Notice | null): string | null {
 }
 
 export function Game() {
-  const { model, selectSlot, submitGuess, requestHint, dismissNotice, markHowToSeen, retry } = useGame();
+  const { model, stats, selectSlot, submitGuess, requestHint, dismissNotice, markHowToSeen, retry, resetToday } = useGame();
   const [howToOpen, setHowToOpen] = useState<boolean | null>(null);
+  const [statsOpen, setStatsOpen] = useState(false);
+  const debug = useSyncExternalStore(noSubscribe, readDebugParam, () => false);
   const inputRef = useRef<HTMLInputElement>(null);
   const { game, puzzle, phase, pending, selectedSlot } = model;
 
   const showHowTo = howToOpen ?? (phase === "ready" && model.firstVisit);
   const playing = phase === "ready" && game.status === "playing";
   const message = noticeText(model.notice);
+
+  function openStats() {
+    setStatsOpen(true);
+    if (puzzle) track("stats_opened", { puzzle_id: puzzle.id });
+  }
 
   function handleSelect(slot: SlotKey) {
     selectSlot(slot);
@@ -50,7 +65,7 @@ export function Game() {
 
   return (
     <>
-      <Header onHelp={() => setHowToOpen(true)} />
+      <Header onHelp={() => setHowToOpen(true)} onStats={openStats} />
 
       <div className="flex flex-col gap-4">
         <ImageCard imageUrl={puzzle?.imageUrl ?? null} puzzleId={puzzle?.id ?? null} />
@@ -70,7 +85,7 @@ export function Game() {
 
         {phase === "ready" && (
           <>
-            {!playing && <EndScreen game={game} />}
+            {!playing && puzzle && <EndScreen puzzleId={puzzle.id} game={game} onStats={openStats} />}
             {playing && <GuessCounter left={guessesLeft(game)} total={game.budget} />}
 
             <SlotTiles game={game} selected={selectedSlot} disabled={Boolean(pending)} onSelect={handleSelect} />
@@ -105,11 +120,22 @@ export function Game() {
 
       <HowToPlayModal
         open={showHowTo}
-        onClose={() => {
+        onClose={(panelReached, skipped) => {
           markHowToSeen();
           setHowToOpen(false);
+          track("howto_completed", howtoCompleted(skipped, panelReached));
         }}
       />
+
+      <StatsModal
+        open={statsOpen}
+        stats={stats}
+        todayPuzzleId={puzzle?.id ?? null}
+        todayGuesses={game.status === "won" ? guessesUsed(game) : null}
+        onClose={() => setStatsOpen(false)}
+      />
+
+      {debug && <DebugPanel model={model} onResetToday={resetToday} />}
     </>
   );
 }

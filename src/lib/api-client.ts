@@ -14,6 +14,38 @@ import { createLogger } from "@/lib/logger";
 
 const log = createLogger("api");
 
+/** The last few calls with timing and body, for the DebugPanel. */
+export interface ApiCall {
+  id: number;
+  time: number;
+  method: string;
+  path: string;
+  status: number;
+  ms: number;
+  body: unknown;
+}
+
+const RECENT_CALLS = 5;
+let recentCalls: readonly ApiCall[] = [];
+let nextCallId = 1;
+const callListeners = new Set<(calls: readonly ApiCall[]) => void>();
+
+function remember(call: Omit<ApiCall, "id" | "time">): void {
+  recentCalls = [...recentCalls.slice(-(RECENT_CALLS - 1)), { ...call, id: nextCallId++, time: Date.now() }];
+  for (const listener of callListeners) listener(recentCalls);
+}
+
+export function getRecentApiCalls(): readonly ApiCall[] {
+  return recentCalls;
+}
+
+export function subscribeApiCalls(listener: (calls: readonly ApiCall[]) => void): () => void {
+  callListeners.add(listener);
+  return () => {
+    callListeners.delete(listener);
+  };
+}
+
 export class ApiClientError extends Error {
   constructor(
     readonly status: number,
@@ -35,11 +67,14 @@ async function request<T>(method: "GET" | "POST", path: string, body?: unknown):
       body: body === undefined ? undefined : JSON.stringify(body),
     });
   } catch (error) {
-    log.warn(`${method} ${path} network error`, { ms: Math.round(performance.now() - started) });
+    const ms = Math.round(performance.now() - started);
+    log.warn(`${method} ${path} network error`, { ms });
+    remember({ method, path, status: 0, ms, body: null });
     throw new ApiClientError(0, "network", error instanceof Error ? error.message : "Network error");
   }
   const ms = Math.round(performance.now() - started);
   const data: unknown = await response.json().catch(() => null);
+  remember({ method, path, status: response.status, ms, body: data });
   if (!response.ok) {
     const error = (data as ApiErrorBody | null)?.error;
     log.warn(`${method} ${path} -> ${response.status}`, { ms, code: error?.code });

@@ -10,7 +10,7 @@ export interface Strings {
   slotQuestions: Record<SlotKey, string>;
   tiers: Record<Tier, string>;
   tierMeaning: Record<Tier, string>;
-  header: { help: string };
+  header: { help: string; stats: string };
   image: { alt: (puzzleId: number) => string };
   counter: { label: string; left: (left: number, total: number) => string };
   tile: {
@@ -47,6 +47,38 @@ export interface Strings {
     lostDetail: string;
     promptLabel: string;
     loadingPrompt: string;
+    recapTitle: string;
+    recapRow: (slot: string, guesses: number, solved: boolean) => string;
+    nextCase: string;
+    newCaseReady: string;
+    openNewCase: string;
+    share: string;
+    copied: string;
+    shareFailed: string;
+    stats: string;
+  };
+  stats: {
+    title: string;
+    played: string;
+    winPct: string;
+    currentStreak: string;
+    maxStreak: string;
+    distribution: string;
+    distributionHint: string;
+    distributionRow: (guesses: number, count: number) => string;
+    close: string;
+  };
+  debug: {
+    title: string;
+    open: string;
+    close: string;
+    logs: string;
+    events: string;
+    state: string;
+    api: string;
+    flag: (value: string, budget: number) => string;
+    resetToday: string;
+    empty: string;
   };
   howTo: {
     title: string;
@@ -77,7 +109,7 @@ export const en: Strings = {
     warm: "Related.",
     cold: "Not related.",
   },
-  header: { help: "How to play" },
+  header: { help: "How to play", stats: "Statistics" },
   image: { alt: (id) => `Case #${id}: the AI image to investigate` },
   counter: { label: "Guesses left", left: (left, total) => `${left} of ${total} guesses left` },
   tile: {
@@ -124,6 +156,39 @@ export const en: Strings = {
     lostDetail: "Out of guesses. Here's what the machine was told:",
     promptLabel: "The prompt",
     loadingPrompt: "Unsealing the file…",
+    recapTitle: "How you got there",
+    recapRow: (slot, guesses, solved) =>
+      `${slot}: ${guesses} ${guesses === 1 ? "guess" : "guesses"}, ${solved ? "solved" : "not solved"}`,
+    nextCase: "Next case in",
+    newCaseReady: "A new case is open.",
+    openNewCase: "Open it",
+    share: "Share result",
+    copied: "Result copied. Paste it anywhere.",
+    shareFailed: "Couldn't share. Try again.",
+    stats: "Statistics",
+  },
+  stats: {
+    title: "Statistics",
+    played: "Played",
+    winPct: "Win %",
+    currentStreak: "Current streak",
+    maxStreak: "Max streak",
+    distribution: "Guesses per win",
+    distributionHint: "Win a case to see your spread.",
+    distributionRow: (guesses, count) => `${count} ${count === 1 ? "win" : "wins"} in ${guesses} guesses`,
+    close: "Close",
+  },
+  debug: {
+    title: "Debug",
+    open: "Open debug panel",
+    close: "Close debug panel",
+    logs: "Logs",
+    events: "Events",
+    state: "State",
+    api: "API",
+    flag: (value, budget) => `guess-budget: ${value} (budget ${budget})`,
+    resetToday: "Reset today",
+    empty: "Nothing yet.",
   },
   howTo: {
     title: "How to play",
