@@ -26,10 +26,14 @@ const rows = ["0001", "0002", "0003"].map((id) => {
   };
 });
 
-const db = createClient(url, key, { auth: { persistSession: false } });
-const { error } = await db.from("puzzles").upsert(rows, { onConflict: "id" });
-if (error) {
-  console.error(`Seed failed: ${error.message}`);
-  process.exit(1);
+async function main(url: string, key: string) {
+  const db = createClient(url, key, { auth: { persistSession: false } });
+  const { error } = await db.from("puzzles").upsert(rows, { onConflict: "id" });
+  if (error) {
+    console.error(`Seed failed: ${error.message}`);
+    process.exit(1);
+  }
+  console.log(`Seeded puzzles ${rows.map((r) => `#${r.id} (${r.publish_date})`).join(", ")}`);
 }
-console.log(`Seeded puzzles ${rows.map((r) => `#${r.id} (${r.publish_date})`).join(", ")}`);
+
+void main(url, key);
