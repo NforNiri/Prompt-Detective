@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { serverNow } from "@/lib/clock";
+import { appNow } from "@/lib/clock";
 import { displayPrompt } from "@/lib/game/prompt";
 
 describe("displayPrompt", () => {
@@ -14,21 +14,21 @@ describe("displayPrompt", () => {
   });
 });
 
-describe("serverNow", () => {
+describe("appNow", () => {
   afterEach(() => vi.unstubAllEnvs());
 
-  it("uses DEV_TODAY in development", () => {
+  it("uses NEXT_PUBLIC_DEV_TODAY in development", () => {
     vi.stubEnv("NODE_ENV", "development");
-    vi.stubEnv("DEV_TODAY", "2026-10-04");
-    expect(serverNow().toISOString()).toBe("2026-10-04T12:00:00.000Z");
+    vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "2026-10-04");
+    expect(appNow().toISOString()).toBe("2026-10-04T12:00:00.000Z");
   });
 
-  it("ignores DEV_TODAY in production and when malformed", () => {
-    vi.stubEnv("DEV_TODAY", "2026-10-04");
+  it("ignores NEXT_PUBLIC_DEV_TODAY in production and when malformed", () => {
+    vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "2026-10-04");
     vi.stubEnv("NODE_ENV", "production");
-    expect(serverNow().toISOString().slice(0, 10)).not.toBe("2026-10-04");
+    expect(appNow().toISOString().slice(0, 10)).not.toBe("2026-10-04");
     vi.stubEnv("NODE_ENV", "development");
-    vi.stubEnv("DEV_TODAY", "soon");
-    expect(Math.abs(serverNow().getTime() - Date.now())).toBeLessThan(1000);
+    vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "soon");
+    expect(Math.abs(appNow().getTime() - Date.now())).toBeLessThan(1000);
   });
 });

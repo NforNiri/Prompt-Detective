@@ -1,7 +1,7 @@
 import "server-only";
 import { createHash } from "node:crypto";
 import type { z } from "zod";
-import { serverNow } from "@/lib/clock";
+import { appNow } from "@/lib/clock";
 import { isDateInWindow } from "@/lib/game/date";
 import type { ApiErrorBody } from "@/lib/game/types";
 import { createLogger, logRequest } from "@/lib/logger";
@@ -64,7 +64,7 @@ export function parseQuery<T>(request: Request, schema: z.ZodType<T>): T {
 }
 
 export function assertDateInWindow(date: string): void {
-  if (!isDateInWindow(date, serverNow())) {
+  if (!isDateInWindow(date, appNow())) {
     throw new ApiError(400, "date_out_of_window", "Date must be within one day of today (UTC)");
   }
 }
