@@ -3,7 +3,7 @@
 // Existing puzzle files are kept unless --force, because content/puzzles is the source of truth.
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { puzzleSchema } from "../src/lib/game/types";
+import { puzzleSchema } from "../src/lib/game/schemas";
 
 const RAW_DIR = "content/raw";
 const PUZZLE_DIR = "content/puzzles";
