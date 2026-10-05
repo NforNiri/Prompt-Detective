@@ -26,6 +26,8 @@ Next.js route handlers on Vercel (server only)
   v
 Supabase Postgres (RLS on, zero anon policies) + Storage bucket "puzzles" (public images)
 ```
+Page rendering (Day 5, for Lighthouse): GET / renders per request. The server reads the visitor's timezone from Vercel's `x-vercel-ip-timezone` header, works out their local date and renders that day's public puzzle (no answers) into the HTML, so the image is the LCP element before any JavaScript runs. The browser re-checks with its own clock and falls back to GET /api/puzzle when the dates differ. Zod schemas live in `src/lib/game/schemas.ts` (server only); the browser validates storage with `zod/mini`.
+
 Design pattern: a pure-function game core (`src/lib/game/*`) with no I/O, called by thin route handlers. The core is fully unit-testable and can be reused by the Hebrew version and by the content validator script.
 
 ## Repo structure
@@ -160,7 +162,7 @@ Precompute the variant sets once per puzzle load (a Map per slot) so each lookup
 | stats_opened | puzzle_id |
 | howto_completed | skipped (bool), panel_reached |
 
-Feature flag `guess-budget`: variants `control` (10) and `short` (8). Read the flag once per puzzle and store it in the game state, so a player never switches budgets mid-game.
+Feature flag `guess-budget`: variants `control` (10) and `short` (8). Read the flag once per puzzle and store it in the game state, so a player never switches budgets mid-game. The flag comes from one direct request to PostHog's `/flags/?v=2` endpoint (1.5 s timeout, fallback 10). The posthog-js SDK loads at the next idle moment, bootstrapped with that value, and records the experiment exposure only when the game used the flag's budget. Players who fell back to 10 are not in the experiment.
 
 PostHog dashboards: funnel (viewed -> first guess -> completed -> shared), retention (puzzle_viewed to puzzle_viewed, daily), per-slot solve rate, guesses-used distribution.
 
@@ -185,7 +187,7 @@ IP_HASH_SALT=
 NEXT_PUBLIC_POSTHOG_KEY=
 NEXT_PUBLIC_POSTHOG_HOST=
 NEXT_PUBLIC_LAUNCH_DATE=2026-10-11   # puzzle #1 date, used for display only
-NEXT_PUBLIC_DEV_TODAY=               # development only: pin the app date (YYYY-MM-DD) to play pre-launch puzzles; ignored in production builds
+NEXT_PUBLIC_DEV_TODAY=               # pin the app date (YYYY-MM-DD) to play pre-launch puzzles: dev, local prod builds, Vercel previews; always ignored on Vercel production
 ```
 
 ## Tests

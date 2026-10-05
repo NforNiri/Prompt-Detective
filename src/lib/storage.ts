@@ -1,4 +1,3 @@
-import type { z } from "zod";
 import { createLogger } from "@/lib/logger";
 
 // Every localStorage access goes through here. When storage is blocked (private
@@ -7,6 +6,11 @@ import { createLogger } from "@/lib/logger";
 const log = createLogger("storage");
 const memory = new Map<string, string>();
 let available: boolean | null = null;
+
+/** Anything with a zod-style safeParse: full zod, zod/mini or a hand-written check. */
+export interface Validator<T> {
+  safeParse(input: unknown): { success: true; data: T } | { success: false };
+}
 
 export const STORAGE_KEYS = {
   device: "pd:device",
@@ -61,7 +65,7 @@ export function removeKey(key: string): void {
 }
 
 /** Parses and validates a stored JSON value. Corrupt or outdated values read as null. */
-export function readJson<T>(key: string, schema: z.ZodType<T>): T | null {
+export function readJson<T>(key: string, schema: Validator<T>): T | null {
   const raw = readString(key);
   if (raw === null) return null;
   try {

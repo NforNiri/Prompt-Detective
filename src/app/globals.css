@@ -52,3 +52,75 @@ body {
 dialog::backdrop {
   background: rgb(0 0 0 / 0.75);
 }
+
+/* Feedback motion. Defined only when the player has not asked for reduced motion. */
+@media (prefers-reduced-motion: no-preference) {
+  .anim-flip {
+    animation: tile-flip 420ms ease-out;
+  }
+  .anim-shake {
+    animation: tile-shake 380ms ease-in-out;
+  }
+  .anim-stamp {
+    animation: stamp 420ms cubic-bezier(0.2, 1.5, 0.4, 1) both;
+  }
+  .anim-rise {
+    animation: rise 360ms ease-out both;
+  }
+}
+
+@keyframes tile-flip {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+  50% {
+    transform: perspective(400px) rotateX(90deg);
+  }
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+  }
+}
+
+@keyframes tile-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  40% {
+    transform: translateX(6px);
+  }
+  60% {
+    transform: translateX(-4px);
+  }
+  80% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes stamp {
+  0% {
+    transform: scale(2.4) rotate(var(--stamp-rotate, 0deg));
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.92) rotate(var(--stamp-rotate, 0deg));
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(var(--stamp-rotate, 0deg));
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

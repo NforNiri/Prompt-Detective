@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { GUESS_PATTERN, puzzleSchema } from "@/lib/game/types";
+import { puzzleSchema } from "@/lib/game/schemas";
+import { GUESS_PATTERN } from "@/lib/game/types";
 import { rawPuzzles } from "./fixtures";
 
 describe("puzzleSchema", () => {

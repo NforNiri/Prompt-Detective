@@ -62,6 +62,13 @@ describe("loading", () => {
     expect(loaded(null, 8).game.budget).toBe(8);
   });
 
+  it("shows the puzzle before the game is ready", () => {
+    const fetched = gameReducer(initialModel(), { type: "PUZZLE_FETCHED", puzzle });
+    expect(fetched).toMatchObject({ phase: "loading", puzzle });
+    const ready = loaded();
+    expect(gameReducer(ready, { type: "PUZZLE_FETCHED", puzzle })).toBe(ready);
+  });
+
   it("records load failures", () => {
     expect(gameReducer(initialModel(), { type: "LOAD_FAILED", reason: "not_found" })).toMatchObject({
       phase: "error",

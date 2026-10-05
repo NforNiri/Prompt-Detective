@@ -1,5 +1,6 @@
 import { assertDateInWindow, handle, jsonResponse, parseJsonBody, requirePuzzleAnswers } from "@/lib/api";
-import { hintRequestSchema, type HintResponse } from "@/lib/game/types";
+import { hintRequestSchema } from "@/lib/game/schemas";
+import type { HintResponse } from "@/lib/game/types";
 
 // POST /api/hint -> first letter of one slot's answer.
 export const POST = handle("hint", async (request, ctx) => {

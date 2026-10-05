@@ -4,6 +4,7 @@ import {
   getTrackedEvents,
   initAnalytics,
   resetAnalyticsForTests,
+  getFlagValue,
   resolveBudget,
   subscribeEvents,
   track,
@@ -13,6 +14,7 @@ import { newGame, type SavedGame } from "@/lib/game/state";
 import { emptyStats, recordGame, statsSchema } from "@/lib/game/stats";
 import type { PublicPuzzle } from "@/lib/game/types";
 
+const DEVICE = "7d444840-9dc0-41d2-9a5e-4c5a2f1b6a01";
 const puzzle: PublicPuzzle = { id: 5, date: "2026-10-08", imageUrl: "x", difficulty: 3, slots: ["who", "doing", "where", "style"] };
 
 function finished(overrides: Partial<SavedGame>): SavedGame {
@@ -90,8 +92,9 @@ describe("statsSchema", () => {
   it("accepts stored stats, including JSON's string keys", () => {
     const stored = JSON.parse(JSON.stringify(recordGame(emptyStats(), { puzzleId: 1, won: true, guessesUsed: 6 })));
     const parsed = statsSchema.safeParse(stored);
-    expect(parsed.success).toBe(true);
-    expect(parsed.data?.distribution[6]).toBe(1);
+    if (!parsed.success) throw new Error("expected stored stats to parse");
+    expect(parsed.data.distribution[6]).toBe(1);
+    expect(Object.keys(parsed.data.distribution)).toContain("10");
   });
 
   it("rejects garbage", () => {
@@ -130,19 +133,65 @@ describe("track", () => {
   });
 
   it("runs without a PostHog key", async () => {
-    await expect(initAnalytics("7d444840-9dc0-41d2-9a5e-4c5a2f1b6a01")).resolves.toBeNull();
+    await expect(initAnalytics(DEVICE)).resolves.toBeNull();
     expect(() => track("stats_opened", { puzzle_id: 1 })).not.toThrow();
   });
 
-  it("falls back to a budget of 10 when there is no client", async () => {
-    await initAnalytics("7d444840-9dc0-41d2-9a5e-4c5a2f1b6a01");
-    await expect(resolveBudget()).resolves.toBe(10);
+  it("falls back to a budget of 10 without a PostHog key", async () => {
+    await expect(resolveBudget(DEVICE)).resolves.toBe(10);
   });
 
-  it(`falls back to 10 if flags do not arrive within ${FLAG_TIMEOUT_MS}ms`, async () => {
-    vi.useFakeTimers();
-    const pending = resolveBudget();
-    await vi.advanceTimersByTimeAsync(FLAG_TIMEOUT_MS + 10);
-    await expect(pending).resolves.toBe(10);
+  describe("with a PostHog key", () => {
+    beforeEach(() => {
+      vi.stubEnv("NEXT_PUBLIC_POSTHOG_KEY", "phc_test");
+      vi.stubEnv("NEXT_PUBLIC_POSTHOG_HOST", "https://eu.i.posthog.com");
+    });
+
+    afterEach(() => vi.unstubAllGlobals());
+
+    function flagsResponse(body: unknown, ok = true) {
+      return vi.fn().mockResolvedValue({ ok, json: () => Promise.resolve(body) });
+    }
+
+    it("reads the variant from the flags endpoint and maps it to a budget", async () => {
+      const fetchMock = flagsResponse({ flags: { "guess-budget": { enabled: true, variant: "short" } } });
+      vi.stubGlobal("fetch", fetchMock);
+      await expect(resolveBudget(DEVICE)).resolves.toBe(8);
+      expect(getFlagValue()).toBe("short");
+      const [url, init] = fetchMock.mock.calls[0]!;
+      expect(url).toBe("https://eu.i.posthog.com/flags/?v=2");
+      expect(JSON.parse(init.body)).toEqual({ api_key: "phc_test", distinct_id: DEVICE });
+    });
+
+    it("uses 10 for control", async () => {
+      vi.stubGlobal("fetch", flagsResponse({ flags: { "guess-budget": { enabled: true, variant: "control" } } }));
+      await expect(resolveBudget(DEVICE)).resolves.toBe(10);
+      expect(getFlagValue()).toBe("control");
+    });
+
+    it.each([
+      ["a missing flag", { flags: {} }, true],
+      ["a disabled flag", { flags: { "guess-budget": { enabled: false, variant: null } } }, true],
+      ["an unknown variant", { flags: { "guess-budget": { enabled: true, variant: "huge" } } }, true],
+      ["an error response", {}, false],
+    ])("falls back to 10 (not in the experiment) for %s", async (_label, body, ok) => {
+      vi.stubGlobal("fetch", flagsResponse(body, ok as boolean));
+      await expect(resolveBudget(DEVICE)).resolves.toBe(10);
+      expect(getFlagValue()).toBeNull();
+    });
+
+    it("falls back to 10 when the request fails", async () => {
+      vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new TypeError("offline")));
+      await expect(resolveBudget(DEVICE)).resolves.toBe(10);
+    });
+
+    it(`falls back to 10 if the flag takes longer than ${FLAG_TIMEOUT_MS}ms`, async () => {
+      vi.useFakeTimers();
+      vi.stubGlobal("fetch", vi.fn(() => new Promise(() => {})));
+      const pending = resolveBudget(DEVICE);
+      await vi.advanceTimersByTimeAsync(FLAG_TIMEOUT_MS + 10);
+      await expect(pending).resolves.toBe(10);
+      expect(getFlagValue()).toBeNull();
+    });
   });
 });

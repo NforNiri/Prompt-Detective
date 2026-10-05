@@ -2,7 +2,8 @@ import { daysBetween, expectedDifficulty } from "./date";
 import { levenshtein, TYPO_MAX_DISTANCE, TYPO_MIN_LENGTH } from "./match";
 import { normalize, variants } from "./normalize";
 import { PROMPT_SUFFIX } from "./prompt";
-import { puzzleSchema, SLOT_KEYS, type Puzzle, type Slot, type SlotKey } from "./types";
+import { puzzleSchema } from "./schemas";
+import { SLOT_KEYS, type Puzzle, type Slot, type SlotKey } from "./types";
 
 // Content rules from docs/04-CONTENT-PIPELINE.md "Validator rules", plus two engine
 // checks: tier words that typo tolerance would score SOLVED, and answers missing

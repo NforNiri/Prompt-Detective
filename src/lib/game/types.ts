@@ -1,49 +1,36 @@
-import { z } from "zod";
-
-// Shared types for the whole app. Runtime schemas live next to the types they
-// produce so the app, the route handlers and the content scripts all agree.
+// Shared types for the whole app. Plain TypeScript with no runtime dependency, so the
+// browser bundle stays small. The zod schemas for route input and content files live
+// in schemas.ts and are checked against these types at compile time.
 
 export const SLOT_KEYS = ["who", "doing", "where", "style"] as const;
-export const slotKeySchema = z.enum(SLOT_KEYS);
-export type SlotKey = z.infer<typeof slotKeySchema>;
+export type SlotKey = (typeof SLOT_KEYS)[number];
 
 export const TIERS = ["solved", "hot", "warm", "cold"] as const;
-export const tierSchema = z.enum(TIERS);
-export type Tier = z.infer<typeof tierSchema>;
+export type Tier = (typeof TIERS)[number];
 
 export const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
 /** Allowed characters in a guess. Keep in sync with the character class in normalize.ts. */
 export const GUESS_PATTERN = /^[\p{L}\p{N}\s'-]+$/u;
 
-const tierWordSchema = z.string().min(1).max(40);
+export interface Slot {
+  answer: string;
+  accepted: string[];
+  hot: string[];
+  warm: string[];
+}
 
-export const slotSchema = z.strictObject({
-  answer: tierWordSchema,
-  accepted: z.array(tierWordSchema).min(2).max(6),
-  hot: z.array(tierWordSchema).min(3).max(8),
-  warm: z.array(tierWordSchema).min(5).max(12),
-});
-export type Slot = z.infer<typeof slotSchema>;
-
-export const slotsSchema = z.strictObject({
-  who: slotSchema,
-  doing: slotSchema,
-  where: slotSchema,
-  style: slotSchema,
-});
-export type Slots = z.infer<typeof slotsSchema>;
+export type Slots = Record<SlotKey, Slot>;
 
 /** One puzzle as stored in content/puzzles/NNNN.json. Mirrors content/schema/puzzle.schema.json. */
-export const puzzleSchema = z.strictObject({
-  id: z.number().int().min(1),
-  publishDate: z.string().regex(DATE_PATTERN),
-  difficulty: z.number().int().min(1).max(5),
-  locale: z.enum(["en", "he"]),
-  prompt: z.string().min(10),
-  slots: slotsSchema,
-});
-export type Puzzle = z.infer<typeof puzzleSchema>;
+export interface Puzzle {
+  id: number;
+  publishDate: string;
+  difficulty: number;
+  locale: "en" | "he";
+  prompt: string;
+  slots: Slots;
+}
 
 /** GET /api/puzzle response. Never carries answers. */
 export interface PublicPuzzle {
@@ -90,35 +77,27 @@ export interface Stats {
 
 // ---- API contracts (docs/02-TECH-SPEC.md "API contracts") ----
 
-const dateStringSchema = z.string().regex(DATE_PATTERN);
-const puzzleIdSchema = z.number().int().min(1);
+export interface GuessRequest {
+  puzzleId: number;
+  date: string;
+  slot: SlotKey;
+  guess: string;
+  deviceId: string;
+  guessIndex: number;
+}
 
-export const puzzleQuerySchema = z.object({ date: dateStringSchema });
+export interface HintRequest {
+  puzzleId: number;
+  date: string;
+  slot: SlotKey;
+  deviceId: string;
+}
 
-export const guessRequestSchema = z.object({
-  puzzleId: puzzleIdSchema,
-  date: dateStringSchema,
-  slot: slotKeySchema,
-  guess: z.string().min(1).max(40).regex(GUESS_PATTERN),
-  deviceId: z.uuid(),
-  guessIndex: z.number().int().min(1).max(12),
-});
-export type GuessRequest = z.infer<typeof guessRequestSchema>;
-
-export const hintRequestSchema = z.object({
-  puzzleId: puzzleIdSchema,
-  date: dateStringSchema,
-  slot: slotKeySchema,
-  deviceId: z.uuid(),
-});
-export type HintRequest = z.infer<typeof hintRequestSchema>;
-
-export const revealRequestSchema = z.object({
-  puzzleId: puzzleIdSchema,
-  date: dateStringSchema,
-  deviceId: z.uuid(),
-});
-export type RevealRequest = z.infer<typeof revealRequestSchema>;
+export interface RevealRequest {
+  puzzleId: number;
+  date: string;
+  deviceId: string;
+}
 
 export interface GuessResponse extends MatchResult {
   /** Present only when tier is "solved". */

@@ -5,6 +5,7 @@ import type { SlotKey, Tier } from "@/lib/game/types";
 export interface Strings {
   appName: string;
   tagline: string;
+  meta: { title: string; description: string; ogAlt: string };
   slots: Record<SlotKey, string>;
   /** What each slot asks for, shown under the label and in the input placeholder. */
   slotQuestions: Record<SlotKey, string>;
@@ -47,6 +48,8 @@ export interface Strings {
     lostDetail: string;
     promptLabel: string;
     loadingPrompt: string;
+    stampWon: string;
+    stampLost: string;
     recapTitle: string;
     recapRow: (slot: string, guesses: number, solved: boolean) => string;
     nextCase: string;
@@ -95,6 +98,12 @@ export interface Strings {
 export const en: Strings = {
   appName: "Prompt Detective",
   tagline: "Guess the 4 hidden words behind today's AI image.",
+  meta: {
+    title: "Prompt Detective: a daily AI image puzzle",
+    description:
+      "One AI image a day. Find the 4 hidden words of the prompt that made it: who, doing, where and style. 10 guesses, 1 hint, a new case every midnight.",
+    ogAlt: "Prompt Detective: guess the 4 hidden words behind today's AI image",
+  },
   slots: { who: "WHO", doing: "DOING", where: "WHERE", style: "STYLE" },
   slotQuestions: {
     who: "Who or what is it?",
@@ -156,6 +165,8 @@ export const en: Strings = {
     lostDetail: "Out of guesses. Here's what the machine was told:",
     promptLabel: "The prompt",
     loadingPrompt: "Unsealing the file…",
+    stampWon: "Case closed",
+    stampLost: "Cold case",
     recapTitle: "How you got there",
     recapRow: (slot, guesses, solved) =>
       `${slot}: ${guesses} ${guesses === 1 ? "guess" : "guesses"}, ${solved ? "solved" : "not solved"}`,

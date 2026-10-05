@@ -17,7 +17,7 @@ export function EndScreen({ puzzleId, game, onStats }: EndScreenProps) {
   const rows = buildShareRows(game);
 
   return (
-    <section aria-labelledby="end-title" className="flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
+    <section aria-labelledby="end-title" className="anim-rise flex flex-col gap-4 rounded-xl border border-border bg-surface p-4">
       <div className="flex flex-col gap-1">
         <h2 id="end-title" className={`font-typewriter text-2xl font-bold ${won ? "text-tier-solved" : "text-fg"}`}>
           {won ? en.end.won : en.end.lost}

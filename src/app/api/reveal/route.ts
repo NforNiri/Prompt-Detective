@@ -1,6 +1,7 @@
 import { assertDateInWindow, handle, jsonResponse, parseJsonBody, requirePuzzleAnswers } from "@/lib/api";
 import { displayPrompt } from "@/lib/game/prompt";
-import { revealRequestSchema, type RevealResponse } from "@/lib/game/types";
+import { revealRequestSchema } from "@/lib/game/schemas";
+import type { RevealResponse } from "@/lib/game/types";
 
 // POST /api/reveal -> the full prompt and answers, called when the game ends.
 export const POST = handle("reveal", async (request, ctx) => {

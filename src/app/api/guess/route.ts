@@ -1,7 +1,8 @@
 import { ApiError, assertDateInWindow, clientIp, handle, hashIp, jsonResponse, parseJsonBody, requirePuzzleAnswers } from "@/lib/api";
 import { matchGuess } from "@/lib/game/match";
 import { normalize } from "@/lib/game/normalize";
-import { guessRequestSchema, type GuessResponse } from "@/lib/game/types";
+import { guessRequestSchema } from "@/lib/game/schemas";
+import type { GuessResponse } from "@/lib/game/types";
 import { createLogger } from "@/lib/logger";
 import { insertGuessLog } from "@/lib/puzzle-repo";
 import { isGuessRateLimited } from "@/lib/rate-limit";

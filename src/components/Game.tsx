@@ -7,7 +7,7 @@ import { howtoCompleted } from "@/lib/game/events";
 import { canUseHint, guessesLeft, type Notice } from "@/lib/game/state";
 import { guessesUsed } from "@/lib/game/stats";
 import { en } from "@/lib/i18n/en";
-import type { SlotKey } from "@/lib/game/types";
+import type { PublicPuzzle, SlotKey } from "@/lib/game/types";
 import { DebugPanel } from "./DebugPanel";
 import { EndScreen } from "./EndScreen";
 import { GuessCounter } from "./GuessCounter";
@@ -17,7 +17,7 @@ import { Header } from "./Header";
 import { HintButton } from "./HintButton";
 import { HowToPlayModal } from "./HowToPlayModal";
 import { ImageCard } from "./ImageCard";
-import { SlotTiles } from "./SlotTiles";
+import { SlotTiles, type FreshTile } from "./SlotTiles";
 import { StatsModal } from "./StatsModal";
 
 const noSubscribe = () => () => {};
@@ -41,8 +41,9 @@ function noticeText(notice: Notice | null): string | null {
   }
 }
 
-export function Game() {
-  const { model, stats, selectSlot, submitGuess, requestHint, dismissNotice, markHowToSeen, retry, resetToday } = useGame();
+export function Game({ initialPuzzle }: { initialPuzzle: PublicPuzzle | null }) {
+  const { model, stats, selectSlot, submitGuess, requestHint, dismissNotice, markHowToSeen, retry, resetToday } =
+    useGame(initialPuzzle);
   const [howToOpen, setHowToOpen] = useState<boolean | null>(null);
   const [statsOpen, setStatsOpen] = useState(false);
   const debug = useSyncExternalStore(noSubscribe, readDebugParam, () => false);
@@ -52,6 +53,13 @@ export function Game() {
   const showHowTo = howToOpen ?? (phase === "ready" && model.firstVisit);
   const playing = phase === "ready" && game.status === "playing";
   const message = noticeText(model.notice);
+  const notice = model.notice;
+  const fresh: FreshTile | null =
+    notice?.kind === "result"
+      ? { slot: notice.slot, tier: notice.tier, key: game.guesses.length }
+      : notice?.kind === "hint"
+        ? { slot: notice.slot, tier: null, key: -1 }
+        : null;
 
   function openStats() {
     setStatsOpen(true);
@@ -68,7 +76,12 @@ export function Game() {
       <Header onHelp={() => setHowToOpen(true)} onStats={openStats} />
 
       <div className="flex flex-col gap-4">
-        <ImageCard imageUrl={puzzle?.imageUrl ?? null} puzzleId={puzzle?.id ?? null} />
+        <ImageCard
+          imageUrl={puzzle?.imageUrl ?? null}
+          puzzleId={puzzle?.id ?? null}
+          status={phase === "ready" ? game.status : null}
+          animateStamp={notice !== null}
+        />
 
         {phase === "loading" && <p className="text-center text-muted">{en.load.loading}</p>}
 
@@ -88,7 +101,7 @@ export function Game() {
             {!playing && puzzle && <EndScreen puzzleId={puzzle.id} game={game} onStats={openStats} />}
             {playing && <GuessCounter left={guessesLeft(game)} total={game.budget} />}
 
-            <SlotTiles game={game} selected={selectedSlot} disabled={Boolean(pending)} onSelect={handleSelect} />
+            <SlotTiles game={game} selected={selectedSlot} disabled={Boolean(pending)} fresh={fresh} onSelect={handleSelect} />
 
             {playing && (
               <>

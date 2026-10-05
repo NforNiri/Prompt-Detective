@@ -3,10 +3,18 @@ import { SLOT_KEYS, type SlotKey, type Tier } from "@/lib/game/types";
 import { en } from "@/lib/i18n/en";
 import { TIER_BORDER, TierBadge } from "./TierBadge";
 
+/** The tile that just changed in this session, so only it animates (not on reload). */
+export interface FreshTile {
+  slot: SlotKey;
+  tier: Tier | null;
+  key: number;
+}
+
 interface SlotTilesProps {
   game: SavedGame;
   selected: SlotKey;
   disabled: boolean;
+  fresh: FreshTile | null;
   onSelect: (slot: SlotKey) => void;
 }
 
@@ -18,7 +26,7 @@ function lastGuess(game: SavedGame, slot: SlotKey): { guess: string; tier: Tier 
   return null;
 }
 
-export function SlotTiles({ game, selected, disabled, onSelect }: SlotTilesProps) {
+export function SlotTiles({ game, selected, disabled, fresh, onSelect }: SlotTilesProps) {
   const over = game.status !== "playing";
   return (
     <div className="grid grid-cols-2 gap-2">
@@ -30,6 +38,8 @@ export function SlotTiles({ game, selected, disabled, onSelect }: SlotTilesProps
         const hint = game.hintUsed === slot ? game.hintLetter : null;
         const isSelected = selected === slot && !over;
         const tier: Tier | null = answer ? "solved" : (last?.tier ?? null);
+        const isFresh = fresh?.slot === slot;
+        const motion = isFresh ? (fresh.tier === "cold" ? "anim-shake" : "anim-flip") : "";
 
         let body: string;
         let description: string;
@@ -57,25 +67,32 @@ export function SlotTiles({ game, selected, disabled, onSelect }: SlotTilesProps
             aria-pressed={isSelected}
             aria-label={`${label}. ${description}${isSelected ? `. ${en.tile.selected}` : ""}`}
             className={[
-              "flex min-h-[76px] flex-col justify-between gap-1 rounded-lg border-2 bg-surface p-2.5 text-start transition-colors",
+              "min-h-[76px] rounded-lg border-2 bg-surface p-2.5 text-start transition-colors",
               tier ? TIER_BORDER[tier] : "border-border",
-              isSelected ? "bg-surface-2 outline-2 outline-offset-2 outline-accent" : "",
+              isSelected ? "bg-surface-2 ring-2 ring-accent ring-offset-2 ring-offset-bg" : "",
               answer ? "cursor-default" : "enabled:hover:bg-surface-2",
               revealed ? "opacity-80" : "",
             ].join(" ")}
           >
-            <span className="flex w-full items-center justify-between gap-2">
-              <span className={`text-[11px] font-bold tracking-widest ${isSelected ? "text-accent" : "text-muted"}`}>
-                {label}
+            {/* Keyed so the animation restarts on each new result without remounting the button (keeps focus). */}
+            <span key={isFresh ? fresh.key : "still"} className={`flex h-full flex-col justify-between gap-1 ${motion}`}>
+              <span className="flex w-full items-center justify-between gap-2">
+                <span className={`text-[11px] font-bold tracking-widest ${isSelected ? "text-accent" : "text-muted"}`}>
+                  {label}
+                </span>
+                {tier && (
+                  <span className={isFresh && tier === "solved" ? "anim-stamp" : ""}>
+                    <TierBadge tier={tier} />
+                  </span>
+                )}
               </span>
-              {tier && <TierBadge tier={tier} />}
-            </span>
-            <span
-              className={`font-typewriter text-base leading-tight break-words ${
-                answer ? "font-bold text-fg" : last || revealed ? "text-fg/80" : "text-muted"
-              } ${revealed ? "italic" : ""}`}
-            >
-              {body}
+              <span
+                className={`font-typewriter text-base leading-tight break-words ${
+                  answer ? "font-bold text-fg" : last || revealed ? "text-fg/80" : "text-muted"
+                } ${revealed ? "italic" : ""}`}
+              >
+                {body}
+              </span>
             </span>
           </button>
         );

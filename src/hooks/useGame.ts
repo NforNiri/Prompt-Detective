@@ -17,7 +17,7 @@ import {
   type GuessCheck,
 } from "@/lib/game/state";
 import { emptyStats, guessesUsed, recordGame, statsSchema } from "@/lib/game/stats";
-import type { SlotKey, Stats } from "@/lib/game/types";
+import type { PublicPuzzle, SlotKey, Stats } from "@/lib/game/types";
 import { createLogger } from "@/lib/logger";
 import {
   STORAGE_KEYS,
@@ -49,11 +49,19 @@ export interface GameControls {
   resetToday: () => void;
 }
 
-export function useGame(): GameControls {
-  const [model, rawDispatch] = useReducer(gameReducer, undefined, initialModel);
+/**
+ * @param initialPuzzle The puzzle the server rendered for the visitor's local date, if any.
+ * Used when it matches the browser's own date, so the image is in the first HTML.
+ */
+export function useGame(initialPuzzle: PublicPuzzle | null): GameControls {
+  const [model, rawDispatch] = useReducer(gameReducer, initialPuzzle, (puzzle) =>
+    puzzle ? gameReducer(initialModel(), { type: "PUZZLE_FETCHED", puzzle }) : initialModel(),
+  );
   const [stats, setStats] = useState<Stats>(emptyStats);
   const modelRef = useRef(model);
   const busy = useRef(false);
+  // puzzle_viewed fires once per puzzle, even when React runs the load effect twice (dev Strict Mode).
+  const viewedPuzzle = useRef<number | null>(null);
   const [loadAttempt, retryLoad] = useReducer((n: number) => n + 1, 0);
 
   useEffect(() => {
@@ -74,10 +82,13 @@ export function useGame(): GameControls {
 
     (async () => {
       try {
-        const puzzle = await apiClient.puzzle(date);
+        const puzzle = initialPuzzle?.date === date ? initialPuzzle : await apiClient.puzzle(date);
+        if (cancelled) return;
+        // Show the image now. A new game still waits (at most 1.5 s) for the budget flag.
+        if (puzzle !== initialPuzzle) dispatch({ type: "PUZZLE_FETCHED", puzzle });
         const saved = readJson(STORAGE_KEYS.game(puzzle.id), savedGameSchema);
         const storedStats = readJson(STORAGE_KEYS.stats, statsSchema) ?? emptyStats();
-        const budget = saved ? saved.budget : await resolveBudget();
+        const budget = saved ? saved.budget : await resolveBudget(getDeviceId());
         if (cancelled) return;
         setStats(storedStats);
         dispatch({
@@ -89,7 +100,10 @@ export function useGame(): GameControls {
           storageOk: storageAvailable(),
           now: Date.now(),
         });
-        track("puzzle_viewed", puzzleViewed(puzzle, storedStats, saved !== null));
+        if (viewedPuzzle.current !== puzzle.id) {
+          viewedPuzzle.current = puzzle.id;
+          track("puzzle_viewed", puzzleViewed(puzzle, storedStats, saved !== null));
+        }
       } catch (error) {
         if (cancelled) return;
         const reason = error instanceof ApiClientError && error.status === 404 ? "not_found" : "network";
@@ -100,7 +114,7 @@ export function useGame(): GameControls {
     return () => {
       cancelled = true;
     };
-  }, [dispatch, loadAttempt]);
+  }, [dispatch, loadAttempt, initialPuzzle]);
 
   // Persist progress after every change once the puzzle is known.
   useEffect(() => {

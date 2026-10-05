@@ -1,11 +1,10 @@
-import { z } from "zod";
+import * as z from "zod/mini";
 import { variants } from "./normalize";
 import { guessesUsed } from "./stats";
 import {
   GUESS_PATTERN,
   SLOT_KEYS,
-  slotKeySchema,
-  tierSchema,
+  TIERS,
   type GameState,
   type GameStatus,
   type GuessResponse,
@@ -32,25 +31,34 @@ export interface SavedGame extends GameState {
   startedAt: number | null;
 }
 
-const slotRecord = <T extends z.ZodType>(value: T) =>
-  z.object({ who: value.optional(), doing: value.optional(), where: value.optional(), style: value.optional() });
+// zod/mini keeps this off the critical path: it runs in the browser on every load.
+const slotKey = z.enum(SLOT_KEYS);
+const optionalText = z.optional(z.string());
 
-export const savedGameSchema: z.ZodType<SavedGame> = z.object({
-  guesses: z.array(z.object({ slot: slotKeySchema, guess: z.string(), tier: tierSchema })),
-  hintUsed: slotKeySchema.nullable(),
-  hintAt: z.number().int().min(0).nullable(),
+const savedGameShape = z.object({
+  guesses: z.array(z.object({ slot: slotKey, guess: z.string(), tier: z.enum(TIERS) })),
+  hintUsed: z.nullable(slotKey),
+  hintAt: z.nullable(z.number().check(z.int(), z.minimum(0))),
   status: z.enum(["playing", "won", "lost"]),
-  budget: z.number().int().min(1).max(12),
-  solved: slotRecord(z.string()),
-  hintLetter: z.string().nullable(),
-  reveal: z
-    .object({
+  budget: z.number().check(z.int(), z.minimum(1), z.maximum(12)),
+  solved: z.object({ who: optionalText, doing: optionalText, where: optionalText, style: optionalText }),
+  hintLetter: z.nullable(z.string()),
+  reveal: z.nullable(
+    z.object({
       prompt: z.string(),
       answers: z.object({ who: z.string(), doing: z.string(), where: z.string(), style: z.string() }),
-    })
-    .nullable(),
-  startedAt: z.number().nullable().default(null),
+    }),
+  ),
+  startedAt: z.optional(z.nullable(z.number())),
 });
+
+/** Validates a saved game read from storage. Games saved before Day 4 have no startedAt. */
+export const savedGameSchema = {
+  safeParse(input: unknown): { success: true; data: SavedGame } | { success: false } {
+    const result = savedGameShape.safeParse(input);
+    return result.success ? { success: true, data: { ...result.data, startedAt: result.data.startedAt ?? null } } : { success: false };
+  },
+};
 
 export type Pending = { kind: "guess"; slot: SlotKey; guess: string } | { kind: "hint"; slot: SlotKey } | null;
 
@@ -79,6 +87,8 @@ export interface GameModel {
 }
 
 export type GameAction =
+  /** The puzzle arrived; show its image while the budget flag resolves. */
+  | { type: "PUZZLE_FETCHED"; puzzle: PublicPuzzle }
   | {
       type: "LOADED";
       puzzle: PublicPuzzle;
@@ -179,6 +189,9 @@ export function canUseHint(model: GameModel): boolean {
 
 export function gameReducer(model: GameModel, action: GameAction): GameModel {
   switch (action.type) {
+    case "PUZZLE_FETCHED":
+      return model.phase === "loading" ? { ...model, puzzle: action.puzzle } : model;
+
     case "LOADED": {
       const game = action.saved ?? newGame(action.budget, action.now);
       const selectedSlot = game.solved.who ? nextUnsolvedSlot(game.solved, "who") : "who";

@@ -1,5 +1,6 @@
 import "server-only";
-import { slotsSchema, type SlotKey, type Slots, type Tier } from "@/lib/game/types";
+import { slotsSchema } from "@/lib/game/schemas";
+import { SLOT_KEYS, type PublicPuzzle, type SlotKey, type Slots, type Tier } from "@/lib/game/types";
 import { getSupabaseAdmin } from "@/lib/supabase-server";
 
 // Data access for the route handlers. Answers (slots, prompt) are only selected
@@ -41,6 +42,17 @@ export class DbError extends Error {
 export function publicImageUrl(imagePath: string): string {
   const base = process.env.SUPABASE_URL ?? "";
   return `${base}/storage/v1/object/public/${PUZZLE_BUCKET}/${imagePath}`;
+}
+
+/** The public shape served by /api/puzzle and rendered into the page. Never carries answers. */
+export function toPublicPuzzle(row: PublicPuzzleRow): PublicPuzzle {
+  return {
+    id: row.id,
+    date: row.publish_date,
+    imageUrl: publicImageUrl(row.image_path),
+    difficulty: row.difficulty,
+    slots: [...SLOT_KEYS],
+  };
 }
 
 export async function getPublicPuzzle(date: string): Promise<PublicPuzzleRow | null> {

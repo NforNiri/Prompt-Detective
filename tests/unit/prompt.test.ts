@@ -18,8 +18,7 @@ describe("displayPrompt", () => {
 describe("appNow", () => {
   afterEach(() => vi.unstubAllEnvs());
 
-  it("uses NEXT_PUBLIC_DEV_TODAY in development", () => {
-    vi.stubEnv("NODE_ENV", "development");
+  it("uses NEXT_PUBLIC_DEV_TODAY outside Vercel production", () => {
     vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "2026-10-04");
     const now = appNow();
     const real = new Date();
@@ -27,11 +26,14 @@ describe("appNow", () => {
     expect(now.getHours()).toBe(real.getHours());
   });
 
-  it("ignores NEXT_PUBLIC_DEV_TODAY in production and when malformed", () => {
+  it("ignores NEXT_PUBLIC_DEV_TODAY on Vercel production and when malformed", () => {
     vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "2026-10-04");
-    vi.stubEnv("NODE_ENV", "production");
+    vi.stubEnv("NEXT_PUBLIC_VERCEL_ENV", "production");
     expect(localDateString(appNow())).toBe(localDateString(new Date()));
-    vi.stubEnv("NODE_ENV", "development");
+    vi.stubEnv("NEXT_PUBLIC_VERCEL_ENV", "");
+    vi.stubEnv("VERCEL_ENV", "production");
+    expect(localDateString(appNow())).toBe(localDateString(new Date()));
+    vi.stubEnv("VERCEL_ENV", "");
     vi.stubEnv("NEXT_PUBLIC_DEV_TODAY", "soon");
     expect(Math.abs(appNow().getTime() - Date.now())).toBeLessThan(1000);
   });
