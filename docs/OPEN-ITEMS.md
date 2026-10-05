@@ -14,12 +14,10 @@ Last updated: 2026-10-05 (after Day 4; launch moved to Sunday Oct 11). Close ite
 
 | Item | Due | Notes |
 |---|---|---|
-| Image #25 (mermaid) | Before Nov 4 | Missing. The zip's 0025 was #26's image, renamed. |
-| Images #27 to #60 | Nov 6 to Dec 9 | All prompts are in docs/NANO-BANANA-PROMPTS.md. |
-| Regenerate #24 (gorilla, graffiti) | Before Nov 3 | QA fail: no gym visible, and the background is giant graffiti letters. |
-| Regenerate #14 (blacksmith, cubism) | Before Oct 24 | QA weak: reads as oil painting, not cubism. Saturday puzzle, so the style must be fair. |
-| Brand images (logo, icon, link preview, texture) | Runbook Day 5 | Prompts in docs/NANO-BANANA-PROMPTS.md section 1. Save to content/brand/. |
-| Puzzle 0002 prompt says "pixar style" | Any time | The pipeline rules say no brands. Low risk; consider "animated movie style 3d render". |
+| Image #44 (dragon roasting marshmallows, crayon drawing) | Before Nov 23 | The only missing puzzle image. Prompt in docs/NANO-BANANA-PROMPTS.md. |
+| Optional: regenerate #56 (sommelier, pointillism) | Before Dec 5 | Weak style at phone size. Try adding "visible dots of pure color, Seurat" to the prompt. |
+| Puzzle 0002 prompt says "pixar style" | Any time | The pipeline rules say no brands. Low risk. |
+| Upload puzzles 4 to 60 | Runbook Day 7 | Run `npm run content:upload -- --only=4-43,45-60` now, and #44 once its image exists. The script refuses any selection that includes a puzzle without an image. Rows 1 to 3 are already uploaded. |
 
 ## Checks only Niri can do
 

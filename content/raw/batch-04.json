@@ -430,16 +430,18 @@
         "answer": "student",
         "accepted": [
           "student",
-          "schoolboy",
-          "boy",
+          "schoolgirl",
+          "girl",
           "pupil",
           "schoolkid"
         ],
         "hot": [
-          "girl",
+          "boy",
+          "schoolboy",
           "child",
+          "kid",
           "teenager",
-          "kid"
+          "woman"
         ],
         "warm": [
           "person",

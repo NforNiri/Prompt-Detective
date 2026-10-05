@@ -42,6 +42,16 @@ export default async function Image() {
           // eslint-disable-next-line @next/next/no-img-element -- ImageResponse renders plain img only
           <img src={bg} alt="" width={1200} height={630} style={{ position: "absolute", inset: 0, objectFit: "cover" }} />
         )}
+        {bg && (
+          // Keeps the title readable over the banner art.
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: `linear-gradient(90deg, ${INK} 0%, ${INK} 38%, rgba(11,13,16,0.55) 58%, rgba(11,13,16,0) 75%)`,
+            }}
+          />
+        )}
         <div style={{ display: "flex", alignItems: "center", gap: 28 }}>
           <svg width="96" height="96" viewBox="0 0 64 64">
             <rect x="20" y="18" width="7" height="7" fill={AMBER} />
@@ -49,10 +59,11 @@ export default async function Image() {
             <circle cx="28" cy="28" r="15" fill="none" stroke={AMBER} strokeWidth="5" />
             <path d="M39 39l13 13" stroke={AMBER} strokeWidth="7" strokeLinecap="round" />
           </svg>
-          <div style={{ fontSize: 84, fontWeight: 700, letterSpacing: -2 }}>{en.appName}</div>
+          <div style={{ fontSize: bg ? 68 : 84, fontWeight: 700, letterSpacing: -2 }}>{en.appName}</div>
         </div>
-        <div style={{ fontSize: 38, marginTop: 24, maxWidth: 760, color: "#cfccc5" }}>{en.tagline}</div>
-        <div style={{ display: "flex", gap: 18, marginTop: 56 }}>
+        <div style={{ fontSize: bg ? 32 : 38, marginTop: 24, maxWidth: bg ? 540 : 760, color: "#cfccc5" }}>{en.tagline}</div>
+        {/* The Nano Banana banner draws its own four cards; the plain version draws the slots. */}
+        <div style={{ display: bg ? "none" : "flex", gap: 18, marginTop: 56 }}>
           {SLOT_KEYS.map((slot) => (
             <div
               key={slot}
