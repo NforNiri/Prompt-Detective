@@ -72,7 +72,7 @@ Warnings:
 Output: a colored console table (puzzle, status, issues) and a non-zero exit code on errors, so it can run in CI.
 
 ## Step 5: Upload (scripts/upload-puzzles.ts)
-- Converts PNG or JPEG to WebP (sharp, quality 82, max 1376px wide, aspect kept, target under 200KB).
+- Converts PNG or JPEG to WebP (sharp, aspect kept, under 200KB): tries 1376px at quality 82, 74, 66, then 1200px and 1024px. Busy textures (mosaic, embroidery) end up at 1024px rather than blurry.
 - Uploads to bucket `puzzles/` as `{uuid}.webp`.
 - Upserts the row by `id`. It is idempotent: re-running updates the row and replaces the image.
 - Supports `--dry-run` and `--only=0012,0013`.

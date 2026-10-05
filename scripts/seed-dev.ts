@@ -7,7 +7,7 @@ import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
 import sharp from "sharp";
-import { puzzleSchema } from "../src/lib/game/types";
+import { puzzleSchema } from "../src/lib/game/schemas";
 
 const BUCKET = "puzzles";
 const MAX_WIDTH = 1376;
@@ -50,6 +50,7 @@ async function main() {
     const hash = createHash("sha256").update(webp).digest("hex").slice(0, 8);
     const imagePath = `dev/${file}-${hash}.webp`;
 
+    const { data: before } = await db.from("puzzles").select("image_path").eq("id", p.id).maybeSingle<{ image_path: string }>();
     const upload = await db.storage.from(BUCKET).upload(imagePath, webp, { contentType: "image/webp", upsert: true });
     if (upload.error) throw new Error(`upload ${imagePath}: ${upload.error.message}`);
 
@@ -66,6 +67,8 @@ async function main() {
       { onConflict: "id" },
     );
     if (error) throw new Error(`upsert #${p.id}: ${error.message}`);
+    // Delete the image this row pointed at before, so dev runs do not pile up orphans.
+    if (before && before.image_path !== imagePath) await db.storage.from(BUCKET).remove([before.image_path]);
     console.log(`#${p.id} ${p.publishDate}  ${source} -> ${imagePath} (${Math.round(webp.length / 1024)} KB)`);
   }
 }
