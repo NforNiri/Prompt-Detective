@@ -1,6 +1,6 @@
 # Nano Banana prompts
 
-Status (2026-10-05): everything below is generated except **#44** (the dragon). #56 is optional to redo. QA results are in docs/CONTENT-LOG.md.
+Status (2026-10-05): everything below is generated, including #44. QA results are in docs/CONTENT-LOG.md.
 
 Everything still to generate before and after launch: 4 brand images and 37 puzzle images. Generated 2026-10-05 from the puzzle files, so each prompt matches what the end screen reveals.
 

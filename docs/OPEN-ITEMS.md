@@ -14,10 +14,8 @@ Last updated: 2026-10-05 (after Day 4; launch moved to Sunday Oct 11). Close ite
 
 | Item | Due | Notes |
 |---|---|---|
-| Image #44 (dragon roasting marshmallows, crayon drawing) | Before Nov 23 | The only missing puzzle image. Prompt in docs/NANO-BANANA-PROMPTS.md. |
-| Optional: regenerate #56 (sommelier, pointillism) | Before Dec 5 | Weak style at phone size. Try adding "visible dots of pure color, Seurat" to the prompt. |
 | Puzzle 0002 prompt says "pixar style" | Any time | The pipeline rules say no brands. Low risk. |
-| Upload puzzles 4 to 60 | Runbook Day 7 | Run `npm run content:upload -- --only=4-43,45-60` now, and #44 once its image exists. The script refuses any selection that includes a puzzle without an image. Rows 1 to 3 are already uploaded. |
+| Upload puzzles 4 to 60 | Runbook Day 7 | All 60 images exist and pass strict validation. Rows 1 to 3 are already uploaded. |
 
 ## Checks only Niri can do
 

@@ -46,3 +46,7 @@ Brand: logo, icon, link-preview banner and texture all usable, plus one unreques
 Content change from QA: #38 WHO now accepts "girl" and "schoolgirl" (they were HOT, but the image shows a schoolgirl).
 
 Rejected v1 images are kept in content/images/rejected/ for before and after comparisons.
+
+## 2026-10-05: #44 delivered
+
+#44 (dragon roasting marshmallows, crayon drawing) passes QA on the first try. All 60 puzzle images now exist; #56 stays as is (weak style, accepted).
