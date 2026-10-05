@@ -1,0 +1,104 @@
+{
+  "id": 42,
+  "publishDate": "2026-11-21",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "an astronomer using a telescope in an observatory, renaissance painting, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "astronomer",
+      "accepted": [
+        "astronomer",
+        "stargazer"
+      ],
+      "hot": [
+        "scientist",
+        "scholar",
+        "philosopher",
+        "wizard",
+        "inventor"
+      ],
+      "warm": [
+        "man",
+        "old man",
+        "monk",
+        "professor",
+        "person",
+        "explorer"
+      ]
+    },
+    "doing": {
+      "answer": "using a telescope",
+      "accepted": [
+        "using a telescope",
+        "looking through a telescope",
+        "stargazing",
+        "telescope",
+        "observing"
+      ],
+      "hot": [
+        "looking",
+        "watching",
+        "studying",
+        "gazing",
+        "peering"
+      ],
+      "warm": [
+        "standing",
+        "thinking",
+        "searching",
+        "reading",
+        "pointing",
+        "discovering"
+      ]
+    },
+    "where": {
+      "answer": "observatory",
+      "accepted": [
+        "observatory",
+        "astronomy tower",
+        "tower"
+      ],
+      "hot": [
+        "library",
+        "study",
+        "castle",
+        "attic",
+        "workshop"
+      ],
+      "warm": [
+        "night",
+        "stars",
+        "sky",
+        "room",
+        "building",
+        "dome"
+      ]
+    },
+    "style": {
+      "answer": "renaissance painting",
+      "accepted": [
+        "renaissance painting",
+        "renaissance",
+        "old master",
+        "classical painting",
+        "italian renaissance"
+      ],
+      "hot": [
+        "oil painting",
+        "baroque",
+        "fresco",
+        "classical",
+        "medieval"
+      ],
+      "warm": [
+        "painting",
+        "museum",
+        "old",
+        "art",
+        "portrait",
+        "religious"
+      ]
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "id": 36,
+  "publishDate": "2026-11-15",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a panda eating bamboo in a bamboo forest, photograph, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "panda",
+      "accepted": [
+        "panda",
+        "giant panda",
+        "panda bear"
+      ],
+      "hot": [
+        "bear",
+        "red panda",
+        "koala",
+        "polar bear"
+      ],
+      "warm": [
+        "animal",
+        "mammal",
+        "china",
+        "cub",
+        "black and white",
+        "cute"
+      ]
+    },
+    "doing": {
+      "answer": "eating bamboo",
+      "accepted": [
+        "eating bamboo",
+        "eating",
+        "chewing bamboo",
+        "munching",
+        "chewing"
+      ],
+      "hot": [
+        "bamboo",
+        "feeding",
+        "snacking",
+        "biting"
+      ],
+      "warm": [
+        "sitting",
+        "holding",
+        "resting",
+        "food",
+        "hungry",
+        "leaves"
+      ]
+    },
+    "where": {
+      "answer": "bamboo forest",
+      "accepted": [
+        "bamboo forest",
+        "bamboo grove",
+        "bamboo",
+        "forest"
+      ],
+      "hot": [
+        "jungle",
+        "woods",
+        "zoo",
+        "grove"
+      ],
+      "warm": [
+        "trees",
+        "nature",
+        "china",
+        "garden",
+        "mountain",
+        "green"
+      ]
+    },
+    "style": {
+      "answer": "photograph",
+      "accepted": [
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
+      ],
+      "hot": [
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
+      ],
+      "warm": [
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
+      ]
+    }
+  }
+}

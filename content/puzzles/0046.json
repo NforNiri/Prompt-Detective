@@ -1,0 +1,109 @@
+{
+  "id": 46,
+  "publishDate": "2026-11-25",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a fox running through a snowy forest, low poly, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "fox",
+      "accepted": [
+        "fox",
+        "red fox",
+        "arctic fox",
+        "vixen"
+      ],
+      "hot": [
+        "wolf",
+        "coyote",
+        "dog",
+        "jackal"
+      ],
+      "warm": [
+        "animal",
+        "cat",
+        "mammal",
+        "wildlife",
+        "predator",
+        "creature"
+      ]
+    },
+    "doing": {
+      "answer": "running",
+      "accepted": [
+        "running",
+        "sprinting",
+        "dashing",
+        "racing"
+      ],
+      "hot": [
+        "jumping",
+        "chasing",
+        "hunting",
+        "leaping",
+        "galloping"
+      ],
+      "warm": [
+        "walking",
+        "moving",
+        "playing",
+        "escaping",
+        "exploring",
+        "fast"
+      ]
+    },
+    "where": {
+      "answer": "snowy forest",
+      "accepted": [
+        "snowy forest",
+        "forest",
+        "winter forest",
+        "snowy woods",
+        "woods",
+        "woodland"
+      ],
+      "hot": [
+        "snow",
+        "taiga",
+        "mountain",
+        "tundra",
+        "park"
+      ],
+      "warm": [
+        "winter",
+        "trees",
+        "cold",
+        "nature",
+        "ice",
+        "outdoors"
+      ]
+    },
+    "style": {
+      "answer": "low poly",
+      "accepted": [
+        "low poly",
+        "lowpoly",
+        "low-poly",
+        "polygon",
+        "polygonal",
+        "polygon art"
+      ],
+      "hot": [
+        "geometric",
+        "3d",
+        "3d render",
+        "faceted",
+        "origami",
+        "crystal"
+      ],
+      "warm": [
+        "digital",
+        "shapes",
+        "video game",
+        "computer",
+        "angular",
+        "modern"
+      ]
+    }
+  }
+}

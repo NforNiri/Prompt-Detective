@@ -1,0 +1,111 @@
+{
+  "id": 51,
+  "publishDate": "2026-11-30",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a teddy bear having a tea party in a playroom, 3d render, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "teddy bear",
+      "accepted": [
+        "teddy bear",
+        "teddy",
+        "bear",
+        "stuffed bear",
+        "toy bear",
+        "plush bear"
+      ],
+      "hot": [
+        "toy",
+        "doll",
+        "panda",
+        "stuffed animal",
+        "puppet"
+      ],
+      "warm": [
+        "animal",
+        "cute",
+        "plush",
+        "child",
+        "kid",
+        "brown"
+      ]
+    },
+    "doing": {
+      "answer": "having a tea party",
+      "accepted": [
+        "having a tea party",
+        "tea party",
+        "drinking tea",
+        "pouring tea",
+        "having tea"
+      ],
+      "hot": [
+        "drinking",
+        "eating",
+        "playing",
+        "picnic",
+        "party"
+      ],
+      "warm": [
+        "sitting",
+        "cups",
+        "snack",
+        "cake",
+        "celebrating",
+        "sharing"
+      ]
+    },
+    "where": {
+      "answer": "playroom",
+      "accepted": [
+        "playroom",
+        "nursery",
+        "kids room",
+        "children's room",
+        "bedroom"
+      ],
+      "hot": [
+        "living room",
+        "house",
+        "dollhouse",
+        "kindergarten",
+        "toy store"
+      ],
+      "warm": [
+        "room",
+        "home",
+        "indoors",
+        "toys",
+        "table",
+        "floor"
+      ]
+    },
+    "style": {
+      "answer": "3d render",
+      "accepted": [
+        "3d render",
+        "3d",
+        "render",
+        "cgi",
+        "3d animation",
+        "3d rendering"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "cartoon",
+        "claymation",
+        "toy"
+      ],
+      "warm": [
+        "digital",
+        "computer",
+        "cute",
+        "movie",
+        "plastic",
+        "smooth"
+      ]
+    }
+  }
+}

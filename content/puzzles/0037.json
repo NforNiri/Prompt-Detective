@@ -1,0 +1,106 @@
+{
+  "id": 37,
+  "publishDate": "2026-11-16",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a ninja climbing a skyscraper at night, comic book, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "ninja",
+      "accepted": [
+        "ninja",
+        "shinobi",
+        "assassin"
+      ],
+      "hot": [
+        "samurai",
+        "spy",
+        "thief",
+        "burglar",
+        "martial artist"
+      ],
+      "warm": [
+        "man",
+        "warrior",
+        "fighter",
+        "hero",
+        "person",
+        "mask"
+      ]
+    },
+    "doing": {
+      "answer": "climbing",
+      "accepted": [
+        "climbing",
+        "climbing a building",
+        "scaling",
+        "climbing a wall",
+        "wall climbing"
+      ],
+      "hot": [
+        "hanging",
+        "jumping",
+        "sneaking",
+        "parkour",
+        "crawling"
+      ],
+      "warm": [
+        "running",
+        "hiding",
+        "holding",
+        "moving",
+        "falling",
+        "spying"
+      ]
+    },
+    "where": {
+      "answer": "skyscraper",
+      "accepted": [
+        "skyscraper",
+        "tall building",
+        "tower",
+        "high rise",
+        "building"
+      ],
+      "hot": [
+        "city",
+        "rooftop",
+        "office building",
+        "downtown"
+      ],
+      "warm": [
+        "night",
+        "sky",
+        "street",
+        "window",
+        "wall",
+        "urban"
+      ]
+    },
+    "style": {
+      "answer": "comic book",
+      "accepted": [
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
+      ],
+      "hot": [
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
+      ],
+      "warm": [
+        "drawing",
+        "ink",
+        "bold",
+        "halftone",
+        "retro",
+        "panel"
+      ]
+    }
+  }
+}

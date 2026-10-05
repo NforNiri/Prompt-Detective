@@ -1,0 +1,109 @@
+{
+  "id": 53,
+  "publishDate": "2026-12-02",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a mouse sailing a paper boat down a stream, pixel art, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "mouse",
+      "accepted": [
+        "mouse",
+        "mice",
+        "field mouse",
+        "little mouse"
+      ],
+      "hot": [
+        "rat",
+        "hamster",
+        "squirrel",
+        "gerbil",
+        "chipmunk"
+      ],
+      "warm": [
+        "animal",
+        "rodent",
+        "pet",
+        "mammal",
+        "critter",
+        "cute"
+      ]
+    },
+    "doing": {
+      "answer": "sailing",
+      "accepted": [
+        "sailing",
+        "sailing a boat",
+        "boating",
+        "floating",
+        "paper boat"
+      ],
+      "hot": [
+        "rowing",
+        "paddling",
+        "drifting",
+        "steering",
+        "fishing"
+      ],
+      "warm": [
+        "traveling",
+        "adventure",
+        "water",
+        "swimming",
+        "riding",
+        "exploring"
+      ]
+    },
+    "where": {
+      "answer": "stream",
+      "accepted": [
+        "stream",
+        "creek",
+        "brook",
+        "river",
+        "small river"
+      ],
+      "hot": [
+        "pond",
+        "puddle",
+        "lake",
+        "canal",
+        "waterfall"
+      ],
+      "warm": [
+        "water",
+        "forest",
+        "nature",
+        "rain",
+        "outdoors",
+        "grass"
+      ]
+    },
+    "style": {
+      "answer": "pixel art",
+      "accepted": [
+        "pixel art",
+        "pixel",
+        "8-bit",
+        "8 bit",
+        "pixelated",
+        "16-bit"
+      ],
+      "hot": [
+        "retro game",
+        "video game",
+        "sprite",
+        "retro",
+        "arcade game"
+      ],
+      "warm": [
+        "game",
+        "arcade",
+        "digital",
+        "blocky",
+        "old school",
+        "computer"
+      ]
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "id": 55,
+  "publishDate": "2026-12-04",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a black cat walking along a rooftop at night, film noir, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "black cat",
+      "accepted": [
+        "black cat",
+        "cat",
+        "kitty",
+        "alley cat",
+        "stray cat",
+        "tomcat"
+      ],
+      "hot": [
+        "panther",
+        "kitten",
+        "dog",
+        "raccoon",
+        "rat"
+      ],
+      "warm": [
+        "animal",
+        "pet",
+        "shadow",
+        "night",
+        "mammal",
+        "creature"
+      ]
+    },
+    "doing": {
+      "answer": "walking",
+      "accepted": [
+        "walking",
+        "prowling",
+        "sneaking",
+        "creeping",
+        "strolling",
+        "stalking"
+      ],
+      "hot": [
+        "running",
+        "jumping",
+        "climbing",
+        "balancing",
+        "hunting"
+      ],
+      "warm": [
+        "sitting",
+        "looking",
+        "watching",
+        "moving",
+        "exploring",
+        "hiding"
+      ]
+    },
+    "where": {
+      "answer": "rooftop",
+      "accepted": [
+        "rooftop",
+        "roof",
+        "rooftops",
+        "city rooftop",
+        "roof top"
+      ],
+      "hot": [
+        "chimney",
+        "alley",
+        "fire escape",
+        "balcony",
+        "city"
+      ],
+      "warm": [
+        "night",
+        "building",
+        "moon",
+        "sky",
+        "street",
+        "town"
+      ]
+    },
+    "style": {
+      "answer": "film noir",
+      "accepted": [
+        "film noir",
+        "noir",
+        "noir film",
+        "noir movie",
+        "neo noir"
+      ],
+      "hot": [
+        "black and white",
+        "monochrome",
+        "old movie",
+        "detective movie",
+        "1940s"
+      ],
+      "warm": [
+        "movie",
+        "film",
+        "dark",
+        "shadows",
+        "vintage",
+        "cinematic"
+      ]
+    }
+  }
+}

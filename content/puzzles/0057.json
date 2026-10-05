@@ -1,0 +1,110 @@
+{
+  "id": 57,
+  "publishDate": "2026-12-06",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a giraffe eating leaves in the savanna, photograph, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "giraffe",
+      "accepted": [
+        "giraffe",
+        "baby giraffe",
+        "reticulated giraffe"
+      ],
+      "hot": [
+        "okapi",
+        "camel",
+        "llama",
+        "deer",
+        "zebra"
+      ],
+      "warm": [
+        "animal",
+        "mammal",
+        "tall",
+        "africa",
+        "safari",
+        "spots"
+      ]
+    },
+    "doing": {
+      "answer": "eating leaves",
+      "accepted": [
+        "eating leaves",
+        "eating",
+        "grazing",
+        "browsing",
+        "feeding",
+        "munching"
+      ],
+      "hot": [
+        "chewing",
+        "reaching",
+        "stretching",
+        "licking",
+        "nibbling"
+      ],
+      "warm": [
+        "standing",
+        "walking",
+        "food",
+        "hungry",
+        "tree",
+        "leaves"
+      ]
+    },
+    "where": {
+      "answer": "savanna",
+      "accepted": [
+        "savanna",
+        "savannah",
+        "grassland",
+        "plains",
+        "african savanna",
+        "serengeti"
+      ],
+      "hot": [
+        "safari",
+        "desert",
+        "prairie",
+        "zoo",
+        "jungle"
+      ],
+      "warm": [
+        "africa",
+        "grass",
+        "trees",
+        "outdoors",
+        "wild",
+        "nature"
+      ]
+    },
+    "style": {
+      "answer": "photograph",
+      "accepted": [
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
+      ],
+      "hot": [
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
+      ],
+      "warm": [
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
+      ]
+    }
+  }
+}

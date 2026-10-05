@@ -1,0 +1,110 @@
+{
+  "id": 58,
+  "publishDate": "2026-12-07",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a submarine exploring a coral reef, paper cutout, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "submarine",
+      "accepted": [
+        "submarine",
+        "sub",
+        "submersible",
+        "mini submarine"
+      ],
+      "hot": [
+        "boat",
+        "ship",
+        "diver",
+        "robot",
+        "torpedo"
+      ],
+      "warm": [
+        "vehicle",
+        "machine",
+        "ocean",
+        "underwater",
+        "yellow",
+        "metal"
+      ]
+    },
+    "doing": {
+      "answer": "exploring",
+      "accepted": [
+        "exploring",
+        "diving",
+        "searching",
+        "exploring the reef",
+        "discovering"
+      ],
+      "hot": [
+        "swimming",
+        "floating",
+        "sailing",
+        "traveling",
+        "scanning"
+      ],
+      "warm": [
+        "moving",
+        "looking",
+        "adventure",
+        "hiding",
+        "sinking",
+        "cruising"
+      ]
+    },
+    "where": {
+      "answer": "coral reef",
+      "accepted": [
+        "coral reef",
+        "reef",
+        "coral",
+        "under the sea",
+        "ocean floor"
+      ],
+      "hot": [
+        "ocean",
+        "sea",
+        "sea floor",
+        "underwater",
+        "aquarium"
+      ],
+      "warm": [
+        "water",
+        "fish",
+        "seaweed",
+        "beach",
+        "deep",
+        "tropical"
+      ]
+    },
+    "style": {
+      "answer": "paper cutout",
+      "accepted": [
+        "paper cutout",
+        "paper cut",
+        "papercut",
+        "paper art",
+        "cut paper",
+        "layered paper"
+      ],
+      "hot": [
+        "papercraft",
+        "origami",
+        "collage",
+        "paper",
+        "craft",
+        "shadow box"
+      ],
+      "warm": [
+        "layers",
+        "handmade",
+        "scissors",
+        "3d",
+        "kids",
+        "crafty"
+      ]
+    }
+  }
+}

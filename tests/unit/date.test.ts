@@ -79,9 +79,9 @@ describe("msUntilLocalMidnight", () => {
 });
 
 describe("weekday difficulty", () => {
-  it("launch day, Sunday Oct 4 2026, is difficulty 1", () => {
-    expect(weekday("2026-10-04")).toBe(0);
-    expect(expectedDifficulty("2026-10-04")).toBe(1);
+  it("launch day, Sunday Oct 11 2026, is difficulty 1", () => {
+    expect(weekday("2026-10-11")).toBe(0);
+    expect(expectedDifficulty("2026-10-11")).toBe(1);
   });
 
   it("follows the Sun..Sat curve", () => {

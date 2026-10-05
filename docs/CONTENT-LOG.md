@@ -20,3 +20,10 @@ Notes:
 - Single-word styles for niche art movements ("cubism") drift toward generic painting. Template v2 idea: "in the style of X, <one visual trait of X>", e.g. "in the style of cubism, geometric fragmented shapes".
 - Decision: keep 16:9. A square crop cut clues at the edges (#3, #7, #9, #20, #23). The game card is now 16:9.
 - File mix-up: the zip's 0025 was #26's image. Renamed. #25 is still missing.
+
+## 2026-10-05: Reschedule and puzzles 34 to 60
+
+- Launch moved from Oct 4 to Sunday Oct 11. Every publishDate moved +7 days, so weekday difficulty is unchanged. Puzzle 60 is now Dec 9.
+- Puzzles 34 to 60 written in three batches (content/raw/batch-04 to 06): 0 validator errors. Two HOT words removed because typo tolerance would have scored them SOLVED ("toasting" vs "roasting" in #44, vs "tasting" in #56).
+- New style in rotation: renaissance painting (#42, a Saturday).
+- Prompt template v2 applied to the two image redos: #14 adds "geometric fragmented shapes" to cubism, #24 asks for "benches and dumbbell racks" so the gym is visible.

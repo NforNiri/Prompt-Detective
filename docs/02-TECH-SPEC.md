@@ -184,7 +184,7 @@ SUPABASE_SERVICE_ROLE_KEY=
 IP_HASH_SALT=
 NEXT_PUBLIC_POSTHOG_KEY=
 NEXT_PUBLIC_POSTHOG_HOST=
-NEXT_PUBLIC_LAUNCH_DATE=2026-10-04   # puzzle #1 date, used for display only
+NEXT_PUBLIC_LAUNCH_DATE=2026-10-11   # puzzle #1 date, used for display only
 NEXT_PUBLIC_DEV_TODAY=               # development only: pin the app date (YYYY-MM-DD) to play pre-launch puzzles; ignored in production builds
 ```
 

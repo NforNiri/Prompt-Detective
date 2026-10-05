@@ -1,0 +1,108 @@
+{
+  "id": 47,
+  "publishDate": "2026-11-26",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a peacock spreading its feathers in a palace garden, mosaic, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "peacock",
+      "accepted": [
+        "peacock",
+        "peafowl",
+        "peahen"
+      ],
+      "hot": [
+        "turkey",
+        "pheasant",
+        "parrot",
+        "flamingo",
+        "ostrich"
+      ],
+      "warm": [
+        "bird",
+        "animal",
+        "feathers",
+        "colorful",
+        "chicken",
+        "fowl"
+      ]
+    },
+    "doing": {
+      "answer": "spreading its feathers",
+      "accepted": [
+        "spreading its feathers",
+        "showing off",
+        "displaying feathers",
+        "fanning its tail",
+        "spreading feathers",
+        "displaying"
+      ],
+      "hot": [
+        "posing",
+        "strutting",
+        "dancing",
+        "preening",
+        "flapping"
+      ],
+      "warm": [
+        "standing",
+        "walking",
+        "flying",
+        "looking",
+        "feathers",
+        "proud"
+      ]
+    },
+    "where": {
+      "answer": "palace garden",
+      "accepted": [
+        "palace garden",
+        "garden",
+        "royal garden",
+        "courtyard",
+        "palace"
+      ],
+      "hot": [
+        "park",
+        "temple",
+        "fountain",
+        "castle",
+        "zoo"
+      ],
+      "warm": [
+        "flowers",
+        "outdoors",
+        "india",
+        "trees",
+        "path",
+        "grass"
+      ]
+    },
+    "style": {
+      "answer": "mosaic",
+      "accepted": [
+        "mosaic",
+        "tile mosaic",
+        "roman mosaic",
+        "tiles",
+        "tile art"
+      ],
+      "hot": [
+        "stained glass",
+        "pixel art",
+        "ceramic",
+        "pottery",
+        "fresco"
+      ],
+      "warm": [
+        "ancient",
+        "roman",
+        "greek",
+        "stone",
+        "pattern",
+        "colorful"
+      ]
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "id": 41,
+  "publishDate": "2026-11-20",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a cowboy riding a horse through a desert at sunset, synthwave, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "cowboy",
+      "accepted": [
+        "cowboy",
+        "cowgirl",
+        "rancher",
+        "wrangler",
+        "horseman"
+      ],
+      "hot": [
+        "sheriff",
+        "farmer",
+        "outlaw",
+        "rider",
+        "bandit"
+      ],
+      "warm": [
+        "man",
+        "western",
+        "person",
+        "hat",
+        "hero",
+        "traveler"
+      ]
+    },
+    "doing": {
+      "answer": "riding a horse",
+      "accepted": [
+        "riding a horse",
+        "horseback riding",
+        "riding",
+        "galloping",
+        "horse riding"
+      ],
+      "hot": [
+        "horse",
+        "racing",
+        "trotting",
+        "driving"
+      ],
+      "warm": [
+        "moving",
+        "running",
+        "traveling",
+        "sitting",
+        "jumping",
+        "exploring"
+      ]
+    },
+    "where": {
+      "answer": "desert",
+      "accepted": [
+        "desert",
+        "wild west",
+        "badlands",
+        "desert road"
+      ],
+      "hot": [
+        "canyon",
+        "prairie",
+        "mesa",
+        "highway",
+        "valley"
+      ],
+      "warm": [
+        "sand",
+        "sunset",
+        "mountains",
+        "dunes",
+        "road",
+        "west"
+      ]
+    },
+    "style": {
+      "answer": "synthwave",
+      "accepted": [
+        "synthwave",
+        "retrowave",
+        "outrun",
+        "synth wave",
+        "80s",
+        "neon 80s"
+      ],
+      "hot": [
+        "vaporwave",
+        "neon",
+        "cyberpunk",
+        "80s retro",
+        "retro",
+        "miami"
+      ],
+      "warm": [
+        "purple",
+        "synth",
+        "electronic",
+        "sunset",
+        "vintage",
+        "music",
+        "futuristic"
+      ]
+    }
+  }
+}

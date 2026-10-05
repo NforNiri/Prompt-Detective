@@ -1,0 +1,109 @@
+{
+  "id": 52,
+  "publishDate": "2026-12-01",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a carpenter building a chair in a woodshop, pencil sketch, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "carpenter",
+      "accepted": [
+        "carpenter",
+        "woodworker",
+        "craftsman",
+        "joiner"
+      ],
+      "hot": [
+        "builder",
+        "blacksmith",
+        "worker",
+        "lumberjack",
+        "handyman"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "beard",
+        "apron",
+        "tools",
+        "artisan"
+      ]
+    },
+    "doing": {
+      "answer": "building a chair",
+      "accepted": [
+        "building a chair",
+        "woodworking",
+        "making a chair",
+        "building",
+        "sawing"
+      ],
+      "hot": [
+        "hammering",
+        "sanding",
+        "crafting",
+        "carving",
+        "fixing"
+      ],
+      "warm": [
+        "working",
+        "measuring",
+        "cutting",
+        "wood",
+        "furniture",
+        "tools"
+      ]
+    },
+    "where": {
+      "answer": "woodshop",
+      "accepted": [
+        "woodshop",
+        "workshop",
+        "carpentry workshop",
+        "wood shop",
+        "carpentry shop"
+      ],
+      "hot": [
+        "garage",
+        "shed",
+        "barn",
+        "factory",
+        "studio"
+      ],
+      "warm": [
+        "room",
+        "indoors",
+        "house",
+        "sawdust",
+        "bench",
+        "basement"
+      ]
+    },
+    "style": {
+      "answer": "pencil sketch",
+      "accepted": [
+        "pencil sketch",
+        "sketch",
+        "pencil",
+        "pencil drawing",
+        "graphite",
+        "sketching"
+      ],
+      "hot": [
+        "drawing",
+        "charcoal",
+        "line art",
+        "ink drawing",
+        "doodle"
+      ],
+      "warm": [
+        "art",
+        "black and white",
+        "paper",
+        "hand drawn",
+        "grey",
+        "rough"
+      ]
+    }
+  }
+}

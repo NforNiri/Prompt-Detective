@@ -1,0 +1,767 @@
+[
+  {
+    "id": 54,
+    "publishDate": "2026-12-03",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a shepherd herding sheep on a hillside, oil painting, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "shepherd",
+        "accepted": [
+          "shepherd",
+          "shepherdess",
+          "herder",
+          "sheepherder",
+          "sheep farmer"
+        ],
+        "hot": [
+          "farmer",
+          "rancher",
+          "cowboy",
+          "goatherd",
+          "monk"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "peasant",
+          "staff",
+          "villager",
+          "traveler"
+        ]
+      },
+      "doing": {
+        "answer": "herding sheep",
+        "accepted": [
+          "herding sheep",
+          "herding",
+          "tending sheep",
+          "guiding sheep",
+          "leading sheep",
+          "watching sheep"
+        ],
+        "hot": [
+          "walking",
+          "farming",
+          "sheep",
+          "guiding",
+          "flock"
+        ],
+        "warm": [
+          "standing",
+          "resting",
+          "animals",
+          "grazing",
+          "counting",
+          "looking"
+        ]
+      },
+      "where": {
+        "answer": "hillside",
+        "accepted": [
+          "hillside",
+          "hill",
+          "rolling hills",
+          "green hills",
+          "slope"
+        ],
+        "hot": [
+          "meadow",
+          "pasture",
+          "field",
+          "mountain",
+          "valley"
+        ],
+        "warm": [
+          "countryside",
+          "grass",
+          "farm",
+          "nature",
+          "outdoors",
+          "sky"
+        ]
+      },
+      "style": {
+        "answer": "oil painting",
+        "accepted": [
+          "oil painting",
+          "oil",
+          "oil on canvas",
+          "oil paint"
+        ],
+        "hot": [
+          "painting",
+          "acrylic",
+          "classical painting",
+          "renaissance",
+          "canvas"
+        ],
+        "warm": [
+          "paint",
+          "art",
+          "realism",
+          "classic",
+          "brushstrokes",
+          "museum",
+          "old master"
+        ]
+      }
+    }
+  },
+  {
+    "id": 55,
+    "publishDate": "2026-12-04",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a black cat walking along a rooftop at night, film noir, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "black cat",
+        "accepted": [
+          "black cat",
+          "cat",
+          "kitty",
+          "alley cat",
+          "stray cat",
+          "tomcat"
+        ],
+        "hot": [
+          "panther",
+          "kitten",
+          "dog",
+          "raccoon",
+          "rat"
+        ],
+        "warm": [
+          "animal",
+          "pet",
+          "shadow",
+          "night",
+          "mammal",
+          "creature"
+        ]
+      },
+      "doing": {
+        "answer": "walking",
+        "accepted": [
+          "walking",
+          "prowling",
+          "sneaking",
+          "creeping",
+          "strolling",
+          "stalking"
+        ],
+        "hot": [
+          "running",
+          "jumping",
+          "climbing",
+          "balancing",
+          "hunting"
+        ],
+        "warm": [
+          "sitting",
+          "looking",
+          "watching",
+          "moving",
+          "exploring",
+          "hiding"
+        ]
+      },
+      "where": {
+        "answer": "rooftop",
+        "accepted": [
+          "rooftop",
+          "roof",
+          "rooftops",
+          "city rooftop",
+          "roof top"
+        ],
+        "hot": [
+          "chimney",
+          "alley",
+          "fire escape",
+          "balcony",
+          "city"
+        ],
+        "warm": [
+          "night",
+          "building",
+          "moon",
+          "sky",
+          "street",
+          "town"
+        ]
+      },
+      "style": {
+        "answer": "film noir",
+        "accepted": [
+          "film noir",
+          "noir",
+          "noir film",
+          "noir movie",
+          "neo noir"
+        ],
+        "hot": [
+          "black and white",
+          "monochrome",
+          "old movie",
+          "detective movie",
+          "1940s"
+        ],
+        "warm": [
+          "movie",
+          "film",
+          "dark",
+          "shadows",
+          "vintage",
+          "cinematic"
+        ]
+      }
+    }
+  },
+  {
+    "id": 56,
+    "publishDate": "2026-12-05",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a sommelier tasting wine in a wine cellar, pointillism, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "sommelier",
+        "accepted": [
+          "sommelier",
+          "wine expert",
+          "wine taster",
+          "connoisseur"
+        ],
+        "hot": [
+          "winemaker",
+          "waiter",
+          "butler",
+          "chef",
+          "bartender"
+        ],
+        "warm": [
+          "man",
+          "gentleman",
+          "person",
+          "expert",
+          "critic",
+          "french"
+        ]
+      },
+      "doing": {
+        "answer": "tasting wine",
+        "accepted": [
+          "tasting wine",
+          "wine tasting",
+          "drinking wine",
+          "sipping wine",
+          "tasting",
+          "sniffing wine"
+        ],
+        "hot": [
+          "drinking",
+          "sipping",
+          "smelling",
+          "swirling"
+        ],
+        "warm": [
+          "holding a glass",
+          "standing",
+          "enjoying",
+          "glass",
+          "alcohol",
+          "celebrating"
+        ]
+      },
+      "where": {
+        "answer": "wine cellar",
+        "accepted": [
+          "wine cellar",
+          "cellar",
+          "winery",
+          "basement"
+        ],
+        "hot": [
+          "vineyard",
+          "bar",
+          "restaurant",
+          "cave",
+          "dungeon"
+        ],
+        "warm": [
+          "bottles",
+          "barrels",
+          "underground",
+          "room",
+          "dark",
+          "france"
+        ]
+      },
+      "style": {
+        "answer": "pointillism",
+        "accepted": [
+          "pointillism",
+          "pointillist",
+          "dots",
+          "dot painting",
+          "seurat",
+          "stippling"
+        ],
+        "hot": [
+          "impressionism",
+          "dotted",
+          "pixel art",
+          "post impressionism",
+          "mosaic"
+        ],
+        "warm": [
+          "painting",
+          "colorful",
+          "art",
+          "french",
+          "classic",
+          "points"
+        ]
+      }
+    }
+  },
+  {
+    "id": 57,
+    "publishDate": "2026-12-06",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a giraffe eating leaves in the savanna, photograph, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "giraffe",
+        "accepted": [
+          "giraffe",
+          "baby giraffe",
+          "reticulated giraffe"
+        ],
+        "hot": [
+          "okapi",
+          "camel",
+          "llama",
+          "deer",
+          "zebra"
+        ],
+        "warm": [
+          "animal",
+          "mammal",
+          "tall",
+          "africa",
+          "safari",
+          "spots"
+        ]
+      },
+      "doing": {
+        "answer": "eating leaves",
+        "accepted": [
+          "eating leaves",
+          "eating",
+          "grazing",
+          "browsing",
+          "feeding",
+          "munching"
+        ],
+        "hot": [
+          "chewing",
+          "reaching",
+          "stretching",
+          "licking",
+          "nibbling"
+        ],
+        "warm": [
+          "standing",
+          "walking",
+          "food",
+          "hungry",
+          "tree",
+          "leaves"
+        ]
+      },
+      "where": {
+        "answer": "savanna",
+        "accepted": [
+          "savanna",
+          "savannah",
+          "grassland",
+          "plains",
+          "african savanna",
+          "serengeti"
+        ],
+        "hot": [
+          "safari",
+          "desert",
+          "prairie",
+          "zoo",
+          "jungle"
+        ],
+        "warm": [
+          "africa",
+          "grass",
+          "trees",
+          "outdoors",
+          "wild",
+          "nature"
+        ]
+      },
+      "style": {
+        "answer": "photograph",
+        "accepted": [
+          "photograph",
+          "photo",
+          "photography",
+          "realistic",
+          "photorealistic",
+          "close-up photo"
+        ],
+        "hot": [
+          "picture",
+          "camera",
+          "snapshot",
+          "portrait",
+          "close-up"
+        ],
+        "warm": [
+          "real life",
+          "natural",
+          "hd",
+          "macro",
+          "detailed",
+          "sharp"
+        ]
+      }
+    }
+  },
+  {
+    "id": 58,
+    "publishDate": "2026-12-07",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a submarine exploring a coral reef, paper cutout, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "submarine",
+        "accepted": [
+          "submarine",
+          "sub",
+          "submersible",
+          "mini submarine"
+        ],
+        "hot": [
+          "boat",
+          "ship",
+          "diver",
+          "robot",
+          "torpedo"
+        ],
+        "warm": [
+          "vehicle",
+          "machine",
+          "ocean",
+          "underwater",
+          "yellow",
+          "metal"
+        ]
+      },
+      "doing": {
+        "answer": "exploring",
+        "accepted": [
+          "exploring",
+          "diving",
+          "searching",
+          "exploring the reef",
+          "discovering"
+        ],
+        "hot": [
+          "swimming",
+          "floating",
+          "sailing",
+          "traveling",
+          "scanning"
+        ],
+        "warm": [
+          "moving",
+          "looking",
+          "adventure",
+          "hiding",
+          "sinking",
+          "cruising"
+        ]
+      },
+      "where": {
+        "answer": "coral reef",
+        "accepted": [
+          "coral reef",
+          "reef",
+          "coral",
+          "under the sea",
+          "ocean floor"
+        ],
+        "hot": [
+          "ocean",
+          "sea",
+          "sea floor",
+          "underwater",
+          "aquarium"
+        ],
+        "warm": [
+          "water",
+          "fish",
+          "seaweed",
+          "beach",
+          "deep",
+          "tropical"
+        ]
+      },
+      "style": {
+        "answer": "paper cutout",
+        "accepted": [
+          "paper cutout",
+          "paper cut",
+          "papercut",
+          "paper art",
+          "cut paper",
+          "layered paper"
+        ],
+        "hot": [
+          "papercraft",
+          "origami",
+          "collage",
+          "paper",
+          "craft",
+          "shadow box"
+        ],
+        "warm": [
+          "layers",
+          "handmade",
+          "scissors",
+          "3d",
+          "kids",
+          "crafty"
+        ]
+      }
+    }
+  },
+  {
+    "id": 59,
+    "publishDate": "2026-12-08",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a scientist mixing chemicals in a laboratory, comic book, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "scientist",
+        "accepted": [
+          "scientist",
+          "chemist",
+          "mad scientist",
+          "researcher"
+        ],
+        "hot": [
+          "professor",
+          "doctor",
+          "inventor",
+          "alchemist",
+          "teacher"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "genius",
+          "glasses",
+          "lab coat",
+          "nerd"
+        ]
+      },
+      "doing": {
+        "answer": "mixing chemicals",
+        "accepted": [
+          "mixing chemicals",
+          "mixing",
+          "experimenting",
+          "doing an experiment",
+          "pouring chemicals",
+          "chemistry"
+        ],
+        "hot": [
+          "pouring",
+          "brewing",
+          "potion",
+          "testing",
+          "boiling"
+        ],
+        "warm": [
+          "working",
+          "holding",
+          "science",
+          "explosion",
+          "studying",
+          "inventing"
+        ]
+      },
+      "where": {
+        "answer": "laboratory",
+        "accepted": [
+          "laboratory",
+          "lab",
+          "science lab",
+          "chemistry lab",
+          "research lab"
+        ],
+        "hot": [
+          "classroom",
+          "hospital",
+          "factory",
+          "kitchen",
+          "workshop"
+        ],
+        "warm": [
+          "school",
+          "room",
+          "building",
+          "university",
+          "indoors",
+          "office"
+        ]
+      },
+      "style": {
+        "answer": "comic book",
+        "accepted": [
+          "comic book",
+          "comic",
+          "graphic novel",
+          "comic art",
+          "comic book art"
+        ],
+        "hot": [
+          "cartoon",
+          "pop art",
+          "manga",
+          "superhero",
+          "illustration"
+        ],
+        "warm": [
+          "drawing",
+          "ink",
+          "bold",
+          "halftone",
+          "retro",
+          "panel"
+        ]
+      }
+    }
+  },
+  {
+    "id": 60,
+    "publishDate": "2026-12-09",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a snowman building a sandcastle on a beach, claymation, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "snowman",
+        "accepted": [
+          "snowman",
+          "snow man"
+        ],
+        "hot": [
+          "snowball",
+          "yeti",
+          "penguin",
+          "ice sculpture",
+          "doll"
+        ],
+        "warm": [
+          "winter",
+          "snow",
+          "christmas",
+          "toy",
+          "figure",
+          "cold"
+        ]
+      },
+      "doing": {
+        "answer": "building a sandcastle",
+        "accepted": [
+          "building a sandcastle",
+          "building",
+          "making a sandcastle",
+          "sandcastle",
+          "building sandcastles"
+        ],
+        "hot": [
+          "digging",
+          "playing",
+          "sculpting",
+          "shoveling",
+          "constructing"
+        ],
+        "warm": [
+          "sitting",
+          "working",
+          "sand",
+          "bucket",
+          "summer",
+          "crafting"
+        ]
+      },
+      "where": {
+        "answer": "beach",
+        "accepted": [
+          "beach",
+          "seashore",
+          "shore",
+          "seaside",
+          "coast"
+        ],
+        "hot": [
+          "sand",
+          "ocean",
+          "sea",
+          "island",
+          "desert"
+        ],
+        "warm": [
+          "water",
+          "summer",
+          "sun",
+          "vacation",
+          "waves",
+          "tropical"
+        ]
+      },
+      "style": {
+        "answer": "claymation",
+        "accepted": [
+          "claymation",
+          "clay",
+          "clay animation",
+          "stop motion",
+          "plasticine",
+          "clay model"
+        ],
+        "hot": [
+          "animation",
+          "puppet",
+          "3d",
+          "sculpture",
+          "toy"
+        ],
+        "warm": [
+          "cartoon",
+          "handmade",
+          "cute",
+          "model",
+          "figurine",
+          "kids"
+        ]
+      }
+    }
+  }
+]

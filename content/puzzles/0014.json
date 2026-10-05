@@ -1,9 +1,9 @@
 {
   "id": 14,
-  "publishDate": "2026-10-17",
+  "publishDate": "2026-10-24",
   "difficulty": 5,
   "locale": "en",
-  "prompt": "a blacksmith forging a sword in a forge, cubism, no text, no letters, no watermark",
+  "prompt": "a blacksmith forging a sword in a forge, cubism, geometric fragmented shapes, no text, no letters, no watermark",
   "slots": {
     "who": {
       "answer": "blacksmith",

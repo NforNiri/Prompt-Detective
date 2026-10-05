@@ -1,6 +1,8 @@
 # Prompt Detective: 7-Day Runbook
 
-Calendar: Day 1 = Sunday Sep 27, 2026. Day 7 = Saturday Oct 3. Puzzle #1 goes live Sunday Oct 4 (difficulty 1, the easiest day, which suits launch day).
+Calendar (rescheduled 2026-10-05): launch moved to **Sunday Oct 11**. Every puzzle date moved +7 days, so weekdays and difficulty are unchanged. Days 1 to 4 ran Sep 24 to Oct 5; Days 5 to 7 run Oct 6 to Oct 10.
+
+Original plan: Day 1 = Sunday Sep 27, 2026. Day 7 = Saturday Oct 3. Puzzle #1 goes live Sunday Oct 4 (difficulty 1, the easiest day, which suits launch day).
 Load: about 5 hours per day. Each day lists HUMAN tasks (you), CLAUDE CODE sessions (paste the prompt), and ACCEPTANCE criteria. Don't start the next day until today's acceptance criteria pass. If a day slips, cut from that day's "stretch" line, never from launch.
 
 ---

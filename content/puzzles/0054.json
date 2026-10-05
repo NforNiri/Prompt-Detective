@@ -1,0 +1,110 @@
+{
+  "id": 54,
+  "publishDate": "2026-12-03",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a shepherd herding sheep on a hillside, oil painting, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "shepherd",
+      "accepted": [
+        "shepherd",
+        "shepherdess",
+        "herder",
+        "sheepherder",
+        "sheep farmer"
+      ],
+      "hot": [
+        "farmer",
+        "rancher",
+        "cowboy",
+        "goatherd",
+        "monk"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "peasant",
+        "staff",
+        "villager",
+        "traveler"
+      ]
+    },
+    "doing": {
+      "answer": "herding sheep",
+      "accepted": [
+        "herding sheep",
+        "herding",
+        "tending sheep",
+        "guiding sheep",
+        "leading sheep",
+        "watching sheep"
+      ],
+      "hot": [
+        "walking",
+        "farming",
+        "sheep",
+        "guiding",
+        "flock"
+      ],
+      "warm": [
+        "standing",
+        "resting",
+        "animals",
+        "grazing",
+        "counting",
+        "looking"
+      ]
+    },
+    "where": {
+      "answer": "hillside",
+      "accepted": [
+        "hillside",
+        "hill",
+        "rolling hills",
+        "green hills",
+        "slope"
+      ],
+      "hot": [
+        "meadow",
+        "pasture",
+        "field",
+        "mountain",
+        "valley"
+      ],
+      "warm": [
+        "countryside",
+        "grass",
+        "farm",
+        "nature",
+        "outdoors",
+        "sky"
+      ]
+    },
+    "style": {
+      "answer": "oil painting",
+      "accepted": [
+        "oil painting",
+        "oil",
+        "oil on canvas",
+        "oil paint"
+      ],
+      "hot": [
+        "painting",
+        "acrylic",
+        "classical painting",
+        "renaissance",
+        "canvas"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "realism",
+        "classic",
+        "brushstrokes",
+        "museum",
+        "old master"
+      ]
+    }
+  }
+}

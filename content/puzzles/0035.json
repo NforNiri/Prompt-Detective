@@ -1,0 +1,104 @@
+{
+  "id": 35,
+  "publishDate": "2026-11-14",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a florist arranging a bouquet in a greenhouse, art nouveau, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "florist",
+      "accepted": [
+        "florist",
+        "flower seller",
+        "flower arranger"
+      ],
+      "hot": [
+        "gardener",
+        "botanist",
+        "farmer",
+        "shopkeeper"
+      ],
+      "warm": [
+        "woman",
+        "lady",
+        "person",
+        "worker",
+        "girl",
+        "seller"
+      ]
+    },
+    "doing": {
+      "answer": "arranging a bouquet",
+      "accepted": [
+        "arranging a bouquet",
+        "arranging flowers",
+        "making a bouquet",
+        "flower arranging",
+        "arranging"
+      ],
+      "hot": [
+        "holding flowers",
+        "holding a bouquet",
+        "picking flowers",
+        "gardening",
+        "cutting flowers"
+      ],
+      "warm": [
+        "working",
+        "smelling",
+        "watering",
+        "flowers",
+        "bouquet",
+        "crafting"
+      ]
+    },
+    "where": {
+      "answer": "greenhouse",
+      "accepted": [
+        "greenhouse",
+        "glasshouse",
+        "conservatory",
+        "hothouse"
+      ],
+      "hot": [
+        "garden",
+        "flower shop",
+        "nursery",
+        "botanical garden"
+      ],
+      "warm": [
+        "plants",
+        "flowers",
+        "indoors",
+        "shop",
+        "farm",
+        "glass"
+      ]
+    },
+    "style": {
+      "answer": "art nouveau",
+      "accepted": [
+        "art nouveau",
+        "nouveau",
+        "mucha",
+        "jugendstil"
+      ],
+      "hot": [
+        "art deco",
+        "poster",
+        "decorative",
+        "victorian",
+        "vintage poster"
+      ],
+      "warm": [
+        "vintage",
+        "ornate",
+        "floral",
+        "illustration",
+        "elegant",
+        "retro",
+        "old"
+      ]
+    }
+  }
+}

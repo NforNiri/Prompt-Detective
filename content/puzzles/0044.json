@@ -1,0 +1,110 @@
+{
+  "id": 44,
+  "publishDate": "2026-11-23",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a dragon roasting marshmallows at a campfire, crayon drawing, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "dragon",
+      "accepted": [
+        "dragon",
+        "baby dragon",
+        "little dragon",
+        "wyvern"
+      ],
+      "hot": [
+        "dinosaur",
+        "lizard",
+        "monster",
+        "serpent",
+        "crocodile"
+      ],
+      "warm": [
+        "creature",
+        "animal",
+        "fantasy",
+        "beast",
+        "reptile",
+        "myth"
+      ]
+    },
+    "doing": {
+      "answer": "roasting marshmallows",
+      "accepted": [
+        "roasting marshmallows",
+        "roasting",
+        "toasting marshmallows",
+        "cooking marshmallows",
+        "marshmallows"
+      ],
+      "hot": [
+        "breathing fire",
+        "cooking",
+        "camping",
+        "grilling"
+      ],
+      "warm": [
+        "eating",
+        "sitting",
+        "relaxing",
+        "snack",
+        "food",
+        "fire"
+      ]
+    },
+    "where": {
+      "answer": "campfire",
+      "accepted": [
+        "campfire",
+        "camp fire",
+        "campsite",
+        "camping",
+        "bonfire",
+        "fire pit"
+      ],
+      "hot": [
+        "forest",
+        "woods",
+        "tent",
+        "fireplace",
+        "camp"
+      ],
+      "warm": [
+        "night",
+        "outdoors",
+        "nature",
+        "stars",
+        "fire",
+        "trees"
+      ]
+    },
+    "style": {
+      "answer": "crayon drawing",
+      "accepted": [
+        "crayon drawing",
+        "crayon",
+        "kids drawing",
+        "childrens drawing",
+        "child's drawing",
+        "children's drawing"
+      ],
+      "hot": [
+        "drawing",
+        "colored pencil",
+        "pastel",
+        "doodle",
+        "finger painting",
+        "chalk"
+      ],
+      "warm": [
+        "kids",
+        "childish",
+        "art",
+        "colorful",
+        "simple",
+        "scribble"
+      ]
+    }
+  }
+}

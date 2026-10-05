@@ -1,0 +1,106 @@
+{
+  "id": 49,
+  "publishDate": "2026-11-28",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a juggler juggling balls at a circus, bauhaus, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "juggler",
+      "accepted": [
+        "juggler",
+        "circus performer",
+        "performer",
+        "street performer"
+      ],
+      "hot": [
+        "clown",
+        "acrobat",
+        "magician",
+        "jester",
+        "entertainer"
+      ],
+      "warm": [
+        "man",
+        "artist",
+        "person",
+        "circus",
+        "show",
+        "act"
+      ]
+    },
+    "doing": {
+      "answer": "juggling",
+      "accepted": [
+        "juggling",
+        "juggling balls",
+        "tossing balls",
+        "juggle"
+      ],
+      "hot": [
+        "throwing",
+        "catching",
+        "balancing",
+        "performing",
+        "playing ball"
+      ],
+      "warm": [
+        "playing",
+        "tricks",
+        "balls",
+        "dancing",
+        "standing",
+        "show"
+      ]
+    },
+    "where": {
+      "answer": "circus",
+      "accepted": [
+        "circus",
+        "circus tent",
+        "big top",
+        "circus ring"
+      ],
+      "hot": [
+        "carnival",
+        "stage",
+        "theater",
+        "fair",
+        "arena"
+      ],
+      "warm": [
+        "tent",
+        "show",
+        "crowd",
+        "audience",
+        "festival",
+        "spotlight"
+      ]
+    },
+    "style": {
+      "answer": "bauhaus",
+      "accepted": [
+        "bauhaus",
+        "bauhaus style",
+        "bauhaus design"
+      ],
+      "hot": [
+        "geometric",
+        "modernism",
+        "constructivism",
+        "minimalism",
+        "mid century",
+        "de stijl"
+      ],
+      "warm": [
+        "abstract",
+        "shapes",
+        "poster",
+        "modern",
+        "german",
+        "primary colors",
+        "circles"
+      ]
+    }
+  }
+}

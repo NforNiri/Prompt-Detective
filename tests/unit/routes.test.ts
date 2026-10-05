@@ -48,7 +48,7 @@ function post(handler: (r: Request) => Promise<Response>, body: unknown, raw?: s
 function guess(overrides: Record<string, unknown> = {}) {
   return post(postGuess, {
     puzzleId: 1,
-    date: "2026-10-04",
+    date: "2026-10-11",
     slot: "who",
     guess: "dog",
     deviceId: DEVICE_ID,
@@ -59,7 +59,7 @@ function guess(overrides: Record<string, unknown> = {}) {
 
 beforeEach(() => {
   vi.useFakeTimers({ toFake: ["Date"] });
-  vi.setSystemTime(new Date("2026-10-04T10:00:00Z"));
+  vi.setSystemTime(new Date("2026-10-11T10:00:00Z"));
   vi.stubEnv("SUPABASE_URL", SUPABASE_URL);
   vi.stubEnv("IP_HASH_SALT", "test-salt");
   vi.spyOn(console, "info").mockImplementation(() => {});
@@ -77,11 +77,11 @@ afterEach(() => {
 
 describe("GET /api/puzzle", () => {
   it("returns public puzzle data", async () => {
-    const res = await get("?date=2026-10-04");
+    const res = await get("?date=2026-10-11");
     expect(res.status).toBe(200);
     expect(await res.json()).toEqual({
       id: 1,
-      date: "2026-10-04",
+      date: "2026-10-11",
       imageUrl: `${SUPABASE_URL}/storage/v1/object/public/puzzles/3f0c9a1e-5b7d-4c2a-9e8f-1a2b3c4d5e6f.webp`,
       difficulty: 1,
       slots: ["who", "doing", "where", "style"],
@@ -90,7 +90,7 @@ describe("GET /api/puzzle", () => {
   });
 
   it("never contains answers, and never reads them", async () => {
-    const text = await (await get("?date=2026-10-04")).text();
+    const text = await (await get("?date=2026-10-11")).text();
     const tierWords = SLOT_KEYS.flatMap((k) => {
       const s = puzzle1.slots[k];
       return [s.answer, ...s.accepted, ...s.hot, ...s.warm];
@@ -113,7 +113,7 @@ describe("GET /api/puzzle", () => {
   });
 
   it("blocks future dates outside the window", async () => {
-    const res = await get("?date=2026-10-06");
+    const res = await get("?date=2026-10-13");
     expect(res.status).toBe(400);
     expect(await res.json()).toEqual({
       error: { code: "date_out_of_window", message: expect.any(String) },
@@ -121,14 +121,14 @@ describe("GET /api/puzzle", () => {
   });
 
   it("returns 404 when no puzzle exists for the date", async () => {
-    const res = await get("?date=2026-10-05");
+    const res = await get("?date=2026-10-12");
     expect(res.status).toBe(404);
     expect((await res.json()).error.code).toBe("not_found");
   });
 
   it("returns a generic 500 when the database fails", async () => {
     fake.failWith = "connection refused";
-    const res = await get("?date=2026-10-04");
+    const res = await get("?date=2026-10-11");
     expect(res.status).toBe(500);
     const body = await res.json();
     expect(body.error.code).toBe("internal");
@@ -193,7 +193,7 @@ describe("POST /api/guess", () => {
   });
 
   it("blocks a future date", async () => {
-    const res = await guess({ date: "2026-10-07" });
+    const res = await guess({ date: "2026-10-14" });
     expect(res.status).toBe(400);
     expect((await res.json()).error.code).toBe("date_out_of_window");
   });
@@ -206,7 +206,7 @@ describe("POST /api/guess", () => {
 
   it(`rate limits after ${GUESS_RATE_LIMIT} guesses per minute per IP`, async () => {
     const ipHash = hashIp(IP);
-    const recent = new Date("2026-10-04T09:59:30Z").toISOString();
+    const recent = new Date("2026-10-11T09:59:30Z").toISOString();
     fake.tables.guess_log = Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: ipHash, created_at: recent }));
 
     const res = await guess();
@@ -217,8 +217,8 @@ describe("POST /api/guess", () => {
   });
 
   it("ignores guesses older than a minute and other IPs for the rate limit", async () => {
-    const old = new Date("2026-10-04T09:58:00Z").toISOString();
-    const recent = new Date("2026-10-04T09:59:30Z").toISOString();
+    const old = new Date("2026-10-11T09:58:00Z").toISOString();
+    const recent = new Date("2026-10-11T09:59:30Z").toISOString();
     fake.tables.guess_log = [
       ...Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: hashIp(IP), created_at: old })),
       ...Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: hashIp("198.51.100.1"), created_at: recent })),
@@ -229,19 +229,19 @@ describe("POST /api/guess", () => {
 
 describe("POST /api/hint", () => {
   it("returns the first letter of the slot answer", async () => {
-    const res = await post(postHint, { puzzleId: 1, date: "2026-10-04", slot: "style", deviceId: DEVICE_ID });
+    const res = await post(postHint, { puzzleId: 1, date: "2026-10-11", slot: "style", deviceId: DEVICE_ID });
     expect(await res.json()).toEqual({ firstLetter: "w" });
   });
 
   it("returns 404 for a date without a puzzle", async () => {
-    const res = await post(postHint, { puzzleId: 1, date: "2026-10-03", slot: "who", deviceId: DEVICE_ID });
+    const res = await post(postHint, { puzzleId: 1, date: "2026-10-10", slot: "who", deviceId: DEVICE_ID });
     expect(res.status).toBe(404);
   });
 });
 
 describe("POST /api/reveal", () => {
   it("returns the display prompt and all answers", async () => {
-    const res = await post(postReveal, { puzzleId: 1, date: "2026-10-04", deviceId: DEVICE_ID });
+    const res = await post(postReveal, { puzzleId: 1, date: "2026-10-11", deviceId: DEVICE_ID });
     expect(await res.json()).toEqual({
       prompt: "a golden retriever riding a bicycle on a beach at sunset, watercolor painting",
       answers: { who: "golden retriever", doing: "riding a bicycle", where: "beach", style: "watercolor" },
@@ -249,7 +249,7 @@ describe("POST /api/reveal", () => {
   });
 
   it("rejects a missing device id", async () => {
-    const res = await post(postReveal, { puzzleId: 1, date: "2026-10-04" });
+    const res = await post(postReveal, { puzzleId: 1, date: "2026-10-11" });
     expect(res.status).toBe(400);
   });
 });
@@ -267,7 +267,7 @@ describe("request logging", () => {
   });
 
   it("includes the error code on failures", async () => {
-    await get("?date=2026-10-06");
+    await get("?date=2026-10-13");
     const entry = JSON.parse(String(vi.mocked(console.info).mock.calls[0]?.[0]));
     expect(entry).toMatchObject({ route: "puzzle", status: 400, code: "date_out_of_window", puzzleId: null });
   });

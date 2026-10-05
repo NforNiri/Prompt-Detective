@@ -1,0 +1,1087 @@
+[
+  {
+    "id": 44,
+    "publishDate": "2026-11-23",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a dragon roasting marshmallows at a campfire, crayon drawing, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "dragon",
+        "accepted": [
+          "dragon",
+          "baby dragon",
+          "little dragon",
+          "wyvern"
+        ],
+        "hot": [
+          "dinosaur",
+          "lizard",
+          "monster",
+          "serpent",
+          "crocodile"
+        ],
+        "warm": [
+          "creature",
+          "animal",
+          "fantasy",
+          "beast",
+          "reptile",
+          "myth"
+        ]
+      },
+      "doing": {
+        "answer": "roasting marshmallows",
+        "accepted": [
+          "roasting marshmallows",
+          "roasting",
+          "toasting marshmallows",
+          "cooking marshmallows",
+          "marshmallows"
+        ],
+        "hot": [
+          "breathing fire",
+          "cooking",
+          "camping",
+          "grilling"
+        ],
+        "warm": [
+          "eating",
+          "sitting",
+          "relaxing",
+          "snack",
+          "food",
+          "fire"
+        ]
+      },
+      "where": {
+        "answer": "campfire",
+        "accepted": [
+          "campfire",
+          "camp fire",
+          "campsite",
+          "camping",
+          "bonfire",
+          "fire pit"
+        ],
+        "hot": [
+          "forest",
+          "woods",
+          "tent",
+          "fireplace",
+          "camp"
+        ],
+        "warm": [
+          "night",
+          "outdoors",
+          "nature",
+          "stars",
+          "fire",
+          "trees"
+        ]
+      },
+      "style": {
+        "answer": "crayon drawing",
+        "accepted": [
+          "crayon drawing",
+          "crayon",
+          "kids drawing",
+          "childrens drawing",
+          "child's drawing",
+          "children's drawing"
+        ],
+        "hot": [
+          "drawing",
+          "colored pencil",
+          "pastel",
+          "doodle",
+          "finger painting",
+          "chalk"
+        ],
+        "warm": [
+          "kids",
+          "childish",
+          "art",
+          "colorful",
+          "simple",
+          "scribble"
+        ]
+      }
+    }
+  },
+  {
+    "id": 45,
+    "publishDate": "2026-11-24",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a spaceship landing on the moon, chalk drawing, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "spaceship",
+        "accepted": [
+          "spaceship",
+          "rocket",
+          "spacecraft",
+          "rocket ship",
+          "space shuttle",
+          "lander"
+        ],
+        "hot": [
+          "ufo",
+          "satellite",
+          "airplane",
+          "alien ship"
+        ],
+        "warm": [
+          "ship",
+          "machine",
+          "vehicle",
+          "astronaut",
+          "space",
+          "plane"
+        ]
+      },
+      "doing": {
+        "answer": "landing",
+        "accepted": [
+          "landing",
+          "landing on the moon",
+          "touching down",
+          "arriving",
+          "descending"
+        ],
+        "hot": [
+          "flying",
+          "launching",
+          "taking off",
+          "hovering",
+          "falling"
+        ],
+        "warm": [
+          "moving",
+          "exploring",
+          "crashing",
+          "parking",
+          "traveling",
+          "floating"
+        ]
+      },
+      "where": {
+        "answer": "moon",
+        "accepted": [
+          "moon",
+          "lunar surface",
+          "moon surface",
+          "lunar"
+        ],
+        "hot": [
+          "crater",
+          "mars",
+          "planet",
+          "outer space",
+          "asteroid"
+        ],
+        "warm": [
+          "space",
+          "stars",
+          "night",
+          "sky",
+          "galaxy",
+          "earth"
+        ]
+      },
+      "style": {
+        "answer": "chalk drawing",
+        "accepted": [
+          "chalk drawing",
+          "chalk",
+          "chalkboard",
+          "blackboard",
+          "chalk art",
+          "chalk on blackboard"
+        ],
+        "hot": [
+          "pastel",
+          "sidewalk chalk",
+          "crayon",
+          "drawing",
+          "sketch"
+        ],
+        "warm": [
+          "school",
+          "dark",
+          "hand drawn",
+          "art",
+          "dusty",
+          "classroom"
+        ]
+      }
+    }
+  },
+  {
+    "id": 46,
+    "publishDate": "2026-11-25",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a fox running through a snowy forest, low poly, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "fox",
+        "accepted": [
+          "fox",
+          "red fox",
+          "arctic fox",
+          "vixen"
+        ],
+        "hot": [
+          "wolf",
+          "coyote",
+          "dog",
+          "jackal"
+        ],
+        "warm": [
+          "animal",
+          "cat",
+          "mammal",
+          "wildlife",
+          "predator",
+          "creature"
+        ]
+      },
+      "doing": {
+        "answer": "running",
+        "accepted": [
+          "running",
+          "sprinting",
+          "dashing",
+          "racing"
+        ],
+        "hot": [
+          "jumping",
+          "chasing",
+          "hunting",
+          "leaping",
+          "galloping"
+        ],
+        "warm": [
+          "walking",
+          "moving",
+          "playing",
+          "escaping",
+          "exploring",
+          "fast"
+        ]
+      },
+      "where": {
+        "answer": "snowy forest",
+        "accepted": [
+          "snowy forest",
+          "forest",
+          "winter forest",
+          "snowy woods",
+          "woods",
+          "woodland"
+        ],
+        "hot": [
+          "snow",
+          "taiga",
+          "mountain",
+          "tundra",
+          "park"
+        ],
+        "warm": [
+          "winter",
+          "trees",
+          "cold",
+          "nature",
+          "ice",
+          "outdoors"
+        ]
+      },
+      "style": {
+        "answer": "low poly",
+        "accepted": [
+          "low poly",
+          "lowpoly",
+          "low-poly",
+          "polygon",
+          "polygonal",
+          "polygon art"
+        ],
+        "hot": [
+          "geometric",
+          "3d",
+          "3d render",
+          "faceted",
+          "origami",
+          "crystal"
+        ],
+        "warm": [
+          "digital",
+          "shapes",
+          "video game",
+          "computer",
+          "angular",
+          "modern"
+        ]
+      }
+    }
+  },
+  {
+    "id": 47,
+    "publishDate": "2026-11-26",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a peacock spreading its feathers in a palace garden, mosaic, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "peacock",
+        "accepted": [
+          "peacock",
+          "peafowl",
+          "peahen"
+        ],
+        "hot": [
+          "turkey",
+          "pheasant",
+          "parrot",
+          "flamingo",
+          "ostrich"
+        ],
+        "warm": [
+          "bird",
+          "animal",
+          "feathers",
+          "colorful",
+          "chicken",
+          "fowl"
+        ]
+      },
+      "doing": {
+        "answer": "spreading its feathers",
+        "accepted": [
+          "spreading its feathers",
+          "showing off",
+          "displaying feathers",
+          "fanning its tail",
+          "spreading feathers",
+          "displaying"
+        ],
+        "hot": [
+          "posing",
+          "strutting",
+          "dancing",
+          "preening",
+          "flapping"
+        ],
+        "warm": [
+          "standing",
+          "walking",
+          "flying",
+          "looking",
+          "feathers",
+          "proud"
+        ]
+      },
+      "where": {
+        "answer": "palace garden",
+        "accepted": [
+          "palace garden",
+          "garden",
+          "royal garden",
+          "courtyard",
+          "palace"
+        ],
+        "hot": [
+          "park",
+          "temple",
+          "fountain",
+          "castle",
+          "zoo"
+        ],
+        "warm": [
+          "flowers",
+          "outdoors",
+          "india",
+          "trees",
+          "path",
+          "grass"
+        ]
+      },
+      "style": {
+        "answer": "mosaic",
+        "accepted": [
+          "mosaic",
+          "tile mosaic",
+          "roman mosaic",
+          "tiles",
+          "tile art"
+        ],
+        "hot": [
+          "stained glass",
+          "pixel art",
+          "ceramic",
+          "pottery",
+          "fresco"
+        ],
+        "warm": [
+          "ancient",
+          "roman",
+          "greek",
+          "stone",
+          "pattern",
+          "colorful"
+        ]
+      }
+    }
+  },
+  {
+    "id": 48,
+    "publishDate": "2026-11-27",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a jazz singer performing in a nightclub, art deco, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "jazz singer",
+        "accepted": [
+          "jazz singer",
+          "singer",
+          "vocalist",
+          "lounge singer",
+          "diva"
+        ],
+        "hot": [
+          "musician",
+          "performer",
+          "dancer",
+          "actress",
+          "entertainer"
+        ],
+        "warm": [
+          "woman",
+          "lady",
+          "star",
+          "glamour",
+          "artist",
+          "person"
+        ]
+      },
+      "doing": {
+        "answer": "performing",
+        "accepted": [
+          "performing",
+          "singing",
+          "crooning",
+          "singing a song",
+          "holding a microphone",
+          "performing on stage"
+        ],
+        "hot": [
+          "microphone",
+          "talking",
+          "dancing",
+          "humming",
+          "posing"
+        ],
+        "warm": [
+          "music",
+          "standing",
+          "show",
+          "concert",
+          "entertaining",
+          "smiling"
+        ]
+      },
+      "where": {
+        "answer": "nightclub",
+        "accepted": [
+          "nightclub",
+          "jazz club",
+          "club",
+          "lounge",
+          "cabaret",
+          "speakeasy"
+        ],
+        "hot": [
+          "bar",
+          "stage",
+          "theater",
+          "ballroom",
+          "casino"
+        ],
+        "warm": [
+          "night",
+          "music",
+          "party",
+          "restaurant",
+          "hotel",
+          "venue"
+        ]
+      },
+      "style": {
+        "answer": "art deco",
+        "accepted": [
+          "art deco",
+          "deco",
+          "artdeco",
+          "1920s",
+          "twenties"
+        ],
+        "hot": [
+          "art nouveau",
+          "gatsby",
+          "vintage poster",
+          "retro",
+          "geometric"
+        ],
+        "warm": [
+          "vintage",
+          "gold",
+          "elegant",
+          "old",
+          "poster",
+          "luxury"
+        ]
+      }
+    }
+  },
+  {
+    "id": 49,
+    "publishDate": "2026-11-28",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a juggler juggling balls at a circus, bauhaus, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "juggler",
+        "accepted": [
+          "juggler",
+          "circus performer",
+          "performer",
+          "street performer"
+        ],
+        "hot": [
+          "clown",
+          "acrobat",
+          "magician",
+          "jester",
+          "entertainer"
+        ],
+        "warm": [
+          "man",
+          "artist",
+          "person",
+          "circus",
+          "show",
+          "act"
+        ]
+      },
+      "doing": {
+        "answer": "juggling",
+        "accepted": [
+          "juggling",
+          "juggling balls",
+          "tossing balls",
+          "juggle"
+        ],
+        "hot": [
+          "throwing",
+          "catching",
+          "balancing",
+          "performing",
+          "playing ball"
+        ],
+        "warm": [
+          "playing",
+          "tricks",
+          "balls",
+          "dancing",
+          "standing",
+          "show"
+        ]
+      },
+      "where": {
+        "answer": "circus",
+        "accepted": [
+          "circus",
+          "circus tent",
+          "big top",
+          "circus ring"
+        ],
+        "hot": [
+          "carnival",
+          "stage",
+          "theater",
+          "fair",
+          "arena"
+        ],
+        "warm": [
+          "tent",
+          "show",
+          "crowd",
+          "audience",
+          "festival",
+          "spotlight"
+        ]
+      },
+      "style": {
+        "answer": "bauhaus",
+        "accepted": [
+          "bauhaus",
+          "bauhaus style",
+          "bauhaus design"
+        ],
+        "hot": [
+          "geometric",
+          "modernism",
+          "constructivism",
+          "minimalism",
+          "mid century",
+          "de stijl"
+        ],
+        "warm": [
+          "abstract",
+          "shapes",
+          "poster",
+          "modern",
+          "german",
+          "primary colors",
+          "circles"
+        ]
+      }
+    }
+  },
+  {
+    "id": 50,
+    "publishDate": "2026-11-29",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "an elephant spraying water at a river, watercolor, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "elephant",
+        "accepted": [
+          "elephant",
+          "baby elephant",
+          "african elephant",
+          "asian elephant"
+        ],
+        "hot": [
+          "mammoth",
+          "rhino",
+          "hippo",
+          "buffalo"
+        ],
+        "warm": [
+          "animal",
+          "mammal",
+          "trunk",
+          "africa",
+          "giant",
+          "safari"
+        ]
+      },
+      "doing": {
+        "answer": "spraying water",
+        "accepted": [
+          "spraying water",
+          "spraying",
+          "bathing",
+          "splashing",
+          "washing",
+          "showering"
+        ],
+        "hot": [
+          "drinking",
+          "swimming",
+          "playing in water",
+          "wading"
+        ],
+        "warm": [
+          "playing",
+          "standing",
+          "cooling off",
+          "water",
+          "trunk",
+          "having fun"
+        ]
+      },
+      "where": {
+        "answer": "river",
+        "accepted": [
+          "river",
+          "riverbank",
+          "river bank",
+          "stream"
+        ],
+        "hot": [
+          "lake",
+          "waterhole",
+          "pond",
+          "swamp",
+          "jungle"
+        ],
+        "warm": [
+          "water",
+          "africa",
+          "savanna",
+          "nature",
+          "outdoors",
+          "mud"
+        ]
+      },
+      "style": {
+        "answer": "watercolor",
+        "accepted": [
+          "watercolor",
+          "watercolour",
+          "watercolor painting",
+          "aquarelle"
+        ],
+        "hot": [
+          "painting",
+          "gouache",
+          "ink wash",
+          "pastel"
+        ],
+        "warm": [
+          "paint",
+          "art",
+          "illustration",
+          "drawing",
+          "soft"
+        ]
+      }
+    }
+  },
+  {
+    "id": 51,
+    "publishDate": "2026-11-30",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a teddy bear having a tea party in a playroom, 3d render, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "teddy bear",
+        "accepted": [
+          "teddy bear",
+          "teddy",
+          "bear",
+          "stuffed bear",
+          "toy bear",
+          "plush bear"
+        ],
+        "hot": [
+          "toy",
+          "doll",
+          "panda",
+          "stuffed animal",
+          "puppet"
+        ],
+        "warm": [
+          "animal",
+          "cute",
+          "plush",
+          "child",
+          "kid",
+          "brown"
+        ]
+      },
+      "doing": {
+        "answer": "having a tea party",
+        "accepted": [
+          "having a tea party",
+          "tea party",
+          "drinking tea",
+          "pouring tea",
+          "having tea"
+        ],
+        "hot": [
+          "drinking",
+          "eating",
+          "playing",
+          "picnic",
+          "party"
+        ],
+        "warm": [
+          "sitting",
+          "cups",
+          "snack",
+          "cake",
+          "celebrating",
+          "sharing"
+        ]
+      },
+      "where": {
+        "answer": "playroom",
+        "accepted": [
+          "playroom",
+          "nursery",
+          "kids room",
+          "children's room",
+          "bedroom"
+        ],
+        "hot": [
+          "living room",
+          "house",
+          "dollhouse",
+          "kindergarten",
+          "toy store"
+        ],
+        "warm": [
+          "room",
+          "home",
+          "indoors",
+          "toys",
+          "table",
+          "floor"
+        ]
+      },
+      "style": {
+        "answer": "3d render",
+        "accepted": [
+          "3d render",
+          "3d",
+          "render",
+          "cgi",
+          "3d animation",
+          "3d rendering"
+        ],
+        "hot": [
+          "animation",
+          "animated",
+          "cartoon",
+          "claymation",
+          "toy"
+        ],
+        "warm": [
+          "digital",
+          "computer",
+          "cute",
+          "movie",
+          "plastic",
+          "smooth"
+        ]
+      }
+    }
+  },
+  {
+    "id": 52,
+    "publishDate": "2026-12-01",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a carpenter building a chair in a woodshop, pencil sketch, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "carpenter",
+        "accepted": [
+          "carpenter",
+          "woodworker",
+          "craftsman",
+          "joiner"
+        ],
+        "hot": [
+          "builder",
+          "blacksmith",
+          "worker",
+          "lumberjack",
+          "handyman"
+        ],
+        "warm": [
+          "man",
+          "person",
+          "beard",
+          "apron",
+          "tools",
+          "artisan"
+        ]
+      },
+      "doing": {
+        "answer": "building a chair",
+        "accepted": [
+          "building a chair",
+          "woodworking",
+          "making a chair",
+          "building",
+          "sawing"
+        ],
+        "hot": [
+          "hammering",
+          "sanding",
+          "crafting",
+          "carving",
+          "fixing"
+        ],
+        "warm": [
+          "working",
+          "measuring",
+          "cutting",
+          "wood",
+          "furniture",
+          "tools"
+        ]
+      },
+      "where": {
+        "answer": "woodshop",
+        "accepted": [
+          "woodshop",
+          "workshop",
+          "carpentry workshop",
+          "wood shop",
+          "carpentry shop"
+        ],
+        "hot": [
+          "garage",
+          "shed",
+          "barn",
+          "factory",
+          "studio"
+        ],
+        "warm": [
+          "room",
+          "indoors",
+          "house",
+          "sawdust",
+          "bench",
+          "basement"
+        ]
+      },
+      "style": {
+        "answer": "pencil sketch",
+        "accepted": [
+          "pencil sketch",
+          "sketch",
+          "pencil",
+          "pencil drawing",
+          "graphite",
+          "sketching"
+        ],
+        "hot": [
+          "drawing",
+          "charcoal",
+          "line art",
+          "ink drawing",
+          "doodle"
+        ],
+        "warm": [
+          "art",
+          "black and white",
+          "paper",
+          "hand drawn",
+          "grey",
+          "rough"
+        ]
+      }
+    }
+  },
+  {
+    "id": 53,
+    "publishDate": "2026-12-02",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a mouse sailing a paper boat down a stream, pixel art, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "mouse",
+        "accepted": [
+          "mouse",
+          "mice",
+          "field mouse",
+          "little mouse"
+        ],
+        "hot": [
+          "rat",
+          "hamster",
+          "squirrel",
+          "gerbil",
+          "chipmunk"
+        ],
+        "warm": [
+          "animal",
+          "rodent",
+          "pet",
+          "mammal",
+          "critter",
+          "cute"
+        ]
+      },
+      "doing": {
+        "answer": "sailing",
+        "accepted": [
+          "sailing",
+          "sailing a boat",
+          "boating",
+          "floating",
+          "paper boat"
+        ],
+        "hot": [
+          "rowing",
+          "paddling",
+          "drifting",
+          "steering",
+          "fishing"
+        ],
+        "warm": [
+          "traveling",
+          "adventure",
+          "water",
+          "swimming",
+          "riding",
+          "exploring"
+        ]
+      },
+      "where": {
+        "answer": "stream",
+        "accepted": [
+          "stream",
+          "creek",
+          "brook",
+          "river",
+          "small river"
+        ],
+        "hot": [
+          "pond",
+          "puddle",
+          "lake",
+          "canal",
+          "waterfall"
+        ],
+        "warm": [
+          "water",
+          "forest",
+          "nature",
+          "rain",
+          "outdoors",
+          "grass"
+        ]
+      },
+      "style": {
+        "answer": "pixel art",
+        "accepted": [
+          "pixel art",
+          "pixel",
+          "8-bit",
+          "8 bit",
+          "pixelated",
+          "16-bit"
+        ],
+        "hot": [
+          "retro game",
+          "video game",
+          "sprite",
+          "retro",
+          "arcade game"
+        ],
+        "warm": [
+          "game",
+          "arcade",
+          "digital",
+          "blocky",
+          "old school",
+          "computer"
+        ]
+      }
+    }
+  }
+]

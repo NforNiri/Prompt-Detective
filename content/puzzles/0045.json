@@ -1,0 +1,109 @@
+{
+  "id": 45,
+  "publishDate": "2026-11-24",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a spaceship landing on the moon, chalk drawing, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "spaceship",
+      "accepted": [
+        "spaceship",
+        "rocket",
+        "spacecraft",
+        "rocket ship",
+        "space shuttle",
+        "lander"
+      ],
+      "hot": [
+        "ufo",
+        "satellite",
+        "airplane",
+        "alien ship"
+      ],
+      "warm": [
+        "ship",
+        "machine",
+        "vehicle",
+        "astronaut",
+        "space",
+        "plane"
+      ]
+    },
+    "doing": {
+      "answer": "landing",
+      "accepted": [
+        "landing",
+        "landing on the moon",
+        "touching down",
+        "arriving",
+        "descending"
+      ],
+      "hot": [
+        "flying",
+        "launching",
+        "taking off",
+        "hovering",
+        "falling"
+      ],
+      "warm": [
+        "moving",
+        "exploring",
+        "crashing",
+        "parking",
+        "traveling",
+        "floating"
+      ]
+    },
+    "where": {
+      "answer": "moon",
+      "accepted": [
+        "moon",
+        "lunar surface",
+        "moon surface",
+        "lunar"
+      ],
+      "hot": [
+        "crater",
+        "mars",
+        "planet",
+        "outer space",
+        "asteroid"
+      ],
+      "warm": [
+        "space",
+        "stars",
+        "night",
+        "sky",
+        "galaxy",
+        "earth"
+      ]
+    },
+    "style": {
+      "answer": "chalk drawing",
+      "accepted": [
+        "chalk drawing",
+        "chalk",
+        "chalkboard",
+        "blackboard",
+        "chalk art",
+        "chalk on blackboard"
+      ],
+      "hot": [
+        "pastel",
+        "sidewalk chalk",
+        "crayon",
+        "drawing",
+        "sketch"
+      ],
+      "warm": [
+        "school",
+        "dark",
+        "hand drawn",
+        "art",
+        "dusty",
+        "classroom"
+      ]
+    }
+  }
+}

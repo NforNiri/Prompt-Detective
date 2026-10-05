@@ -1,0 +1,1064 @@
+[
+  {
+    "id": 34,
+    "publishDate": "2026-11-13",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a frog fishing from a wooden bridge, ukiyo-e, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "frog",
+        "accepted": [
+          "frog",
+          "toad",
+          "tree frog",
+          "bullfrog"
+        ],
+        "hot": [
+          "lizard",
+          "newt",
+          "salamander",
+          "turtle"
+        ],
+        "warm": [
+          "animal",
+          "amphibian",
+          "creature",
+          "pond animal",
+          "fish"
+        ]
+      },
+      "doing": {
+        "answer": "fishing",
+        "accepted": [
+          "fishing",
+          "fishing from a bridge",
+          "holding a fishing rod",
+          "angling",
+          "casting a line"
+        ],
+        "hot": [
+          "fishing rod",
+          "catching fish",
+          "rod",
+          "reeling"
+        ],
+        "warm": [
+          "sitting",
+          "waiting",
+          "relaxing",
+          "water",
+          "fish",
+          "holding"
+        ]
+      },
+      "where": {
+        "answer": "wooden bridge",
+        "accepted": [
+          "wooden bridge",
+          "bridge",
+          "footbridge",
+          "arched bridge",
+          "japanese bridge"
+        ],
+        "hot": [
+          "pond",
+          "river",
+          "stream",
+          "dock",
+          "pier"
+        ],
+        "warm": [
+          "water",
+          "garden",
+          "lake",
+          "park",
+          "village",
+          "wood"
+        ]
+      },
+      "style": {
+        "answer": "ukiyo-e",
+        "accepted": [
+          "ukiyo-e",
+          "ukiyoe",
+          "ukiyo e",
+          "woodblock print",
+          "woodblock",
+          "japanese woodblock"
+        ],
+        "hot": [
+          "japanese print",
+          "japanese art",
+          "printmaking",
+          "hokusai",
+          "woodcut"
+        ],
+        "warm": [
+          "japanese",
+          "print",
+          "traditional",
+          "asian",
+          "ink",
+          "edo"
+        ]
+      }
+    }
+  },
+  {
+    "id": 35,
+    "publishDate": "2026-11-14",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "a florist arranging a bouquet in a greenhouse, art nouveau, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "florist",
+        "accepted": [
+          "florist",
+          "flower seller",
+          "flower arranger"
+        ],
+        "hot": [
+          "gardener",
+          "botanist",
+          "farmer",
+          "shopkeeper"
+        ],
+        "warm": [
+          "woman",
+          "lady",
+          "person",
+          "worker",
+          "girl",
+          "seller"
+        ]
+      },
+      "doing": {
+        "answer": "arranging a bouquet",
+        "accepted": [
+          "arranging a bouquet",
+          "arranging flowers",
+          "making a bouquet",
+          "flower arranging",
+          "arranging"
+        ],
+        "hot": [
+          "holding flowers",
+          "holding a bouquet",
+          "picking flowers",
+          "gardening",
+          "cutting flowers"
+        ],
+        "warm": [
+          "working",
+          "smelling",
+          "watering",
+          "flowers",
+          "bouquet",
+          "crafting"
+        ]
+      },
+      "where": {
+        "answer": "greenhouse",
+        "accepted": [
+          "greenhouse",
+          "glasshouse",
+          "conservatory",
+          "hothouse"
+        ],
+        "hot": [
+          "garden",
+          "flower shop",
+          "nursery",
+          "botanical garden"
+        ],
+        "warm": [
+          "plants",
+          "flowers",
+          "indoors",
+          "shop",
+          "farm",
+          "glass"
+        ]
+      },
+      "style": {
+        "answer": "art nouveau",
+        "accepted": [
+          "art nouveau",
+          "nouveau",
+          "mucha",
+          "jugendstil"
+        ],
+        "hot": [
+          "art deco",
+          "poster",
+          "decorative",
+          "victorian",
+          "vintage poster"
+        ],
+        "warm": [
+          "vintage",
+          "ornate",
+          "floral",
+          "illustration",
+          "elegant",
+          "retro",
+          "old"
+        ]
+      }
+    }
+  },
+  {
+    "id": 36,
+    "publishDate": "2026-11-15",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a panda eating bamboo in a bamboo forest, photograph, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "panda",
+        "accepted": [
+          "panda",
+          "giant panda",
+          "panda bear"
+        ],
+        "hot": [
+          "bear",
+          "red panda",
+          "koala",
+          "polar bear"
+        ],
+        "warm": [
+          "animal",
+          "mammal",
+          "china",
+          "cub",
+          "black and white",
+          "cute"
+        ]
+      },
+      "doing": {
+        "answer": "eating bamboo",
+        "accepted": [
+          "eating bamboo",
+          "eating",
+          "chewing bamboo",
+          "munching",
+          "chewing"
+        ],
+        "hot": [
+          "bamboo",
+          "feeding",
+          "snacking",
+          "biting"
+        ],
+        "warm": [
+          "sitting",
+          "holding",
+          "resting",
+          "food",
+          "hungry",
+          "leaves"
+        ]
+      },
+      "where": {
+        "answer": "bamboo forest",
+        "accepted": [
+          "bamboo forest",
+          "bamboo grove",
+          "bamboo",
+          "forest"
+        ],
+        "hot": [
+          "jungle",
+          "woods",
+          "zoo",
+          "grove"
+        ],
+        "warm": [
+          "trees",
+          "nature",
+          "china",
+          "garden",
+          "mountain",
+          "green"
+        ]
+      },
+      "style": {
+        "answer": "photograph",
+        "accepted": [
+          "photograph",
+          "photo",
+          "photography",
+          "realistic",
+          "photorealistic",
+          "close-up photo"
+        ],
+        "hot": [
+          "picture",
+          "camera",
+          "snapshot",
+          "portrait",
+          "close-up"
+        ],
+        "warm": [
+          "real life",
+          "natural",
+          "hd",
+          "macro",
+          "detailed",
+          "sharp"
+        ]
+      }
+    }
+  },
+  {
+    "id": 37,
+    "publishDate": "2026-11-16",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a ninja climbing a skyscraper at night, comic book, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "ninja",
+        "accepted": [
+          "ninja",
+          "shinobi",
+          "assassin"
+        ],
+        "hot": [
+          "samurai",
+          "spy",
+          "thief",
+          "burglar",
+          "martial artist"
+        ],
+        "warm": [
+          "man",
+          "warrior",
+          "fighter",
+          "hero",
+          "person",
+          "mask"
+        ]
+      },
+      "doing": {
+        "answer": "climbing",
+        "accepted": [
+          "climbing",
+          "climbing a building",
+          "scaling",
+          "climbing a wall",
+          "wall climbing"
+        ],
+        "hot": [
+          "hanging",
+          "jumping",
+          "sneaking",
+          "parkour",
+          "crawling"
+        ],
+        "warm": [
+          "running",
+          "hiding",
+          "holding",
+          "moving",
+          "falling",
+          "spying"
+        ]
+      },
+      "where": {
+        "answer": "skyscraper",
+        "accepted": [
+          "skyscraper",
+          "tall building",
+          "tower",
+          "high rise",
+          "building"
+        ],
+        "hot": [
+          "city",
+          "rooftop",
+          "office building",
+          "downtown"
+        ],
+        "warm": [
+          "night",
+          "sky",
+          "street",
+          "window",
+          "wall",
+          "urban"
+        ]
+      },
+      "style": {
+        "answer": "comic book",
+        "accepted": [
+          "comic book",
+          "comic",
+          "graphic novel",
+          "comic art",
+          "comic book art"
+        ],
+        "hot": [
+          "cartoon",
+          "pop art",
+          "manga",
+          "superhero",
+          "illustration"
+        ],
+        "warm": [
+          "drawing",
+          "ink",
+          "bold",
+          "halftone",
+          "retro",
+          "panel"
+        ]
+      }
+    }
+  },
+  {
+    "id": 38,
+    "publishDate": "2026-11-17",
+    "difficulty": 2,
+    "locale": "en",
+    "prompt": "a student eating ramen in a ramen shop, anime, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "student",
+        "accepted": [
+          "student",
+          "schoolboy",
+          "boy",
+          "pupil",
+          "schoolkid"
+        ],
+        "hot": [
+          "girl",
+          "child",
+          "teenager",
+          "kid"
+        ],
+        "warm": [
+          "person",
+          "young",
+          "man",
+          "friend",
+          "human",
+          "youth"
+        ]
+      },
+      "doing": {
+        "answer": "eating ramen",
+        "accepted": [
+          "eating ramen",
+          "eating noodles",
+          "slurping noodles",
+          "eating",
+          "slurping"
+        ],
+        "hot": [
+          "noodles",
+          "ramen",
+          "eating soup",
+          "dinner",
+          "lunch"
+        ],
+        "warm": [
+          "food",
+          "chopsticks",
+          "sitting",
+          "hungry",
+          "cooking",
+          "drinking"
+        ]
+      },
+      "where": {
+        "answer": "ramen shop",
+        "accepted": [
+          "ramen shop",
+          "noodle shop",
+          "restaurant",
+          "ramen bar",
+          "noodle bar"
+        ],
+        "hot": [
+          "cafe",
+          "diner",
+          "kitchen",
+          "food stall",
+          "japan"
+        ],
+        "warm": [
+          "city",
+          "street",
+          "counter",
+          "japanese",
+          "shop",
+          "night"
+        ]
+      },
+      "style": {
+        "answer": "anime",
+        "accepted": [
+          "anime",
+          "manga",
+          "japanese animation",
+          "ghibli",
+          "anime style"
+        ],
+        "hot": [
+          "cartoon",
+          "animation",
+          "animated",
+          "cel shaded",
+          "japanese"
+        ],
+        "warm": [
+          "drawing",
+          "illustration",
+          "cute",
+          "art",
+          "colorful",
+          "kawaii"
+        ]
+      }
+    }
+  },
+  {
+    "id": 39,
+    "publishDate": "2026-11-18",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a penguin ice skating on a frozen pond, claymation, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "penguin",
+        "accepted": [
+          "penguin",
+          "emperor penguin",
+          "baby penguin"
+        ],
+        "hot": [
+          "puffin",
+          "seal",
+          "duck",
+          "goose",
+          "polar bear"
+        ],
+        "warm": [
+          "bird",
+          "animal",
+          "antarctica",
+          "cold",
+          "ice",
+          "cute"
+        ]
+      },
+      "doing": {
+        "answer": "ice skating",
+        "accepted": [
+          "ice skating",
+          "skating",
+          "figure skating",
+          "iceskating"
+        ],
+        "hot": [
+          "sliding",
+          "dancing",
+          "gliding",
+          "spinning",
+          "slipping"
+        ],
+        "warm": [
+          "playing",
+          "winter",
+          "moving",
+          "sport",
+          "balancing",
+          "falling"
+        ]
+      },
+      "where": {
+        "answer": "frozen pond",
+        "accepted": [
+          "frozen pond",
+          "frozen lake",
+          "ice rink",
+          "rink",
+          "ice"
+        ],
+        "hot": [
+          "pond",
+          "lake",
+          "snowfield",
+          "arctic",
+          "glacier"
+        ],
+        "warm": [
+          "snow",
+          "winter",
+          "cold",
+          "water",
+          "outdoors",
+          "mountain"
+        ]
+      },
+      "style": {
+        "answer": "claymation",
+        "accepted": [
+          "claymation",
+          "clay",
+          "clay animation",
+          "stop motion",
+          "plasticine",
+          "clay model"
+        ],
+        "hot": [
+          "animation",
+          "puppet",
+          "3d",
+          "sculpture",
+          "toy"
+        ],
+        "warm": [
+          "cartoon",
+          "handmade",
+          "cute",
+          "model",
+          "figurine",
+          "kids"
+        ]
+      }
+    }
+  },
+  {
+    "id": 40,
+    "publishDate": "2026-11-19",
+    "difficulty": 3,
+    "locale": "en",
+    "prompt": "a lion roaring on a rocky cliff, stained glass, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "lion",
+        "accepted": [
+          "lion",
+          "lioness",
+          "male lion"
+        ],
+        "hot": [
+          "tiger",
+          "leopard",
+          "cheetah",
+          "big cat",
+          "cougar"
+        ],
+        "warm": [
+          "cat",
+          "animal",
+          "king",
+          "beast",
+          "predator",
+          "mane"
+        ]
+      },
+      "doing": {
+        "answer": "roaring",
+        "accepted": [
+          "roaring",
+          "growling",
+          "snarling"
+        ],
+        "hot": [
+          "shouting",
+          "yelling",
+          "howling",
+          "calling",
+          "barking"
+        ],
+        "warm": [
+          "standing",
+          "sitting",
+          "looking",
+          "opening mouth",
+          "singing",
+          "hunting"
+        ]
+      },
+      "where": {
+        "answer": "rocky cliff",
+        "accepted": [
+          "rocky cliff",
+          "cliff",
+          "rock",
+          "cliff edge",
+          "ledge"
+        ],
+        "hot": [
+          "mountain",
+          "hill",
+          "canyon",
+          "boulder",
+          "savanna"
+        ],
+        "warm": [
+          "africa",
+          "sky",
+          "sunset",
+          "nature",
+          "outdoors",
+          "wilderness"
+        ]
+      },
+      "style": {
+        "answer": "stained glass",
+        "accepted": [
+          "stained glass",
+          "stained glass window",
+          "glass",
+          "church window",
+          "leaded glass"
+        ],
+        "hot": [
+          "mosaic",
+          "window",
+          "colored glass",
+          "gothic",
+          "cathedral"
+        ],
+        "warm": [
+          "church",
+          "colorful",
+          "religious",
+          "medieval",
+          "glowing",
+          "art"
+        ]
+      }
+    }
+  },
+  {
+    "id": 41,
+    "publishDate": "2026-11-20",
+    "difficulty": 4,
+    "locale": "en",
+    "prompt": "a cowboy riding a horse through a desert at sunset, synthwave, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "cowboy",
+        "accepted": [
+          "cowboy",
+          "cowgirl",
+          "rancher",
+          "wrangler",
+          "horseman"
+        ],
+        "hot": [
+          "sheriff",
+          "farmer",
+          "outlaw",
+          "rider",
+          "bandit"
+        ],
+        "warm": [
+          "man",
+          "western",
+          "person",
+          "hat",
+          "hero",
+          "traveler"
+        ]
+      },
+      "doing": {
+        "answer": "riding a horse",
+        "accepted": [
+          "riding a horse",
+          "horseback riding",
+          "riding",
+          "galloping",
+          "horse riding"
+        ],
+        "hot": [
+          "horse",
+          "racing",
+          "trotting",
+          "driving"
+        ],
+        "warm": [
+          "moving",
+          "running",
+          "traveling",
+          "sitting",
+          "jumping",
+          "exploring"
+        ]
+      },
+      "where": {
+        "answer": "desert",
+        "accepted": [
+          "desert",
+          "wild west",
+          "badlands",
+          "desert road"
+        ],
+        "hot": [
+          "canyon",
+          "prairie",
+          "mesa",
+          "highway",
+          "valley"
+        ],
+        "warm": [
+          "sand",
+          "sunset",
+          "mountains",
+          "dunes",
+          "road",
+          "west"
+        ]
+      },
+      "style": {
+        "answer": "synthwave",
+        "accepted": [
+          "synthwave",
+          "retrowave",
+          "outrun",
+          "synth wave",
+          "80s",
+          "neon 80s"
+        ],
+        "hot": [
+          "vaporwave",
+          "neon",
+          "cyberpunk",
+          "80s retro",
+          "retro",
+          "miami"
+        ],
+        "warm": [
+          "purple",
+          "synth",
+          "electronic",
+          "sunset",
+          "vintage",
+          "music",
+          "futuristic"
+        ]
+      }
+    }
+  },
+  {
+    "id": 42,
+    "publishDate": "2026-11-21",
+    "difficulty": 5,
+    "locale": "en",
+    "prompt": "an astronomer using a telescope in an observatory, renaissance painting, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "astronomer",
+        "accepted": [
+          "astronomer",
+          "stargazer"
+        ],
+        "hot": [
+          "scientist",
+          "scholar",
+          "philosopher",
+          "wizard",
+          "inventor"
+        ],
+        "warm": [
+          "man",
+          "old man",
+          "monk",
+          "professor",
+          "person",
+          "explorer"
+        ]
+      },
+      "doing": {
+        "answer": "using a telescope",
+        "accepted": [
+          "using a telescope",
+          "looking through a telescope",
+          "stargazing",
+          "telescope",
+          "observing"
+        ],
+        "hot": [
+          "looking",
+          "watching",
+          "studying",
+          "gazing",
+          "peering"
+        ],
+        "warm": [
+          "standing",
+          "thinking",
+          "searching",
+          "reading",
+          "pointing",
+          "discovering"
+        ]
+      },
+      "where": {
+        "answer": "observatory",
+        "accepted": [
+          "observatory",
+          "astronomy tower",
+          "tower"
+        ],
+        "hot": [
+          "library",
+          "study",
+          "castle",
+          "attic",
+          "workshop"
+        ],
+        "warm": [
+          "night",
+          "stars",
+          "sky",
+          "room",
+          "building",
+          "dome"
+        ]
+      },
+      "style": {
+        "answer": "renaissance painting",
+        "accepted": [
+          "renaissance painting",
+          "renaissance",
+          "old master",
+          "classical painting",
+          "italian renaissance"
+        ],
+        "hot": [
+          "oil painting",
+          "baroque",
+          "fresco",
+          "classical",
+          "medieval"
+        ],
+        "warm": [
+          "painting",
+          "museum",
+          "old",
+          "art",
+          "portrait",
+          "religious"
+        ]
+      }
+    }
+  },
+  {
+    "id": 43,
+    "publishDate": "2026-11-22",
+    "difficulty": 1,
+    "locale": "en",
+    "prompt": "a pig taking a bath in a bathroom, cartoon, no text, no letters, no watermark",
+    "slots": {
+      "who": {
+        "answer": "pig",
+        "accepted": [
+          "pig",
+          "piglet",
+          "hog",
+          "swine"
+        ],
+        "hot": [
+          "boar",
+          "cow",
+          "sheep",
+          "hippo"
+        ],
+        "warm": [
+          "animal",
+          "farm animal",
+          "pink",
+          "pet",
+          "mammal",
+          "cute"
+        ]
+      },
+      "doing": {
+        "answer": "taking a bath",
+        "accepted": [
+          "taking a bath",
+          "bathing",
+          "bubble bath",
+          "having a bath",
+          "washing",
+          "soaking"
+        ],
+        "hot": [
+          "showering",
+          "relaxing",
+          "swimming",
+          "cleaning",
+          "scrubbing"
+        ],
+        "warm": [
+          "playing",
+          "sitting",
+          "bubbles",
+          "water",
+          "soap",
+          "singing"
+        ]
+      },
+      "where": {
+        "answer": "bathroom",
+        "accepted": [
+          "bathroom",
+          "bathtub",
+          "tub",
+          "bath",
+          "washroom"
+        ],
+        "hot": [
+          "shower",
+          "spa",
+          "laundry room",
+          "pool",
+          "kitchen"
+        ],
+        "warm": [
+          "house",
+          "home",
+          "room",
+          "indoors",
+          "tiles",
+          "water"
+        ]
+      },
+      "style": {
+        "answer": "cartoon",
+        "accepted": [
+          "cartoon",
+          "cartoonish",
+          "toon",
+          "animated cartoon",
+          "kids cartoon"
+        ],
+        "hot": [
+          "animation",
+          "animated",
+          "comic",
+          "illustration",
+          "drawing"
+        ],
+        "warm": [
+          "kids",
+          "cute",
+          "funny",
+          "art",
+          "colorful",
+          "simple"
+        ]
+      }
+    }
+  }
+]

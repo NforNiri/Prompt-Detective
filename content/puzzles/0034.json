@@ -1,0 +1,106 @@
+{
+  "id": 34,
+  "publishDate": "2026-11-13",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a frog fishing from a wooden bridge, ukiyo-e, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "frog",
+      "accepted": [
+        "frog",
+        "toad",
+        "tree frog",
+        "bullfrog"
+      ],
+      "hot": [
+        "lizard",
+        "newt",
+        "salamander",
+        "turtle"
+      ],
+      "warm": [
+        "animal",
+        "amphibian",
+        "creature",
+        "pond animal",
+        "fish"
+      ]
+    },
+    "doing": {
+      "answer": "fishing",
+      "accepted": [
+        "fishing",
+        "fishing from a bridge",
+        "holding a fishing rod",
+        "angling",
+        "casting a line"
+      ],
+      "hot": [
+        "fishing rod",
+        "catching fish",
+        "rod",
+        "reeling"
+      ],
+      "warm": [
+        "sitting",
+        "waiting",
+        "relaxing",
+        "water",
+        "fish",
+        "holding"
+      ]
+    },
+    "where": {
+      "answer": "wooden bridge",
+      "accepted": [
+        "wooden bridge",
+        "bridge",
+        "footbridge",
+        "arched bridge",
+        "japanese bridge"
+      ],
+      "hot": [
+        "pond",
+        "river",
+        "stream",
+        "dock",
+        "pier"
+      ],
+      "warm": [
+        "water",
+        "garden",
+        "lake",
+        "park",
+        "village",
+        "wood"
+      ]
+    },
+    "style": {
+      "answer": "ukiyo-e",
+      "accepted": [
+        "ukiyo-e",
+        "ukiyoe",
+        "ukiyo e",
+        "woodblock print",
+        "woodblock",
+        "japanese woodblock"
+      ],
+      "hot": [
+        "japanese print",
+        "japanese art",
+        "printmaking",
+        "hokusai",
+        "woodcut"
+      ],
+      "warm": [
+        "japanese",
+        "print",
+        "traditional",
+        "asian",
+        "ink",
+        "edo"
+      ]
+    }
+  }
+}

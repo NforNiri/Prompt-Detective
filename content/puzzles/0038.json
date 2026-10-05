@@ -1,0 +1,108 @@
+{
+  "id": 38,
+  "publishDate": "2026-11-17",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a student eating ramen in a ramen shop, anime, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "student",
+      "accepted": [
+        "student",
+        "schoolboy",
+        "boy",
+        "pupil",
+        "schoolkid"
+      ],
+      "hot": [
+        "girl",
+        "child",
+        "teenager",
+        "kid"
+      ],
+      "warm": [
+        "person",
+        "young",
+        "man",
+        "friend",
+        "human",
+        "youth"
+      ]
+    },
+    "doing": {
+      "answer": "eating ramen",
+      "accepted": [
+        "eating ramen",
+        "eating noodles",
+        "slurping noodles",
+        "eating",
+        "slurping"
+      ],
+      "hot": [
+        "noodles",
+        "ramen",
+        "eating soup",
+        "dinner",
+        "lunch"
+      ],
+      "warm": [
+        "food",
+        "chopsticks",
+        "sitting",
+        "hungry",
+        "cooking",
+        "drinking"
+      ]
+    },
+    "where": {
+      "answer": "ramen shop",
+      "accepted": [
+        "ramen shop",
+        "noodle shop",
+        "restaurant",
+        "ramen bar",
+        "noodle bar"
+      ],
+      "hot": [
+        "cafe",
+        "diner",
+        "kitchen",
+        "food stall",
+        "japan"
+      ],
+      "warm": [
+        "city",
+        "street",
+        "counter",
+        "japanese",
+        "shop",
+        "night"
+      ]
+    },
+    "style": {
+      "answer": "anime",
+      "accepted": [
+        "anime",
+        "manga",
+        "japanese animation",
+        "ghibli",
+        "anime style"
+      ],
+      "hot": [
+        "cartoon",
+        "animation",
+        "animated",
+        "cel shaded",
+        "japanese"
+      ],
+      "warm": [
+        "drawing",
+        "illustration",
+        "cute",
+        "art",
+        "colorful",
+        "kawaii"
+      ]
+    }
+  }
+}

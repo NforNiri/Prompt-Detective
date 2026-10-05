@@ -1,0 +1,108 @@
+{
+  "id": 43,
+  "publishDate": "2026-11-22",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "a pig taking a bath in a bathroom, cartoon, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "pig",
+      "accepted": [
+        "pig",
+        "piglet",
+        "hog",
+        "swine"
+      ],
+      "hot": [
+        "boar",
+        "cow",
+        "sheep",
+        "hippo"
+      ],
+      "warm": [
+        "animal",
+        "farm animal",
+        "pink",
+        "pet",
+        "mammal",
+        "cute"
+      ]
+    },
+    "doing": {
+      "answer": "taking a bath",
+      "accepted": [
+        "taking a bath",
+        "bathing",
+        "bubble bath",
+        "having a bath",
+        "washing",
+        "soaking"
+      ],
+      "hot": [
+        "showering",
+        "relaxing",
+        "swimming",
+        "cleaning",
+        "scrubbing"
+      ],
+      "warm": [
+        "playing",
+        "sitting",
+        "bubbles",
+        "water",
+        "soap",
+        "singing"
+      ]
+    },
+    "where": {
+      "answer": "bathroom",
+      "accepted": [
+        "bathroom",
+        "bathtub",
+        "tub",
+        "bath",
+        "washroom"
+      ],
+      "hot": [
+        "shower",
+        "spa",
+        "laundry room",
+        "pool",
+        "kitchen"
+      ],
+      "warm": [
+        "house",
+        "home",
+        "room",
+        "indoors",
+        "tiles",
+        "water"
+      ]
+    },
+    "style": {
+      "answer": "cartoon",
+      "accepted": [
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
+      ],
+      "hot": [
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
+      ],
+      "warm": [
+        "kids",
+        "cute",
+        "funny",
+        "art",
+        "colorful",
+        "simple"
+      ]
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "id": 39,
+  "publishDate": "2026-11-18",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a penguin ice skating on a frozen pond, claymation, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "penguin",
+      "accepted": [
+        "penguin",
+        "emperor penguin",
+        "baby penguin"
+      ],
+      "hot": [
+        "puffin",
+        "seal",
+        "duck",
+        "goose",
+        "polar bear"
+      ],
+      "warm": [
+        "bird",
+        "animal",
+        "antarctica",
+        "cold",
+        "ice",
+        "cute"
+      ]
+    },
+    "doing": {
+      "answer": "ice skating",
+      "accepted": [
+        "ice skating",
+        "skating",
+        "figure skating",
+        "iceskating"
+      ],
+      "hot": [
+        "sliding",
+        "dancing",
+        "gliding",
+        "spinning",
+        "slipping"
+      ],
+      "warm": [
+        "playing",
+        "winter",
+        "moving",
+        "sport",
+        "balancing",
+        "falling"
+      ]
+    },
+    "where": {
+      "answer": "frozen pond",
+      "accepted": [
+        "frozen pond",
+        "frozen lake",
+        "ice rink",
+        "rink",
+        "ice"
+      ],
+      "hot": [
+        "pond",
+        "lake",
+        "snowfield",
+        "arctic",
+        "glacier"
+      ],
+      "warm": [
+        "snow",
+        "winter",
+        "cold",
+        "water",
+        "outdoors",
+        "mountain"
+      ]
+    },
+    "style": {
+      "answer": "claymation",
+      "accepted": [
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
+      ],
+      "hot": [
+        "animation",
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
+      ],
+      "warm": [
+        "cartoon",
+        "handmade",
+        "cute",
+        "model",
+        "figurine",
+        "kids"
+      ]
+    }
+  }
+}

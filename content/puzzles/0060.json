@@ -1,0 +1,107 @@
+{
+  "id": 60,
+  "publishDate": "2026-12-09",
+  "difficulty": 3,
+  "locale": "en",
+  "prompt": "a snowman building a sandcastle on a beach, claymation, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "snowman",
+      "accepted": [
+        "snowman",
+        "snow man"
+      ],
+      "hot": [
+        "snowball",
+        "yeti",
+        "penguin",
+        "ice sculpture",
+        "doll"
+      ],
+      "warm": [
+        "winter",
+        "snow",
+        "christmas",
+        "toy",
+        "figure",
+        "cold"
+      ]
+    },
+    "doing": {
+      "answer": "building a sandcastle",
+      "accepted": [
+        "building a sandcastle",
+        "building",
+        "making a sandcastle",
+        "sandcastle",
+        "building sandcastles"
+      ],
+      "hot": [
+        "digging",
+        "playing",
+        "sculpting",
+        "shoveling",
+        "constructing"
+      ],
+      "warm": [
+        "sitting",
+        "working",
+        "sand",
+        "bucket",
+        "summer",
+        "crafting"
+      ]
+    },
+    "where": {
+      "answer": "beach",
+      "accepted": [
+        "beach",
+        "seashore",
+        "shore",
+        "seaside",
+        "coast"
+      ],
+      "hot": [
+        "sand",
+        "ocean",
+        "sea",
+        "island",
+        "desert"
+      ],
+      "warm": [
+        "water",
+        "summer",
+        "sun",
+        "vacation",
+        "waves",
+        "tropical"
+      ]
+    },
+    "style": {
+      "answer": "claymation",
+      "accepted": [
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
+      ],
+      "hot": [
+        "animation",
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
+      ],
+      "warm": [
+        "cartoon",
+        "handmade",
+        "cute",
+        "model",
+        "figurine",
+        "kids"
+      ]
+    }
+  }
+}

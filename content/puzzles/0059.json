@@ -1,0 +1,109 @@
+{
+  "id": 59,
+  "publishDate": "2026-12-08",
+  "difficulty": 2,
+  "locale": "en",
+  "prompt": "a scientist mixing chemicals in a laboratory, comic book, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "scientist",
+      "accepted": [
+        "scientist",
+        "chemist",
+        "mad scientist",
+        "researcher"
+      ],
+      "hot": [
+        "professor",
+        "doctor",
+        "inventor",
+        "alchemist",
+        "teacher"
+      ],
+      "warm": [
+        "man",
+        "person",
+        "genius",
+        "glasses",
+        "lab coat",
+        "nerd"
+      ]
+    },
+    "doing": {
+      "answer": "mixing chemicals",
+      "accepted": [
+        "mixing chemicals",
+        "mixing",
+        "experimenting",
+        "doing an experiment",
+        "pouring chemicals",
+        "chemistry"
+      ],
+      "hot": [
+        "pouring",
+        "brewing",
+        "potion",
+        "testing",
+        "boiling"
+      ],
+      "warm": [
+        "working",
+        "holding",
+        "science",
+        "explosion",
+        "studying",
+        "inventing"
+      ]
+    },
+    "where": {
+      "answer": "laboratory",
+      "accepted": [
+        "laboratory",
+        "lab",
+        "science lab",
+        "chemistry lab",
+        "research lab"
+      ],
+      "hot": [
+        "classroom",
+        "hospital",
+        "factory",
+        "kitchen",
+        "workshop"
+      ],
+      "warm": [
+        "school",
+        "room",
+        "building",
+        "university",
+        "indoors",
+        "office"
+      ]
+    },
+    "style": {
+      "answer": "comic book",
+      "accepted": [
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
+      ],
+      "hot": [
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
+      ],
+      "warm": [
+        "drawing",
+        "ink",
+        "bold",
+        "halftone",
+        "retro",
+        "panel"
+      ]
+    }
+  }
+}

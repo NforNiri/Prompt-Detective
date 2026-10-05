@@ -1,0 +1,111 @@
+{
+  "id": 48,
+  "publishDate": "2026-11-27",
+  "difficulty": 4,
+  "locale": "en",
+  "prompt": "a jazz singer performing in a nightclub, art deco, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "jazz singer",
+      "accepted": [
+        "jazz singer",
+        "singer",
+        "vocalist",
+        "lounge singer",
+        "diva"
+      ],
+      "hot": [
+        "musician",
+        "performer",
+        "dancer",
+        "actress",
+        "entertainer"
+      ],
+      "warm": [
+        "woman",
+        "lady",
+        "star",
+        "glamour",
+        "artist",
+        "person"
+      ]
+    },
+    "doing": {
+      "answer": "performing",
+      "accepted": [
+        "performing",
+        "singing",
+        "crooning",
+        "singing a song",
+        "holding a microphone",
+        "performing on stage"
+      ],
+      "hot": [
+        "microphone",
+        "talking",
+        "dancing",
+        "humming",
+        "posing"
+      ],
+      "warm": [
+        "music",
+        "standing",
+        "show",
+        "concert",
+        "entertaining",
+        "smiling"
+      ]
+    },
+    "where": {
+      "answer": "nightclub",
+      "accepted": [
+        "nightclub",
+        "jazz club",
+        "club",
+        "lounge",
+        "cabaret",
+        "speakeasy"
+      ],
+      "hot": [
+        "bar",
+        "stage",
+        "theater",
+        "ballroom",
+        "casino"
+      ],
+      "warm": [
+        "night",
+        "music",
+        "party",
+        "restaurant",
+        "hotel",
+        "venue"
+      ]
+    },
+    "style": {
+      "answer": "art deco",
+      "accepted": [
+        "art deco",
+        "deco",
+        "artdeco",
+        "1920s",
+        "twenties"
+      ],
+      "hot": [
+        "art nouveau",
+        "gatsby",
+        "vintage poster",
+        "retro",
+        "geometric"
+      ],
+      "warm": [
+        "vintage",
+        "gold",
+        "elegant",
+        "old",
+        "poster",
+        "luxury"
+      ]
+    }
+  }
+}

@@ -1,7 +1,7 @@
 [
   {
     "id": 4,
-    "publishDate": "2026-10-07",
+    "publishDate": "2026-10-14",
     "difficulty": 3,
     "locale": "en",
     "prompt": "a knight in armor knitting a scarf by the fireplace in a castle hall, oil painting, no text, no letters, no watermark",
@@ -108,7 +108,7 @@
   },
   {
     "id": 5,
-    "publishDate": "2026-10-08",
+    "publishDate": "2026-10-15",
     "difficulty": 3,
     "locale": "en",
     "prompt": "a raccoon skateboarding in an empty swimming pool, pixel art, no text, no letters, no watermark",
@@ -218,7 +218,7 @@
   },
   {
     "id": 6,
-    "publishDate": "2026-10-09",
+    "publishDate": "2026-10-16",
     "difficulty": 4,
     "locale": "en",
     "prompt": "a tiger surfing a giant wave on the open ocean, ukiyo-e, no text, no letters, no watermark",
@@ -326,7 +326,7 @@
   },
   {
     "id": 7,
-    "publishDate": "2026-10-10",
+    "publishDate": "2026-10-17",
     "difficulty": 5,
     "locale": "en",
     "prompt": "a beekeeper harvesting honey in a lavender field, art nouveau, no text, no letters, no watermark",
@@ -436,7 +436,7 @@
   },
   {
     "id": 8,
-    "publishDate": "2026-10-11",
+    "publishDate": "2026-10-18",
     "difficulty": 1,
     "locale": "en",
     "prompt": "a cow playing guitar on a farm, cartoon, no text, no letters, no watermark",
@@ -545,7 +545,7 @@
   },
   {
     "id": 9,
-    "publishDate": "2026-10-12",
+    "publishDate": "2026-10-19",
     "difficulty": 2,
     "locale": "en",
     "prompt": "a grandmother feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
@@ -656,7 +656,7 @@
   },
   {
     "id": 10,
-    "publishDate": "2026-10-13",
+    "publishDate": "2026-10-20",
     "difficulty": 2,
     "locale": "en",
     "prompt": "a robot walking a dog on a rainy street, comic book, no text, no letters, no watermark",
@@ -766,7 +766,7 @@
   },
   {
     "id": 11,
-    "publishDate": "2026-10-14",
+    "publishDate": "2026-10-21",
     "difficulty": 3,
     "locale": "en",
     "prompt": "a snail driving a race car on a race track, claymation, no text, no letters, no watermark",
@@ -876,7 +876,7 @@
   },
   {
     "id": 12,
-    "publishDate": "2026-10-15",
+    "publishDate": "2026-10-22",
     "difficulty": 3,
     "locale": "en",
     "prompt": "an owl holding a lantern in a forest at night, stained glass, no text, no letters, no watermark",
@@ -986,7 +986,7 @@
   },
   {
     "id": 13,
-    "publishDate": "2026-10-16",
+    "publishDate": "2026-10-23",
     "difficulty": 4,
     "locale": "en",
     "prompt": "a skeleton playing a keytar on a city rooftop at night, synthwave, no text, no letters, no watermark",

@@ -27,7 +27,7 @@ function run(puzzles: unknown[], options = {}) {
 function later(id: number): Puzzle {
   const p = base()[0]!;
   p.id = id;
-  p.publishDate = addDays("2026-10-04", id - 1);
+  p.publishDate = addDays("2026-10-11", id - 1);
   p.difficulty = expectedDifficulty(p.publishDate);
   return p;
 }
@@ -84,13 +84,13 @@ describe("validatePuzzles", () => {
     const dupe = structuredClone(puzzles[1]!);
     puzzles.push(dupe);
     expect(run(puzzles).errors).toEqual(
-      expect.arrayContaining(["duplicate id 2", "publishDate 2026-10-05 is also used by #2"]),
+      expect.arrayContaining(["duplicate id 2", "publishDate 2026-10-12 is also used by #2"]),
     );
 
     const gap = base();
-    gap[2]!.publishDate = "2026-10-08";
-    gap[2]!.difficulty = expectedDifficulty("2026-10-08");
-    expect(run(gap).errors).toContain("date gap: #2 is 2026-10-05, #3 is 2026-10-08");
+    gap[2]!.publishDate = "2026-10-15";
+    gap[2]!.difficulty = expectedDifficulty("2026-10-15");
+    expect(run(gap).errors).toContain("date gap: #2 is 2026-10-12, #3 is 2026-10-15");
   });
 
   it("checks difficulty against the weekday", () => {

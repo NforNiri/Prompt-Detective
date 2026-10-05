@@ -1,10 +1,10 @@
 [
   {
     "id": 14,
-    "publishDate": "2026-10-17",
+    "publishDate": "2026-10-24",
     "difficulty": 5,
     "locale": "en",
-    "prompt": "a blacksmith forging a sword in a forge, cubism, no text, no letters, no watermark",
+    "prompt": "a blacksmith forging a sword in a forge, cubism, geometric fragmented shapes, no text, no letters, no watermark",
     "slots": {
       "who": {
         "answer": "blacksmith",
@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "publishDate": "2026-10-18",
+    "publishDate": "2026-10-25",
     "difficulty": 1,
     "locale": "en",
     "prompt": "a dinosaur eating ice cream at a playground, crayon drawing, no text, no letters, no watermark",
@@ -227,7 +227,7 @@
   },
   {
     "id": 16,
-    "publishDate": "2026-10-19",
+    "publishDate": "2026-10-26",
     "difficulty": 2,
     "locale": "en",
     "prompt": "a girl flying a kite on a grassy hilltop, anime, no text, no letters, no watermark",
@@ -336,7 +336,7 @@
   },
   {
     "id": 17,
-    "publishDate": "2026-10-20",
+    "publishDate": "2026-10-27",
     "difficulty": 2,
     "locale": "en",
     "prompt": "a whale flying in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
@@ -448,7 +448,7 @@
   },
   {
     "id": 18,
-    "publishDate": "2026-10-21",
+    "publishDate": "2026-10-28",
     "difficulty": 3,
     "locale": "en",
     "prompt": "a deer drinking water from a mountain lake, low poly, no text, no letters, no watermark",
@@ -559,7 +559,7 @@
   },
   {
     "id": 19,
-    "publishDate": "2026-10-22",
+    "publishDate": "2026-10-29",
     "difficulty": 3,
     "locale": "en",
     "prompt": "an octopus playing drums on the sea floor, mosaic, no text, no letters, no watermark",
@@ -667,7 +667,7 @@
   },
   {
     "id": 20,
-    "publishDate": "2026-10-23",
+    "publishDate": "2026-10-30",
     "difficulty": 4,
     "locale": "en",
     "prompt": "a flamingo sipping a cocktail on the deck of an ocean liner, art deco, no text, no letters, no watermark",
@@ -777,7 +777,7 @@
   },
   {
     "id": 21,
-    "publishDate": "2026-10-24",
+    "publishDate": "2026-10-31",
     "difficulty": 5,
     "locale": "en",
     "prompt": "a conductor conducting an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
@@ -887,7 +887,7 @@
   },
   {
     "id": 22,
-    "publishDate": "2026-10-25",
+    "publishDate": "2026-11-01",
     "difficulty": 1,
     "locale": "en",
     "prompt": "a kitten sleeping in a flower pot, photograph, no text, no letters, no watermark",
@@ -999,7 +999,7 @@
   },
   {
     "id": 23,
-    "publishDate": "2026-10-26",
+    "publishDate": "2026-11-02",
     "difficulty": 2,
     "locale": "en",
     "prompt": "a pirate digging for treasure on a desert island, cartoon, no text, no letters, no watermark",

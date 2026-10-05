@@ -1,0 +1,103 @@
+{
+  "id": 50,
+  "publishDate": "2026-11-29",
+  "difficulty": 1,
+  "locale": "en",
+  "prompt": "an elephant spraying water at a river, watercolor, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "elephant",
+      "accepted": [
+        "elephant",
+        "baby elephant",
+        "african elephant",
+        "asian elephant"
+      ],
+      "hot": [
+        "mammoth",
+        "rhino",
+        "hippo",
+        "buffalo"
+      ],
+      "warm": [
+        "animal",
+        "mammal",
+        "trunk",
+        "africa",
+        "giant",
+        "safari"
+      ]
+    },
+    "doing": {
+      "answer": "spraying water",
+      "accepted": [
+        "spraying water",
+        "spraying",
+        "bathing",
+        "splashing",
+        "washing",
+        "showering"
+      ],
+      "hot": [
+        "drinking",
+        "swimming",
+        "playing in water",
+        "wading"
+      ],
+      "warm": [
+        "playing",
+        "standing",
+        "cooling off",
+        "water",
+        "trunk",
+        "having fun"
+      ]
+    },
+    "where": {
+      "answer": "river",
+      "accepted": [
+        "river",
+        "riverbank",
+        "river bank",
+        "stream"
+      ],
+      "hot": [
+        "lake",
+        "waterhole",
+        "pond",
+        "swamp",
+        "jungle"
+      ],
+      "warm": [
+        "water",
+        "africa",
+        "savanna",
+        "nature",
+        "outdoors",
+        "mud"
+      ]
+    },
+    "style": {
+      "answer": "watercolor",
+      "accepted": [
+        "watercolor",
+        "watercolour",
+        "watercolor painting",
+        "aquarelle"
+      ],
+      "hot": [
+        "painting",
+        "gouache",
+        "ink wash",
+        "pastel"
+      ],
+      "warm": [
+        "paint",
+        "art",
+        "illustration",
+        "drawing",
+        "soft"
+      ]
+    }
+  }
+}

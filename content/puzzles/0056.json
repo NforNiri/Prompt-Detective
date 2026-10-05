@@ -1,0 +1,108 @@
+{
+  "id": 56,
+  "publishDate": "2026-12-05",
+  "difficulty": 5,
+  "locale": "en",
+  "prompt": "a sommelier tasting wine in a wine cellar, pointillism, no text, no letters, no watermark",
+  "slots": {
+    "who": {
+      "answer": "sommelier",
+      "accepted": [
+        "sommelier",
+        "wine expert",
+        "wine taster",
+        "connoisseur"
+      ],
+      "hot": [
+        "winemaker",
+        "waiter",
+        "butler",
+        "chef",
+        "bartender"
+      ],
+      "warm": [
+        "man",
+        "gentleman",
+        "person",
+        "expert",
+        "critic",
+        "french"
+      ]
+    },
+    "doing": {
+      "answer": "tasting wine",
+      "accepted": [
+        "tasting wine",
+        "wine tasting",
+        "drinking wine",
+        "sipping wine",
+        "tasting",
+        "sniffing wine"
+      ],
+      "hot": [
+        "drinking",
+        "sipping",
+        "smelling",
+        "swirling"
+      ],
+      "warm": [
+        "holding a glass",
+        "standing",
+        "enjoying",
+        "glass",
+        "alcohol",
+        "celebrating"
+      ]
+    },
+    "where": {
+      "answer": "wine cellar",
+      "accepted": [
+        "wine cellar",
+        "cellar",
+        "winery",
+        "basement"
+      ],
+      "hot": [
+        "vineyard",
+        "bar",
+        "restaurant",
+        "cave",
+        "dungeon"
+      ],
+      "warm": [
+        "bottles",
+        "barrels",
+        "underground",
+        "room",
+        "dark",
+        "france"
+      ]
+    },
+    "style": {
+      "answer": "pointillism",
+      "accepted": [
+        "pointillism",
+        "pointillist",
+        "dots",
+        "dot painting",
+        "seurat",
+        "stippling"
+      ],
+      "hot": [
+        "impressionism",
+        "dotted",
+        "pixel art",
+        "post impressionism",
+        "mosaic"
+      ],
+      "warm": [
+        "painting",
+        "colorful",
+        "art",
+        "french",
+        "classic",
+        "points"
+      ]
+    }
+  }
+}
