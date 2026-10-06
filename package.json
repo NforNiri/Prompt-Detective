@@ -11,6 +11,7 @@
     "test": "vitest run --coverage",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
+    "audit:bundle": "tsx scripts/audit-bundle.ts",
     "content:validate": "tsx scripts/validate-puzzles.ts",
     "content:upload": "tsx --env-file-if-exists=.env.local scripts/upload-puzzles.ts",
     "content:split": "tsx scripts/split-batch.ts",
