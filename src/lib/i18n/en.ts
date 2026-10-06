@@ -217,7 +217,8 @@ export const en: Strings = {
         body: "All 4 words share 10 guesses. One hint shows a first letter and costs a guess. A new case opens every midnight.",
       },
     ],
-    example: "fox · playing chess · frozen lake · ukiyo-e",
+    // Keep these out of every puzzle's word lists: the example must not spoil a real answer.
+    example: "walrus · playing violin · lighthouse · blueprint",
     next: "Next",
     back: "Back",
     skip: "Skip",
