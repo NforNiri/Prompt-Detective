@@ -1,14 +1,19 @@
 # Open items
 
-Last updated: 2026-10-05 (after Day 4; launch moved to Sunday Oct 11). Close items by deleting them or moving them to "Done".
+Last updated: 2026-10-06 (Day 6 checks done; playtest pending; launch Sunday Oct 11). Close items by deleting them or moving them to "Done".
 
 ## Decisions needed (Niri)
 
 | Item | Options | Notes |
 |---|---|---|
-| Public repo exposes all answers | Make repo private until after launch / keep future puzzles out of git / accept | `content/puzzles/*.json` holds every answer through Nov 12. Already in git history, so only going private hides them. |
-| Live Vercel page shows "Couldn't load today's case" | Show a placeholder in production until Oct 11 / leave it | Production has no env vars yet and no puzzle exists for real dates before launch. Fixed for real on Day 7. |
+| Public repo exposes all answers | Make repo private until after launch / keep future puzzles out of git / accept | `content/puzzles/*.json` holds every answer through Dec 9. Already in git history, so only going private hides them. |
+| Live page says there is no case today until Oct 11 | Show a "first case opens Sunday" placeholder / leave it | Production works (env vars set, functions in Frankfurt); there is simply no puzzle before launch. |
 | Project lives in OneDrive | Move to e.g. `C:\dev\prompt-detective` / stay | OneDrive truncated the 106 MB Next binary during a reinstall (dev server would not start). A plain folder move; git does not care. |
+
+## Day 6
+
+- Playtest with 5 people, then fill in docs/PLAYTEST-01.md (template ready). Claude fixes the top 3.
+- Preview link for testers: https://prompt-detective-git-preview-niris-projects.vercel.app (behind Vercel login; see the playtest doc).
 
 ## Content
 
@@ -22,15 +27,14 @@ Last updated: 2026-10-05 (after Day 4; launch moved to Sunday Oct 11). Close ite
 - Day 4 acceptance: play a full game on localhost with PostHog open at Activity > Live events and confirm every event arrives; paste a share result into WhatsApp and check the grid.
 - Before week 5 (A/B test): create the `guess-budget` multivariate flag in PostHog with variants `control` and `short`. Until it exists, every game uses 10 guesses (the code falls back after 1.5 s at most).
 
-- Day 3 acceptance on a real phone: open http://192.168.0.70:3000 on the same Wi-Fi (allow Node through Windows Firewall on private networks if it does not load).
+- Day 3 acceptance on a real phone: play the preview link on mobile data and install it to the home screen.
 - Sign the scope doc: add "LOCKED" and the date to docs/00-SCOPE.md.
-- Install the Playwright browser before Day 6: `npx playwright install chromium`.
 
 ## Data hygiene before launch
 
 - `guess_log` holds test rows from curl and UI play (all dated before Oct 11). Delete them before launch, or filter by `created_at >= '2026-10-11'` in analysis.
-- Rows 1 to 3 now use real uploads (UUID filenames). Three orphaned placeholder files remain in the bucket under `dev/` (0001-23f16b4f, 0002-0f5a9b2e, 0003-2eb5b09f); delete them in Supabase Storage. The seed script now cleans up after itself.
-- Day 7: set production env vars in Vercel, with a new `IP_HASH_SALT` (not the local one). Leave `NEXT_PUBLIC_DEV_TODAY` unset in production.
+- The e2e test writes guess_log rows under device `00000000-0000-4000-8000-00000000e2e0`. Exclude that device in analysis; it keeps writing rows after launch whenever the test runs.
+- Three orphaned placeholder files under `dev/` in the bucket (0001-23f16b4f, 0002-0f5a9b2e, 0003-2eb5b09f): delete them in Supabase Storage if not done yet.
 
 ## Spec changes made during the build (for review)
 
@@ -47,6 +51,8 @@ All are written into docs/02-TECH-SPEC.md or the content pipeline doc.
 - The home page renders per request with today's puzzle image in the HTML (visitor timezone from Vercel's header). Lighthouse mobile went from 75 to 93-95.
 - PostHog SDK loads at idle; the budget flag comes from a direct /flags request. Zod schemas moved to schemas.ts; the browser uses zod/mini.
 - Game address is prompt-detective-puce.vercel.app (the plain subdomain belongs to someone else).
+- Vercel functions run in Frankfurt (vercel.json), next to the Supabase database.
+- CSP allows inline scripts instead of using nonces (nonces need a proxy on every request). The spec said "strict CSP".
 
 ## Known tooling issues
 
