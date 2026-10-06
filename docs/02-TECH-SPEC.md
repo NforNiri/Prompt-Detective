@@ -176,7 +176,8 @@ PostHog dashboards: funnel (viewed -> first guess -> completed -> shared), reten
 - Answers never appear in the client bundle or in the puzzle endpoint.
 - Image filenames are random UUIDs, so future images cannot be found by guessing filenames.
 - IPs are stored only as a salted SHA-256 hash (`IP_HASH_SALT`).
-- Security headers are set in next.config: a strict CSP (self, the Supabase storage host, the PostHog host; Vercel Analytics loads from the same origin at /_vercel/insights), `X-Content-Type-Options`, `Referrer-Policy`.
+- Security headers are set in next.config: a CSP (self, the Supabase storage host, the PostHog host and its `-assets` host for remote config; Vercel Analytics loads from the same origin at /_vercel/insights), `X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`. Scripts are allowed `'unsafe-inline'` instead of nonces: nonces need a proxy on every request, and nothing renders user-controlled HTML. Previews also allow vercel.live for Vercel's toolbar.
+- `npm run audit:bundle` (after a build) fails if a puzzle's prompt, a multi-word answer, or 3 of a puzzle's 4 answers appear in `.next/static`. The e2e test also checks the served HTML for puzzle #1's answers.
 - Every input is validated with zod. Guesses are length-limited and restricted to letters, digits, spaces, apostrophes and hyphens (digits so answers like "3d render" and "8-bit" work).
 
 ## Env vars
@@ -198,7 +199,7 @@ Unit (Vitest), with at least 90% coverage of `src/lib/game`:
 - share: the exact output string for a won game, a lost game, and a game with a hint.
 - stats: streak continues, breaks after a skipped day, loss resets the streak, distribution updates.
 - date: local date string, the date window check around midnight UTC.
-E2E (Playwright, mobile viewport): load a seeded test puzzle, play a winning game, check that the share text reaches the clipboard.
+E2E (Playwright, mobile viewport): load a seeded test puzzle, play a winning game, check that the share text reaches the clipboard. It runs against a production build on port 3100, uses puzzle #1 through `NEXT_PUBLIC_DEV_TODAY`, answers PostHog requests locally, and fails on any CSP violation or console error. Its guesses reach guess_log under device id `00000000-0000-4000-8000-00000000e2e0`.
 
 ## Architecture decisions (ADRs)
 1. Curated tier lists instead of word embeddings. Embeddings need a vector model per language (Hebrew morphology makes that worse) and give noisy scores. Claude-generated lists with human QA are predictable, cost nothing and work in Hebrew. Trade-off: guesses outside the lists come back COLD. `guess_log` shows the missed near-misses so the lists can be expanded weekly.
