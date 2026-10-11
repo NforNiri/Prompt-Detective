@@ -11,9 +11,7 @@ Last updated: 2026-10-11 (launch moved to Wednesday Oct 14; puzzles renumbered).
 
 ## Before launch (Wed Oct 14)
 
-- Re-upload puzzles 1 to 3 so their database dates move to Oct 14 to 16: `npm run content:upload -- --only=1-3`. Until then the live site serves puzzle #1 on Oct 11.
-- Upload puzzles 4 to 60 before Saturday Oct 17, when #4 is due: `npm run content:upload -- --only=4-60`.
-- Vercel > Settings > Environment Variables: set `NEXT_PUBLIC_DEV_TODAY` (Preview) to `2026-10-14`, then redeploy the preview. `NEXT_PUBLIC_LAUNCH_DATE` is unused and can be deleted.
+- Done 2026-10-11: all 60 puzzles uploaded with the new dates; Vercel `NEXT_PUBLIC_DEV_TODAY` and `NEXT_PUBLIC_LAUNCH_DATE` set to 2026-10-14 and the preview rebuilt. The project is linked to the Vercel CLI (.vercel/, gitignored).
 - Anyone who played #1 on Oct 11 will see their finished game again on Oct 14 (same puzzle id, saved in their browser).
 
 ## Day 6
