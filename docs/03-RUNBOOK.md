@@ -1,5 +1,7 @@
 # Prompt Detective: 7-Day Runbook
 
+Calendar (rescheduled again 2026-10-11): launch moved to **Wednesday Oct 14**. Launch week ramps up (Wed 1, Thu 2, Fri 2, Sat 3) and the normal weekly curve starts Sunday Oct 18. Puzzles were renumbered to keep weekdays and difficulty matched; the mapping is in docs/CONTENT-LOG.md. Puzzle 60 is Dec 12.
+
 Calendar (rescheduled 2026-10-05): launch moved to **Sunday Oct 11**. Every puzzle date moved +7 days, so weekdays and difficulty are unchanged. Days 1 to 4 ran Sep 24 to Oct 5; Days 5 to 7 run Oct 6 to Oct 10.
 
 Original plan: Day 1 = Sunday Sep 27, 2026. Day 7 = Saturday Oct 3. Puzzle #1 goes live Sunday Oct 4 (difficulty 1, the easiest day, which suits launch day).

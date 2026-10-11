@@ -1,108 +1,107 @@
 {
   "id": 59,
-  "publishDate": "2026-12-08",
-  "difficulty": 2,
+  "publishDate": "2026-12-11",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a scientist mixing chemicals in a laboratory, comic book, no text, no letters, no watermark",
+  "prompt": "a tiger surfing a giant wave on the open ocean, ukiyo-e, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "scientist",
+      "answer": "tiger",
       "accepted": [
-        "scientist",
-        "chemist",
-        "mad scientist",
-        "researcher"
+        "tiger",
+        "bengal tiger",
+        "tigress"
       ],
       "hot": [
-        "professor",
-        "doctor",
-        "inventor",
-        "alchemist",
-        "teacher"
+        "big cat",
+        "lion",
+        "leopard",
+        "jaguar",
+        "panther",
+        "cheetah"
       ],
       "warm": [
-        "man",
-        "person",
-        "genius",
-        "glasses",
-        "lab coat",
-        "nerd"
+        "cat",
+        "animal",
+        "predator",
+        "stripes",
+        "beast",
+        "wildcat"
       ]
     },
     "doing": {
-      "answer": "mixing chemicals",
+      "answer": "surfing",
       "accepted": [
-        "mixing chemicals",
-        "mixing",
-        "experimenting",
-        "doing an experiment",
-        "pouring chemicals",
-        "chemistry"
+        "surfing",
+        "surfing a wave",
+        "riding a wave",
+        "surf"
       ],
       "hot": [
-        "pouring",
-        "brewing",
-        "potion",
-        "testing",
-        "boiling"
+        "bodyboarding",
+        "sailing",
+        "wakeboarding",
+        "riding",
+        "balancing"
       ],
       "warm": [
-        "working",
-        "holding",
-        "science",
-        "explosion",
-        "studying",
-        "inventing"
+        "swimming",
+        "floating",
+        "jumping",
+        "standing",
+        "wave",
+        "water"
       ]
     },
     "where": {
-      "answer": "laboratory",
+      "answer": "ocean",
       "accepted": [
-        "laboratory",
-        "lab",
-        "science lab",
-        "chemistry lab",
-        "research lab"
+        "ocean",
+        "sea",
+        "open sea",
+        "waves",
+        "ocean waves"
       ],
       "hot": [
-        "classroom",
-        "hospital",
-        "factory",
-        "kitchen",
-        "workshop"
+        "storm",
+        "beach",
+        "coast",
+        "bay",
+        "harbor"
       ],
       "warm": [
-        "school",
-        "room",
-        "building",
-        "university",
-        "indoors",
-        "office"
+        "water",
+        "lake",
+        "river",
+        "island",
+        "mountain",
+        "boat"
       ]
     },
     "style": {
-      "answer": "comic book",
+      "answer": "ukiyo-e",
       "accepted": [
-        "comic book",
-        "comic",
-        "graphic novel",
-        "comic art",
-        "comic book art"
+        "ukiyo-e",
+        "ukiyoe",
+        "ukiyo e",
+        "woodblock print",
+        "woodblock",
+        "japanese woodblock"
       ],
       "hot": [
-        "cartoon",
-        "pop art",
-        "manga",
-        "superhero",
-        "illustration"
+        "japanese print",
+        "japanese art",
+        "printmaking",
+        "hokusai",
+        "woodcut"
       ],
       "warm": [
-        "drawing",
+        "japanese",
+        "print",
+        "traditional",
+        "asian",
         "ink",
-        "bold",
-        "halftone",
-        "retro",
-        "panel"
+        "edo"
       ]
     }
   }

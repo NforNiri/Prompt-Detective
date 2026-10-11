@@ -1,110 +1,107 @@
 {
   "id": 26,
-  "publishDate": "2026-11-05",
-  "difficulty": 3,
+  "publishDate": "2026-11-08",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a bear having a picnic in a flower meadow, embroidery, no text, no letters, no watermark",
+  "prompt": "a rabbit planting carrots in a vegetable garden, watercolor, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "bear",
+      "answer": "rabbit",
       "accepted": [
-        "bear",
-        "brown bear",
-        "grizzly",
-        "grizzly bear"
+        "rabbit",
+        "bunny",
+        "hare",
+        "bunny rabbit",
+        "jackrabbit"
       ],
       "hot": [
-        "teddy bear",
-        "panda",
-        "polar bear",
-        "black bear",
-        "wolf"
+        "hamster",
+        "guinea pig",
+        "mouse",
+        "squirrel",
+        "kangaroo"
       ],
       "warm": [
         "animal",
-        "dog",
-        "cub",
-        "furry",
-        "beast",
-        "mammal"
+        "pet",
+        "rodent",
+        "ears",
+        "easter",
+        "cute"
       ]
     },
     "doing": {
-      "answer": "having a picnic",
+      "answer": "planting carrots",
       "accepted": [
-        "having a picnic",
-        "picnic",
-        "picnicking",
-        "eating lunch",
-        "eating a picnic"
+        "planting carrots",
+        "planting",
+        "gardening",
+        "growing carrots",
+        "harvesting carrots",
+        "picking carrots"
       ],
       "hot": [
-        "eating",
-        "lunch",
-        "sandwich",
-        "eating honey",
-        "honey"
+        "digging",
+        "carrots",
+        "farming",
+        "watering",
+        "harvesting"
       ],
       "warm": [
-        "sitting",
-        "relaxing",
+        "eating",
+        "working",
+        "vegetables",
         "food",
-        "basket",
-        "hungry",
-        "snack"
+        "plants",
+        "hopping"
       ]
     },
     "where": {
-      "answer": "meadow",
+      "answer": "vegetable garden",
       "accepted": [
-        "meadow",
-        "field",
-        "grassland",
-        "flower meadow",
-        "grassy field"
+        "vegetable garden",
+        "garden",
+        "veggie garden",
+        "vegetable patch",
+        "allotment",
+        "kitchen garden"
       ],
       "hot": [
-        "park",
-        "garden",
-        "hill",
-        "prairie",
-        "countryside",
-        "lawn"
+        "farm",
+        "field",
+        "backyard",
+        "greenhouse",
+        "yard"
       ],
       "warm": [
-        "grass",
-        "flowers",
-        "nature",
-        "forest",
+        "soil",
+        "dirt",
         "outdoors",
-        "summer"
+        "countryside",
+        "flowers",
+        "village"
       ]
     },
     "style": {
-      "answer": "embroidery",
+      "answer": "watercolor",
       "accepted": [
-        "embroidery",
-        "embroidered",
-        "needlework",
-        "cross stitch",
-        "cross-stitch",
-        "stitching"
+        "watercolor",
+        "watercolour",
+        "watercolor painting",
+        "aquarelle"
       ],
       "hot": [
-        "sewing",
-        "textile",
-        "tapestry",
-        "fabric",
-        "knitting",
-        "quilt"
+        "painting",
+        "gouache",
+        "ink wash",
+        "pastel"
       ],
       "warm": [
-        "thread",
-        "craft",
-        "handmade",
-        "cloth",
-        "cute",
-        "yarn"
+        "paint",
+        "art",
+        "illustration",
+        "drawing",
+        "soft"
       ]
     }
   }

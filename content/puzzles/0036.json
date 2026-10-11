@@ -1,103 +1,106 @@
 {
   "id": 36,
-  "publishDate": "2026-11-15",
-  "difficulty": 1,
+  "publishDate": "2026-11-18",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a panda eating bamboo in a bamboo forest, photograph, no text, no letters, no watermark",
+  "prompt": "a penguin ice skating on a frozen pond, claymation, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "panda",
+      "answer": "penguin",
       "accepted": [
-        "panda",
-        "giant panda",
-        "panda bear"
+        "penguin",
+        "emperor penguin",
+        "baby penguin"
       ],
       "hot": [
-        "bear",
-        "red panda",
-        "koala",
+        "puffin",
+        "seal",
+        "duck",
+        "goose",
         "polar bear"
       ],
       "warm": [
+        "bird",
         "animal",
-        "mammal",
-        "china",
-        "cub",
-        "black and white",
+        "antarctica",
+        "cold",
+        "ice",
         "cute"
       ]
     },
     "doing": {
-      "answer": "eating bamboo",
+      "answer": "ice skating",
       "accepted": [
-        "eating bamboo",
-        "eating",
-        "chewing bamboo",
-        "munching",
-        "chewing"
+        "ice skating",
+        "skating",
+        "figure skating",
+        "iceskating"
       ],
       "hot": [
-        "bamboo",
-        "feeding",
-        "snacking",
-        "biting"
+        "sliding",
+        "dancing",
+        "gliding",
+        "spinning",
+        "slipping"
       ],
       "warm": [
-        "sitting",
-        "holding",
-        "resting",
-        "food",
-        "hungry",
-        "leaves"
+        "playing",
+        "winter",
+        "moving",
+        "sport",
+        "balancing",
+        "falling"
       ]
     },
     "where": {
-      "answer": "bamboo forest",
+      "answer": "frozen pond",
       "accepted": [
-        "bamboo forest",
-        "bamboo grove",
-        "bamboo",
-        "forest"
+        "frozen pond",
+        "frozen lake",
+        "ice rink",
+        "rink",
+        "ice"
       ],
       "hot": [
-        "jungle",
-        "woods",
-        "zoo",
-        "grove"
+        "pond",
+        "lake",
+        "snowfield",
+        "arctic",
+        "glacier"
       ],
       "warm": [
-        "trees",
-        "nature",
-        "china",
-        "garden",
-        "mountain",
-        "green"
+        "snow",
+        "winter",
+        "cold",
+        "water",
+        "outdoors",
+        "mountain"
       ]
     },
     "style": {
-      "answer": "photograph",
+      "answer": "claymation",
       "accepted": [
-        "photograph",
-        "photo",
-        "photography",
-        "realistic",
-        "photorealistic",
-        "close-up photo"
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
       ],
       "hot": [
-        "picture",
-        "camera",
-        "snapshot",
-        "portrait",
-        "close-up"
+        "animation",
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
       ],
       "warm": [
-        "real life",
-        "natural",
-        "hd",
-        "macro",
-        "detailed",
-        "sharp"
+        "cartoon",
+        "handmade",
+        "cute",
+        "model",
+        "figurine",
+        "kids"
       ]
     }
   }

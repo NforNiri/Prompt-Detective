@@ -1,109 +1,105 @@
 {
   "id": 31,
-  "publishDate": "2026-11-10",
-  "difficulty": 2,
+  "publishDate": "2026-11-13",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a firefighter rescuing a cat from a tall tree, pencil sketch, no text, no letters, no watermark",
+  "prompt": "a frog fishing from a wooden bridge, ukiyo-e, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "firefighter",
+      "answer": "frog",
       "accepted": [
-        "firefighter",
-        "fireman",
-        "fire fighter",
-        "firewoman"
+        "frog",
+        "toad",
+        "tree frog",
+        "bullfrog"
       ],
       "hot": [
-        "rescuer",
-        "policeman",
-        "paramedic",
-        "soldier",
-        "lifeguard"
+        "lizard",
+        "newt",
+        "salamander",
+        "turtle"
       ],
       "warm": [
-        "hero",
-        "man",
-        "worker",
-        "helmet",
-        "person",
-        "uniform"
+        "animal",
+        "amphibian",
+        "creature",
+        "pond animal",
+        "fish"
       ]
     },
     "doing": {
-      "answer": "rescuing a cat",
+      "answer": "fishing",
       "accepted": [
-        "rescuing a cat",
-        "rescuing",
-        "saving a cat",
-        "saving",
-        "rescue",
-        "rescuing a kitten"
+        "fishing",
+        "fishing from a bridge",
+        "holding a fishing rod",
+        "angling",
+        "casting a line"
       ],
       "hot": [
-        "climbing",
-        "holding a cat",
-        "helping",
-        "catching",
-        "reaching"
+        "fishing rod",
+        "catching fish",
+        "rod",
+        "reeling"
       ],
       "warm": [
-        "cat",
-        "kitten",
-        "working",
-        "climbing a ladder",
-        "holding",
-        "ladder"
+        "sitting",
+        "waiting",
+        "relaxing",
+        "water",
+        "fish",
+        "holding"
       ]
     },
     "where": {
-      "answer": "tree",
+      "answer": "wooden bridge",
       "accepted": [
-        "tree",
-        "treetop",
-        "tree branch",
-        "oak tree",
-        "big tree",
-        "tall tree"
+        "wooden bridge",
+        "bridge",
+        "footbridge",
+        "arched bridge",
+        "japanese bridge"
       ],
       "hot": [
-        "branch",
-        "forest",
-        "park",
-        "ladder"
+        "pond",
+        "river",
+        "stream",
+        "dock",
+        "pier"
       ],
       "warm": [
-        "backyard",
-        "yard",
+        "water",
         "garden",
-        "neighborhood",
-        "street",
-        "leaves"
+        "lake",
+        "park",
+        "village",
+        "wood"
       ]
     },
     "style": {
-      "answer": "pencil sketch",
+      "answer": "ukiyo-e",
       "accepted": [
-        "pencil sketch",
-        "sketch",
-        "pencil",
-        "pencil drawing",
-        "graphite",
-        "sketching"
+        "ukiyo-e",
+        "ukiyoe",
+        "ukiyo e",
+        "woodblock print",
+        "woodblock",
+        "japanese woodblock"
       ],
       "hot": [
-        "drawing",
-        "charcoal",
-        "line art",
-        "ink drawing",
-        "doodle"
+        "japanese print",
+        "japanese art",
+        "printmaking",
+        "hokusai",
+        "woodcut"
       ],
       "warm": [
-        "art",
-        "black and white",
-        "paper",
-        "hand drawn",
-        "grey",
-        "rough"
+        "japanese",
+        "print",
+        "traditional",
+        "asian",
+        "ink",
+        "edo"
       ]
     }
   }

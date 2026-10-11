@@ -1,105 +1,104 @@
 {
   "id": 37,
-  "publishDate": "2026-11-16",
-  "difficulty": 2,
+  "publishDate": "2026-11-19",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a ninja climbing a skyscraper at night, comic book, no text, no letters, no watermark",
+  "prompt": "a lion roaring on a rocky cliff, stained glass, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "ninja",
+      "answer": "lion",
       "accepted": [
-        "ninja",
-        "shinobi",
-        "assassin"
+        "lion",
+        "lioness",
+        "male lion"
       ],
       "hot": [
-        "samurai",
-        "spy",
-        "thief",
-        "burglar",
-        "martial artist"
+        "tiger",
+        "leopard",
+        "cheetah",
+        "big cat",
+        "cougar"
       ],
       "warm": [
-        "man",
-        "warrior",
-        "fighter",
-        "hero",
-        "person",
-        "mask"
+        "cat",
+        "animal",
+        "king",
+        "beast",
+        "predator",
+        "mane"
       ]
     },
     "doing": {
-      "answer": "climbing",
+      "answer": "roaring",
       "accepted": [
-        "climbing",
-        "climbing a building",
-        "scaling",
-        "climbing a wall",
-        "wall climbing"
+        "roaring",
+        "growling",
+        "snarling"
       ],
       "hot": [
-        "hanging",
-        "jumping",
-        "sneaking",
-        "parkour",
-        "crawling"
+        "shouting",
+        "yelling",
+        "howling",
+        "calling",
+        "barking"
       ],
       "warm": [
-        "running",
-        "hiding",
-        "holding",
-        "moving",
-        "falling",
-        "spying"
+        "standing",
+        "sitting",
+        "looking",
+        "opening mouth",
+        "singing",
+        "hunting"
       ]
     },
     "where": {
-      "answer": "skyscraper",
+      "answer": "rocky cliff",
       "accepted": [
-        "skyscraper",
-        "tall building",
-        "tower",
-        "high rise",
-        "building"
+        "rocky cliff",
+        "cliff",
+        "rock",
+        "cliff edge",
+        "ledge"
       ],
       "hot": [
-        "city",
-        "rooftop",
-        "office building",
-        "downtown"
+        "mountain",
+        "hill",
+        "canyon",
+        "boulder",
+        "savanna"
       ],
       "warm": [
-        "night",
+        "africa",
         "sky",
-        "street",
-        "window",
-        "wall",
-        "urban"
+        "sunset",
+        "nature",
+        "outdoors",
+        "wilderness"
       ]
     },
     "style": {
-      "answer": "comic book",
+      "answer": "stained glass",
       "accepted": [
-        "comic book",
-        "comic",
-        "graphic novel",
-        "comic art",
-        "comic book art"
+        "stained glass",
+        "stained glass window",
+        "glass",
+        "church window",
+        "leaded glass"
       ],
       "hot": [
-        "cartoon",
-        "pop art",
-        "manga",
-        "superhero",
-        "illustration"
+        "mosaic",
+        "window",
+        "colored glass",
+        "gothic",
+        "cathedral"
       ],
       "warm": [
-        "drawing",
-        "ink",
-        "bold",
-        "halftone",
-        "retro",
-        "panel"
+        "church",
+        "colorful",
+        "religious",
+        "medieval",
+        "glowing",
+        "art"
       ]
     }
   }

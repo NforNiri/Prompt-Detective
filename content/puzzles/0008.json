@@ -1,108 +1,109 @@
 {
   "id": 8,
-  "publishDate": "2026-10-18",
-  "difficulty": 1,
+  "publishDate": "2026-10-21",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a cow playing guitar on a farm, cartoon, no text, no letters, no watermark",
+  "prompt": "a snail driving a race car on a race track, claymation, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "cow",
+      "answer": "snail",
       "accepted": [
-        "cow",
-        "cattle",
-        "dairy cow",
-        "calf"
+        "snail",
+        "garden snail",
+        "escargot"
       ],
       "hot": [
-        "bull",
-        "ox",
-        "buffalo",
-        "yak",
-        "goat"
+        "slug",
+        "turtle",
+        "shell",
+        "caterpillar",
+        "worm"
       ],
       "warm": [
+        "bug",
+        "insect",
         "animal",
-        "farm animal",
-        "sheep",
-        "horse",
-        "pig",
-        "milk"
+        "slow",
+        "creature",
+        "critter"
       ]
     },
     "doing": {
-      "answer": "playing guitar",
+      "answer": "driving a race car",
       "accepted": [
-        "playing guitar",
-        "guitar",
-        "playing the guitar",
-        "playing a guitar",
-        "strumming"
+        "driving a race car",
+        "racing",
+        "driving",
+        "race car",
+        "driving a car",
+        "car racing"
       ],
       "hot": [
-        "singing",
-        "playing music",
-        "banjo",
-        "ukulele",
-        "music",
-        "playing"
+        "speeding",
+        "race",
+        "competing",
+        "riding",
+        "car"
       ],
       "warm": [
-        "dancing",
-        "performing",
-        "song",
-        "concert",
-        "instrument",
-        "band"
+        "winning",
+        "going fast",
+        "moving",
+        "sport",
+        "wheel",
+        "speed"
       ]
     },
     "where": {
-      "answer": "farm",
+      "answer": "race track",
       "accepted": [
-        "farm",
-        "barn",
-        "farmyard",
-        "barnyard",
-        "ranch"
+        "race track",
+        "racetrack",
+        "track",
+        "circuit",
+        "raceway",
+        "speedway"
       ],
       "hot": [
-        "field",
-        "meadow",
-        "countryside",
-        "pasture",
-        "stable"
+        "road",
+        "stadium",
+        "highway",
+        "finish line",
+        "arena"
       ],
       "warm": [
-        "grass",
-        "village",
-        "hay",
-        "fence",
-        "outdoors",
-        "hill"
+        "street",
+        "asphalt",
+        "crowd",
+        "grandstand",
+        "pit",
+        "course"
       ]
     },
     "style": {
-      "answer": "cartoon",
+      "answer": "claymation",
       "accepted": [
-        "cartoon",
-        "cartoonish",
-        "toon",
-        "animated cartoon",
-        "kids cartoon"
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
       ],
       "hot": [
         "animation",
-        "animated",
-        "comic",
-        "illustration",
-        "drawing"
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
       ],
       "warm": [
-        "kids",
+        "cartoon",
+        "handmade",
         "cute",
-        "funny",
-        "art",
-        "colorful",
-        "simple"
+        "model",
+        "figurine",
+        "kids"
       ]
     }
   }

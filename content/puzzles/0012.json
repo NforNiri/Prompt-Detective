@@ -1,109 +1,113 @@
 {
   "id": 12,
-  "publishDate": "2026-10-22",
-  "difficulty": 3,
+  "publishDate": "2026-10-25",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "an owl holding a lantern in a forest at night, stained glass, no text, no letters, no watermark",
+  "prompt": "a dinosaur eating ice cream at a playground, crayon drawing, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "owl",
+      "answer": "dinosaur",
       "accepted": [
-        "owl",
-        "barn owl",
-        "snowy owl",
-        "great horned owl",
-        "owlet"
+        "dinosaur",
+        "dino",
+        "t-rex",
+        "t rex",
+        "trex",
+        "tyrannosaurus"
       ],
       "hot": [
-        "hawk",
-        "eagle",
-        "falcon",
-        "raven",
-        "parrot"
+        "dragon",
+        "lizard",
+        "raptor",
+        "crocodile",
+        "reptile"
       ],
       "warm": [
-        "bird",
+        "monster",
         "animal",
-        "feathers",
-        "night bird",
-        "wise",
-        "nocturnal"
+        "prehistoric",
+        "beast",
+        "creature",
+        "green"
       ]
     },
     "doing": {
-      "answer": "holding a lantern",
+      "answer": "eating ice cream",
       "accepted": [
-        "holding a lantern",
-        "lantern",
-        "carrying a lantern",
-        "holding a lamp",
-        "holding lantern"
+        "eating ice cream",
+        "ice cream",
+        "licking ice cream",
+        "eating an ice cream",
+        "eating icecream",
+        "ice cream cone"
       ],
       "hot": [
-        "lamp",
-        "holding a light",
-        "candle",
-        "torch",
-        "glowing"
+        "eating",
+        "licking",
+        "dessert",
+        "cone",
+        "gelato",
+        "popsicle"
       ],
       "warm": [
-        "light",
-        "holding",
-        "carrying",
-        "flying",
-        "perching",
-        "standing",
-        "guiding"
+        "food",
+        "snack",
+        "treat",
+        "sweet",
+        "hungry",
+        "sugar"
       ]
     },
     "where": {
-      "answer": "forest",
+      "answer": "playground",
       "accepted": [
-        "forest",
-        "woods",
-        "woodland",
-        "dark forest",
-        "night forest"
+        "playground",
+        "play ground",
+        "play area",
+        "jungle gym",
+        "playpark"
       ],
       "hot": [
-        "jungle",
-        "trees",
-        "grove",
-        "swamp",
-        "park"
+        "park",
+        "swings",
+        "slide",
+        "schoolyard",
+        "sandbox"
       ],
       "warm": [
-        "night",
-        "nature",
-        "moon",
-        "branch",
-        "mountain",
-        "outdoors"
+        "school",
+        "garden",
+        "yard",
+        "kids",
+        "outdoors",
+        "grass"
       ]
     },
     "style": {
-      "answer": "stained glass",
+      "answer": "crayon drawing",
       "accepted": [
-        "stained glass",
-        "stained glass window",
-        "glass",
-        "church window",
-        "leaded glass"
+        "crayon drawing",
+        "crayon",
+        "kids drawing",
+        "childrens drawing",
+        "child's drawing",
+        "children's drawing"
       ],
       "hot": [
-        "mosaic",
-        "window",
-        "colored glass",
-        "gothic",
-        "cathedral"
+        "drawing",
+        "colored pencil",
+        "pastel",
+        "doodle",
+        "finger painting",
+        "chalk"
       ],
       "warm": [
-        "church",
+        "kids",
+        "childish",
+        "art",
         "colorful",
-        "religious",
-        "medieval",
-        "glowing",
-        "art"
+        "simple",
+        "scribble"
       ]
     }
   }

@@ -1,111 +1,108 @@
 {
   "id": 22,
-  "publishDate": "2026-11-01",
-  "difficulty": 1,
+  "publishDate": "2026-11-04",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a kitten sleeping in a flower pot, photograph, no text, no letters, no watermark",
+  "prompt": "a mermaid combing her hair on a rock in the sea, paper cutout, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "kitten",
+      "answer": "mermaid",
       "accepted": [
-        "kitten",
-        "kitty",
-        "cat",
-        "baby cat",
-        "tabby"
+        "mermaid",
+        "siren",
+        "sea maiden"
       ],
       "hot": [
-        "puppy",
-        "bunny",
-        "hamster",
-        "fox",
-        "lion cub"
+        "fish",
+        "fairy",
+        "princess",
+        "nymph",
+        "sea creature"
       ],
       "warm": [
-        "animal",
-        "pet",
-        "baby",
-        "fur",
-        "cute",
-        "dog"
+        "woman",
+        "girl",
+        "ocean",
+        "fantasy",
+        "tail",
+        "myth"
       ]
     },
     "doing": {
-      "answer": "sleeping",
+      "answer": "combing her hair",
       "accepted": [
-        "sleeping",
-        "asleep",
-        "napping",
-        "taking a nap",
-        "dozing",
-        "sleep"
+        "combing her hair",
+        "combing hair",
+        "brushing hair",
+        "brushing her hair",
+        "combing"
       ],
       "hot": [
-        "resting",
-        "lying down",
-        "curled up",
-        "relaxing",
-        "dreaming"
+        "brushing",
+        "grooming",
+        "singing",
+        "looking in a mirror",
+        "styling hair"
       ],
       "warm": [
         "sitting",
-        "hiding",
-        "yawning",
-        "lazy",
-        "tired",
-        "cozy"
+        "relaxing",
+        "posing",
+        "hair",
+        "mirror",
+        "waiting"
       ]
     },
     "where": {
-      "answer": "flower pot",
+      "answer": "rock in the sea",
       "accepted": [
-        "flower pot",
-        "flowerpot",
-        "pot",
-        "plant pot",
-        "planter",
-        "clay pot"
+        "rock in the sea",
+        "rock",
+        "sea rock",
+        "rocky shore",
+        "boulder"
       ],
       "hot": [
-        "garden",
-        "basket",
-        "bucket",
-        "vase",
-        "window box"
+        "reef",
+        "cliff",
+        "coast",
+        "island",
+        "shore"
       ],
       "warm": [
-        "flowers",
-        "plants",
-        "porch",
-        "windowsill",
-        "balcony",
-        "soil"
+        "ocean",
+        "sea",
+        "waves",
+        "beach",
+        "water",
+        "moon"
       ]
     },
     "style": {
-      "answer": "photograph",
+      "answer": "paper cutout",
       "accepted": [
-        "photograph",
-        "photo",
-        "photography",
-        "realistic",
-        "photorealistic",
-        "close-up photo"
+        "paper cutout",
+        "paper cut",
+        "papercut",
+        "paper art",
+        "cut paper",
+        "layered paper"
       ],
       "hot": [
-        "picture",
-        "camera",
-        "snapshot",
-        "portrait",
-        "close-up"
+        "papercraft",
+        "origami",
+        "collage",
+        "paper",
+        "craft",
+        "shadow box"
       ],
       "warm": [
-        "real life",
-        "natural",
-        "hd",
-        "macro",
-        "detailed",
-        "sharp"
+        "layers",
+        "handmade",
+        "scissors",
+        "3d",
+        "kids",
+        "crafty"
       ]
     }
   }

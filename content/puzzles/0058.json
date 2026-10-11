@@ -1,109 +1,109 @@
 {
   "id": 58,
-  "publishDate": "2026-12-07",
-  "difficulty": 2,
+  "publishDate": "2026-12-10",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a submarine exploring a coral reef, paper cutout, no text, no letters, no watermark",
+  "prompt": "a raccoon skateboarding in an empty swimming pool, pixel art, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "submarine",
+      "answer": "raccoon",
       "accepted": [
-        "submarine",
-        "sub",
-        "submersible",
-        "mini submarine"
+        "raccoon",
+        "racoon",
+        "trash panda"
       ],
       "hot": [
-        "boat",
-        "ship",
-        "diver",
-        "robot",
-        "torpedo"
+        "possum",
+        "opossum",
+        "badger",
+        "red panda",
+        "ferret",
+        "skunk"
       ],
       "warm": [
-        "vehicle",
-        "machine",
-        "ocean",
-        "underwater",
-        "yellow",
-        "metal"
+        "animal",
+        "bandit",
+        "mammal",
+        "cat",
+        "fox",
+        "bear",
+        "rodent"
       ]
     },
     "doing": {
-      "answer": "exploring",
+      "answer": "skateboarding",
       "accepted": [
-        "exploring",
-        "diving",
-        "searching",
-        "exploring the reef",
-        "discovering"
+        "skateboarding",
+        "skateboard",
+        "skating",
+        "riding a skateboard"
       ],
       "hot": [
-        "swimming",
-        "floating",
-        "sailing",
-        "traveling",
-        "scanning"
+        "doing a trick",
+        "ollie",
+        "kickflip",
+        "jumping",
+        "surfing",
+        "rollerblading"
       ],
       "warm": [
-        "moving",
-        "looking",
-        "adventure",
-        "hiding",
-        "sinking",
-        "cruising"
+        "riding",
+        "sport",
+        "trick",
+        "rolling",
+        "balancing",
+        "flying",
+        "playing"
       ]
     },
     "where": {
-      "answer": "coral reef",
+      "answer": "empty swimming pool",
       "accepted": [
-        "coral reef",
-        "reef",
-        "coral",
-        "under the sea",
-        "ocean floor"
+        "empty swimming pool",
+        "empty pool",
+        "swimming pool",
+        "pool",
+        "drained pool"
       ],
       "hot": [
-        "ocean",
-        "sea",
-        "sea floor",
-        "underwater",
-        "aquarium"
+        "skatepark",
+        "skate park",
+        "bowl",
+        "ramp"
       ],
       "warm": [
-        "water",
-        "fish",
-        "seaweed",
-        "beach",
-        "deep",
-        "tropical"
+        "backyard",
+        "concrete",
+        "park",
+        "yard",
+        "street",
+        "summer"
       ]
     },
     "style": {
-      "answer": "paper cutout",
+      "answer": "pixel art",
       "accepted": [
-        "paper cutout",
-        "paper cut",
-        "papercut",
-        "paper art",
-        "cut paper",
-        "layered paper"
+        "pixel art",
+        "pixel",
+        "8-bit",
+        "8 bit",
+        "pixelated",
+        "16-bit"
       ],
       "hot": [
-        "papercraft",
-        "origami",
-        "collage",
-        "paper",
-        "craft",
-        "shadow box"
+        "retro game",
+        "video game",
+        "sprite",
+        "retro",
+        "arcade game"
       ],
       "warm": [
-        "layers",
-        "handmade",
-        "scissors",
-        "3d",
-        "kids",
-        "crafty"
+        "game",
+        "arcade",
+        "digital",
+        "blocky",
+        "old school",
+        "computer"
       ]
     }
   }

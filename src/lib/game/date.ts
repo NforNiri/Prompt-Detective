@@ -60,6 +60,17 @@ export function weekday(date: string): number {
 // Israeli week, Sunday start. See docs/01-GDD.md "Weekly difficulty curve".
 const DIFFICULTY_BY_WEEKDAY = [1, 2, 2, 3, 3, 4, 5] as const;
 
+/** Puzzle #1's date. Moved from Sunday Oct 11 to Wednesday Oct 14 (docs/CONTENT-LOG.md). */
+export const LAUNCH_DATE = "2026-10-14";
+
+// Launch week ramps up from an easy first puzzle; the weekly curve starts on Sunday Oct 18.
+const LAUNCH_RAMP: Readonly<Record<string, number>> = {
+  "2026-10-14": 1,
+  "2026-10-15": 2,
+  "2026-10-16": 2,
+  "2026-10-17": 3,
+};
+
 export function expectedDifficulty(date: string): number {
-  return DIFFICULTY_BY_WEEKDAY[weekday(date)]!;
+  return LAUNCH_RAMP[date] ?? DIFFICULTY_BY_WEEKDAY[weekday(date)]!;
 }

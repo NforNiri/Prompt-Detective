@@ -1,108 +1,110 @@
 {
   "id": 45,
-  "publishDate": "2026-11-24",
-  "difficulty": 2,
+  "publishDate": "2026-11-27",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a spaceship landing on the moon, chalk drawing, no text, no letters, no watermark",
+  "prompt": "a jazz singer performing in a nightclub, art deco, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "spaceship",
+      "answer": "jazz singer",
       "accepted": [
-        "spaceship",
-        "rocket",
-        "spacecraft",
-        "rocket ship",
-        "space shuttle",
-        "lander"
+        "jazz singer",
+        "singer",
+        "vocalist",
+        "lounge singer",
+        "diva"
       ],
       "hot": [
-        "ufo",
-        "satellite",
-        "airplane",
-        "alien ship"
+        "musician",
+        "performer",
+        "dancer",
+        "actress",
+        "entertainer"
       ],
       "warm": [
-        "ship",
-        "machine",
-        "vehicle",
-        "astronaut",
-        "space",
-        "plane"
+        "woman",
+        "lady",
+        "star",
+        "glamour",
+        "artist",
+        "person"
       ]
     },
     "doing": {
-      "answer": "landing",
+      "answer": "performing",
       "accepted": [
-        "landing",
-        "landing on the moon",
-        "touching down",
-        "arriving",
-        "descending"
+        "performing",
+        "singing",
+        "crooning",
+        "singing a song",
+        "holding a microphone",
+        "performing on stage"
       ],
       "hot": [
-        "flying",
-        "launching",
-        "taking off",
-        "hovering",
-        "falling"
+        "microphone",
+        "talking",
+        "dancing",
+        "humming",
+        "posing"
       ],
       "warm": [
-        "moving",
-        "exploring",
-        "crashing",
-        "parking",
-        "traveling",
-        "floating"
+        "music",
+        "standing",
+        "show",
+        "concert",
+        "entertaining",
+        "smiling"
       ]
     },
     "where": {
-      "answer": "moon",
+      "answer": "nightclub",
       "accepted": [
-        "moon",
-        "lunar surface",
-        "moon surface",
-        "lunar"
+        "nightclub",
+        "jazz club",
+        "club",
+        "lounge",
+        "cabaret",
+        "speakeasy"
       ],
       "hot": [
-        "crater",
-        "mars",
-        "planet",
-        "outer space",
-        "asteroid"
+        "bar",
+        "stage",
+        "theater",
+        "ballroom",
+        "casino"
       ],
       "warm": [
-        "space",
-        "stars",
         "night",
-        "sky",
-        "galaxy",
-        "earth"
+        "music",
+        "party",
+        "restaurant",
+        "hotel",
+        "venue"
       ]
     },
     "style": {
-      "answer": "chalk drawing",
+      "answer": "art deco",
       "accepted": [
-        "chalk drawing",
-        "chalk",
-        "chalkboard",
-        "blackboard",
-        "chalk art",
-        "chalk on blackboard"
+        "art deco",
+        "deco",
+        "artdeco",
+        "1920s",
+        "twenties"
       ],
       "hot": [
-        "pastel",
-        "sidewalk chalk",
-        "crayon",
-        "drawing",
-        "sketch"
+        "art nouveau",
+        "gatsby",
+        "vintage poster",
+        "retro",
+        "geometric"
       ],
       "warm": [
-        "school",
-        "dark",
-        "hand drawn",
-        "art",
-        "dusty",
-        "classroom"
+        "vintage",
+        "gold",
+        "elegant",
+        "old",
+        "poster",
+        "luxury"
       ]
     }
   }

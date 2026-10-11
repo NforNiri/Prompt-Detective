@@ -50,3 +50,17 @@ Rejected v1 images are kept in content/images/rejected/ for before and after com
 ## 2026-10-05: #44 delivered
 
 #44 (dragon roasting marshmallows, crayon drawing) passes QA on the first try. All 60 puzzle images now exist; #56 stays as is (weak style, accepted).
+
+## 2026-10-11: Launch moved to Wednesday Oct 14, puzzles renumbered
+
+A plain +3 day shift would have broken the weekday difficulty curve (Saturday puzzles on Tuesdays). Instead:
+
+| Old | New | Dates | Why |
+|---|---|---|---|
+| #1 to #4 | #1 to #4 | Wed Oct 14 to Sat Oct 17 | Launch week ramp: difficulty 1, 2, 2, 3. An easy first puzzle for new players. |
+| #8 to #60 | #5 to #57 | Oct 18 to Dec 9, unchanged | The weekly curve resumes on Sunday Oct 18 with the same content on the same days. |
+| #5, #6, #7 | #58, #59, #60 | Thu Dec 10 to Sat Dec 12 | Same weekdays and difficulty (3, 4, 5) as before. |
+
+The ramp is coded as `LAUNCH_RAMP` in src/lib/game/date.ts, so the validator accepts it. Images in content/images were renamed to match (rejected v1s: old 0014 and 0024 are now 0011 and 0021). Entries above this one use the old numbers.
+
+One new warning: #58 (pixel art) comes 8 days after #50 (pixel art). Accepted.

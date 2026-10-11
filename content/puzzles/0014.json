@@ -1,111 +1,111 @@
 {
   "id": 14,
-  "publishDate": "2026-10-24",
-  "difficulty": 5,
+  "publishDate": "2026-10-27",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a blacksmith forging a sword in a forge, cubism, geometric fragmented shapes, no text, no letters, no watermark",
+  "prompt": "a whale flying in the sky above a city at night, chalk drawing, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "blacksmith",
+      "answer": "whale",
       "accepted": [
-        "blacksmith",
-        "smith",
-        "ironsmith",
-        "metalworker",
-        "black smith"
+        "whale",
+        "blue whale",
+        "humpback",
+        "humpback whale",
+        "sperm whale"
       ],
       "hot": [
-        "welder",
-        "armorer",
-        "craftsman",
-        "ironworker",
-        "viking"
+        "orca",
+        "dolphin",
+        "shark",
+        "killer whale",
+        "narwhal"
       ],
       "warm": [
-        "man",
-        "worker",
-        "muscles",
-        "hammer",
-        "medieval",
-        "dwarf",
-        "apron"
+        "fish",
+        "sea creature",
+        "animal",
+        "ocean",
+        "mammal",
+        "giant"
       ]
     },
     "doing": {
-      "answer": "forging a sword",
+      "answer": "flying",
       "accepted": [
-        "forging a sword",
-        "forging",
-        "hammering",
-        "smithing",
-        "making a sword",
-        "forging metal"
+        "flying",
+        "floating",
+        "levitating",
+        "soaring",
+        "swimming in the sky",
+        "hovering"
       ],
       "hot": [
-        "sword",
-        "anvil",
-        "hitting",
-        "working metal",
-        "welding",
-        "crafting"
+        "swimming",
+        "drifting",
+        "gliding",
+        "diving",
+        "jumping"
       ],
       "warm": [
-        "working",
-        "building",
-        "fire",
-        "sparks",
-        "iron",
-        "hammer"
+        "moving",
+        "sleeping",
+        "singing",
+        "dreaming",
+        "falling",
+        "rising"
       ]
     },
     "where": {
-      "answer": "forge",
+      "answer": "city at night",
       "accepted": [
-        "forge",
-        "smithy",
-        "workshop",
-        "blacksmith shop",
-        "foundry"
+        "city at night",
+        "city",
+        "night city",
+        "cityscape",
+        "skyline",
+        "city skyline"
       ],
       "hot": [
-        "garage",
-        "factory",
-        "barn",
-        "shed",
-        "furnace"
+        "town",
+        "buildings",
+        "downtown",
+        "skyscrapers",
+        "rooftops"
       ],
       "warm": [
-        "fire",
-        "room",
-        "village",
-        "medieval",
-        "cave",
-        "basement"
+        "night",
+        "sky",
+        "streets",
+        "lights",
+        "stars",
+        "moon"
       ]
     },
     "style": {
-      "answer": "cubism",
+      "answer": "chalk drawing",
       "accepted": [
-        "cubism",
-        "cubist",
-        "cubist painting",
-        "picasso"
+        "chalk drawing",
+        "chalk",
+        "chalkboard",
+        "blackboard",
+        "chalk art",
+        "chalk on blackboard"
       ],
       "hot": [
-        "abstract",
-        "geometric",
-        "modern art",
-        "futurism",
-        "collage"
+        "pastel",
+        "sidewalk chalk",
+        "crayon",
+        "drawing",
+        "sketch"
       ],
       "warm": [
-        "modern",
-        "shapes",
-        "painting",
+        "school",
+        "dark",
+        "hand drawn",
         "art",
-        "angular",
-        "fragmented",
-        "surreal"
+        "dusty",
+        "classroom"
       ]
     }
   }

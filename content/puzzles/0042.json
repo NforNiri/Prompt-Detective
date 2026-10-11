@@ -1,103 +1,108 @@
 {
   "id": 42,
-  "publishDate": "2026-11-21",
-  "difficulty": 5,
+  "publishDate": "2026-11-24",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "an astronomer using a telescope in an observatory, renaissance painting, no text, no letters, no watermark",
+  "prompt": "a spaceship landing on the moon, chalk drawing, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "astronomer",
+      "answer": "spaceship",
       "accepted": [
-        "astronomer",
-        "stargazer"
+        "spaceship",
+        "rocket",
+        "spacecraft",
+        "rocket ship",
+        "space shuttle",
+        "lander"
       ],
       "hot": [
-        "scientist",
-        "scholar",
-        "philosopher",
-        "wizard",
-        "inventor"
+        "ufo",
+        "satellite",
+        "airplane",
+        "alien ship"
       ],
       "warm": [
-        "man",
-        "old man",
-        "monk",
-        "professor",
-        "person",
-        "explorer"
+        "ship",
+        "machine",
+        "vehicle",
+        "astronaut",
+        "space",
+        "plane"
       ]
     },
     "doing": {
-      "answer": "using a telescope",
+      "answer": "landing",
       "accepted": [
-        "using a telescope",
-        "looking through a telescope",
-        "stargazing",
-        "telescope",
-        "observing"
+        "landing",
+        "landing on the moon",
+        "touching down",
+        "arriving",
+        "descending"
       ],
       "hot": [
-        "looking",
-        "watching",
-        "studying",
-        "gazing",
-        "peering"
+        "flying",
+        "launching",
+        "taking off",
+        "hovering",
+        "falling"
       ],
       "warm": [
-        "standing",
-        "thinking",
-        "searching",
-        "reading",
-        "pointing",
-        "discovering"
+        "moving",
+        "exploring",
+        "crashing",
+        "parking",
+        "traveling",
+        "floating"
       ]
     },
     "where": {
-      "answer": "observatory",
+      "answer": "moon",
       "accepted": [
-        "observatory",
-        "astronomy tower",
-        "tower"
+        "moon",
+        "lunar surface",
+        "moon surface",
+        "lunar"
       ],
       "hot": [
-        "library",
-        "study",
-        "castle",
-        "attic",
-        "workshop"
+        "crater",
+        "mars",
+        "planet",
+        "outer space",
+        "asteroid"
       ],
       "warm": [
-        "night",
+        "space",
         "stars",
+        "night",
         "sky",
-        "room",
-        "building",
-        "dome"
+        "galaxy",
+        "earth"
       ]
     },
     "style": {
-      "answer": "renaissance painting",
+      "answer": "chalk drawing",
       "accepted": [
-        "renaissance painting",
-        "renaissance",
-        "old master",
-        "classical painting",
-        "italian renaissance"
+        "chalk drawing",
+        "chalk",
+        "chalkboard",
+        "blackboard",
+        "chalk art",
+        "chalk on blackboard"
       ],
       "hot": [
-        "oil painting",
-        "baroque",
-        "fresco",
-        "classical",
-        "medieval"
+        "pastel",
+        "sidewalk chalk",
+        "crayon",
+        "drawing",
+        "sketch"
       ],
       "warm": [
-        "painting",
-        "museum",
-        "old",
+        "school",
+        "dark",
+        "hand drawn",
         "art",
-        "portrait",
-        "religious"
+        "dusty",
+        "classroom"
       ]
     }
   }

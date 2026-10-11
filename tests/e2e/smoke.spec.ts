@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 /**
- * Smoke test against seeded puzzle #1 (NEXT_PUBLIC_DEV_TODAY=2026-10-11 in .env.local, row 1 in Supabase).
+ * Smoke test against seeded puzzle #1 (NEXT_PUBLIC_DEV_TODAY=2026-10-14 in .env.local, row 1 in Supabase).
  * Plays a winning game at a phone viewport and checks the share text on the clipboard.
  *
  * Guesses really reach /api/guess and land in guess_log under E2E_DEVICE_ID, so analysis can exclude them.

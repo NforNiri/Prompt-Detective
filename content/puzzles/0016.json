@@ -1,108 +1,107 @@
 {
   "id": 16,
-  "publishDate": "2026-10-26",
-  "difficulty": 2,
+  "publishDate": "2026-10-29",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a girl flying a kite on a grassy hilltop, anime, no text, no letters, no watermark",
+  "prompt": "an octopus playing drums on the sea floor, mosaic, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "girl",
+      "answer": "octopus",
       "accepted": [
-        "girl",
-        "little girl",
-        "young girl",
-        "schoolgirl"
+        "octopus",
+        "octopi",
+        "octopuses"
       ],
       "hot": [
-        "child",
-        "kid",
-        "daughter",
-        "boy",
-        "teenager",
-        "woman"
+        "squid",
+        "kraken",
+        "jellyfish",
+        "cuttlefish",
+        "tentacles"
       ],
       "warm": [
-        "person",
-        "student",
-        "human",
-        "friend",
-        "young",
-        "youth"
+        "sea creature",
+        "fish",
+        "animal",
+        "monster",
+        "crab",
+        "ocean"
       ]
     },
     "doing": {
-      "answer": "flying a kite",
+      "answer": "playing drums",
       "accepted": [
-        "flying a kite",
-        "kite",
-        "kite flying",
-        "flying kite",
-        "kiting"
+        "playing drums",
+        "drums",
+        "drumming",
+        "playing the drums",
+        "drum"
       ],
       "hot": [
-        "flying",
-        "holding a string",
-        "running",
-        "playing"
+        "playing music",
+        "percussion",
+        "playing",
+        "banging",
+        "music"
       ],
       "warm": [
-        "wind",
-        "jumping",
-        "standing",
-        "looking up",
-        "sky",
-        "holding"
+        "dancing",
+        "band",
+        "singing",
+        "performing",
+        "concert",
+        "rhythm"
       ]
     },
     "where": {
-      "answer": "hilltop",
+      "answer": "sea floor",
       "accepted": [
-        "hilltop",
-        "hill",
-        "hillside",
-        "grassy hill",
-        "top of a hill",
-        "hill top"
+        "sea floor",
+        "seafloor",
+        "ocean floor",
+        "underwater",
+        "bottom of the sea",
+        "seabed"
       ],
       "hot": [
-        "meadow",
-        "mountain",
-        "field",
-        "cliff",
-        "grassland"
+        "ocean",
+        "sea",
+        "reef",
+        "coral reef",
+        "deep sea"
       ],
       "warm": [
-        "grass",
-        "countryside",
-        "outdoors",
-        "nature",
-        "clouds",
-        "valley"
+        "water",
+        "beach",
+        "sand",
+        "aquarium",
+        "shipwreck",
+        "deep"
       ]
     },
     "style": {
-      "answer": "anime",
+      "answer": "mosaic",
       "accepted": [
-        "anime",
-        "manga",
-        "japanese animation",
-        "ghibli",
-        "anime style"
+        "mosaic",
+        "tile mosaic",
+        "roman mosaic",
+        "tiles",
+        "tile art"
       ],
       "hot": [
-        "cartoon",
-        "animation",
-        "animated",
-        "cel shaded",
-        "japanese"
+        "stained glass",
+        "pixel art",
+        "ceramic",
+        "pottery",
+        "fresco"
       ],
       "warm": [
-        "drawing",
-        "illustration",
-        "cute",
-        "art",
-        "colorful",
-        "kawaii"
+        "ancient",
+        "roman",
+        "greek",
+        "stone",
+        "pattern",
+        "colorful"
       ]
     }
   }

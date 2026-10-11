@@ -1,110 +1,109 @@
 {
   "id": 55,
-  "publishDate": "2026-12-04",
-  "difficulty": 4,
+  "publishDate": "2026-12-07",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a black cat walking along a rooftop at night, film noir, no text, no letters, no watermark",
+  "prompt": "a submarine exploring a coral reef, paper cutout, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "black cat",
+      "answer": "submarine",
       "accepted": [
-        "black cat",
-        "cat",
-        "kitty",
-        "alley cat",
-        "stray cat",
-        "tomcat"
+        "submarine",
+        "sub",
+        "submersible",
+        "mini submarine"
       ],
       "hot": [
-        "panther",
-        "kitten",
-        "dog",
-        "raccoon",
-        "rat"
+        "boat",
+        "ship",
+        "diver",
+        "robot",
+        "torpedo"
       ],
       "warm": [
-        "animal",
-        "pet",
-        "shadow",
-        "night",
-        "mammal",
-        "creature"
+        "vehicle",
+        "machine",
+        "ocean",
+        "underwater",
+        "yellow",
+        "metal"
       ]
     },
     "doing": {
-      "answer": "walking",
+      "answer": "exploring",
       "accepted": [
-        "walking",
-        "prowling",
-        "sneaking",
-        "creeping",
-        "strolling",
-        "stalking"
+        "exploring",
+        "diving",
+        "searching",
+        "exploring the reef",
+        "discovering"
       ],
       "hot": [
-        "running",
-        "jumping",
-        "climbing",
-        "balancing",
-        "hunting"
+        "swimming",
+        "floating",
+        "sailing",
+        "traveling",
+        "scanning"
       ],
       "warm": [
-        "sitting",
-        "looking",
-        "watching",
         "moving",
-        "exploring",
-        "hiding"
+        "looking",
+        "adventure",
+        "hiding",
+        "sinking",
+        "cruising"
       ]
     },
     "where": {
-      "answer": "rooftop",
+      "answer": "coral reef",
       "accepted": [
-        "rooftop",
-        "roof",
-        "rooftops",
-        "city rooftop",
-        "roof top"
+        "coral reef",
+        "reef",
+        "coral",
+        "under the sea",
+        "ocean floor"
       ],
       "hot": [
-        "chimney",
-        "alley",
-        "fire escape",
-        "balcony",
-        "city"
+        "ocean",
+        "sea",
+        "sea floor",
+        "underwater",
+        "aquarium"
       ],
       "warm": [
-        "night",
-        "building",
-        "moon",
-        "sky",
-        "street",
-        "town"
+        "water",
+        "fish",
+        "seaweed",
+        "beach",
+        "deep",
+        "tropical"
       ]
     },
     "style": {
-      "answer": "film noir",
+      "answer": "paper cutout",
       "accepted": [
-        "film noir",
-        "noir",
-        "noir film",
-        "noir movie",
-        "neo noir"
+        "paper cutout",
+        "paper cut",
+        "papercut",
+        "paper art",
+        "cut paper",
+        "layered paper"
       ],
       "hot": [
-        "black and white",
-        "monochrome",
-        "old movie",
-        "detective movie",
-        "1940s"
+        "papercraft",
+        "origami",
+        "collage",
+        "paper",
+        "craft",
+        "shadow box"
       ],
       "warm": [
-        "movie",
-        "film",
-        "dark",
-        "shadows",
-        "vintage",
-        "cinematic"
+        "layers",
+        "handmade",
+        "scissors",
+        "3d",
+        "kids",
+        "crafty"
       ]
     }
   }

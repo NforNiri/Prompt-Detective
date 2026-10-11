@@ -1,107 +1,102 @@
 {
   "id": 47,
-  "publishDate": "2026-11-26",
-  "difficulty": 3,
+  "publishDate": "2026-11-29",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a peacock spreading its feathers in a palace garden, mosaic, no text, no letters, no watermark",
+  "prompt": "an elephant spraying water at a river, watercolor, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "peacock",
+      "answer": "elephant",
       "accepted": [
-        "peacock",
-        "peafowl",
-        "peahen"
+        "elephant",
+        "baby elephant",
+        "african elephant",
+        "asian elephant"
       ],
       "hot": [
-        "turkey",
-        "pheasant",
-        "parrot",
-        "flamingo",
-        "ostrich"
+        "mammoth",
+        "rhino",
+        "hippo",
+        "buffalo"
       ],
       "warm": [
-        "bird",
         "animal",
-        "feathers",
-        "colorful",
-        "chicken",
-        "fowl"
+        "mammal",
+        "trunk",
+        "africa",
+        "giant",
+        "safari"
       ]
     },
     "doing": {
-      "answer": "spreading its feathers",
+      "answer": "spraying water",
       "accepted": [
-        "spreading its feathers",
-        "showing off",
-        "displaying feathers",
-        "fanning its tail",
-        "spreading feathers",
-        "displaying"
+        "spraying water",
+        "spraying",
+        "bathing",
+        "splashing",
+        "washing",
+        "showering"
       ],
       "hot": [
-        "posing",
-        "strutting",
-        "dancing",
-        "preening",
-        "flapping"
+        "drinking",
+        "swimming",
+        "playing in water",
+        "wading"
       ],
       "warm": [
+        "playing",
         "standing",
-        "walking",
-        "flying",
-        "looking",
-        "feathers",
-        "proud"
+        "cooling off",
+        "water",
+        "trunk",
+        "having fun"
       ]
     },
     "where": {
-      "answer": "palace garden",
+      "answer": "river",
       "accepted": [
-        "palace garden",
-        "garden",
-        "royal garden",
-        "courtyard",
-        "palace"
+        "river",
+        "riverbank",
+        "river bank",
+        "stream"
       ],
       "hot": [
-        "park",
-        "temple",
-        "fountain",
-        "castle",
-        "zoo"
+        "lake",
+        "waterhole",
+        "pond",
+        "swamp",
+        "jungle"
       ],
       "warm": [
-        "flowers",
+        "water",
+        "africa",
+        "savanna",
+        "nature",
         "outdoors",
-        "india",
-        "trees",
-        "path",
-        "grass"
+        "mud"
       ]
     },
     "style": {
-      "answer": "mosaic",
+      "answer": "watercolor",
       "accepted": [
-        "mosaic",
-        "tile mosaic",
-        "roman mosaic",
-        "tiles",
-        "tile art"
+        "watercolor",
+        "watercolour",
+        "watercolor painting",
+        "aquarelle"
       ],
       "hot": [
-        "stained glass",
-        "pixel art",
-        "ceramic",
-        "pottery",
-        "fresco"
+        "painting",
+        "gouache",
+        "ink wash",
+        "pastel"
       ],
       "warm": [
-        "ancient",
-        "roman",
-        "greek",
-        "stone",
-        "pattern",
-        "colorful"
+        "paint",
+        "art",
+        "illustration",
+        "drawing",
+        "soft"
       ]
     }
   }

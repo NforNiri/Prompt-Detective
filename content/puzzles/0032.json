@@ -1,109 +1,103 @@
 {
   "id": 32,
-  "publishDate": "2026-11-11",
-  "difficulty": 3,
+  "publishDate": "2026-11-14",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a wizard brewing a potion in a cave, pixel art, no text, no letters, no watermark",
+  "prompt": "a florist arranging a bouquet in a greenhouse, art nouveau, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "wizard",
+      "answer": "florist",
       "accepted": [
-        "wizard",
-        "sorcerer",
-        "mage",
-        "magician",
-        "warlock"
+        "florist",
+        "flower seller",
+        "flower arranger"
       ],
       "hot": [
-        "witch",
-        "druid",
-        "alchemist",
-        "monk",
-        "old man"
+        "gardener",
+        "botanist",
+        "farmer",
+        "shopkeeper"
       ],
       "warm": [
-        "man",
-        "beard",
-        "hat",
-        "fantasy",
-        "elf",
-        "hermit"
+        "woman",
+        "lady",
+        "person",
+        "worker",
+        "girl",
+        "seller"
       ]
     },
     "doing": {
-      "answer": "brewing a potion",
+      "answer": "arranging a bouquet",
       "accepted": [
-        "brewing a potion",
-        "brewing",
-        "making a potion",
-        "stirring a cauldron",
-        "potion making",
-        "stirring"
+        "arranging a bouquet",
+        "arranging flowers",
+        "making a bouquet",
+        "flower arranging",
+        "arranging"
       ],
       "hot": [
-        "cooking",
-        "casting a spell",
-        "mixing",
-        "potion",
-        "magic"
+        "holding flowers",
+        "holding a bouquet",
+        "picking flowers",
+        "gardening",
+        "cutting flowers"
       ],
       "warm": [
-        "boiling",
-        "soup",
-        "spell",
-        "cauldron",
-        "witchcraft",
-        "chemistry"
+        "working",
+        "smelling",
+        "watering",
+        "flowers",
+        "bouquet",
+        "crafting"
       ]
     },
     "where": {
-      "answer": "cave",
+      "answer": "greenhouse",
       "accepted": [
-        "cave",
-        "cavern",
-        "grotto",
-        "underground cave"
+        "greenhouse",
+        "glasshouse",
+        "conservatory",
+        "hothouse"
       ],
       "hot": [
-        "dungeon",
-        "tunnel",
-        "mine",
-        "lair",
-        "cellar"
+        "garden",
+        "flower shop",
+        "nursery",
+        "botanical garden"
       ],
       "warm": [
-        "underground",
-        "dark",
-        "rock",
-        "mountain",
-        "castle",
-        "tower"
+        "plants",
+        "flowers",
+        "indoors",
+        "shop",
+        "farm",
+        "glass"
       ]
     },
     "style": {
-      "answer": "pixel art",
+      "answer": "art nouveau",
       "accepted": [
-        "pixel art",
-        "pixel",
-        "8-bit",
-        "8 bit",
-        "pixelated",
-        "16-bit"
+        "art nouveau",
+        "nouveau",
+        "mucha",
+        "jugendstil"
       ],
       "hot": [
-        "retro game",
-        "video game",
-        "sprite",
-        "retro",
-        "arcade game"
+        "art deco",
+        "poster",
+        "decorative",
+        "victorian",
+        "vintage poster"
       ],
       "warm": [
-        "game",
-        "arcade",
-        "digital",
-        "blocky",
-        "old school",
-        "computer"
+        "vintage",
+        "ornate",
+        "floral",
+        "illustration",
+        "elegant",
+        "retro",
+        "old"
       ]
     }
   }

@@ -1,110 +1,109 @@
 {
   "id": 51,
-  "publishDate": "2026-11-30",
-  "difficulty": 2,
+  "publishDate": "2026-12-03",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a teddy bear having a tea party in a playroom, 3d render, no text, no letters, no watermark",
+  "prompt": "a shepherd herding sheep on a hillside, oil painting, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "teddy bear",
+      "answer": "shepherd",
       "accepted": [
-        "teddy bear",
-        "teddy",
-        "bear",
-        "stuffed bear",
-        "toy bear",
-        "plush bear"
+        "shepherd",
+        "shepherdess",
+        "herder",
+        "sheepherder",
+        "sheep farmer"
       ],
       "hot": [
-        "toy",
-        "doll",
-        "panda",
-        "stuffed animal",
-        "puppet"
+        "farmer",
+        "rancher",
+        "cowboy",
+        "goatherd",
+        "monk"
       ],
       "warm": [
-        "animal",
-        "cute",
-        "plush",
-        "child",
-        "kid",
-        "brown"
+        "man",
+        "person",
+        "peasant",
+        "staff",
+        "villager",
+        "traveler"
       ]
     },
     "doing": {
-      "answer": "having a tea party",
+      "answer": "herding sheep",
       "accepted": [
-        "having a tea party",
-        "tea party",
-        "drinking tea",
-        "pouring tea",
-        "having tea"
+        "herding sheep",
+        "herding",
+        "tending sheep",
+        "guiding sheep",
+        "leading sheep",
+        "watching sheep"
       ],
       "hot": [
-        "drinking",
-        "eating",
-        "playing",
-        "picnic",
-        "party"
+        "walking",
+        "farming",
+        "sheep",
+        "guiding",
+        "flock"
       ],
       "warm": [
-        "sitting",
-        "cups",
-        "snack",
-        "cake",
-        "celebrating",
-        "sharing"
+        "standing",
+        "resting",
+        "animals",
+        "grazing",
+        "counting",
+        "looking"
       ]
     },
     "where": {
-      "answer": "playroom",
+      "answer": "hillside",
       "accepted": [
-        "playroom",
-        "nursery",
-        "kids room",
-        "children's room",
-        "bedroom"
+        "hillside",
+        "hill",
+        "rolling hills",
+        "green hills",
+        "slope"
       ],
       "hot": [
-        "living room",
-        "house",
-        "dollhouse",
-        "kindergarten",
-        "toy store"
+        "meadow",
+        "pasture",
+        "field",
+        "mountain",
+        "valley"
       ],
       "warm": [
-        "room",
-        "home",
-        "indoors",
-        "toys",
-        "table",
-        "floor"
+        "countryside",
+        "grass",
+        "farm",
+        "nature",
+        "outdoors",
+        "sky"
       ]
     },
     "style": {
-      "answer": "3d render",
+      "answer": "oil painting",
       "accepted": [
-        "3d render",
-        "3d",
-        "render",
-        "cgi",
-        "3d animation",
-        "3d rendering"
+        "oil painting",
+        "oil",
+        "oil on canvas",
+        "oil paint"
       ],
       "hot": [
-        "animation",
-        "animated",
-        "cartoon",
-        "claymation",
-        "toy"
+        "painting",
+        "acrylic",
+        "classical painting",
+        "renaissance",
+        "canvas"
       ],
       "warm": [
-        "digital",
-        "computer",
-        "cute",
-        "movie",
-        "plastic",
-        "smooth"
+        "paint",
+        "art",
+        "realism",
+        "classic",
+        "brushstrokes",
+        "museum",
+        "old master"
       ]
     }
   }

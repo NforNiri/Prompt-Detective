@@ -1,109 +1,109 @@
 {
   "id": 54,
-  "publishDate": "2026-12-03",
-  "difficulty": 3,
+  "publishDate": "2026-12-06",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a shepherd herding sheep on a hillside, oil painting, no text, no letters, no watermark",
+  "prompt": "a giraffe eating leaves in the savanna, photograph, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "shepherd",
+      "answer": "giraffe",
       "accepted": [
-        "shepherd",
-        "shepherdess",
-        "herder",
-        "sheepherder",
-        "sheep farmer"
+        "giraffe",
+        "baby giraffe",
+        "reticulated giraffe"
       ],
       "hot": [
-        "farmer",
-        "rancher",
-        "cowboy",
-        "goatherd",
-        "monk"
+        "okapi",
+        "camel",
+        "llama",
+        "deer",
+        "zebra"
       ],
       "warm": [
-        "man",
-        "person",
-        "peasant",
-        "staff",
-        "villager",
-        "traveler"
+        "animal",
+        "mammal",
+        "tall",
+        "africa",
+        "safari",
+        "spots"
       ]
     },
     "doing": {
-      "answer": "herding sheep",
+      "answer": "eating leaves",
       "accepted": [
-        "herding sheep",
-        "herding",
-        "tending sheep",
-        "guiding sheep",
-        "leading sheep",
-        "watching sheep"
+        "eating leaves",
+        "eating",
+        "grazing",
+        "browsing",
+        "feeding",
+        "munching"
       ],
       "hot": [
-        "walking",
-        "farming",
-        "sheep",
-        "guiding",
-        "flock"
+        "chewing",
+        "reaching",
+        "stretching",
+        "licking",
+        "nibbling"
       ],
       "warm": [
         "standing",
-        "resting",
-        "animals",
-        "grazing",
-        "counting",
-        "looking"
+        "walking",
+        "food",
+        "hungry",
+        "tree",
+        "leaves"
       ]
     },
     "where": {
-      "answer": "hillside",
+      "answer": "savanna",
       "accepted": [
-        "hillside",
-        "hill",
-        "rolling hills",
-        "green hills",
-        "slope"
+        "savanna",
+        "savannah",
+        "grassland",
+        "plains",
+        "african savanna",
+        "serengeti"
       ],
       "hot": [
-        "meadow",
-        "pasture",
-        "field",
-        "mountain",
-        "valley"
+        "safari",
+        "desert",
+        "prairie",
+        "zoo",
+        "jungle"
       ],
       "warm": [
-        "countryside",
+        "africa",
         "grass",
-        "farm",
-        "nature",
+        "trees",
         "outdoors",
-        "sky"
+        "wild",
+        "nature"
       ]
     },
     "style": {
-      "answer": "oil painting",
+      "answer": "photograph",
       "accepted": [
-        "oil painting",
-        "oil",
-        "oil on canvas",
-        "oil paint"
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
       ],
       "hot": [
-        "painting",
-        "acrylic",
-        "classical painting",
-        "renaissance",
-        "canvas"
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
       ],
       "warm": [
-        "paint",
-        "art",
-        "realism",
-        "classic",
-        "brushstrokes",
-        "museum",
-        "old master"
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
       ]
     }
   }

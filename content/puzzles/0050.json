@@ -1,102 +1,108 @@
 {
   "id": 50,
-  "publishDate": "2026-11-29",
-  "difficulty": 1,
+  "publishDate": "2026-12-02",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "an elephant spraying water at a river, watercolor, no text, no letters, no watermark",
+  "prompt": "a mouse sailing a paper boat down a stream, pixel art, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "elephant",
+      "answer": "mouse",
       "accepted": [
-        "elephant",
-        "baby elephant",
-        "african elephant",
-        "asian elephant"
+        "mouse",
+        "mice",
+        "field mouse",
+        "little mouse"
       ],
       "hot": [
-        "mammoth",
-        "rhino",
-        "hippo",
-        "buffalo"
+        "rat",
+        "hamster",
+        "squirrel",
+        "gerbil",
+        "chipmunk"
       ],
       "warm": [
         "animal",
+        "rodent",
+        "pet",
         "mammal",
-        "trunk",
-        "africa",
-        "giant",
-        "safari"
+        "critter",
+        "cute"
       ]
     },
     "doing": {
-      "answer": "spraying water",
+      "answer": "sailing",
       "accepted": [
-        "spraying water",
-        "spraying",
-        "bathing",
-        "splashing",
-        "washing",
-        "showering"
+        "sailing",
+        "sailing a boat",
+        "boating",
+        "floating",
+        "paper boat"
       ],
       "hot": [
-        "drinking",
-        "swimming",
-        "playing in water",
-        "wading"
+        "rowing",
+        "paddling",
+        "drifting",
+        "steering",
+        "fishing"
       ],
       "warm": [
-        "playing",
-        "standing",
-        "cooling off",
+        "traveling",
+        "adventure",
         "water",
-        "trunk",
-        "having fun"
+        "swimming",
+        "riding",
+        "exploring"
       ]
     },
     "where": {
-      "answer": "river",
+      "answer": "stream",
       "accepted": [
+        "stream",
+        "creek",
+        "brook",
         "river",
-        "riverbank",
-        "river bank",
-        "stream"
+        "small river"
       ],
       "hot": [
-        "lake",
-        "waterhole",
         "pond",
-        "swamp",
-        "jungle"
+        "puddle",
+        "lake",
+        "canal",
+        "waterfall"
       ],
       "warm": [
         "water",
-        "africa",
-        "savanna",
+        "forest",
         "nature",
+        "rain",
         "outdoors",
-        "mud"
+        "grass"
       ]
     },
     "style": {
-      "answer": "watercolor",
+      "answer": "pixel art",
       "accepted": [
-        "watercolor",
-        "watercolour",
-        "watercolor painting",
-        "aquarelle"
+        "pixel art",
+        "pixel",
+        "8-bit",
+        "8 bit",
+        "pixelated",
+        "16-bit"
       ],
       "hot": [
-        "painting",
-        "gouache",
-        "ink wash",
-        "pastel"
+        "retro game",
+        "video game",
+        "sprite",
+        "retro",
+        "arcade game"
       ],
       "warm": [
-        "paint",
-        "art",
-        "illustration",
-        "drawing",
-        "soft"
+        "game",
+        "arcade",
+        "digital",
+        "blocky",
+        "old school",
+        "computer"
       ]
     }
   }

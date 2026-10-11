@@ -1,109 +1,109 @@
 {
   "id": 38,
-  "publishDate": "2026-11-17",
-  "difficulty": 2,
+  "publishDate": "2026-11-20",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a student eating ramen in a ramen shop, anime, no text, no letters, no watermark",
+  "prompt": "a cowboy riding a horse through a desert at sunset, synthwave, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "student",
+      "answer": "cowboy",
       "accepted": [
-        "student",
-        "schoolgirl",
-        "girl",
-        "pupil",
-        "schoolkid"
+        "cowboy",
+        "cowgirl",
+        "rancher",
+        "wrangler",
+        "horseman"
       ],
       "hot": [
-        "boy",
-        "schoolboy",
-        "child",
-        "kid",
-        "teenager",
-        "woman"
+        "sheriff",
+        "farmer",
+        "outlaw",
+        "rider",
+        "bandit"
       ],
       "warm": [
-        "person",
-        "young",
         "man",
-        "friend",
-        "human",
-        "youth"
+        "western",
+        "person",
+        "hat",
+        "hero",
+        "traveler"
       ]
     },
     "doing": {
-      "answer": "eating ramen",
+      "answer": "riding a horse",
       "accepted": [
-        "eating ramen",
-        "eating noodles",
-        "slurping noodles",
-        "eating",
-        "slurping"
+        "riding a horse",
+        "horseback riding",
+        "riding",
+        "galloping",
+        "horse riding"
       ],
       "hot": [
-        "noodles",
-        "ramen",
-        "eating soup",
-        "dinner",
-        "lunch"
+        "horse",
+        "racing",
+        "trotting",
+        "driving"
       ],
       "warm": [
-        "food",
-        "chopsticks",
+        "moving",
+        "running",
+        "traveling",
         "sitting",
-        "hungry",
-        "cooking",
-        "drinking"
+        "jumping",
+        "exploring"
       ]
     },
     "where": {
-      "answer": "ramen shop",
+      "answer": "desert",
       "accepted": [
-        "ramen shop",
-        "noodle shop",
-        "restaurant",
-        "ramen bar",
-        "noodle bar"
+        "desert",
+        "wild west",
+        "badlands",
+        "desert road"
       ],
       "hot": [
-        "cafe",
-        "diner",
-        "kitchen",
-        "food stall",
-        "japan"
+        "canyon",
+        "prairie",
+        "mesa",
+        "highway",
+        "valley"
       ],
       "warm": [
-        "city",
-        "street",
-        "counter",
-        "japanese",
-        "shop",
-        "night"
+        "sand",
+        "sunset",
+        "mountains",
+        "dunes",
+        "road",
+        "west"
       ]
     },
     "style": {
-      "answer": "anime",
+      "answer": "synthwave",
       "accepted": [
-        "anime",
-        "manga",
-        "japanese animation",
-        "ghibli",
-        "anime style"
+        "synthwave",
+        "retrowave",
+        "outrun",
+        "synth wave",
+        "80s",
+        "neon 80s"
       ],
       "hot": [
-        "cartoon",
-        "animation",
-        "animated",
-        "cel shaded",
-        "japanese"
+        "vaporwave",
+        "neon",
+        "cyberpunk",
+        "80s retro",
+        "retro",
+        "miami"
       ],
       "warm": [
-        "drawing",
-        "illustration",
-        "cute",
-        "art",
-        "colorful",
-        "kawaii"
+        "purple",
+        "synth",
+        "electronic",
+        "sunset",
+        "vintage",
+        "music",
+        "futuristic"
       ]
     }
   }

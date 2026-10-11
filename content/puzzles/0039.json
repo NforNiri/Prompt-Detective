@@ -1,106 +1,103 @@
 {
   "id": 39,
-  "publishDate": "2026-11-18",
-  "difficulty": 3,
+  "publishDate": "2026-11-21",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a penguin ice skating on a frozen pond, claymation, no text, no letters, no watermark",
+  "prompt": "an astronomer using a telescope in an observatory, renaissance painting, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "penguin",
+      "answer": "astronomer",
       "accepted": [
-        "penguin",
-        "emperor penguin",
-        "baby penguin"
+        "astronomer",
+        "stargazer"
       ],
       "hot": [
-        "puffin",
-        "seal",
-        "duck",
-        "goose",
-        "polar bear"
+        "scientist",
+        "scholar",
+        "philosopher",
+        "wizard",
+        "inventor"
       ],
       "warm": [
-        "bird",
-        "animal",
-        "antarctica",
-        "cold",
-        "ice",
-        "cute"
+        "man",
+        "old man",
+        "monk",
+        "professor",
+        "person",
+        "explorer"
       ]
     },
     "doing": {
-      "answer": "ice skating",
+      "answer": "using a telescope",
       "accepted": [
-        "ice skating",
-        "skating",
-        "figure skating",
-        "iceskating"
+        "using a telescope",
+        "looking through a telescope",
+        "stargazing",
+        "telescope",
+        "observing"
       ],
       "hot": [
-        "sliding",
-        "dancing",
-        "gliding",
-        "spinning",
-        "slipping"
+        "looking",
+        "watching",
+        "studying",
+        "gazing",
+        "peering"
       ],
       "warm": [
-        "playing",
-        "winter",
-        "moving",
-        "sport",
-        "balancing",
-        "falling"
+        "standing",
+        "thinking",
+        "searching",
+        "reading",
+        "pointing",
+        "discovering"
       ]
     },
     "where": {
-      "answer": "frozen pond",
+      "answer": "observatory",
       "accepted": [
-        "frozen pond",
-        "frozen lake",
-        "ice rink",
-        "rink",
-        "ice"
+        "observatory",
+        "astronomy tower",
+        "tower"
       ],
       "hot": [
-        "pond",
-        "lake",
-        "snowfield",
-        "arctic",
-        "glacier"
+        "library",
+        "study",
+        "castle",
+        "attic",
+        "workshop"
       ],
       "warm": [
-        "snow",
-        "winter",
-        "cold",
-        "water",
-        "outdoors",
-        "mountain"
+        "night",
+        "stars",
+        "sky",
+        "room",
+        "building",
+        "dome"
       ]
     },
     "style": {
-      "answer": "claymation",
+      "answer": "renaissance painting",
       "accepted": [
-        "claymation",
-        "clay",
-        "clay animation",
-        "stop motion",
-        "plasticine",
-        "clay model"
+        "renaissance painting",
+        "renaissance",
+        "old master",
+        "classical painting",
+        "italian renaissance"
       ],
       "hot": [
-        "animation",
-        "puppet",
-        "3d",
-        "sculpture",
-        "toy"
+        "oil painting",
+        "baroque",
+        "fresco",
+        "classical",
+        "medieval"
       ],
       "warm": [
-        "cartoon",
-        "handmade",
-        "cute",
-        "model",
-        "figurine",
-        "kids"
+        "painting",
+        "museum",
+        "old",
+        "art",
+        "portrait",
+        "religious"
       ]
     }
   }
