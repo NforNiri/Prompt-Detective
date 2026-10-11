@@ -1,110 +1,109 @@
 {
   "id": 18,
-  "publishDate": "2026-10-28",
-  "difficulty": 3,
+  "publishDate": "2026-10-31",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a deer drinking water from a mountain lake, low poly, no text, no letters, no watermark",
+  "prompt": "a conductor conducting an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "deer",
+      "answer": "conductor",
       "accepted": [
-        "deer",
-        "stag",
-        "buck",
-        "doe",
-        "fawn"
+        "conductor",
+        "maestro",
+        "orchestra conductor",
+        "bandleader",
+        "music director"
       ],
       "hot": [
-        "elk",
-        "moose",
-        "reindeer",
-        "antelope",
-        "caribou"
+        "musician",
+        "composer",
+        "pianist",
+        "violinist",
+        "magician"
       ],
       "warm": [
-        "animal",
-        "antlers",
-        "horse",
-        "goat",
-        "wildlife",
-        "forest animal"
+        "man",
+        "person",
+        "performer",
+        "artist",
+        "tuxedo",
+        "music"
       ]
     },
     "doing": {
-      "answer": "drinking water",
+      "answer": "conducting an orchestra",
       "accepted": [
-        "drinking water",
-        "drinking",
-        "drinking from a lake",
-        "sipping",
-        "drink"
+        "conducting an orchestra",
+        "conducting",
+        "leading an orchestra",
+        "conducting music",
+        "waving a baton"
       ],
       "hot": [
-        "bending down",
-        "grazing",
-        "eating",
-        "lapping",
-        "looking at reflection"
+        "orchestra",
+        "baton",
+        "directing",
+        "leading",
+        "performing"
       ],
       "warm": [
-        "standing",
-        "resting",
-        "thirsty",
-        "water",
-        "looking",
-        "relaxing"
+        "music",
+        "waving",
+        "dancing",
+        "pointing",
+        "playing",
+        "concert"
       ]
     },
     "where": {
-      "answer": "mountain lake",
+      "answer": "concert hall",
       "accepted": [
-        "mountain lake",
-        "lake",
-        "alpine lake",
-        "lakeside",
-        "lake shore"
+        "concert hall",
+        "opera house",
+        "auditorium",
+        "symphony hall",
+        "theater",
+        "theatre"
       ],
       "hot": [
-        "pond",
-        "river",
-        "mountains",
-        "stream",
-        "lagoon"
+        "stage",
+        "opera",
+        "hall",
+        "music hall",
+        "amphitheater"
       ],
       "warm": [
-        "forest",
-        "water",
-        "nature",
-        "valley",
-        "snow",
-        "wilderness"
+        "building",
+        "room",
+        "audience",
+        "venue",
+        "seats",
+        "show"
       ]
     },
     "style": {
-      "answer": "low poly",
+      "answer": "bauhaus",
       "accepted": [
-        "low poly",
-        "lowpoly",
-        "low-poly",
-        "polygon",
-        "polygonal",
-        "polygon art"
+        "bauhaus",
+        "bauhaus style",
+        "bauhaus design"
       ],
       "hot": [
         "geometric",
-        "3d",
-        "3d render",
-        "faceted",
-        "origami",
-        "crystal"
+        "modernism",
+        "constructivism",
+        "minimalism",
+        "mid century",
+        "de stijl"
       ],
       "warm": [
-        "digital",
+        "abstract",
         "shapes",
-        "video game",
-        "computer",
-        "angular",
-        "modern"
+        "poster",
+        "modern",
+        "german",
+        "primary colors",
+        "circles"
       ]
     }
   }

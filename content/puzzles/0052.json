@@ -1,108 +1,110 @@
 {
   "id": 52,
-  "publishDate": "2026-12-01",
-  "difficulty": 2,
+  "publishDate": "2026-12-04",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a carpenter building a chair in a woodshop, pencil sketch, no text, no letters, no watermark",
+  "prompt": "a black cat walking along a rooftop at night, film noir, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "carpenter",
+      "answer": "black cat",
       "accepted": [
-        "carpenter",
-        "woodworker",
-        "craftsman",
-        "joiner"
+        "black cat",
+        "cat",
+        "kitty",
+        "alley cat",
+        "stray cat",
+        "tomcat"
       ],
       "hot": [
-        "builder",
-        "blacksmith",
-        "worker",
-        "lumberjack",
-        "handyman"
+        "panther",
+        "kitten",
+        "dog",
+        "raccoon",
+        "rat"
       ],
       "warm": [
-        "man",
-        "person",
-        "beard",
-        "apron",
-        "tools",
-        "artisan"
+        "animal",
+        "pet",
+        "shadow",
+        "night",
+        "mammal",
+        "creature"
       ]
     },
     "doing": {
-      "answer": "building a chair",
+      "answer": "walking",
       "accepted": [
-        "building a chair",
-        "woodworking",
-        "making a chair",
-        "building",
-        "sawing"
+        "walking",
+        "prowling",
+        "sneaking",
+        "creeping",
+        "strolling",
+        "stalking"
       ],
       "hot": [
-        "hammering",
-        "sanding",
-        "crafting",
-        "carving",
-        "fixing"
+        "running",
+        "jumping",
+        "climbing",
+        "balancing",
+        "hunting"
       ],
       "warm": [
-        "working",
-        "measuring",
-        "cutting",
-        "wood",
-        "furniture",
-        "tools"
+        "sitting",
+        "looking",
+        "watching",
+        "moving",
+        "exploring",
+        "hiding"
       ]
     },
     "where": {
-      "answer": "woodshop",
+      "answer": "rooftop",
       "accepted": [
-        "woodshop",
-        "workshop",
-        "carpentry workshop",
-        "wood shop",
-        "carpentry shop"
+        "rooftop",
+        "roof",
+        "rooftops",
+        "city rooftop",
+        "roof top"
       ],
       "hot": [
-        "garage",
-        "shed",
-        "barn",
-        "factory",
-        "studio"
+        "chimney",
+        "alley",
+        "fire escape",
+        "balcony",
+        "city"
       ],
       "warm": [
-        "room",
-        "indoors",
-        "house",
-        "sawdust",
-        "bench",
-        "basement"
+        "night",
+        "building",
+        "moon",
+        "sky",
+        "street",
+        "town"
       ]
     },
     "style": {
-      "answer": "pencil sketch",
+      "answer": "film noir",
       "accepted": [
-        "pencil sketch",
-        "sketch",
-        "pencil",
-        "pencil drawing",
-        "graphite",
-        "sketching"
+        "film noir",
+        "noir",
+        "noir film",
+        "noir movie",
+        "neo noir"
       ],
       "hot": [
-        "drawing",
-        "charcoal",
-        "line art",
-        "ink drawing",
-        "doodle"
+        "black and white",
+        "monochrome",
+        "old movie",
+        "detective movie",
+        "1940s"
       ],
       "warm": [
-        "art",
-        "black and white",
-        "paper",
-        "hand drawn",
-        "grey",
-        "rough"
+        "movie",
+        "film",
+        "dark",
+        "shadows",
+        "vintage",
+        "cinematic"
       ]
     }
   }

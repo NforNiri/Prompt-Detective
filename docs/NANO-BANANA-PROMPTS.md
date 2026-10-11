@@ -2,6 +2,8 @@
 
 Status (2026-10-05): everything below is generated, including #44. QA results are in docs/CONTENT-LOG.md.
 
+Numbers and dates below are from before the 2026-10-11 renumbering. Old #8 to #60 are now #5 to #57; old #5, #6, #7 are now #58, #59, #60. See docs/CONTENT-LOG.md.
+
 Everything still to generate before and after launch: 4 brand images and 37 puzzle images. Generated 2026-10-05 from the puzzle files, so each prompt matches what the end screen reveals.
 
 ## How to use this file

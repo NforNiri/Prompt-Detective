@@ -1,109 +1,111 @@
 {
   "id": 20,
-  "publishDate": "2026-10-30",
-  "difficulty": 4,
+  "publishDate": "2026-11-02",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a flamingo sipping a cocktail on the deck of an ocean liner, art deco, no text, no letters, no watermark",
+  "prompt": "a pirate digging for treasure on a desert island, cartoon, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "flamingo",
+      "answer": "pirate",
       "accepted": [
-        "flamingo",
-        "pink flamingo",
-        "flamingos"
+        "pirate",
+        "pirate captain",
+        "buccaneer",
+        "corsair",
+        "privateer"
       ],
       "hot": [
-        "heron",
-        "stork",
-        "crane",
-        "pelican",
-        "swan",
-        "ibis"
+        "captain",
+        "sailor",
+        "viking",
+        "parrot",
+        "bandit"
       ],
       "warm": [
-        "bird",
-        "pink",
-        "animal",
-        "feathers",
-        "tropical",
-        "duck"
+        "man",
+        "eyepatch",
+        "sea",
+        "treasure",
+        "hat",
+        "beard",
+        "hook"
       ]
     },
     "doing": {
-      "answer": "sipping a cocktail",
+      "answer": "digging for treasure",
       "accepted": [
-        "sipping a cocktail",
-        "drinking a cocktail",
-        "cocktail",
-        "drinking",
-        "sipping",
-        "drinking a martini"
+        "digging for treasure",
+        "digging",
+        "treasure hunting",
+        "digging a hole",
+        "shoveling",
+        "looking for treasure"
       ],
       "hot": [
-        "martini",
-        "drink",
-        "toasting",
-        "having a drink",
-        "relaxing"
+        "treasure",
+        "shovel",
+        "searching",
+        "finding treasure",
+        "hunting"
       ],
       "warm": [
-        "party",
-        "glass",
-        "celebrating",
-        "standing",
-        "posing",
-        "vacation"
+        "working",
+        "exploring",
+        "gold",
+        "map",
+        "sand",
+        "chest"
       ]
     },
     "where": {
-      "answer": "ocean liner",
+      "answer": "desert island",
       "accepted": [
-        "ocean liner",
-        "cruise ship",
-        "ship",
-        "liner",
-        "steamship",
-        "ship deck"
+        "desert island",
+        "island",
+        "tropical island",
+        "deserted island",
+        "small island",
+        "islet"
       ],
       "hot": [
-        "boat",
-        "yacht",
-        "ferry",
-        "deck",
-        "titanic"
+        "beach",
+        "shore",
+        "coast",
+        "lagoon",
+        "palm tree"
       ],
       "warm": [
         "ocean",
         "sea",
-        "travel",
-        "harbor",
-        "water",
-        "cruise"
+        "sand",
+        "tropical",
+        "jungle",
+        "paradise"
       ]
     },
     "style": {
-      "answer": "art deco",
+      "answer": "cartoon",
       "accepted": [
-        "art deco",
-        "deco",
-        "artdeco",
-        "1920s",
-        "twenties"
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
       ],
       "hot": [
-        "art nouveau",
-        "gatsby",
-        "vintage poster",
-        "retro",
-        "geometric"
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
       ],
       "warm": [
-        "vintage",
-        "gold",
-        "elegant",
-        "old",
-        "poster",
-        "luxury"
+        "kids",
+        "cute",
+        "funny",
+        "art",
+        "colorful",
+        "simple"
       ]
     }
   }

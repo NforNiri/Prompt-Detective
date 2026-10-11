@@ -1,109 +1,107 @@
 {
   "id": 44,
-  "publishDate": "2026-11-23",
-  "difficulty": 2,
+  "publishDate": "2026-11-26",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a dragon roasting marshmallows at a campfire, crayon drawing, no text, no letters, no watermark",
+  "prompt": "a peacock spreading its feathers in a palace garden, mosaic, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "dragon",
+      "answer": "peacock",
       "accepted": [
-        "dragon",
-        "baby dragon",
-        "little dragon",
-        "wyvern"
+        "peacock",
+        "peafowl",
+        "peahen"
       ],
       "hot": [
-        "dinosaur",
-        "lizard",
-        "monster",
-        "serpent",
-        "crocodile"
+        "turkey",
+        "pheasant",
+        "parrot",
+        "flamingo",
+        "ostrich"
       ],
       "warm": [
-        "creature",
+        "bird",
         "animal",
-        "fantasy",
-        "beast",
-        "reptile",
-        "myth"
+        "feathers",
+        "colorful",
+        "chicken",
+        "fowl"
       ]
     },
     "doing": {
-      "answer": "roasting marshmallows",
+      "answer": "spreading its feathers",
       "accepted": [
-        "roasting marshmallows",
-        "roasting",
-        "toasting marshmallows",
-        "cooking marshmallows",
-        "marshmallows"
+        "spreading its feathers",
+        "showing off",
+        "displaying feathers",
+        "fanning its tail",
+        "spreading feathers",
+        "displaying"
       ],
       "hot": [
-        "breathing fire",
-        "cooking",
-        "camping",
-        "grilling"
+        "posing",
+        "strutting",
+        "dancing",
+        "preening",
+        "flapping"
       ],
       "warm": [
-        "eating",
-        "sitting",
-        "relaxing",
-        "snack",
-        "food",
-        "fire"
+        "standing",
+        "walking",
+        "flying",
+        "looking",
+        "feathers",
+        "proud"
       ]
     },
     "where": {
-      "answer": "campfire",
+      "answer": "palace garden",
       "accepted": [
-        "campfire",
-        "camp fire",
-        "campsite",
-        "camping",
-        "bonfire",
-        "fire pit"
+        "palace garden",
+        "garden",
+        "royal garden",
+        "courtyard",
+        "palace"
       ],
       "hot": [
-        "forest",
-        "woods",
-        "tent",
-        "fireplace",
-        "camp"
+        "park",
+        "temple",
+        "fountain",
+        "castle",
+        "zoo"
       ],
       "warm": [
-        "night",
+        "flowers",
         "outdoors",
-        "nature",
-        "stars",
-        "fire",
-        "trees"
+        "india",
+        "trees",
+        "path",
+        "grass"
       ]
     },
     "style": {
-      "answer": "crayon drawing",
+      "answer": "mosaic",
       "accepted": [
-        "crayon drawing",
-        "crayon",
-        "kids drawing",
-        "childrens drawing",
-        "child's drawing",
-        "children's drawing"
+        "mosaic",
+        "tile mosaic",
+        "roman mosaic",
+        "tiles",
+        "tile art"
       ],
       "hot": [
-        "drawing",
-        "colored pencil",
-        "pastel",
-        "doodle",
-        "finger painting",
-        "chalk"
+        "stained glass",
+        "pixel art",
+        "ceramic",
+        "pottery",
+        "fresco"
       ],
       "warm": [
-        "kids",
-        "childish",
-        "art",
-        "colorful",
-        "simple",
-        "scribble"
+        "ancient",
+        "roman",
+        "greek",
+        "stone",
+        "pattern",
+        "colorful"
       ]
     }
   }

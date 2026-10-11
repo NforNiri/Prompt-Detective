@@ -1,112 +1,111 @@
 {
   "id": 24,
-  "publishDate": "2026-11-03",
-  "difficulty": 2,
+  "publishDate": "2026-11-06",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a gorilla lifting weights in a gym with benches and dumbbell racks, graffiti, no text, no letters, no watermark",
+  "prompt": "a detective inspecting clues with a magnifying glass in a dark alley, film noir, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "gorilla",
+      "answer": "detective",
       "accepted": [
-        "gorilla",
-        "silverback",
-        "ape",
-        "great ape"
+        "detective",
+        "private eye",
+        "investigator",
+        "sleuth",
+        "inspector",
+        "gumshoe"
       ],
       "hot": [
-        "monkey",
-        "chimpanzee",
-        "chimp",
-        "orangutan",
-        "baboon",
-        "king kong"
+        "policeman",
+        "cop",
+        "spy",
+        "agent",
+        "officer"
       ],
       "warm": [
-        "animal",
-        "primate",
-        "bear",
-        "beast",
-        "muscles",
-        "jungle"
+        "man",
+        "person",
+        "trench coat",
+        "hat",
+        "mystery",
+        "stranger"
       ]
     },
     "doing": {
-      "answer": "lifting weights",
+      "answer": "inspecting clues",
       "accepted": [
-        "lifting weights",
-        "weightlifting",
-        "lifting",
-        "bodybuilding",
-        "pumping iron",
-        "working out"
+        "inspecting clues",
+        "inspecting",
+        "investigating",
+        "examining",
+        "magnifying glass",
+        "searching for clues"
       ],
       "hot": [
-        "exercising",
-        "training",
-        "squatting",
-        "barbell",
-        "dumbbell",
-        "bench press"
+        "looking",
+        "searching",
+        "magnifier",
+        "observing",
+        "studying",
+        "clues"
       ],
       "warm": [
-        "sport",
-        "strong",
-        "flexing",
-        "fitness",
-        "muscles",
-        "sweating"
+        "holding",
+        "standing",
+        "thinking",
+        "walking",
+        "waiting",
+        "crouching"
       ]
     },
     "where": {
-      "answer": "gym",
+      "answer": "dark alley",
       "accepted": [
-        "gym",
-        "fitness center",
-        "weight room",
-        "fitness club",
-        "health club",
-        "gymnasium"
+        "dark alley",
+        "alley",
+        "alleyway",
+        "back alley",
+        "side street"
       ],
       "hot": [
-        "boxing ring",
-        "locker room",
-        "sports hall",
-        "studio",
-        "basement"
+        "street",
+        "city street",
+        "lane",
+        "passage",
+        "doorway"
       ],
       "warm": [
+        "city",
+        "night",
+        "rain",
+        "shadows",
         "building",
-        "room",
-        "club",
-        "stadium",
-        "garage",
-        "school"
+        "dumpster"
       ]
     },
     "style": {
-      "answer": "graffiti",
+      "answer": "film noir",
       "accepted": [
-        "graffiti",
-        "grafitti",
-        "street art",
-        "mural",
-        "spray paint",
-        "graffiti art"
+        "film noir",
+        "noir",
+        "noir film",
+        "noir movie",
+        "neo noir"
       ],
       "hot": [
-        "urban art",
-        "wall art",
-        "painting",
-        "stencil",
-        "pop art"
+        "black and white",
+        "monochrome",
+        "old movie",
+        "detective movie",
+        "1940s"
       ],
       "warm": [
-        "urban",
-        "wall",
-        "paint",
-        "colorful",
-        "hip hop",
-        "city"
+        "movie",
+        "film",
+        "dark",
+        "shadows",
+        "vintage",
+        "cinematic"
       ]
     }
   }

@@ -1,113 +1,110 @@
 {
   "id": 15,
-  "publishDate": "2026-10-25",
-  "difficulty": 1,
+  "publishDate": "2026-10-28",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a dinosaur eating ice cream at a playground, crayon drawing, no text, no letters, no watermark",
+  "prompt": "a deer drinking water from a mountain lake, low poly, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "dinosaur",
+      "answer": "deer",
       "accepted": [
-        "dinosaur",
-        "dino",
-        "t-rex",
-        "t rex",
-        "trex",
-        "tyrannosaurus"
+        "deer",
+        "stag",
+        "buck",
+        "doe",
+        "fawn"
       ],
       "hot": [
-        "dragon",
-        "lizard",
-        "raptor",
-        "crocodile",
-        "reptile"
+        "elk",
+        "moose",
+        "reindeer",
+        "antelope",
+        "caribou"
       ],
       "warm": [
-        "monster",
         "animal",
-        "prehistoric",
-        "beast",
-        "creature",
-        "green"
+        "antlers",
+        "horse",
+        "goat",
+        "wildlife",
+        "forest animal"
       ]
     },
     "doing": {
-      "answer": "eating ice cream",
+      "answer": "drinking water",
       "accepted": [
-        "eating ice cream",
-        "ice cream",
-        "licking ice cream",
-        "eating an ice cream",
-        "eating icecream",
-        "ice cream cone"
+        "drinking water",
+        "drinking",
+        "drinking from a lake",
+        "sipping",
+        "drink"
       ],
       "hot": [
+        "bending down",
+        "grazing",
         "eating",
-        "licking",
-        "dessert",
-        "cone",
-        "gelato",
-        "popsicle"
+        "lapping",
+        "looking at reflection"
       ],
       "warm": [
-        "food",
-        "snack",
-        "treat",
-        "sweet",
-        "hungry",
-        "sugar"
+        "standing",
+        "resting",
+        "thirsty",
+        "water",
+        "looking",
+        "relaxing"
       ]
     },
     "where": {
-      "answer": "playground",
+      "answer": "mountain lake",
       "accepted": [
-        "playground",
-        "play ground",
-        "play area",
-        "jungle gym",
-        "playpark"
+        "mountain lake",
+        "lake",
+        "alpine lake",
+        "lakeside",
+        "lake shore"
       ],
       "hot": [
-        "park",
-        "swings",
-        "slide",
-        "schoolyard",
-        "sandbox"
+        "pond",
+        "river",
+        "mountains",
+        "stream",
+        "lagoon"
       ],
       "warm": [
-        "school",
-        "garden",
-        "yard",
-        "kids",
-        "outdoors",
-        "grass"
+        "forest",
+        "water",
+        "nature",
+        "valley",
+        "snow",
+        "wilderness"
       ]
     },
     "style": {
-      "answer": "crayon drawing",
+      "answer": "low poly",
       "accepted": [
-        "crayon drawing",
-        "crayon",
-        "kids drawing",
-        "childrens drawing",
-        "child's drawing",
-        "children's drawing"
+        "low poly",
+        "lowpoly",
+        "low-poly",
+        "polygon",
+        "polygonal",
+        "polygon art"
       ],
       "hot": [
-        "drawing",
-        "colored pencil",
-        "pastel",
-        "doodle",
-        "finger painting",
-        "chalk"
+        "geometric",
+        "3d",
+        "3d render",
+        "faceted",
+        "origami",
+        "crystal"
       ],
       "warm": [
-        "kids",
-        "childish",
-        "art",
-        "colorful",
-        "simple",
-        "scribble"
+        "digital",
+        "shapes",
+        "video game",
+        "computer",
+        "angular",
+        "modern"
       ]
     }
   }

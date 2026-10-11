@@ -1,105 +1,108 @@
 {
   "id": 49,
-  "publishDate": "2026-11-28",
-  "difficulty": 5,
+  "publishDate": "2026-12-01",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a juggler juggling balls at a circus, bauhaus, no text, no letters, no watermark",
+  "prompt": "a carpenter building a chair in a woodshop, pencil sketch, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "juggler",
+      "answer": "carpenter",
       "accepted": [
-        "juggler",
-        "circus performer",
-        "performer",
-        "street performer"
+        "carpenter",
+        "woodworker",
+        "craftsman",
+        "joiner"
       ],
       "hot": [
-        "clown",
-        "acrobat",
-        "magician",
-        "jester",
-        "entertainer"
+        "builder",
+        "blacksmith",
+        "worker",
+        "lumberjack",
+        "handyman"
       ],
       "warm": [
         "man",
-        "artist",
         "person",
-        "circus",
-        "show",
-        "act"
+        "beard",
+        "apron",
+        "tools",
+        "artisan"
       ]
     },
     "doing": {
-      "answer": "juggling",
+      "answer": "building a chair",
       "accepted": [
-        "juggling",
-        "juggling balls",
-        "tossing balls",
-        "juggle"
+        "building a chair",
+        "woodworking",
+        "making a chair",
+        "building",
+        "sawing"
       ],
       "hot": [
-        "throwing",
-        "catching",
-        "balancing",
-        "performing",
-        "playing ball"
+        "hammering",
+        "sanding",
+        "crafting",
+        "carving",
+        "fixing"
       ],
       "warm": [
-        "playing",
-        "tricks",
-        "balls",
-        "dancing",
-        "standing",
-        "show"
+        "working",
+        "measuring",
+        "cutting",
+        "wood",
+        "furniture",
+        "tools"
       ]
     },
     "where": {
-      "answer": "circus",
+      "answer": "woodshop",
       "accepted": [
-        "circus",
-        "circus tent",
-        "big top",
-        "circus ring"
+        "woodshop",
+        "workshop",
+        "carpentry workshop",
+        "wood shop",
+        "carpentry shop"
       ],
       "hot": [
-        "carnival",
-        "stage",
-        "theater",
-        "fair",
-        "arena"
+        "garage",
+        "shed",
+        "barn",
+        "factory",
+        "studio"
       ],
       "warm": [
-        "tent",
-        "show",
-        "crowd",
-        "audience",
-        "festival",
-        "spotlight"
+        "room",
+        "indoors",
+        "house",
+        "sawdust",
+        "bench",
+        "basement"
       ]
     },
     "style": {
-      "answer": "bauhaus",
+      "answer": "pencil sketch",
       "accepted": [
-        "bauhaus",
-        "bauhaus style",
-        "bauhaus design"
+        "pencil sketch",
+        "sketch",
+        "pencil",
+        "pencil drawing",
+        "graphite",
+        "sketching"
       ],
       "hot": [
-        "geometric",
-        "modernism",
-        "constructivism",
-        "minimalism",
-        "mid century",
-        "de stijl"
+        "drawing",
+        "charcoal",
+        "line art",
+        "ink drawing",
+        "doodle"
       ],
       "warm": [
-        "abstract",
-        "shapes",
-        "poster",
-        "modern",
-        "german",
-        "primary colors",
-        "circles"
+        "art",
+        "black and white",
+        "paper",
+        "hand drawn",
+        "grey",
+        "rough"
       ]
     }
   }

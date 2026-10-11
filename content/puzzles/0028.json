@@ -1,110 +1,109 @@
 {
   "id": 28,
-  "publishDate": "2026-11-07",
-  "difficulty": 5,
+  "publishDate": "2026-11-10",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a gondolier rowing a gondola along a venice canal, pointillism, no text, no letters, no watermark",
+  "prompt": "a firefighter rescuing a cat from a tall tree, pencil sketch, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "gondolier",
+      "answer": "firefighter",
       "accepted": [
-        "gondolier",
-        "boatman",
-        "rower",
-        "oarsman"
+        "firefighter",
+        "fireman",
+        "fire fighter",
+        "firewoman"
       ],
       "hot": [
-        "sailor",
-        "fisherman",
-        "ferryman",
-        "captain",
-        "boater"
+        "rescuer",
+        "policeman",
+        "paramedic",
+        "soldier",
+        "lifeguard"
       ],
       "warm": [
+        "hero",
         "man",
-        "italian",
-        "venetian",
+        "worker",
+        "helmet",
         "person",
-        "hat",
-        "singer"
+        "uniform"
       ]
     },
     "doing": {
-      "answer": "rowing a gondola",
+      "answer": "rescuing a cat",
       "accepted": [
-        "rowing a gondola",
-        "rowing",
-        "paddling",
-        "steering a gondola",
-        "punting",
-        "rowing a boat"
+        "rescuing a cat",
+        "rescuing",
+        "saving a cat",
+        "saving",
+        "rescue",
+        "rescuing a kitten"
       ],
       "hot": [
-        "sailing",
-        "boating",
-        "gondola",
-        "floating",
-        "steering"
+        "climbing",
+        "holding a cat",
+        "helping",
+        "catching",
+        "reaching"
       ],
       "warm": [
-        "singing",
-        "standing",
-        "traveling",
-        "cruising",
-        "water",
-        "moving"
+        "cat",
+        "kitten",
+        "working",
+        "climbing a ladder",
+        "holding",
+        "ladder"
       ]
     },
     "where": {
-      "answer": "venice canal",
+      "answer": "tree",
       "accepted": [
-        "venice canal",
-        "canal",
-        "venice",
-        "grand canal",
-        "venetian canal",
-        "waterway"
+        "tree",
+        "treetop",
+        "tree branch",
+        "oak tree",
+        "big tree",
+        "tall tree"
       ],
       "hot": [
-        "river",
-        "italy",
-        "harbor",
-        "lagoon",
-        "bridge"
+        "branch",
+        "forest",
+        "park",
+        "ladder"
       ],
       "warm": [
-        "water",
-        "city",
-        "europe",
+        "backyard",
+        "yard",
+        "garden",
+        "neighborhood",
         "street",
-        "lake",
-        "town"
+        "leaves"
       ]
     },
     "style": {
-      "answer": "pointillism",
+      "answer": "pencil sketch",
       "accepted": [
-        "pointillism",
-        "pointillist",
-        "dots",
-        "dot painting",
-        "seurat",
-        "stippling"
+        "pencil sketch",
+        "sketch",
+        "pencil",
+        "pencil drawing",
+        "graphite",
+        "sketching"
       ],
       "hot": [
-        "impressionism",
-        "dotted",
-        "pixel art",
-        "post impressionism",
-        "mosaic"
+        "drawing",
+        "charcoal",
+        "line art",
+        "ink drawing",
+        "doodle"
       ],
       "warm": [
-        "painting",
-        "colorful",
         "art",
-        "french",
-        "classic",
-        "points"
+        "black and white",
+        "paper",
+        "hand drawn",
+        "grey",
+        "rough"
       ]
     }
   }

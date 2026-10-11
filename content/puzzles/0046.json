@@ -1,108 +1,105 @@
 {
   "id": 46,
-  "publishDate": "2026-11-25",
-  "difficulty": 3,
+  "publishDate": "2026-11-28",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a fox running through a snowy forest, low poly, no text, no letters, no watermark",
+  "prompt": "a juggler juggling balls at a circus, bauhaus, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "fox",
+      "answer": "juggler",
       "accepted": [
-        "fox",
-        "red fox",
-        "arctic fox",
-        "vixen"
+        "juggler",
+        "circus performer",
+        "performer",
+        "street performer"
       ],
       "hot": [
-        "wolf",
-        "coyote",
-        "dog",
-        "jackal"
+        "clown",
+        "acrobat",
+        "magician",
+        "jester",
+        "entertainer"
       ],
       "warm": [
-        "animal",
-        "cat",
-        "mammal",
-        "wildlife",
-        "predator",
-        "creature"
+        "man",
+        "artist",
+        "person",
+        "circus",
+        "show",
+        "act"
       ]
     },
     "doing": {
-      "answer": "running",
+      "answer": "juggling",
       "accepted": [
-        "running",
-        "sprinting",
-        "dashing",
-        "racing"
+        "juggling",
+        "juggling balls",
+        "tossing balls",
+        "juggle"
       ],
       "hot": [
-        "jumping",
-        "chasing",
-        "hunting",
-        "leaping",
-        "galloping"
+        "throwing",
+        "catching",
+        "balancing",
+        "performing",
+        "playing ball"
       ],
       "warm": [
-        "walking",
-        "moving",
         "playing",
-        "escaping",
-        "exploring",
-        "fast"
+        "tricks",
+        "balls",
+        "dancing",
+        "standing",
+        "show"
       ]
     },
     "where": {
-      "answer": "snowy forest",
+      "answer": "circus",
       "accepted": [
-        "snowy forest",
-        "forest",
-        "winter forest",
-        "snowy woods",
-        "woods",
-        "woodland"
+        "circus",
+        "circus tent",
+        "big top",
+        "circus ring"
       ],
       "hot": [
-        "snow",
-        "taiga",
-        "mountain",
-        "tundra",
-        "park"
+        "carnival",
+        "stage",
+        "theater",
+        "fair",
+        "arena"
       ],
       "warm": [
-        "winter",
-        "trees",
-        "cold",
-        "nature",
-        "ice",
-        "outdoors"
+        "tent",
+        "show",
+        "crowd",
+        "audience",
+        "festival",
+        "spotlight"
       ]
     },
     "style": {
-      "answer": "low poly",
+      "answer": "bauhaus",
       "accepted": [
-        "low poly",
-        "lowpoly",
-        "low-poly",
-        "polygon",
-        "polygonal",
-        "polygon art"
+        "bauhaus",
+        "bauhaus style",
+        "bauhaus design"
       ],
       "hot": [
         "geometric",
-        "3d",
-        "3d render",
-        "faceted",
-        "origami",
-        "crystal"
+        "modernism",
+        "constructivism",
+        "minimalism",
+        "mid century",
+        "de stijl"
       ],
       "warm": [
-        "digital",
+        "abstract",
         "shapes",
-        "video game",
-        "computer",
-        "angular",
-        "modern"
+        "poster",
+        "modern",
+        "german",
+        "primary colors",
+        "circles"
       ]
     }
   }

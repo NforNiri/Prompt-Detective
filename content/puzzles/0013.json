@@ -1,113 +1,108 @@
 {
   "id": 13,
-  "publishDate": "2026-10-23",
-  "difficulty": 4,
+  "publishDate": "2026-10-26",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a skeleton playing a keytar on a city rooftop at night, synthwave, no text, no letters, no watermark",
+  "prompt": "a girl flying a kite on a grassy hilltop, anime, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "skeleton",
+      "answer": "girl",
       "accepted": [
-        "skeleton",
-        "bones",
-        "living skeleton"
+        "girl",
+        "little girl",
+        "young girl",
+        "schoolgirl"
       ],
       "hot": [
-        "skull",
-        "zombie",
-        "ghost",
-        "undead",
-        "mummy",
-        "corpse"
+        "child",
+        "kid",
+        "daughter",
+        "boy",
+        "teenager",
+        "woman"
       ],
       "warm": [
-        "death",
-        "halloween",
-        "monster",
-        "spooky",
-        "dead",
-        "reaper"
+        "person",
+        "student",
+        "human",
+        "friend",
+        "young",
+        "youth"
       ]
     },
     "doing": {
-      "answer": "playing a keytar",
+      "answer": "flying a kite",
       "accepted": [
-        "playing a keytar",
-        "keytar",
-        "playing keyboard",
-        "playing a keyboard",
-        "playing synth",
-        "playing a synthesizer"
+        "flying a kite",
+        "kite",
+        "kite flying",
+        "flying kite",
+        "kiting"
       ],
       "hot": [
-        "playing music",
-        "keyboard",
-        "synthesizer",
-        "piano",
-        "playing piano",
-        "guitar"
+        "flying",
+        "holding a string",
+        "running",
+        "playing"
       ],
       "warm": [
-        "music",
-        "dancing",
-        "performing",
-        "singing",
-        "concert",
-        "jamming",
-        "dj"
+        "wind",
+        "jumping",
+        "standing",
+        "looking up",
+        "sky",
+        "holding"
       ]
     },
     "where": {
-      "answer": "rooftop",
+      "answer": "hilltop",
       "accepted": [
-        "rooftop",
-        "roof",
-        "city rooftop",
-        "building roof",
-        "roof top"
+        "hilltop",
+        "hill",
+        "hillside",
+        "grassy hill",
+        "top of a hill",
+        "hill top"
       ],
       "hot": [
-        "skyscraper",
-        "balcony",
-        "terrace",
-        "city",
-        "skyline"
+        "meadow",
+        "mountain",
+        "field",
+        "cliff",
+        "grassland"
       ],
       "warm": [
-        "night",
-        "building",
-        "sky",
-        "neon",
-        "downtown",
-        "tower"
+        "grass",
+        "countryside",
+        "outdoors",
+        "nature",
+        "clouds",
+        "valley"
       ]
     },
     "style": {
-      "answer": "synthwave",
+      "answer": "anime",
       "accepted": [
-        "synthwave",
-        "retrowave",
-        "outrun",
-        "synth wave",
-        "80s",
-        "neon 80s"
+        "anime",
+        "manga",
+        "japanese animation",
+        "ghibli",
+        "anime style"
       ],
       "hot": [
-        "vaporwave",
-        "neon",
-        "cyberpunk",
-        "80s retro",
-        "retro",
-        "miami"
+        "cartoon",
+        "animation",
+        "animated",
+        "cel shaded",
+        "japanese"
       ],
       "warm": [
-        "purple",
-        "synth",
-        "electronic",
-        "sunset",
-        "vintage",
-        "music",
-        "futuristic"
+        "drawing",
+        "illustration",
+        "cute",
+        "art",
+        "colorful",
+        "kawaii"
       ]
     }
   }

@@ -1,109 +1,109 @@
 {
   "id": 7,
-  "publishDate": "2026-10-17",
-  "difficulty": 5,
+  "publishDate": "2026-10-20",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a beekeeper harvesting honey in a lavender field, art nouveau, no text, no letters, no watermark",
+  "prompt": "a robot walking a dog on a rainy street, comic book, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "beekeeper",
+      "answer": "robot",
       "accepted": [
-        "beekeeper",
-        "bee keeper",
-        "apiarist",
-        "honey farmer"
+        "robot",
+        "android",
+        "droid",
+        "cyborg",
+        "bot"
       ],
       "hot": [
-        "farmer",
-        "gardener",
-        "bee",
-        "astronaut",
-        "hazmat"
+        "machine",
+        "automaton",
+        "mech",
+        "ai",
+        "humanoid"
       ],
       "warm": [
-        "woman",
+        "metal",
+        "computer",
+        "alien",
         "man",
-        "person",
-        "worker",
-        "suit",
-        "veil",
-        "honey"
+        "toy",
+        "tin man"
       ]
     },
     "doing": {
-      "answer": "harvesting honey",
+      "answer": "walking a dog",
       "accepted": [
-        "harvesting honey",
-        "collecting honey",
-        "gathering honey",
-        "honey",
-        "harvesting"
+        "walking a dog",
+        "walking the dog",
+        "dog walking",
+        "walking dog",
+        "walking"
       ],
       "hot": [
-        "beekeeping",
-        "holding a honeycomb",
-        "honeycomb",
-        "checking a hive",
-        "collecting"
+        "dog",
+        "leash",
+        "strolling",
+        "taking a walk",
+        "pet"
       ],
       "warm": [
-        "working",
-        "farming",
-        "picking",
+        "running",
         "holding",
-        "smoking",
-        "bees",
-        "gardening"
+        "raining",
+        "umbrella",
+        "commuting",
+        "jogging"
       ]
     },
     "where": {
-      "answer": "lavender field",
+      "answer": "rainy street",
       "accepted": [
-        "lavender field",
-        "lavender",
-        "lavender farm",
-        "field of lavender"
+        "rainy street",
+        "street",
+        "city street",
+        "road",
+        "sidewalk",
+        "rainy city"
       ],
       "hot": [
-        "flower field",
-        "meadow",
-        "field",
-        "farm",
-        "provence"
+        "city",
+        "alley",
+        "downtown",
+        "crosswalk",
+        "avenue"
       ],
       "warm": [
-        "garden",
-        "flowers",
-        "countryside",
-        "purple",
-        "hill",
-        "summer",
-        "france"
+        "rain",
+        "town",
+        "night",
+        "puddle",
+        "urban",
+        "traffic"
       ]
     },
     "style": {
-      "answer": "art nouveau",
+      "answer": "comic book",
       "accepted": [
-        "art nouveau",
-        "nouveau",
-        "mucha",
-        "jugendstil"
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
       ],
       "hot": [
-        "art deco",
-        "poster",
-        "decorative",
-        "victorian",
-        "vintage poster"
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
       ],
       "warm": [
-        "vintage",
-        "ornate",
-        "floral",
-        "illustration",
-        "elegant",
+        "drawing",
+        "ink",
+        "bold",
+        "halftone",
         "retro",
-        "old"
+        "panel"
       ]
     }
   }

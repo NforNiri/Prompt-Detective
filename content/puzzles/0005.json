@@ -1,109 +1,108 @@
 {
   "id": 5,
-  "publishDate": "2026-10-15",
-  "difficulty": 3,
+  "publishDate": "2026-10-18",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a raccoon skateboarding in an empty swimming pool, pixel art, no text, no letters, no watermark",
+  "prompt": "a cow playing guitar on a farm, cartoon, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "raccoon",
+      "answer": "cow",
       "accepted": [
-        "raccoon",
-        "racoon",
-        "trash panda"
+        "cow",
+        "cattle",
+        "dairy cow",
+        "calf"
       ],
       "hot": [
-        "possum",
-        "opossum",
-        "badger",
-        "red panda",
-        "ferret",
-        "skunk"
+        "bull",
+        "ox",
+        "buffalo",
+        "yak",
+        "goat"
       ],
       "warm": [
         "animal",
-        "bandit",
-        "mammal",
-        "cat",
-        "fox",
-        "bear",
-        "rodent"
+        "farm animal",
+        "sheep",
+        "horse",
+        "pig",
+        "milk"
       ]
     },
     "doing": {
-      "answer": "skateboarding",
+      "answer": "playing guitar",
       "accepted": [
-        "skateboarding",
-        "skateboard",
-        "skating",
-        "riding a skateboard"
+        "playing guitar",
+        "guitar",
+        "playing the guitar",
+        "playing a guitar",
+        "strumming"
       ],
       "hot": [
-        "doing a trick",
-        "ollie",
-        "kickflip",
-        "jumping",
-        "surfing",
-        "rollerblading"
+        "singing",
+        "playing music",
+        "banjo",
+        "ukulele",
+        "music",
+        "playing"
       ],
       "warm": [
-        "riding",
-        "sport",
-        "trick",
-        "rolling",
-        "balancing",
-        "flying",
-        "playing"
+        "dancing",
+        "performing",
+        "song",
+        "concert",
+        "instrument",
+        "band"
       ]
     },
     "where": {
-      "answer": "empty swimming pool",
+      "answer": "farm",
       "accepted": [
-        "empty swimming pool",
-        "empty pool",
-        "swimming pool",
-        "pool",
-        "drained pool"
+        "farm",
+        "barn",
+        "farmyard",
+        "barnyard",
+        "ranch"
       ],
       "hot": [
-        "skatepark",
-        "skate park",
-        "bowl",
-        "ramp"
+        "field",
+        "meadow",
+        "countryside",
+        "pasture",
+        "stable"
       ],
       "warm": [
-        "backyard",
-        "concrete",
-        "park",
-        "yard",
-        "street",
-        "summer"
+        "grass",
+        "village",
+        "hay",
+        "fence",
+        "outdoors",
+        "hill"
       ]
     },
     "style": {
-      "answer": "pixel art",
+      "answer": "cartoon",
       "accepted": [
-        "pixel art",
-        "pixel",
-        "8-bit",
-        "8 bit",
-        "pixelated",
-        "16-bit"
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
       ],
       "hot": [
-        "retro game",
-        "video game",
-        "sprite",
-        "retro",
-        "arcade game"
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
       ],
       "warm": [
-        "game",
-        "arcade",
-        "digital",
-        "blocky",
-        "old school",
-        "computer"
+        "kids",
+        "cute",
+        "funny",
+        "art",
+        "colorful",
+        "simple"
       ]
     }
   }

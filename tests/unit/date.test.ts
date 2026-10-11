@@ -3,6 +3,7 @@ import {
   addDays,
   daysBetween,
   expectedDifficulty,
+  LAUNCH_DATE,
   isDateInWindow,
   isValidDateString,
   localDateString,
@@ -79,14 +80,18 @@ describe("msUntilLocalMidnight", () => {
 });
 
 describe("weekday difficulty", () => {
-  it("launch day, Sunday Oct 11 2026, is difficulty 1", () => {
-    expect(weekday("2026-10-11")).toBe(0);
-    expect(expectedDifficulty("2026-10-11")).toBe(1);
+  it("launch day, Wednesday Oct 14 2026, is difficulty 1", () => {
+    expect(LAUNCH_DATE).toBe("2026-10-14");
+    expect(weekday(LAUNCH_DATE)).toBe(3);
+    expect(expectedDifficulty(LAUNCH_DATE)).toBe(1);
   });
 
-  it("follows the Sun..Sat curve", () => {
-    const week = Array.from({ length: 7 }, (_, i) => expectedDifficulty(addDays("2026-10-04", i)));
+  it("ramps up through launch week, then follows the Sun..Sat curve", () => {
+    const launchWeek = Array.from({ length: 4 }, (_, i) => expectedDifficulty(addDays(LAUNCH_DATE, i)));
+    expect(launchWeek).toEqual([1, 2, 2, 3]);
+    const week = Array.from({ length: 7 }, (_, i) => expectedDifficulty(addDays("2026-10-18", i)));
     expect(week).toEqual([1, 2, 2, 3, 3, 4, 5]);
+    expect(expectedDifficulty("2026-10-07")).toBe(3);
   });
 
   it("matches the difficulty of every content puzzle", () => {

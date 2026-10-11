@@ -39,7 +39,7 @@ export interface Strings {
     invalid: string;
     error: string;
   };
-  load: { loading: string; notFound: string; network: string; retry: string };
+  load: { loading: string; notFound: string; beforeLaunch: (day: string) => string; network: string; retry: string };
   storageNote: string;
   end: {
     won: string;
@@ -154,6 +154,7 @@ export const en: Strings = {
   load: {
     loading: "Opening today's case…",
     notFound: "No case today. Check back tomorrow.",
+    beforeLaunch: (day) => `The first case opens ${day}. See you then.`,
     network: "Couldn't load today's case.",
     retry: "Try again",
   },

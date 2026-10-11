@@ -1,110 +1,110 @@
 {
   "id": 48,
-  "publishDate": "2026-11-27",
-  "difficulty": 4,
+  "publishDate": "2026-11-30",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a jazz singer performing in a nightclub, art deco, no text, no letters, no watermark",
+  "prompt": "a teddy bear having a tea party in a playroom, 3d render, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "jazz singer",
+      "answer": "teddy bear",
       "accepted": [
-        "jazz singer",
-        "singer",
-        "vocalist",
-        "lounge singer",
-        "diva"
+        "teddy bear",
+        "teddy",
+        "bear",
+        "stuffed bear",
+        "toy bear",
+        "plush bear"
       ],
       "hot": [
-        "musician",
-        "performer",
-        "dancer",
-        "actress",
-        "entertainer"
+        "toy",
+        "doll",
+        "panda",
+        "stuffed animal",
+        "puppet"
       ],
       "warm": [
-        "woman",
-        "lady",
-        "star",
-        "glamour",
-        "artist",
-        "person"
+        "animal",
+        "cute",
+        "plush",
+        "child",
+        "kid",
+        "brown"
       ]
     },
     "doing": {
-      "answer": "performing",
+      "answer": "having a tea party",
       "accepted": [
-        "performing",
-        "singing",
-        "crooning",
-        "singing a song",
-        "holding a microphone",
-        "performing on stage"
+        "having a tea party",
+        "tea party",
+        "drinking tea",
+        "pouring tea",
+        "having tea"
       ],
       "hot": [
-        "microphone",
-        "talking",
-        "dancing",
-        "humming",
-        "posing"
+        "drinking",
+        "eating",
+        "playing",
+        "picnic",
+        "party"
       ],
       "warm": [
-        "music",
-        "standing",
-        "show",
-        "concert",
-        "entertaining",
-        "smiling"
+        "sitting",
+        "cups",
+        "snack",
+        "cake",
+        "celebrating",
+        "sharing"
       ]
     },
     "where": {
-      "answer": "nightclub",
+      "answer": "playroom",
       "accepted": [
-        "nightclub",
-        "jazz club",
-        "club",
-        "lounge",
-        "cabaret",
-        "speakeasy"
+        "playroom",
+        "nursery",
+        "kids room",
+        "children's room",
+        "bedroom"
       ],
       "hot": [
-        "bar",
-        "stage",
-        "theater",
-        "ballroom",
-        "casino"
+        "living room",
+        "house",
+        "dollhouse",
+        "kindergarten",
+        "toy store"
       ],
       "warm": [
-        "night",
-        "music",
-        "party",
-        "restaurant",
-        "hotel",
-        "venue"
+        "room",
+        "home",
+        "indoors",
+        "toys",
+        "table",
+        "floor"
       ]
     },
     "style": {
-      "answer": "art deco",
+      "answer": "3d render",
       "accepted": [
-        "art deco",
-        "deco",
-        "artdeco",
-        "1920s",
-        "twenties"
+        "3d render",
+        "3d",
+        "render",
+        "cgi",
+        "3d animation",
+        "3d rendering"
       ],
       "hot": [
-        "art nouveau",
-        "gatsby",
-        "vintage poster",
-        "retro",
-        "geometric"
+        "animation",
+        "animated",
+        "cartoon",
+        "claymation",
+        "toy"
       ],
       "warm": [
-        "vintage",
-        "gold",
-        "elegant",
-        "old",
-        "poster",
-        "luxury"
+        "digital",
+        "computer",
+        "cute",
+        "movie",
+        "plastic",
+        "smooth"
       ]
     }
   }

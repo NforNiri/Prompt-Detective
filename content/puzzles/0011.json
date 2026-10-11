@@ -1,109 +1,111 @@
 {
   "id": 11,
-  "publishDate": "2026-10-21",
-  "difficulty": 3,
+  "publishDate": "2026-10-24",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a snail driving a race car on a race track, claymation, no text, no letters, no watermark",
+  "prompt": "a blacksmith forging a sword in a forge, cubism, geometric fragmented shapes, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "snail",
+      "answer": "blacksmith",
       "accepted": [
-        "snail",
-        "garden snail",
-        "escargot"
+        "blacksmith",
+        "smith",
+        "ironsmith",
+        "metalworker",
+        "black smith"
       ],
       "hot": [
-        "slug",
-        "turtle",
-        "shell",
-        "caterpillar",
-        "worm"
+        "welder",
+        "armorer",
+        "craftsman",
+        "ironworker",
+        "viking"
       ],
       "warm": [
-        "bug",
-        "insect",
-        "animal",
-        "slow",
-        "creature",
-        "critter"
+        "man",
+        "worker",
+        "muscles",
+        "hammer",
+        "medieval",
+        "dwarf",
+        "apron"
       ]
     },
     "doing": {
-      "answer": "driving a race car",
+      "answer": "forging a sword",
       "accepted": [
-        "driving a race car",
-        "racing",
-        "driving",
-        "race car",
-        "driving a car",
-        "car racing"
+        "forging a sword",
+        "forging",
+        "hammering",
+        "smithing",
+        "making a sword",
+        "forging metal"
       ],
       "hot": [
-        "speeding",
-        "race",
-        "competing",
-        "riding",
-        "car"
+        "sword",
+        "anvil",
+        "hitting",
+        "working metal",
+        "welding",
+        "crafting"
       ],
       "warm": [
-        "winning",
-        "going fast",
-        "moving",
-        "sport",
-        "wheel",
-        "speed"
+        "working",
+        "building",
+        "fire",
+        "sparks",
+        "iron",
+        "hammer"
       ]
     },
     "where": {
-      "answer": "race track",
+      "answer": "forge",
       "accepted": [
-        "race track",
-        "racetrack",
-        "track",
-        "circuit",
-        "raceway",
-        "speedway"
+        "forge",
+        "smithy",
+        "workshop",
+        "blacksmith shop",
+        "foundry"
       ],
       "hot": [
-        "road",
-        "stadium",
-        "highway",
-        "finish line",
-        "arena"
+        "garage",
+        "factory",
+        "barn",
+        "shed",
+        "furnace"
       ],
       "warm": [
-        "street",
-        "asphalt",
-        "crowd",
-        "grandstand",
-        "pit",
-        "course"
+        "fire",
+        "room",
+        "village",
+        "medieval",
+        "cave",
+        "basement"
       ]
     },
     "style": {
-      "answer": "claymation",
+      "answer": "cubism",
       "accepted": [
-        "claymation",
-        "clay",
-        "clay animation",
-        "stop motion",
-        "plasticine",
-        "clay model"
+        "cubism",
+        "cubist",
+        "cubist painting",
+        "picasso"
       ],
       "hot": [
-        "animation",
-        "puppet",
-        "3d",
-        "sculpture",
-        "toy"
+        "abstract",
+        "geometric",
+        "modern art",
+        "futurism",
+        "collage"
       ],
       "warm": [
-        "cartoon",
-        "handmade",
-        "cute",
-        "model",
-        "figurine",
-        "kids"
+        "modern",
+        "shapes",
+        "painting",
+        "art",
+        "angular",
+        "fragmented",
+        "surreal"
       ]
     }
   }

@@ -1,104 +1,107 @@
 {
   "id": 40,
-  "publishDate": "2026-11-19",
-  "difficulty": 3,
+  "publishDate": "2026-11-22",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a lion roaring on a rocky cliff, stained glass, no text, no letters, no watermark",
+  "prompt": "a pig taking a bath in a bathroom, cartoon, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "lion",
+      "answer": "pig",
       "accepted": [
-        "lion",
-        "lioness",
-        "male lion"
+        "pig",
+        "piglet",
+        "hog",
+        "swine"
       ],
       "hot": [
-        "tiger",
-        "leopard",
-        "cheetah",
-        "big cat",
-        "cougar"
+        "boar",
+        "cow",
+        "sheep",
+        "hippo"
       ],
       "warm": [
-        "cat",
         "animal",
-        "king",
-        "beast",
-        "predator",
-        "mane"
+        "farm animal",
+        "pink",
+        "pet",
+        "mammal",
+        "cute"
       ]
     },
     "doing": {
-      "answer": "roaring",
+      "answer": "taking a bath",
       "accepted": [
-        "roaring",
-        "growling",
-        "snarling"
+        "taking a bath",
+        "bathing",
+        "bubble bath",
+        "having a bath",
+        "washing",
+        "soaking"
       ],
       "hot": [
-        "shouting",
-        "yelling",
-        "howling",
-        "calling",
-        "barking"
+        "showering",
+        "relaxing",
+        "swimming",
+        "cleaning",
+        "scrubbing"
       ],
       "warm": [
-        "standing",
+        "playing",
         "sitting",
-        "looking",
-        "opening mouth",
-        "singing",
-        "hunting"
+        "bubbles",
+        "water",
+        "soap",
+        "singing"
       ]
     },
     "where": {
-      "answer": "rocky cliff",
+      "answer": "bathroom",
       "accepted": [
-        "rocky cliff",
-        "cliff",
-        "rock",
-        "cliff edge",
-        "ledge"
+        "bathroom",
+        "bathtub",
+        "tub",
+        "bath",
+        "washroom"
       ],
       "hot": [
-        "mountain",
-        "hill",
-        "canyon",
-        "boulder",
-        "savanna"
+        "shower",
+        "spa",
+        "laundry room",
+        "pool",
+        "kitchen"
       ],
       "warm": [
-        "africa",
-        "sky",
-        "sunset",
-        "nature",
-        "outdoors",
-        "wilderness"
+        "house",
+        "home",
+        "room",
+        "indoors",
+        "tiles",
+        "water"
       ]
     },
     "style": {
-      "answer": "stained glass",
+      "answer": "cartoon",
       "accepted": [
-        "stained glass",
-        "stained glass window",
-        "glass",
-        "church window",
-        "leaded glass"
+        "cartoon",
+        "cartoonish",
+        "toon",
+        "animated cartoon",
+        "kids cartoon"
       ],
       "hot": [
-        "mosaic",
-        "window",
-        "colored glass",
-        "gothic",
-        "cathedral"
+        "animation",
+        "animated",
+        "comic",
+        "illustration",
+        "drawing"
       ],
       "warm": [
-        "church",
+        "kids",
+        "cute",
+        "funny",
+        "art",
         "colorful",
-        "religious",
-        "medieval",
-        "glowing",
-        "art"
+        "simple"
       ]
     }
   }

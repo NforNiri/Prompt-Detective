@@ -1,106 +1,109 @@
 {
   "id": 60,
-  "publishDate": "2026-12-09",
-  "difficulty": 3,
+  "publishDate": "2026-12-12",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a snowman building a sandcastle on a beach, claymation, no text, no letters, no watermark",
+  "prompt": "a beekeeper harvesting honey in a lavender field, art nouveau, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "snowman",
+      "answer": "beekeeper",
       "accepted": [
-        "snowman",
-        "snow man"
+        "beekeeper",
+        "bee keeper",
+        "apiarist",
+        "honey farmer"
       ],
       "hot": [
-        "snowball",
-        "yeti",
-        "penguin",
-        "ice sculpture",
-        "doll"
+        "farmer",
+        "gardener",
+        "bee",
+        "astronaut",
+        "hazmat"
       ],
       "warm": [
-        "winter",
-        "snow",
-        "christmas",
-        "toy",
-        "figure",
-        "cold"
+        "woman",
+        "man",
+        "person",
+        "worker",
+        "suit",
+        "veil",
+        "honey"
       ]
     },
     "doing": {
-      "answer": "building a sandcastle",
+      "answer": "harvesting honey",
       "accepted": [
-        "building a sandcastle",
-        "building",
-        "making a sandcastle",
-        "sandcastle",
-        "building sandcastles"
+        "harvesting honey",
+        "collecting honey",
+        "gathering honey",
+        "honey",
+        "harvesting"
       ],
       "hot": [
-        "digging",
-        "playing",
-        "sculpting",
-        "shoveling",
-        "constructing"
+        "beekeeping",
+        "holding a honeycomb",
+        "honeycomb",
+        "checking a hive",
+        "collecting"
       ],
       "warm": [
-        "sitting",
         "working",
-        "sand",
-        "bucket",
-        "summer",
-        "crafting"
+        "farming",
+        "picking",
+        "holding",
+        "smoking",
+        "bees",
+        "gardening"
       ]
     },
     "where": {
-      "answer": "beach",
+      "answer": "lavender field",
       "accepted": [
-        "beach",
-        "seashore",
-        "shore",
-        "seaside",
-        "coast"
+        "lavender field",
+        "lavender",
+        "lavender farm",
+        "field of lavender"
       ],
       "hot": [
-        "sand",
-        "ocean",
-        "sea",
-        "island",
-        "desert"
+        "flower field",
+        "meadow",
+        "field",
+        "farm",
+        "provence"
       ],
       "warm": [
-        "water",
+        "garden",
+        "flowers",
+        "countryside",
+        "purple",
+        "hill",
         "summer",
-        "sun",
-        "vacation",
-        "waves",
-        "tropical"
+        "france"
       ]
     },
     "style": {
-      "answer": "claymation",
+      "answer": "art nouveau",
       "accepted": [
-        "claymation",
-        "clay",
-        "clay animation",
-        "stop motion",
-        "plasticine",
-        "clay model"
+        "art nouveau",
+        "nouveau",
+        "mucha",
+        "jugendstil"
       ],
       "hot": [
-        "animation",
-        "puppet",
-        "3d",
-        "sculpture",
-        "toy"
+        "art deco",
+        "poster",
+        "decorative",
+        "victorian",
+        "vintage poster"
       ],
       "warm": [
-        "cartoon",
-        "handmade",
-        "cute",
-        "model",
-        "figurine",
-        "kids"
+        "vintage",
+        "ornate",
+        "floral",
+        "illustration",
+        "elegant",
+        "retro",
+        "old"
       ]
     }
   }

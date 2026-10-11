@@ -1,110 +1,109 @@
 {
   "id": 9,
-  "publishDate": "2026-10-19",
-  "difficulty": 2,
+  "publishDate": "2026-10-22",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a grandmother feeding pigeons in a town square, pencil sketch, no text, no letters, no watermark",
+  "prompt": "an owl holding a lantern in a forest at night, stained glass, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "grandmother",
+      "answer": "owl",
       "accepted": [
-        "grandmother",
-        "grandma",
-        "old woman",
-        "granny",
-        "elderly woman",
-        "old lady"
+        "owl",
+        "barn owl",
+        "snowy owl",
+        "great horned owl",
+        "owlet"
       ],
       "hot": [
-        "woman",
-        "lady",
-        "old man",
-        "nun",
-        "witch"
+        "hawk",
+        "eagle",
+        "falcon",
+        "raven",
+        "parrot"
       ],
       "warm": [
-        "person",
-        "elder",
-        "senior",
-        "mother",
-        "widow",
-        "retiree"
+        "bird",
+        "animal",
+        "feathers",
+        "night bird",
+        "wise",
+        "nocturnal"
       ]
     },
     "doing": {
-      "answer": "feeding pigeons",
+      "answer": "holding a lantern",
       "accepted": [
-        "feeding pigeons",
-        "feeding birds",
-        "feeding the pigeons",
-        "feeding the birds",
-        "feeding"
+        "holding a lantern",
+        "lantern",
+        "carrying a lantern",
+        "holding a lamp",
+        "holding lantern"
       ],
       "hot": [
-        "throwing bread",
-        "birdwatching",
-        "breadcrumbs",
-        "pigeon"
+        "lamp",
+        "holding a light",
+        "candle",
+        "torch",
+        "glowing"
       ],
       "warm": [
-        "sitting",
-        "eating",
-        "walking",
-        "birds",
-        "resting",
-        "bread"
+        "light",
+        "holding",
+        "carrying",
+        "flying",
+        "perching",
+        "standing",
+        "guiding"
       ]
     },
     "where": {
-      "answer": "town square",
+      "answer": "forest",
       "accepted": [
-        "town square",
-        "square",
-        "plaza",
-        "piazza",
-        "city square",
-        "market square"
+        "forest",
+        "woods",
+        "woodland",
+        "dark forest",
+        "night forest"
       ],
       "hot": [
-        "park",
-        "street",
-        "courtyard",
-        "fountain",
-        "market"
+        "jungle",
+        "trees",
+        "grove",
+        "swamp",
+        "park"
       ],
       "warm": [
-        "city",
-        "town",
-        "village",
-        "europe",
-        "bench",
-        "downtown"
+        "night",
+        "nature",
+        "moon",
+        "branch",
+        "mountain",
+        "outdoors"
       ]
     },
     "style": {
-      "answer": "pencil sketch",
+      "answer": "stained glass",
       "accepted": [
-        "pencil sketch",
-        "sketch",
-        "pencil",
-        "pencil drawing",
-        "graphite",
-        "sketching"
+        "stained glass",
+        "stained glass window",
+        "glass",
+        "church window",
+        "leaded glass"
       ],
       "hot": [
-        "drawing",
-        "charcoal",
-        "line art",
-        "ink drawing",
-        "doodle"
+        "mosaic",
+        "window",
+        "colored glass",
+        "gothic",
+        "cathedral"
       ],
       "warm": [
-        "art",
-        "black and white",
-        "paper",
-        "hand drawn",
-        "grey",
-        "rough"
+        "church",
+        "colorful",
+        "religious",
+        "medieval",
+        "glowing",
+        "art"
       ]
     }
   }

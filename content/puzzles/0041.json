@@ -1,109 +1,109 @@
 {
   "id": 41,
-  "publishDate": "2026-11-20",
-  "difficulty": 4,
+  "publishDate": "2026-11-23",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a cowboy riding a horse through a desert at sunset, synthwave, no text, no letters, no watermark",
+  "prompt": "a dragon roasting marshmallows at a campfire, crayon drawing, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "cowboy",
+      "answer": "dragon",
       "accepted": [
-        "cowboy",
-        "cowgirl",
-        "rancher",
-        "wrangler",
-        "horseman"
+        "dragon",
+        "baby dragon",
+        "little dragon",
+        "wyvern"
       ],
       "hot": [
-        "sheriff",
-        "farmer",
-        "outlaw",
-        "rider",
-        "bandit"
+        "dinosaur",
+        "lizard",
+        "monster",
+        "serpent",
+        "crocodile"
       ],
       "warm": [
-        "man",
-        "western",
-        "person",
-        "hat",
-        "hero",
-        "traveler"
+        "creature",
+        "animal",
+        "fantasy",
+        "beast",
+        "reptile",
+        "myth"
       ]
     },
     "doing": {
-      "answer": "riding a horse",
+      "answer": "roasting marshmallows",
       "accepted": [
-        "riding a horse",
-        "horseback riding",
-        "riding",
-        "galloping",
-        "horse riding"
+        "roasting marshmallows",
+        "roasting",
+        "toasting marshmallows",
+        "cooking marshmallows",
+        "marshmallows"
       ],
       "hot": [
-        "horse",
-        "racing",
-        "trotting",
-        "driving"
+        "breathing fire",
+        "cooking",
+        "camping",
+        "grilling"
       ],
       "warm": [
-        "moving",
-        "running",
-        "traveling",
+        "eating",
         "sitting",
-        "jumping",
-        "exploring"
+        "relaxing",
+        "snack",
+        "food",
+        "fire"
       ]
     },
     "where": {
-      "answer": "desert",
+      "answer": "campfire",
       "accepted": [
-        "desert",
-        "wild west",
-        "badlands",
-        "desert road"
+        "campfire",
+        "camp fire",
+        "campsite",
+        "camping",
+        "bonfire",
+        "fire pit"
       ],
       "hot": [
-        "canyon",
-        "prairie",
-        "mesa",
-        "highway",
-        "valley"
+        "forest",
+        "woods",
+        "tent",
+        "fireplace",
+        "camp"
       ],
       "warm": [
-        "sand",
-        "sunset",
-        "mountains",
-        "dunes",
-        "road",
-        "west"
+        "night",
+        "outdoors",
+        "nature",
+        "stars",
+        "fire",
+        "trees"
       ]
     },
     "style": {
-      "answer": "synthwave",
+      "answer": "crayon drawing",
       "accepted": [
-        "synthwave",
-        "retrowave",
-        "outrun",
-        "synth wave",
-        "80s",
-        "neon 80s"
+        "crayon drawing",
+        "crayon",
+        "kids drawing",
+        "childrens drawing",
+        "child's drawing",
+        "children's drawing"
       ],
       "hot": [
-        "vaporwave",
-        "neon",
-        "cyberpunk",
-        "80s retro",
-        "retro",
-        "miami"
+        "drawing",
+        "colored pencil",
+        "pastel",
+        "doodle",
+        "finger painting",
+        "chalk"
       ],
       "warm": [
-        "purple",
-        "synth",
-        "electronic",
-        "sunset",
-        "vintage",
-        "music",
-        "futuristic"
+        "kids",
+        "childish",
+        "art",
+        "colorful",
+        "simple",
+        "scribble"
       ]
     }
   }

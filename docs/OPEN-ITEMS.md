@@ -1,14 +1,20 @@
 # Open items
 
-Last updated: 2026-10-06 (Day 6 checks done; playtest pending; launch Sunday Oct 11). Close items by deleting them or moving them to "Done".
+Last updated: 2026-10-11 (launch moved to Wednesday Oct 14; puzzles renumbered). Close items by deleting them or moving them to "Done".
 
 ## Decisions needed (Niri)
 
 | Item | Options | Notes |
 |---|---|---|
-| Public repo exposes all answers | Make repo private until after launch / keep future puzzles out of git / accept | `content/puzzles/*.json` holds every answer through Dec 9. Already in git history, so only going private hides them. |
-| Live page says there is no case today until Oct 11 | Show a "first case opens Sunday" placeholder / leave it | Production works (env vars set, functions in Frankfurt); there is simply no puzzle before launch. |
+| Public repo exposes all answers | Make repo private until after launch / keep future puzzles out of git / accept | `content/puzzles/*.json` holds every answer through Dec 12. Already in git history, so only going private hides them. |
 | Project lives in OneDrive | Move to e.g. `C:\dev\prompt-detective` / stay | OneDrive truncated the 106 MB Next binary during a reinstall (dev server would not start). A plain folder move; git does not care. |
+
+## Before launch (Wed Oct 14)
+
+- Re-upload puzzles 1 to 3 so their database dates move to Oct 14 to 16: `npm run content:upload -- --only=1-3`. Until then the live site serves puzzle #1 on Oct 11.
+- Upload puzzles 4 to 60 before Saturday Oct 17, when #4 is due: `npm run content:upload -- --only=4-60`.
+- Vercel > Settings > Environment Variables: set `NEXT_PUBLIC_DEV_TODAY` (Preview) to `2026-10-14`, then redeploy the preview. `NEXT_PUBLIC_LAUNCH_DATE` is unused and can be deleted.
+- Anyone who played #1 on Oct 11 will see their finished game again on Oct 14 (same puzzle id, saved in their browser).
 
 ## Day 6
 
@@ -20,7 +26,6 @@ Last updated: 2026-10-06 (Day 6 checks done; playtest pending; launch Sunday Oct
 | Item | Due | Notes |
 |---|---|---|
 | Puzzle 0002 prompt says "pixar style" | Any time | The pipeline rules say no brands. Low risk. |
-| Upload puzzles 4 to 60 | Runbook Day 7 | All 60 images exist and pass strict validation. Rows 1 to 3 are already uploaded. |
 
 ## Checks only Niri can do
 
@@ -32,7 +37,7 @@ Last updated: 2026-10-06 (Day 6 checks done; playtest pending; launch Sunday Oct
 
 ## Data hygiene before launch
 
-- `guess_log` holds test rows from curl and UI play (all dated before Oct 11). Delete them before launch, or filter by `created_at >= '2026-10-11'` in analysis.
+- `guess_log` holds test rows from curl and UI play (all dated before launch). Delete them before launch, or filter by `created_at >= '2026-10-14'` in analysis.
 - The e2e test writes guess_log rows under device `00000000-0000-4000-8000-00000000e2e0`. Exclude that device in analysis; it keeps writing rows after launch whenever the test runs.
 - Three orphaned placeholder files under `dev/` in the bucket (0001-23f16b4f, 0002-0f5a9b2e, 0003-2eb5b09f): delete them in Supabase Storage if not done yet.
 

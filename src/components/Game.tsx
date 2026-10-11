@@ -3,6 +3,8 @@
 import { useRef, useState, useSyncExternalStore } from "react";
 import { useGame } from "@/hooks/useGame";
 import { track } from "@/lib/analytics";
+import { appNow } from "@/lib/clock";
+import { LAUNCH_DATE, localDateString } from "@/lib/game/date";
 import { howtoCompleted } from "@/lib/game/events";
 import { canUseHint, guessesLeft, type Notice } from "@/lib/game/state";
 import { guessesUsed } from "@/lib/game/stats";
@@ -22,6 +24,18 @@ import { StatsModal } from "./StatsModal";
 
 const noSubscribe = () => () => {};
 const readDebugParam = () => new URLSearchParams(window.location.search).get("debug") === "1";
+
+/** Before puzzle #1, name the opening day instead of "check back tomorrow". Runs only in the browser. */
+function notFoundMessage(): string {
+  if (localDateString(appNow()) >= LAUNCH_DATE) return en.load.notFound;
+  const day = new Date(`${LAUNCH_DATE}T00:00:00Z`).toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+  return en.load.beforeLaunch(day);
+}
 
 function noticeText(notice: Notice | null): string | null {
   if (!notice) return null;
@@ -87,7 +101,7 @@ export function Game({ initialPuzzle }: { initialPuzzle: PublicPuzzle | null }) 
 
         {phase === "error" && (
           <div className="flex flex-col items-center gap-3 py-4 text-center">
-            <p>{model.loadError === "not_found" ? en.load.notFound : en.load.network}</p>
+            <p>{model.loadError === "not_found" ? notFoundMessage() : en.load.network}</p>
             {model.loadError === "network" && (
               <button type="button" onClick={retry} className="h-12 rounded-lg border border-border px-5 font-semibold">
                 {en.load.retry}

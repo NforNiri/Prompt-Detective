@@ -1,109 +1,106 @@
 {
   "id": 57,
-  "publishDate": "2026-12-06",
-  "difficulty": 1,
+  "publishDate": "2026-12-09",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a giraffe eating leaves in the savanna, photograph, no text, no letters, no watermark",
+  "prompt": "a snowman building a sandcastle on a beach, claymation, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "giraffe",
+      "answer": "snowman",
       "accepted": [
-        "giraffe",
-        "baby giraffe",
-        "reticulated giraffe"
+        "snowman",
+        "snow man"
       ],
       "hot": [
-        "okapi",
-        "camel",
-        "llama",
-        "deer",
-        "zebra"
+        "snowball",
+        "yeti",
+        "penguin",
+        "ice sculpture",
+        "doll"
       ],
       "warm": [
-        "animal",
-        "mammal",
-        "tall",
-        "africa",
-        "safari",
-        "spots"
+        "winter",
+        "snow",
+        "christmas",
+        "toy",
+        "figure",
+        "cold"
       ]
     },
     "doing": {
-      "answer": "eating leaves",
+      "answer": "building a sandcastle",
       "accepted": [
-        "eating leaves",
-        "eating",
-        "grazing",
-        "browsing",
-        "feeding",
-        "munching"
+        "building a sandcastle",
+        "building",
+        "making a sandcastle",
+        "sandcastle",
+        "building sandcastles"
       ],
       "hot": [
-        "chewing",
-        "reaching",
-        "stretching",
-        "licking",
-        "nibbling"
+        "digging",
+        "playing",
+        "sculpting",
+        "shoveling",
+        "constructing"
       ],
       "warm": [
-        "standing",
-        "walking",
-        "food",
-        "hungry",
-        "tree",
-        "leaves"
+        "sitting",
+        "working",
+        "sand",
+        "bucket",
+        "summer",
+        "crafting"
       ]
     },
     "where": {
-      "answer": "savanna",
+      "answer": "beach",
       "accepted": [
-        "savanna",
-        "savannah",
-        "grassland",
-        "plains",
-        "african savanna",
-        "serengeti"
+        "beach",
+        "seashore",
+        "shore",
+        "seaside",
+        "coast"
       ],
       "hot": [
-        "safari",
-        "desert",
-        "prairie",
-        "zoo",
-        "jungle"
+        "sand",
+        "ocean",
+        "sea",
+        "island",
+        "desert"
       ],
       "warm": [
-        "africa",
-        "grass",
-        "trees",
-        "outdoors",
-        "wild",
-        "nature"
+        "water",
+        "summer",
+        "sun",
+        "vacation",
+        "waves",
+        "tropical"
       ]
     },
     "style": {
-      "answer": "photograph",
+      "answer": "claymation",
       "accepted": [
-        "photograph",
-        "photo",
-        "photography",
-        "realistic",
-        "photorealistic",
-        "close-up photo"
+        "claymation",
+        "clay",
+        "clay animation",
+        "stop motion",
+        "plasticine",
+        "clay model"
       ],
       "hot": [
-        "picture",
-        "camera",
-        "snapshot",
-        "portrait",
-        "close-up"
+        "animation",
+        "puppet",
+        "3d",
+        "sculpture",
+        "toy"
       ],
       "warm": [
-        "real life",
-        "natural",
-        "hd",
-        "macro",
-        "detailed",
-        "sharp"
+        "cartoon",
+        "handmade",
+        "cute",
+        "model",
+        "figurine",
+        "kids"
       ]
     }
   }

@@ -1,109 +1,113 @@
 {
   "id": 10,
-  "publishDate": "2026-10-20",
-  "difficulty": 2,
+  "publishDate": "2026-10-23",
+  "difficulty": 4,
   "locale": "en",
-  "prompt": "a robot walking a dog on a rainy street, comic book, no text, no letters, no watermark",
+  "prompt": "a skeleton playing a keytar on a city rooftop at night, synthwave, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "robot",
+      "answer": "skeleton",
       "accepted": [
-        "robot",
-        "android",
-        "droid",
-        "cyborg",
-        "bot"
+        "skeleton",
+        "bones",
+        "living skeleton"
       ],
       "hot": [
-        "machine",
-        "automaton",
-        "mech",
-        "ai",
-        "humanoid"
+        "skull",
+        "zombie",
+        "ghost",
+        "undead",
+        "mummy",
+        "corpse"
       ],
       "warm": [
-        "metal",
-        "computer",
-        "alien",
-        "man",
-        "toy",
-        "tin man"
+        "death",
+        "halloween",
+        "monster",
+        "spooky",
+        "dead",
+        "reaper"
       ]
     },
     "doing": {
-      "answer": "walking a dog",
+      "answer": "playing a keytar",
       "accepted": [
-        "walking a dog",
-        "walking the dog",
-        "dog walking",
-        "walking dog",
-        "walking"
+        "playing a keytar",
+        "keytar",
+        "playing keyboard",
+        "playing a keyboard",
+        "playing synth",
+        "playing a synthesizer"
       ],
       "hot": [
-        "dog",
-        "leash",
-        "strolling",
-        "taking a walk",
-        "pet"
+        "playing music",
+        "keyboard",
+        "synthesizer",
+        "piano",
+        "playing piano",
+        "guitar"
       ],
       "warm": [
-        "running",
-        "holding",
-        "raining",
-        "umbrella",
-        "commuting",
-        "jogging"
+        "music",
+        "dancing",
+        "performing",
+        "singing",
+        "concert",
+        "jamming",
+        "dj"
       ]
     },
     "where": {
-      "answer": "rainy street",
+      "answer": "rooftop",
       "accepted": [
-        "rainy street",
-        "street",
-        "city street",
-        "road",
-        "sidewalk",
-        "rainy city"
+        "rooftop",
+        "roof",
+        "city rooftop",
+        "building roof",
+        "roof top"
       ],
       "hot": [
+        "skyscraper",
+        "balcony",
+        "terrace",
         "city",
-        "alley",
-        "downtown",
-        "crosswalk",
-        "avenue"
+        "skyline"
       ],
       "warm": [
-        "rain",
-        "town",
         "night",
-        "puddle",
-        "urban",
-        "traffic"
+        "building",
+        "sky",
+        "neon",
+        "downtown",
+        "tower"
       ]
     },
     "style": {
-      "answer": "comic book",
+      "answer": "synthwave",
       "accepted": [
-        "comic book",
-        "comic",
-        "graphic novel",
-        "comic art",
-        "comic book art"
+        "synthwave",
+        "retrowave",
+        "outrun",
+        "synth wave",
+        "80s",
+        "neon 80s"
       ],
       "hot": [
-        "cartoon",
-        "pop art",
-        "manga",
-        "superhero",
-        "illustration"
+        "vaporwave",
+        "neon",
+        "cyberpunk",
+        "80s retro",
+        "retro",
+        "miami"
       ],
       "warm": [
-        "drawing",
-        "ink",
-        "bold",
-        "halftone",
-        "retro",
-        "panel"
+        "purple",
+        "synth",
+        "electronic",
+        "sunset",
+        "vintage",
+        "music",
+        "futuristic"
       ]
     }
   }

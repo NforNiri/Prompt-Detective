@@ -1,109 +1,112 @@
 {
   "id": 21,
-  "publishDate": "2026-10-31",
-  "difficulty": 5,
+  "publishDate": "2026-11-03",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a conductor conducting an orchestra in a concert hall, bauhaus, no text, no letters, no watermark",
+  "prompt": "a gorilla lifting weights in a gym with benches and dumbbell racks, graffiti, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "conductor",
+      "answer": "gorilla",
       "accepted": [
-        "conductor",
-        "maestro",
-        "orchestra conductor",
-        "bandleader",
-        "music director"
+        "gorilla",
+        "silverback",
+        "ape",
+        "great ape"
       ],
       "hot": [
-        "musician",
-        "composer",
-        "pianist",
-        "violinist",
-        "magician"
+        "monkey",
+        "chimpanzee",
+        "chimp",
+        "orangutan",
+        "baboon",
+        "king kong"
       ],
       "warm": [
-        "man",
-        "person",
-        "performer",
-        "artist",
-        "tuxedo",
-        "music"
+        "animal",
+        "primate",
+        "bear",
+        "beast",
+        "muscles",
+        "jungle"
       ]
     },
     "doing": {
-      "answer": "conducting an orchestra",
+      "answer": "lifting weights",
       "accepted": [
-        "conducting an orchestra",
-        "conducting",
-        "leading an orchestra",
-        "conducting music",
-        "waving a baton"
+        "lifting weights",
+        "weightlifting",
+        "lifting",
+        "bodybuilding",
+        "pumping iron",
+        "working out"
       ],
       "hot": [
-        "orchestra",
-        "baton",
-        "directing",
-        "leading",
-        "performing"
+        "exercising",
+        "training",
+        "squatting",
+        "barbell",
+        "dumbbell",
+        "bench press"
       ],
       "warm": [
-        "music",
-        "waving",
-        "dancing",
-        "pointing",
-        "playing",
-        "concert"
+        "sport",
+        "strong",
+        "flexing",
+        "fitness",
+        "muscles",
+        "sweating"
       ]
     },
     "where": {
-      "answer": "concert hall",
+      "answer": "gym",
       "accepted": [
-        "concert hall",
-        "opera house",
-        "auditorium",
-        "symphony hall",
-        "theater",
-        "theatre"
+        "gym",
+        "fitness center",
+        "weight room",
+        "fitness club",
+        "health club",
+        "gymnasium"
       ],
       "hot": [
-        "stage",
-        "opera",
-        "hall",
-        "music hall",
-        "amphitheater"
+        "boxing ring",
+        "locker room",
+        "sports hall",
+        "studio",
+        "basement"
       ],
       "warm": [
         "building",
         "room",
-        "audience",
-        "venue",
-        "seats",
-        "show"
+        "club",
+        "stadium",
+        "garage",
+        "school"
       ]
     },
     "style": {
-      "answer": "bauhaus",
+      "answer": "graffiti",
       "accepted": [
-        "bauhaus",
-        "bauhaus style",
-        "bauhaus design"
+        "graffiti",
+        "grafitti",
+        "street art",
+        "mural",
+        "spray paint",
+        "graffiti art"
       ],
       "hot": [
-        "geometric",
-        "modernism",
-        "constructivism",
-        "minimalism",
-        "mid century",
-        "de stijl"
+        "urban art",
+        "wall art",
+        "painting",
+        "stencil",
+        "pop art"
       ],
       "warm": [
-        "abstract",
-        "shapes",
-        "poster",
-        "modern",
-        "german",
-        "primary colors",
-        "circles"
+        "urban",
+        "wall",
+        "paint",
+        "colorful",
+        "hip hop",
+        "city"
       ]
     }
   }

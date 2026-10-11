@@ -1,107 +1,108 @@
 {
   "id": 56,
-  "publishDate": "2026-12-05",
-  "difficulty": 5,
+  "publishDate": "2026-12-08",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a sommelier tasting wine in a wine cellar, pointillism, no text, no letters, no watermark",
+  "prompt": "a scientist mixing chemicals in a laboratory, comic book, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "sommelier",
+      "answer": "scientist",
       "accepted": [
-        "sommelier",
-        "wine expert",
-        "wine taster",
-        "connoisseur"
+        "scientist",
+        "chemist",
+        "mad scientist",
+        "researcher"
       ],
       "hot": [
-        "winemaker",
-        "waiter",
-        "butler",
-        "chef",
-        "bartender"
+        "professor",
+        "doctor",
+        "inventor",
+        "alchemist",
+        "teacher"
       ],
       "warm": [
         "man",
-        "gentleman",
         "person",
-        "expert",
-        "critic",
-        "french"
+        "genius",
+        "glasses",
+        "lab coat",
+        "nerd"
       ]
     },
     "doing": {
-      "answer": "tasting wine",
+      "answer": "mixing chemicals",
       "accepted": [
-        "tasting wine",
-        "wine tasting",
-        "drinking wine",
-        "sipping wine",
-        "tasting",
-        "sniffing wine"
+        "mixing chemicals",
+        "mixing",
+        "experimenting",
+        "doing an experiment",
+        "pouring chemicals",
+        "chemistry"
       ],
       "hot": [
-        "drinking",
-        "sipping",
-        "smelling",
-        "swirling"
+        "pouring",
+        "brewing",
+        "potion",
+        "testing",
+        "boiling"
       ],
       "warm": [
-        "holding a glass",
-        "standing",
-        "enjoying",
-        "glass",
-        "alcohol",
-        "celebrating"
+        "working",
+        "holding",
+        "science",
+        "explosion",
+        "studying",
+        "inventing"
       ]
     },
     "where": {
-      "answer": "wine cellar",
+      "answer": "laboratory",
       "accepted": [
-        "wine cellar",
-        "cellar",
-        "winery",
-        "basement"
+        "laboratory",
+        "lab",
+        "science lab",
+        "chemistry lab",
+        "research lab"
       ],
       "hot": [
-        "vineyard",
-        "bar",
-        "restaurant",
-        "cave",
-        "dungeon"
+        "classroom",
+        "hospital",
+        "factory",
+        "kitchen",
+        "workshop"
       ],
       "warm": [
-        "bottles",
-        "barrels",
-        "underground",
+        "school",
         "room",
-        "dark",
-        "france"
+        "building",
+        "university",
+        "indoors",
+        "office"
       ]
     },
     "style": {
-      "answer": "pointillism",
+      "answer": "comic book",
       "accepted": [
-        "pointillism",
-        "pointillist",
-        "dots",
-        "dot painting",
-        "seurat",
-        "stippling"
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
       ],
       "hot": [
-        "impressionism",
-        "dotted",
-        "pixel art",
-        "post impressionism",
-        "mosaic"
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
       ],
       "warm": [
-        "painting",
-        "colorful",
-        "art",
-        "french",
-        "classic",
-        "points"
+        "drawing",
+        "ink",
+        "bold",
+        "halftone",
+        "retro",
+        "panel"
       ]
     }
   }

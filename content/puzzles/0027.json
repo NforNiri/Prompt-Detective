@@ -1,111 +1,108 @@
 {
   "id": 27,
-  "publishDate": "2026-11-06",
-  "difficulty": 4,
+  "publishDate": "2026-11-09",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a detective inspecting clues with a magnifying glass in a dark alley, film noir, no text, no letters, no watermark",
+  "prompt": "a sloth hanging from a ceiling lamp in an office, 3d render, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "detective",
+      "answer": "sloth",
       "accepted": [
-        "detective",
-        "private eye",
-        "investigator",
-        "sleuth",
-        "inspector",
-        "gumshoe"
+        "sloth",
+        "three-toed sloth",
+        "tree sloth"
       ],
       "hot": [
-        "policeman",
-        "cop",
-        "spy",
-        "agent",
-        "officer"
+        "koala",
+        "monkey",
+        "lemur",
+        "raccoon",
+        "bear"
       ],
       "warm": [
-        "man",
-        "person",
-        "trench coat",
-        "hat",
-        "mystery",
-        "stranger"
+        "animal",
+        "lazy",
+        "slow",
+        "mammal",
+        "furry",
+        "jungle"
       ]
     },
     "doing": {
-      "answer": "inspecting clues",
+      "answer": "hanging",
       "accepted": [
-        "inspecting clues",
-        "inspecting",
-        "investigating",
-        "examining",
-        "magnifying glass",
-        "searching for clues"
+        "hanging",
+        "hanging from a lamp",
+        "dangling",
+        "hanging upside down",
+        "swinging",
+        "hanging on"
       ],
       "hot": [
-        "looking",
-        "searching",
-        "magnifier",
-        "observing",
-        "studying",
-        "clues"
+        "climbing",
+        "holding on",
+        "sleeping",
+        "clinging"
       ],
       "warm": [
-        "holding",
-        "standing",
-        "thinking",
-        "walking",
+        "resting",
+        "relaxing",
+        "stuck",
+        "lazing",
         "waiting",
-        "crouching"
+        "falling"
       ]
     },
     "where": {
-      "answer": "dark alley",
+      "answer": "office",
       "accepted": [
-        "dark alley",
-        "alley",
-        "alleyway",
-        "back alley",
-        "side street"
+        "office",
+        "workplace",
+        "cubicle",
+        "open office",
+        "corporate office",
+        "office room"
       ],
       "hot": [
-        "street",
-        "city street",
-        "lane",
-        "passage",
-        "doorway"
+        "desk",
+        "meeting room",
+        "classroom",
+        "library",
+        "workspace"
       ],
       "warm": [
-        "city",
-        "night",
-        "rain",
-        "shadows",
         "building",
-        "dumpster"
+        "room",
+        "work",
+        "business",
+        "computer",
+        "job"
       ]
     },
     "style": {
-      "answer": "film noir",
+      "answer": "3d render",
       "accepted": [
-        "film noir",
-        "noir",
-        "noir film",
-        "noir movie",
-        "neo noir"
+        "3d render",
+        "3d",
+        "render",
+        "cgi",
+        "3d animation",
+        "3d rendering"
       ],
       "hot": [
-        "black and white",
-        "monochrome",
-        "old movie",
-        "detective movie",
-        "1940s"
+        "animation",
+        "animated",
+        "cartoon",
+        "claymation",
+        "toy"
       ],
       "warm": [
+        "digital",
+        "computer",
+        "cute",
         "movie",
-        "film",
-        "dark",
-        "shadows",
-        "vintage",
-        "cinematic"
+        "plastic",
+        "smooth"
       ]
     }
   }

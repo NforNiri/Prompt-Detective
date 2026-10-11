@@ -1,107 +1,108 @@
 {
   "id": 43,
-  "publishDate": "2026-11-22",
-  "difficulty": 1,
+  "publishDate": "2026-11-25",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a pig taking a bath in a bathroom, cartoon, no text, no letters, no watermark",
+  "prompt": "a fox running through a snowy forest, low poly, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "pig",
+      "answer": "fox",
       "accepted": [
-        "pig",
-        "piglet",
-        "hog",
-        "swine"
+        "fox",
+        "red fox",
+        "arctic fox",
+        "vixen"
       ],
       "hot": [
-        "boar",
-        "cow",
-        "sheep",
-        "hippo"
+        "wolf",
+        "coyote",
+        "dog",
+        "jackal"
       ],
       "warm": [
         "animal",
-        "farm animal",
-        "pink",
-        "pet",
+        "cat",
         "mammal",
-        "cute"
+        "wildlife",
+        "predator",
+        "creature"
       ]
     },
     "doing": {
-      "answer": "taking a bath",
+      "answer": "running",
       "accepted": [
-        "taking a bath",
-        "bathing",
-        "bubble bath",
-        "having a bath",
-        "washing",
-        "soaking"
+        "running",
+        "sprinting",
+        "dashing",
+        "racing"
       ],
       "hot": [
-        "showering",
-        "relaxing",
-        "swimming",
-        "cleaning",
-        "scrubbing"
+        "jumping",
+        "chasing",
+        "hunting",
+        "leaping",
+        "galloping"
       ],
       "warm": [
+        "walking",
+        "moving",
         "playing",
-        "sitting",
-        "bubbles",
-        "water",
-        "soap",
-        "singing"
+        "escaping",
+        "exploring",
+        "fast"
       ]
     },
     "where": {
-      "answer": "bathroom",
+      "answer": "snowy forest",
       "accepted": [
-        "bathroom",
-        "bathtub",
-        "tub",
-        "bath",
-        "washroom"
+        "snowy forest",
+        "forest",
+        "winter forest",
+        "snowy woods",
+        "woods",
+        "woodland"
       ],
       "hot": [
-        "shower",
-        "spa",
-        "laundry room",
-        "pool",
-        "kitchen"
+        "snow",
+        "taiga",
+        "mountain",
+        "tundra",
+        "park"
       ],
       "warm": [
-        "house",
-        "home",
-        "room",
-        "indoors",
-        "tiles",
-        "water"
+        "winter",
+        "trees",
+        "cold",
+        "nature",
+        "ice",
+        "outdoors"
       ]
     },
     "style": {
-      "answer": "cartoon",
+      "answer": "low poly",
       "accepted": [
-        "cartoon",
-        "cartoonish",
-        "toon",
-        "animated cartoon",
-        "kids cartoon"
+        "low poly",
+        "lowpoly",
+        "low-poly",
+        "polygon",
+        "polygonal",
+        "polygon art"
       ],
       "hot": [
-        "animation",
-        "animated",
-        "comic",
-        "illustration",
-        "drawing"
+        "geometric",
+        "3d",
+        "3d render",
+        "faceted",
+        "origami",
+        "crystal"
       ],
       "warm": [
-        "kids",
-        "cute",
-        "funny",
-        "art",
-        "colorful",
-        "simple"
+        "digital",
+        "shapes",
+        "video game",
+        "computer",
+        "angular",
+        "modern"
       ]
     }
   }

@@ -1,108 +1,107 @@
 {
   "id": 53,
-  "publishDate": "2026-12-02",
-  "difficulty": 3,
+  "publishDate": "2026-12-05",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a mouse sailing a paper boat down a stream, pixel art, no text, no letters, no watermark",
+  "prompt": "a sommelier tasting wine in a wine cellar, pointillism, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "mouse",
+      "answer": "sommelier",
       "accepted": [
-        "mouse",
-        "mice",
-        "field mouse",
-        "little mouse"
+        "sommelier",
+        "wine expert",
+        "wine taster",
+        "connoisseur"
       ],
       "hot": [
-        "rat",
-        "hamster",
-        "squirrel",
-        "gerbil",
-        "chipmunk"
+        "winemaker",
+        "waiter",
+        "butler",
+        "chef",
+        "bartender"
       ],
       "warm": [
-        "animal",
-        "rodent",
-        "pet",
-        "mammal",
-        "critter",
-        "cute"
+        "man",
+        "gentleman",
+        "person",
+        "expert",
+        "critic",
+        "french"
       ]
     },
     "doing": {
-      "answer": "sailing",
+      "answer": "tasting wine",
       "accepted": [
-        "sailing",
-        "sailing a boat",
-        "boating",
-        "floating",
-        "paper boat"
+        "tasting wine",
+        "wine tasting",
+        "drinking wine",
+        "sipping wine",
+        "tasting",
+        "sniffing wine"
       ],
       "hot": [
-        "rowing",
-        "paddling",
-        "drifting",
-        "steering",
-        "fishing"
+        "drinking",
+        "sipping",
+        "smelling",
+        "swirling"
       ],
       "warm": [
-        "traveling",
-        "adventure",
-        "water",
-        "swimming",
-        "riding",
-        "exploring"
+        "holding a glass",
+        "standing",
+        "enjoying",
+        "glass",
+        "alcohol",
+        "celebrating"
       ]
     },
     "where": {
-      "answer": "stream",
+      "answer": "wine cellar",
       "accepted": [
-        "stream",
-        "creek",
-        "brook",
-        "river",
-        "small river"
+        "wine cellar",
+        "cellar",
+        "winery",
+        "basement"
       ],
       "hot": [
-        "pond",
-        "puddle",
-        "lake",
-        "canal",
-        "waterfall"
+        "vineyard",
+        "bar",
+        "restaurant",
+        "cave",
+        "dungeon"
       ],
       "warm": [
-        "water",
-        "forest",
-        "nature",
-        "rain",
-        "outdoors",
-        "grass"
+        "bottles",
+        "barrels",
+        "underground",
+        "room",
+        "dark",
+        "france"
       ]
     },
     "style": {
-      "answer": "pixel art",
+      "answer": "pointillism",
       "accepted": [
-        "pixel art",
-        "pixel",
-        "8-bit",
-        "8 bit",
-        "pixelated",
-        "16-bit"
+        "pointillism",
+        "pointillist",
+        "dots",
+        "dot painting",
+        "seurat",
+        "stippling"
       ],
       "hot": [
-        "retro game",
-        "video game",
-        "sprite",
-        "retro",
-        "arcade game"
+        "impressionism",
+        "dotted",
+        "pixel art",
+        "post impressionism",
+        "mosaic"
       ],
       "warm": [
-        "game",
-        "arcade",
-        "digital",
-        "blocky",
-        "old school",
-        "computer"
+        "painting",
+        "colorful",
+        "art",
+        "french",
+        "classic",
+        "points"
       ]
     }
   }

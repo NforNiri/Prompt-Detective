@@ -1,111 +1,110 @@
 {
   "id": 23,
-  "publishDate": "2026-11-02",
-  "difficulty": 2,
+  "publishDate": "2026-11-05",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a pirate digging for treasure on a desert island, cartoon, no text, no letters, no watermark",
+  "prompt": "a bear having a picnic in a flower meadow, embroidery, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "pirate",
+      "answer": "bear",
       "accepted": [
-        "pirate",
-        "pirate captain",
-        "buccaneer",
-        "corsair",
-        "privateer"
+        "bear",
+        "brown bear",
+        "grizzly",
+        "grizzly bear"
       ],
       "hot": [
-        "captain",
-        "sailor",
-        "viking",
-        "parrot",
-        "bandit"
+        "teddy bear",
+        "panda",
+        "polar bear",
+        "black bear",
+        "wolf"
       ],
       "warm": [
-        "man",
-        "eyepatch",
-        "sea",
-        "treasure",
-        "hat",
-        "beard",
-        "hook"
+        "animal",
+        "dog",
+        "cub",
+        "furry",
+        "beast",
+        "mammal"
       ]
     },
     "doing": {
-      "answer": "digging for treasure",
+      "answer": "having a picnic",
       "accepted": [
-        "digging for treasure",
-        "digging",
-        "treasure hunting",
-        "digging a hole",
-        "shoveling",
-        "looking for treasure"
+        "having a picnic",
+        "picnic",
+        "picnicking",
+        "eating lunch",
+        "eating a picnic"
       ],
       "hot": [
-        "treasure",
-        "shovel",
-        "searching",
-        "finding treasure",
-        "hunting"
+        "eating",
+        "lunch",
+        "sandwich",
+        "eating honey",
+        "honey"
       ],
       "warm": [
-        "working",
-        "exploring",
-        "gold",
-        "map",
-        "sand",
-        "chest"
+        "sitting",
+        "relaxing",
+        "food",
+        "basket",
+        "hungry",
+        "snack"
       ]
     },
     "where": {
-      "answer": "desert island",
+      "answer": "meadow",
       "accepted": [
-        "desert island",
-        "island",
-        "tropical island",
-        "deserted island",
-        "small island",
-        "islet"
+        "meadow",
+        "field",
+        "grassland",
+        "flower meadow",
+        "grassy field"
       ],
       "hot": [
-        "beach",
-        "shore",
-        "coast",
-        "lagoon",
-        "palm tree"
+        "park",
+        "garden",
+        "hill",
+        "prairie",
+        "countryside",
+        "lawn"
       ],
       "warm": [
-        "ocean",
-        "sea",
-        "sand",
-        "tropical",
-        "jungle",
-        "paradise"
+        "grass",
+        "flowers",
+        "nature",
+        "forest",
+        "outdoors",
+        "summer"
       ]
     },
     "style": {
-      "answer": "cartoon",
+      "answer": "embroidery",
       "accepted": [
-        "cartoon",
-        "cartoonish",
-        "toon",
-        "animated cartoon",
-        "kids cartoon"
+        "embroidery",
+        "embroidered",
+        "needlework",
+        "cross stitch",
+        "cross-stitch",
+        "stitching"
       ],
       "hot": [
-        "animation",
-        "animated",
-        "comic",
-        "illustration",
-        "drawing"
+        "sewing",
+        "textile",
+        "tapestry",
+        "fabric",
+        "knitting",
+        "quilt"
       ],
       "warm": [
-        "kids",
+        "thread",
+        "craft",
+        "handmade",
+        "cloth",
         "cute",
-        "funny",
-        "art",
-        "colorful",
-        "simple"
+        "yarn"
       ]
     }
   }

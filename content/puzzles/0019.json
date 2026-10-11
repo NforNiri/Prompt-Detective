@@ -1,107 +1,111 @@
 {
   "id": 19,
-  "publishDate": "2026-10-29",
-  "difficulty": 3,
+  "publishDate": "2026-11-01",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "an octopus playing drums on the sea floor, mosaic, no text, no letters, no watermark",
+  "prompt": "a kitten sleeping in a flower pot, photograph, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "octopus",
+      "answer": "kitten",
       "accepted": [
-        "octopus",
-        "octopi",
-        "octopuses"
+        "kitten",
+        "kitty",
+        "cat",
+        "baby cat",
+        "tabby"
       ],
       "hot": [
-        "squid",
-        "kraken",
-        "jellyfish",
-        "cuttlefish",
-        "tentacles"
+        "puppy",
+        "bunny",
+        "hamster",
+        "fox",
+        "lion cub"
       ],
       "warm": [
-        "sea creature",
-        "fish",
         "animal",
-        "monster",
-        "crab",
-        "ocean"
+        "pet",
+        "baby",
+        "fur",
+        "cute",
+        "dog"
       ]
     },
     "doing": {
-      "answer": "playing drums",
+      "answer": "sleeping",
       "accepted": [
-        "playing drums",
-        "drums",
-        "drumming",
-        "playing the drums",
-        "drum"
+        "sleeping",
+        "asleep",
+        "napping",
+        "taking a nap",
+        "dozing",
+        "sleep"
       ],
       "hot": [
-        "playing music",
-        "percussion",
-        "playing",
-        "banging",
-        "music"
+        "resting",
+        "lying down",
+        "curled up",
+        "relaxing",
+        "dreaming"
       ],
       "warm": [
-        "dancing",
-        "band",
-        "singing",
-        "performing",
-        "concert",
-        "rhythm"
+        "sitting",
+        "hiding",
+        "yawning",
+        "lazy",
+        "tired",
+        "cozy"
       ]
     },
     "where": {
-      "answer": "sea floor",
+      "answer": "flower pot",
       "accepted": [
-        "sea floor",
-        "seafloor",
-        "ocean floor",
-        "underwater",
-        "bottom of the sea",
-        "seabed"
+        "flower pot",
+        "flowerpot",
+        "pot",
+        "plant pot",
+        "planter",
+        "clay pot"
       ],
       "hot": [
-        "ocean",
-        "sea",
-        "reef",
-        "coral reef",
-        "deep sea"
+        "garden",
+        "basket",
+        "bucket",
+        "vase",
+        "window box"
       ],
       "warm": [
-        "water",
-        "beach",
-        "sand",
-        "aquarium",
-        "shipwreck",
-        "deep"
+        "flowers",
+        "plants",
+        "porch",
+        "windowsill",
+        "balcony",
+        "soil"
       ]
     },
     "style": {
-      "answer": "mosaic",
+      "answer": "photograph",
       "accepted": [
-        "mosaic",
-        "tile mosaic",
-        "roman mosaic",
-        "tiles",
-        "tile art"
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
       ],
       "hot": [
-        "stained glass",
-        "pixel art",
-        "ceramic",
-        "pottery",
-        "fresco"
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
       ],
       "warm": [
-        "ancient",
-        "roman",
-        "greek",
-        "stone",
-        "pattern",
-        "colorful"
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
       ]
     }
   }

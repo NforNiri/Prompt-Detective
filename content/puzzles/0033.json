@@ -1,106 +1,103 @@
 {
   "id": 33,
-  "publishDate": "2026-11-12",
-  "difficulty": 3,
+  "publishDate": "2026-11-15",
+  "difficulty": 1,
   "locale": "en",
-  "prompt": "a chef flipping pancakes in a diner, oil painting, no text, no letters, no watermark",
+  "prompt": "a panda eating bamboo in a bamboo forest, photograph, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "chef",
+      "answer": "panda",
       "accepted": [
-        "chef",
-        "cook",
-        "head chef",
-        "line cook"
+        "panda",
+        "giant panda",
+        "panda bear"
       ],
       "hot": [
-        "baker",
-        "waiter",
-        "butcher",
-        "dishwasher"
+        "bear",
+        "red panda",
+        "koala",
+        "polar bear"
       ],
       "warm": [
-        "man",
-        "person",
-        "kitchen",
-        "hat",
-        "food",
-        "worker"
+        "animal",
+        "mammal",
+        "china",
+        "cub",
+        "black and white",
+        "cute"
       ]
     },
     "doing": {
-      "answer": "flipping pancakes",
+      "answer": "eating bamboo",
       "accepted": [
-        "flipping pancakes",
-        "flipping",
-        "making pancakes",
-        "cooking pancakes",
-        "pancakes",
-        "tossing pancakes"
+        "eating bamboo",
+        "eating",
+        "chewing bamboo",
+        "munching",
+        "chewing"
       ],
       "hot": [
-        "cooking",
-        "frying",
-        "making breakfast",
-        "flipping burgers",
-        "juggling"
+        "bamboo",
+        "feeding",
+        "snacking",
+        "biting"
       ],
       "warm": [
-        "breakfast",
-        "eating",
-        "pan",
+        "sitting",
+        "holding",
+        "resting",
         "food",
-        "throwing",
-        "baking"
+        "hungry",
+        "leaves"
       ]
     },
     "where": {
-      "answer": "diner",
+      "answer": "bamboo forest",
       "accepted": [
-        "diner",
-        "american diner",
-        "roadside diner",
-        "greasy spoon"
+        "bamboo forest",
+        "bamboo grove",
+        "bamboo",
+        "forest"
       ],
       "hot": [
-        "restaurant",
-        "cafe",
-        "kitchen",
-        "cafeteria",
-        "bar"
+        "jungle",
+        "woods",
+        "zoo",
+        "grove"
       ],
       "warm": [
-        "breakfast",
-        "counter",
-        "city",
-        "building",
-        "coffee",
-        "booth"
+        "trees",
+        "nature",
+        "china",
+        "garden",
+        "mountain",
+        "green"
       ]
     },
     "style": {
-      "answer": "oil painting",
+      "answer": "photograph",
       "accepted": [
-        "oil painting",
-        "oil",
-        "oil on canvas",
-        "oil paint"
+        "photograph",
+        "photo",
+        "photography",
+        "realistic",
+        "photorealistic",
+        "close-up photo"
       ],
       "hot": [
-        "painting",
-        "acrylic",
-        "classical painting",
-        "renaissance",
-        "canvas"
+        "picture",
+        "camera",
+        "snapshot",
+        "portrait",
+        "close-up"
       ],
       "warm": [
-        "paint",
-        "art",
-        "realism",
-        "classic",
-        "brushstrokes",
-        "museum",
-        "old master"
+        "real life",
+        "natural",
+        "hd",
+        "macro",
+        "detailed",
+        "sharp"
       ]
     }
   }

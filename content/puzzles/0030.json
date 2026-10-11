@@ -1,108 +1,106 @@
 {
   "id": 30,
-  "publishDate": "2026-11-09",
-  "difficulty": 2,
+  "publishDate": "2026-11-12",
+  "difficulty": 3,
   "locale": "en",
-  "prompt": "a sloth hanging from a ceiling lamp in an office, 3d render, no text, no letters, no watermark",
+  "prompt": "a chef flipping pancakes in a diner, oil painting, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "sloth",
+      "answer": "chef",
       "accepted": [
-        "sloth",
-        "three-toed sloth",
-        "tree sloth"
+        "chef",
+        "cook",
+        "head chef",
+        "line cook"
       ],
       "hot": [
-        "koala",
-        "monkey",
-        "lemur",
-        "raccoon",
-        "bear"
+        "baker",
+        "waiter",
+        "butcher",
+        "dishwasher"
       ],
       "warm": [
-        "animal",
-        "lazy",
-        "slow",
-        "mammal",
-        "furry",
-        "jungle"
+        "man",
+        "person",
+        "kitchen",
+        "hat",
+        "food",
+        "worker"
       ]
     },
     "doing": {
-      "answer": "hanging",
+      "answer": "flipping pancakes",
       "accepted": [
-        "hanging",
-        "hanging from a lamp",
-        "dangling",
-        "hanging upside down",
-        "swinging",
-        "hanging on"
+        "flipping pancakes",
+        "flipping",
+        "making pancakes",
+        "cooking pancakes",
+        "pancakes",
+        "tossing pancakes"
       ],
       "hot": [
-        "climbing",
-        "holding on",
-        "sleeping",
-        "clinging"
+        "cooking",
+        "frying",
+        "making breakfast",
+        "flipping burgers",
+        "juggling"
       ],
       "warm": [
-        "resting",
-        "relaxing",
-        "stuck",
-        "lazing",
-        "waiting",
-        "falling"
+        "breakfast",
+        "eating",
+        "pan",
+        "food",
+        "throwing",
+        "baking"
       ]
     },
     "where": {
-      "answer": "office",
+      "answer": "diner",
       "accepted": [
-        "office",
-        "workplace",
-        "cubicle",
-        "open office",
-        "corporate office",
-        "office room"
+        "diner",
+        "american diner",
+        "roadside diner",
+        "greasy spoon"
       ],
       "hot": [
-        "desk",
-        "meeting room",
-        "classroom",
-        "library",
-        "workspace"
+        "restaurant",
+        "cafe",
+        "kitchen",
+        "cafeteria",
+        "bar"
       ],
       "warm": [
+        "breakfast",
+        "counter",
+        "city",
         "building",
-        "room",
-        "work",
-        "business",
-        "computer",
-        "job"
+        "coffee",
+        "booth"
       ]
     },
     "style": {
-      "answer": "3d render",
+      "answer": "oil painting",
       "accepted": [
-        "3d render",
-        "3d",
-        "render",
-        "cgi",
-        "3d animation",
-        "3d rendering"
+        "oil painting",
+        "oil",
+        "oil on canvas",
+        "oil paint"
       ],
       "hot": [
-        "animation",
-        "animated",
-        "cartoon",
-        "claymation",
-        "toy"
+        "painting",
+        "acrylic",
+        "classical painting",
+        "renaissance",
+        "canvas"
       ],
       "warm": [
-        "digital",
-        "computer",
-        "cute",
-        "movie",
-        "plastic",
-        "smooth"
+        "paint",
+        "art",
+        "realism",
+        "classic",
+        "brushstrokes",
+        "museum",
+        "old master"
       ]
     }
   }

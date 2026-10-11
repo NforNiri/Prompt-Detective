@@ -1,108 +1,110 @@
 {
   "id": 25,
-  "publishDate": "2026-11-04",
-  "difficulty": 3,
+  "publishDate": "2026-11-07",
+  "difficulty": 5,
   "locale": "en",
-  "prompt": "a mermaid combing her hair on a rock in the sea, paper cutout, no text, no letters, no watermark",
+  "prompt": "a gondolier rowing a gondola along a venice canal, pointillism, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "mermaid",
+      "answer": "gondolier",
       "accepted": [
-        "mermaid",
-        "siren",
-        "sea maiden"
+        "gondolier",
+        "boatman",
+        "rower",
+        "oarsman"
       ],
       "hot": [
-        "fish",
-        "fairy",
-        "princess",
-        "nymph",
-        "sea creature"
+        "sailor",
+        "fisherman",
+        "ferryman",
+        "captain",
+        "boater"
       ],
       "warm": [
-        "woman",
-        "girl",
-        "ocean",
-        "fantasy",
-        "tail",
-        "myth"
+        "man",
+        "italian",
+        "venetian",
+        "person",
+        "hat",
+        "singer"
       ]
     },
     "doing": {
-      "answer": "combing her hair",
+      "answer": "rowing a gondola",
       "accepted": [
-        "combing her hair",
-        "combing hair",
-        "brushing hair",
-        "brushing her hair",
-        "combing"
+        "rowing a gondola",
+        "rowing",
+        "paddling",
+        "steering a gondola",
+        "punting",
+        "rowing a boat"
       ],
       "hot": [
-        "brushing",
-        "grooming",
-        "singing",
-        "looking in a mirror",
-        "styling hair"
+        "sailing",
+        "boating",
+        "gondola",
+        "floating",
+        "steering"
       ],
       "warm": [
-        "sitting",
-        "relaxing",
-        "posing",
-        "hair",
-        "mirror",
-        "waiting"
+        "singing",
+        "standing",
+        "traveling",
+        "cruising",
+        "water",
+        "moving"
       ]
     },
     "where": {
-      "answer": "rock in the sea",
+      "answer": "venice canal",
       "accepted": [
-        "rock in the sea",
-        "rock",
-        "sea rock",
-        "rocky shore",
-        "boulder"
+        "venice canal",
+        "canal",
+        "venice",
+        "grand canal",
+        "venetian canal",
+        "waterway"
       ],
       "hot": [
-        "reef",
-        "cliff",
-        "coast",
-        "island",
-        "shore"
+        "river",
+        "italy",
+        "harbor",
+        "lagoon",
+        "bridge"
       ],
       "warm": [
-        "ocean",
-        "sea",
-        "waves",
-        "beach",
         "water",
-        "moon"
+        "city",
+        "europe",
+        "street",
+        "lake",
+        "town"
       ]
     },
     "style": {
-      "answer": "paper cutout",
+      "answer": "pointillism",
       "accepted": [
-        "paper cutout",
-        "paper cut",
-        "papercut",
-        "paper art",
-        "cut paper",
-        "layered paper"
+        "pointillism",
+        "pointillist",
+        "dots",
+        "dot painting",
+        "seurat",
+        "stippling"
       ],
       "hot": [
-        "papercraft",
-        "origami",
-        "collage",
-        "paper",
-        "craft",
-        "shadow box"
+        "impressionism",
+        "dotted",
+        "pixel art",
+        "post impressionism",
+        "mosaic"
       ],
       "warm": [
-        "layers",
-        "handmade",
-        "scissors",
-        "3d",
-        "kids",
-        "crafty"
+        "painting",
+        "colorful",
+        "art",
+        "french",
+        "classic",
+        "points"
       ]
     }
   }

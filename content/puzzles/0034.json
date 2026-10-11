@@ -1,105 +1,105 @@
 {
   "id": 34,
-  "publishDate": "2026-11-13",
-  "difficulty": 4,
+  "publishDate": "2026-11-16",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a frog fishing from a wooden bridge, ukiyo-e, no text, no letters, no watermark",
+  "prompt": "a ninja climbing a skyscraper at night, comic book, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "frog",
+      "answer": "ninja",
       "accepted": [
-        "frog",
-        "toad",
-        "tree frog",
-        "bullfrog"
+        "ninja",
+        "shinobi",
+        "assassin"
       ],
       "hot": [
-        "lizard",
-        "newt",
-        "salamander",
-        "turtle"
+        "samurai",
+        "spy",
+        "thief",
+        "burglar",
+        "martial artist"
       ],
       "warm": [
-        "animal",
-        "amphibian",
-        "creature",
-        "pond animal",
-        "fish"
+        "man",
+        "warrior",
+        "fighter",
+        "hero",
+        "person",
+        "mask"
       ]
     },
     "doing": {
-      "answer": "fishing",
+      "answer": "climbing",
       "accepted": [
-        "fishing",
-        "fishing from a bridge",
-        "holding a fishing rod",
-        "angling",
-        "casting a line"
+        "climbing",
+        "climbing a building",
+        "scaling",
+        "climbing a wall",
+        "wall climbing"
       ],
       "hot": [
-        "fishing rod",
-        "catching fish",
-        "rod",
-        "reeling"
+        "hanging",
+        "jumping",
+        "sneaking",
+        "parkour",
+        "crawling"
       ],
       "warm": [
-        "sitting",
-        "waiting",
-        "relaxing",
-        "water",
-        "fish",
-        "holding"
+        "running",
+        "hiding",
+        "holding",
+        "moving",
+        "falling",
+        "spying"
       ]
     },
     "where": {
-      "answer": "wooden bridge",
+      "answer": "skyscraper",
       "accepted": [
-        "wooden bridge",
-        "bridge",
-        "footbridge",
-        "arched bridge",
-        "japanese bridge"
+        "skyscraper",
+        "tall building",
+        "tower",
+        "high rise",
+        "building"
       ],
       "hot": [
-        "pond",
-        "river",
-        "stream",
-        "dock",
-        "pier"
+        "city",
+        "rooftop",
+        "office building",
+        "downtown"
       ],
       "warm": [
-        "water",
-        "garden",
-        "lake",
-        "park",
-        "village",
-        "wood"
+        "night",
+        "sky",
+        "street",
+        "window",
+        "wall",
+        "urban"
       ]
     },
     "style": {
-      "answer": "ukiyo-e",
+      "answer": "comic book",
       "accepted": [
-        "ukiyo-e",
-        "ukiyoe",
-        "ukiyo e",
-        "woodblock print",
-        "woodblock",
-        "japanese woodblock"
+        "comic book",
+        "comic",
+        "graphic novel",
+        "comic art",
+        "comic book art"
       ],
       "hot": [
-        "japanese print",
-        "japanese art",
-        "printmaking",
-        "hokusai",
-        "woodcut"
+        "cartoon",
+        "pop art",
+        "manga",
+        "superhero",
+        "illustration"
       ],
       "warm": [
-        "japanese",
-        "print",
-        "traditional",
-        "asian",
+        "drawing",
         "ink",
-        "edo"
+        "bold",
+        "halftone",
+        "retro",
+        "panel"
       ]
     }
   }

@@ -1,103 +1,109 @@
 {
   "id": 35,
-  "publishDate": "2026-11-14",
-  "difficulty": 5,
+  "publishDate": "2026-11-17",
+  "difficulty": 2,
   "locale": "en",
-  "prompt": "a florist arranging a bouquet in a greenhouse, art nouveau, no text, no letters, no watermark",
+  "prompt": "a student eating ramen in a ramen shop, anime, no text, no letters, no watermark",
   "slots": {
     "who": {
-      "answer": "florist",
+      "answer": "student",
       "accepted": [
-        "florist",
-        "flower seller",
-        "flower arranger"
+        "student",
+        "schoolgirl",
+        "girl",
+        "pupil",
+        "schoolkid"
       ],
       "hot": [
-        "gardener",
-        "botanist",
-        "farmer",
-        "shopkeeper"
+        "boy",
+        "schoolboy",
+        "child",
+        "kid",
+        "teenager",
+        "woman"
       ],
       "warm": [
-        "woman",
-        "lady",
         "person",
-        "worker",
-        "girl",
-        "seller"
+        "young",
+        "man",
+        "friend",
+        "human",
+        "youth"
       ]
     },
     "doing": {
-      "answer": "arranging a bouquet",
+      "answer": "eating ramen",
       "accepted": [
-        "arranging a bouquet",
-        "arranging flowers",
-        "making a bouquet",
-        "flower arranging",
-        "arranging"
+        "eating ramen",
+        "eating noodles",
+        "slurping noodles",
+        "eating",
+        "slurping"
       ],
       "hot": [
-        "holding flowers",
-        "holding a bouquet",
-        "picking flowers",
-        "gardening",
-        "cutting flowers"
+        "noodles",
+        "ramen",
+        "eating soup",
+        "dinner",
+        "lunch"
       ],
       "warm": [
-        "working",
-        "smelling",
-        "watering",
-        "flowers",
-        "bouquet",
-        "crafting"
+        "food",
+        "chopsticks",
+        "sitting",
+        "hungry",
+        "cooking",
+        "drinking"
       ]
     },
     "where": {
-      "answer": "greenhouse",
+      "answer": "ramen shop",
       "accepted": [
-        "greenhouse",
-        "glasshouse",
-        "conservatory",
-        "hothouse"
+        "ramen shop",
+        "noodle shop",
+        "restaurant",
+        "ramen bar",
+        "noodle bar"
       ],
       "hot": [
-        "garden",
-        "flower shop",
-        "nursery",
-        "botanical garden"
+        "cafe",
+        "diner",
+        "kitchen",
+        "food stall",
+        "japan"
       ],
       "warm": [
-        "plants",
-        "flowers",
-        "indoors",
+        "city",
+        "street",
+        "counter",
+        "japanese",
         "shop",
-        "farm",
-        "glass"
+        "night"
       ]
     },
     "style": {
-      "answer": "art nouveau",
+      "answer": "anime",
       "accepted": [
-        "art nouveau",
-        "nouveau",
-        "mucha",
-        "jugendstil"
+        "anime",
+        "manga",
+        "japanese animation",
+        "ghibli",
+        "anime style"
       ],
       "hot": [
-        "art deco",
-        "poster",
-        "decorative",
-        "victorian",
-        "vintage poster"
+        "cartoon",
+        "animation",
+        "animated",
+        "cel shaded",
+        "japanese"
       ],
       "warm": [
-        "vintage",
-        "ornate",
-        "floral",
+        "drawing",
         "illustration",
-        "elegant",
-        "retro",
-        "old"
+        "cute",
+        "art",
+        "colorful",
+        "kawaii"
       ]
     }
   }
