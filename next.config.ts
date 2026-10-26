@@ -13,7 +13,7 @@ const posthogOrigins = [...new Set([posthogHost, posthogAssets])].filter(Boolean
 /**
  * No nonces: they would need a proxy on every request. 'unsafe-inline' for scripts covers the
  * inline payload Next streams into the HTML; nothing renders user-controlled HTML.
- * Puzzle images go through /_next/image (self); the Supabase host is a fallback for direct URLs.
+ * Puzzle images go through /_next/image (self); the Blob host is a fallback for direct URLs.
  * Vercel Analytics loads from the same origin (/_vercel/insights).
  */
 function contentSecurityPolicy(): string {
@@ -22,7 +22,7 @@ function contentSecurityPolicy(): string {
     "default-src 'self'",
     `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}${live}`,
     `style-src 'self' 'unsafe-inline'${live}`,
-    `img-src 'self' data: blob: https://*.supabase.co${vercelPreview ? " https://vercel.live https://vercel.com" : ""}`,
+    `img-src 'self' data: blob: https://*.public.blob.vercel-storage.com${vercelPreview ? " https://vercel.live https://vercel.com" : ""}`,
     `font-src 'self'${vercelPreview ? " https://vercel.live https://assets.vercel.com" : ""}`,
     `connect-src 'self' ${posthogOrigins}${vercelPreview ? " https://vercel.live wss://ws-us3.pusher.com" : ""}`.trimEnd(),
     `frame-src ${vercelPreview ? "https://vercel.live" : "'none'"}`,
@@ -47,8 +47,8 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   images: {
-    // Puzzle images live in the public Supabase bucket "puzzles".
-    remotePatterns: [{ protocol: "https", hostname: "*.supabase.co", pathname: "/storage/v1/object/public/puzzles/**" }],
+    // Puzzle images live in Vercel Blob storage.
+    remotePatterns: [{ protocol: "https", hostname: "*.public.blob.vercel-storage.com" }],
     qualities: [75],
   },
   // Lets a phone on the home network load the dev server (runbook Day 3 acceptance).

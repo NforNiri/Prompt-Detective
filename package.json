@@ -19,7 +19,8 @@
     "brand:build": "tsx scripts/build-brand.ts"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.1",
+    "@neondatabase/serverless": "^1.2.0",
+    "@vercel/blob": "^0.27.0",
     "@vercel/analytics": "^2.0.1",
     "next": "16.3.6",
     "posthog-js": "^1.434.12",

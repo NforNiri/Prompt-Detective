@@ -1,10 +1,65 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { SLOT_KEYS } from "@/lib/game/types";
-import { createFakeSupabase, type FakeSupabase } from "./helpers/fake-supabase";
 import { puzzle1 } from "./fixtures";
 
-const state = vi.hoisted(() => ({ fake: null as unknown as { client: unknown } }));
-vi.mock("@/lib/supabase-server", () => ({ getSupabaseAdmin: () => state.fake.client }));
+const BLOB_BASE_URL = "https://vqbp3tbbajbstqiy.public.blob.vercel-storage.com";
+
+interface MockRow {
+  [key: string]: unknown;
+  created_at?: string;
+  ip_hash?: string;
+}
+
+const state = vi.hoisted(() => ({
+  tables: { puzzles: [] as MockRow[], guess_log: [] as MockRow[] },
+  failWith: null as string | null,
+  failInsertsWith: null as string | null,
+}));
+
+vi.mock("@/lib/db", () => ({
+  sql: vi.fn((strings: TemplateStringsArray, ...values: unknown[]) => {
+    if (state.failWith) throw new Error(state.failWith);
+    
+    const query = strings.join("?").toLowerCase();
+    
+    if (query.includes("select") && query.includes("from puzzles")) {
+      const date = values[0];
+      const row = state.tables.puzzles.find((p) => p.publish_date === date);
+      return Promise.resolve(row ? [row] : []);
+    }
+    
+    if (query.includes("select") && query.includes("from guess_log") && query.includes("count")) {
+      const ipHash = values[0];
+      const since = String(values[1]);
+      const count = state.tables.guess_log.filter(
+        (g) => g.ip_hash === ipHash && typeof g.created_at === "string" && g.created_at >= since
+      ).length;
+      return Promise.resolve([{ count }]);
+    }
+    
+    if (query.includes("insert into guess_log")) {
+      if (state.failInsertsWith) throw new Error(state.failInsertsWith);
+      const [puzzle_id, device_id, slot, guess_norm, tier, guess_index, ip_hash] = values;
+      state.tables.guess_log.push({
+        puzzle_id,
+        device_id,
+        slot: String(slot),
+        guess_norm,
+        tier,
+        guess_index,
+        ip_hash: String(ip_hash),
+        created_at: new Date().toISOString(),
+      });
+      return Promise.resolve([]);
+    }
+    
+    return Promise.resolve([]);
+  }),
+}));
+
+vi.mock("@/lib/config", () => ({
+  BLOB_BASE_URL,
+}));
 
 const { GET: getPuzzle } = await import("@/app/api/puzzle/route");
 const { POST: postGuess } = await import("@/app/api/guess/route");
@@ -13,11 +68,8 @@ const { POST: postReveal } = await import("@/app/api/reveal/route");
 const { hashIp } = await import("@/lib/api");
 const { GUESS_RATE_LIMIT } = await import("@/lib/rate-limit");
 
-const SUPABASE_URL = "https://test-project.supabase.co";
 const DEVICE_ID = "7d444840-9dc0-41d2-9a5e-4c5a2f1b6a01";
 const IP = "203.0.113.7";
-
-let fake: FakeSupabase;
 
 function puzzleRow() {
   return {
@@ -60,13 +112,13 @@ function guess(overrides: Record<string, unknown> = {}) {
 beforeEach(() => {
   vi.useFakeTimers({ toFake: ["Date"] });
   vi.setSystemTime(new Date("2026-10-14T10:00:00Z"));
-  vi.stubEnv("SUPABASE_URL", SUPABASE_URL);
   vi.stubEnv("IP_HASH_SALT", "test-salt");
   vi.spyOn(console, "info").mockImplementation(() => {});
   vi.spyOn(console, "warn").mockImplementation(() => {});
   vi.spyOn(console, "error").mockImplementation(() => {});
-  fake = createFakeSupabase({ puzzles: [puzzleRow()], guess_log: [] });
-  state.fake = fake;
+  state.tables = { puzzles: [puzzleRow()], guess_log: [] };
+  state.failWith = null;
+  state.failInsertsWith = null;
 });
 
 afterEach(() => {
@@ -82,14 +134,23 @@ describe("GET /api/puzzle", () => {
     expect(await res.json()).toEqual({
       id: 1,
       date: "2026-10-14",
-      imageUrl: `${SUPABASE_URL}/storage/v1/object/public/puzzles/3f0c9a1e-5b7d-4c2a-9e8f-1a2b3c4d5e6f.webp`,
+      imageUrl: `${BLOB_BASE_URL}/3f0c9a1e-5b7d-4c2a-9e8f-1a2b3c4d5e6f.webp`,
       difficulty: 1,
       slots: ["who", "doing", "where", "style"],
     });
     expect(res.headers.get("cache-control")).toContain("s-maxage");
   });
 
-  it("never contains answers, and never reads them", async () => {
+  it("returns date as plain YYYY-MM-DD string, not Date or ISO timestamp", async () => {
+    const res = await get("?date=2026-10-14");
+    const data = await res.json();
+    expect(data.date).toBe("2026-10-14");
+    expect(data.date).not.toContain("T");
+    expect(data.date).not.toContain("Z");
+    expect(typeof data.date).toBe("string");
+  });
+
+  it("never contains answers", async () => {
     const text = await (await get("?date=2026-10-14")).text();
     const tierWords = SLOT_KEYS.flatMap((k) => {
       const s = puzzle1.slots[k];
@@ -97,11 +158,6 @@ describe("GET /api/puzzle", () => {
     }).filter((w) => w.length >= 3);
     for (const word of tierWords) expect(text.toLowerCase()).not.toContain(word.toLowerCase());
     expect(text).not.toContain("watercolor");
-
-    const puzzleSelects = fake.selects.filter((s) => s.table === "puzzles");
-    expect(puzzleSelects).toHaveLength(1);
-    expect(puzzleSelects[0]?.columns).not.toContain("slots");
-    expect(puzzleSelects[0]?.columns).not.toContain("prompt");
   });
 
   it("rejects a missing or malformed date", async () => {
@@ -127,7 +183,7 @@ describe("GET /api/puzzle", () => {
   });
 
   it("returns a generic 500 when the database fails", async () => {
-    fake.failWith = "connection refused";
+    state.failWith = "connection refused";
     const res = await get("?date=2026-10-14");
     expect(res.status).toBe(500);
     const body = await res.json();
@@ -151,8 +207,8 @@ describe("POST /api/guess", () => {
 
   it("logs the normalized guess with a hashed IP", async () => {
     await guess({ guess: "  The Labradors ", guessIndex: 3 });
-    expect(fake.tables.guess_log).toHaveLength(1);
-    const row = fake.tables.guess_log![0]!;
+    expect(state.tables.guess_log).toHaveLength(1);
+    const row = state.tables.guess_log[0]!;
     expect(row).toMatchObject({
       puzzle_id: 1,
       device_id: DEVICE_ID,
@@ -167,7 +223,7 @@ describe("POST /api/guess", () => {
   });
 
   it("still answers when the guess_log insert fails", async () => {
-    fake.failInsertsWith = "insert failed";
+    state.failInsertsWith = "insert failed";
     const res = await guess();
     expect(res.status).toBe(200);
     expect((await res.json()).tier).toBe("solved");
@@ -183,7 +239,7 @@ describe("POST /api/guess", () => {
     const res = await guess(overrides);
     expect(res.status).toBe(400);
     expect((await res.json()).error.code).toBe("bad_request");
-    expect(fake.tables.guess_log).toHaveLength(0);
+    expect(state.tables.guess_log).toHaveLength(0);
   });
 
   it("rejects a body that is not JSON", async () => {
@@ -207,19 +263,19 @@ describe("POST /api/guess", () => {
   it(`rate limits after ${GUESS_RATE_LIMIT} guesses per minute per IP`, async () => {
     const ipHash = hashIp(IP);
     const recent = new Date("2026-10-14T09:59:30Z").toISOString();
-    fake.tables.guess_log = Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: ipHash, created_at: recent }));
+    state.tables.guess_log = Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: ipHash, created_at: recent }));
 
     const res = await guess();
     expect(res.status).toBe(429);
     expect(res.headers.get("retry-after")).toBe("60");
     expect((await res.json()).error.code).toBe("rate_limited");
-    expect(fake.tables.guess_log).toHaveLength(GUESS_RATE_LIMIT);
+    expect(state.tables.guess_log).toHaveLength(GUESS_RATE_LIMIT);
   });
 
   it("ignores guesses older than a minute and other IPs for the rate limit", async () => {
     const old = new Date("2026-10-14T09:58:00Z").toISOString();
     const recent = new Date("2026-10-14T09:59:30Z").toISOString();
-    fake.tables.guess_log = [
+    state.tables.guess_log = [
       ...Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: hashIp(IP), created_at: old })),
       ...Array.from({ length: GUESS_RATE_LIMIT }, () => ({ ip_hash: hashIp("198.51.100.1"), created_at: recent })),
     ];

@@ -1,19 +1,19 @@
 // npm run content:upload -- [--dry-run] [--only=0012,0013 | --only=1-26]
-// Ships puzzles to Supabase (docs/04-CONTENT-PIPELINE.md, step 5):
-//   validate -> image to WebP (max 1376px wide, under 200 KB) -> upload as {uuid}.webp -> upsert row.
+// Ships puzzles to Neon Postgres and Vercel Blob (docs/04-CONTENT-PIPELINE.md, step 5):
+//   validate -> image to WebP (max 1376px wide, under 200 KB) -> upload to Blob -> upsert row.
 // Idempotent: re-running a puzzle uploads a fresh image, points the row at it and deletes the old file,
 // so the URL changes and no CDN serves a stale image. --dry-run touches nothing remote.
 import { randomUUID } from "node:crypto";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { createClient } from "@supabase/supabase-js";
+import { put, del } from "@vercel/blob";
+import { neon } from "@neondatabase/serverless";
 import sharp from "sharp";
 import { validatePuzzles } from "../src/lib/game/validate";
 import type { Puzzle } from "../src/lib/game/types";
 
 const PUZZLE_DIR = "content/puzzles";
 const IMAGE_DIR = "content/images";
-const BUCKET = "puzzles";
 const MAX_WIDTH = 1376;
 const TARGET_BYTES = 200 * 1024;
 // Tried in order until one fits. Busy textures (mosaic, embroidery) need a smaller width, not mush.
@@ -88,19 +88,20 @@ async function main() {
     console.log("");
   }
 
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!dryRun && (!url || !key)) {
-    console.error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set (.env.local)");
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  const dbUrl = process.env.DATABASE_URL;
+  if (!dryRun && (!token || !dbUrl)) {
+    console.error("BLOB_READ_WRITE_TOKEN and DATABASE_URL must be set (.env.local)");
     process.exit(1);
   }
-  const db = dryRun ? null : createClient(url!, key!, { auth: { persistSession: false } });
+  const sql = dryRun ? null : neon(dbUrl!);
 
   const existing = new Map<number, string>();
-  if (db) {
-    const { data, error } = await db.from("puzzles").select("id, image_path").in("id", selected.map((p) => p.id));
-    if (error) throw new Error(`reading existing rows: ${error.message}`);
-    for (const row of data as { id: number; image_path: string }[]) existing.set(row.id, row.image_path);
+  if (sql) {
+    const rows = await sql`
+      SELECT id, image_path FROM puzzles WHERE id = ANY(${selected.map((p) => p.id)})
+    ` as unknown as { id: number; image_path: string }[];
+    for (const row of rows) existing.set(row.id, row.image_path);
   }
 
   let uploaded = 0;
@@ -116,31 +117,38 @@ async function main() {
     const webp = await toWebp(file);
     const imagePath = `${randomUUID()}.webp`;
     const summary = `${file} -> ${webp.width}x${webp.height} q${webp.quality} ${kb(webp.data.length)}`;
-    if (!db) {
+    if (!sql) {
       console.log(`${label}  would upload ${summary}`);
       continue;
     }
 
-    const upload = await db.storage.from(BUCKET).upload(imagePath, webp.data, { contentType: "image/webp", upsert: false });
-    if (upload.error) throw new Error(`#${p.id} upload: ${upload.error.message}`);
-    const { error } = await db.from("puzzles").upsert(
-      {
-        id: p.id,
-        publish_date: p.publishDate,
-        image_path: imagePath,
-        difficulty: p.difficulty,
-        slots: p.slots,
-        prompt: p.prompt,
-        locale: p.locale,
-      },
-      { onConflict: "id" },
-    );
-    if (error) {
-      await db.storage.from(BUCKET).remove([imagePath]);
-      throw new Error(`#${p.id} upsert: ${error.message}`);
-    }
+    await put(imagePath, webp.data, {
+      access: "public",
+      contentType: "image/webp",
+      token,
+    });
+    
+    await sql`
+      INSERT INTO puzzles (id, publish_date, image_path, difficulty, slots, prompt, locale)
+      VALUES (${p.id}, ${p.publishDate}, ${imagePath}, ${p.difficulty}, ${JSON.stringify(p.slots)}, ${p.prompt}, ${p.locale})
+      ON CONFLICT (id) 
+      DO UPDATE SET 
+        publish_date = EXCLUDED.publish_date,
+        image_path = EXCLUDED.image_path,
+        difficulty = EXCLUDED.difficulty,
+        slots = EXCLUDED.slots,
+        prompt = EXCLUDED.prompt,
+        locale = EXCLUDED.locale
+    `;
+    
     const previous = existing.get(p.id);
-    if (previous && previous !== imagePath) await db.storage.from(BUCKET).remove([previous]);
+    if (previous && previous !== imagePath) {
+      try {
+        await del(previous, { token });
+      } catch (deleteError) {
+        console.log(`  (could not delete old image ${previous}: ${deleteError instanceof Error ? deleteError.message : String(deleteError)})`);
+      }
+    }
     console.log(`${label}  uploaded ${summary}${previous ? " (replaced old image)" : ""}`);
     uploaded++;
   }

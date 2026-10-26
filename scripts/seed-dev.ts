@@ -1,15 +1,15 @@
 // npm run db:seed-dev [-- 1 2 3 4]
-// Upserts puzzles (default 1-3) into Supabase for local play before the real upload
+// Upserts puzzles (default 1-3) into Neon for local play before the real upload
 // script (Day 5). Uses content/images/NNNN.(png|jpg|webp) when it exists, otherwise a generated
 // placeholder card. The file name includes a content hash so a new image gets a new URL.
 // The upload script later overwrites these rows by id.
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
-import { createClient } from "@supabase/supabase-js";
+import { put, del } from "@vercel/blob";
+import { neon } from "@neondatabase/serverless";
 import sharp from "sharp";
 import { puzzleSchema } from "../src/lib/game/schemas";
 
-const BUCKET = "puzzles";
 const MAX_WIDTH = 1376;
 const IMAGE_EXTENSIONS = ["png", "jpg", "jpeg", "webp"];
 
@@ -34,14 +34,14 @@ async function imageFor(id: number, file: string): Promise<{ webp: Buffer; sourc
 }
 
 async function main() {
-  const url = process.env.SUPABASE_URL;
-  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) {
-    console.error("SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set (see .env.local)");
+  const token = process.env.BLOB_READ_WRITE_TOKEN;
+  const dbUrl = process.env.DATABASE_URL;
+  if (!token || !dbUrl) {
+    console.error("BLOB_READ_WRITE_TOKEN and DATABASE_URL must be set (see .env.local)");
     process.exit(1);
   }
   const ids = process.argv.slice(2).map(Number).filter((n) => Number.isInteger(n) && n > 0);
-  const db = createClient(url, key, { auth: { persistSession: false } });
+  const sql = neon(dbUrl);
 
   for (const id of ids.length ? ids : [1, 2, 3]) {
     const file = String(id).padStart(4, "0");
@@ -50,25 +50,37 @@ async function main() {
     const hash = createHash("sha256").update(webp).digest("hex").slice(0, 8);
     const imagePath = `dev/${file}-${hash}.webp`;
 
-    const { data: before } = await db.from("puzzles").select("image_path").eq("id", p.id).maybeSingle<{ image_path: string }>();
-    const upload = await db.storage.from(BUCKET).upload(imagePath, webp, { contentType: "image/webp", upsert: true });
-    if (upload.error) throw new Error(`upload ${imagePath}: ${upload.error.message}`);
+    const before = await sql`
+      SELECT image_path FROM puzzles WHERE id = ${p.id} LIMIT 1
+    ` as unknown as { image_path: string }[];
+    
+    await put(imagePath, webp, {
+      access: "public",
+      contentType: "image/webp",
+      token,
+    });
 
-    const { error } = await db.from("puzzles").upsert(
-      {
-        id: p.id,
-        publish_date: p.publishDate,
-        image_path: imagePath,
-        difficulty: p.difficulty,
-        slots: p.slots,
-        prompt: p.prompt,
-        locale: p.locale,
-      },
-      { onConflict: "id" },
-    );
-    if (error) throw new Error(`upsert #${p.id}: ${error.message}`);
+    await sql`
+      INSERT INTO puzzles (id, publish_date, image_path, difficulty, slots, prompt, locale)
+      VALUES (${p.id}, ${p.publishDate}, ${imagePath}, ${p.difficulty}, ${JSON.stringify(p.slots)}, ${p.prompt}, ${p.locale})
+      ON CONFLICT (id) 
+      DO UPDATE SET 
+        publish_date = EXCLUDED.publish_date,
+        image_path = EXCLUDED.image_path,
+        difficulty = EXCLUDED.difficulty,
+        slots = EXCLUDED.slots,
+        prompt = EXCLUDED.prompt,
+        locale = EXCLUDED.locale
+    `;
+    
     // Delete the image this row pointed at before, so dev runs do not pile up orphans.
-    if (before && before.image_path !== imagePath) await db.storage.from(BUCKET).remove([before.image_path]);
+    if (before[0] && before[0].image_path !== imagePath) {
+      try {
+        await del(before[0].image_path, { token });
+      } catch {
+        // Orphan cleanup is best effort
+      }
+    }
     console.log(`#${p.id} ${p.publishDate}  ${source} -> ${imagePath} (${Math.round(webp.length / 1024)} KB)`);
   }
 }
