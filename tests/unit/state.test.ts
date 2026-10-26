@@ -17,7 +17,7 @@ import type { GuessResponse, PublicPuzzle, SlotKey } from "@/lib/game/types";
 const puzzle: PublicPuzzle = {
   id: 1,
   date: "2026-10-04",
-  imageUrl: "https://x.supabase.co/storage/v1/object/public/puzzles/a.webp",
+  imageUrl: "https://vqbp3tbbajbstqiy.public.blob.vercel-storage.com/a.webp",
   difficulty: 1,
   slots: ["who", "doing", "where", "style"],
 };

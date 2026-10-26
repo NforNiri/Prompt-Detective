@@ -20,7 +20,7 @@ Daily AI image puzzle. Players guess the 4 hidden prompt words (WHO, DOING, WHER
 - TypeScript strict. No `any`. Shared types live in `src/lib/game/types.ts`.
 - `src/lib/game/*` is pure: no fetch, no storage, no Date.now() without injection. Everything there has unit tests.
 - Answers never reach the client before the game ends. Never add slots data to the puzzle endpoint response.
-- The Supabase service role key is used only in `src/lib/supabase-server.ts`, and only from route handlers.
+- The Neon database connection is used only in `src/lib/db.ts`, and only from route handlers.
 - Validate every route input with zod. Return errors as `{ error: { code, message } }`.
 - Wrap every localStorage access in try/catch. The game must work with storage blocked.
 - Use `createLogger(namespace)` from `src/lib/logger.ts` for all logging, with no bare console.log. Log state transitions, API calls with timing, and flag values at debug level.
