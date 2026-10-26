@@ -57,7 +57,7 @@ export function toPublicPuzzle(row: PublicPuzzleRow): PublicPuzzle {
 export async function getPublicPuzzle(date: string): Promise<PublicPuzzleRow | null> {
   try {
     const rows = await sql`
-      SELECT id, publish_date, image_path, difficulty 
+      SELECT id, publish_date::text as publish_date, image_path, difficulty 
       FROM puzzles 
       WHERE publish_date = ${date} AND locale = ${LOCALE}
       LIMIT 1

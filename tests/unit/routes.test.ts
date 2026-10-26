@@ -141,6 +141,15 @@ describe("GET /api/puzzle", () => {
     expect(res.headers.get("cache-control")).toContain("s-maxage");
   });
 
+  it("returns date as plain YYYY-MM-DD string, not Date or ISO timestamp", async () => {
+    const res = await get("?date=2026-10-14");
+    const data = await res.json();
+    expect(data.date).toBe("2026-10-14");
+    expect(data.date).not.toContain("T");
+    expect(data.date).not.toContain("Z");
+    expect(typeof data.date).toBe("string");
+  });
+
   it("never contains answers", async () => {
     const text = await (await get("?date=2026-10-14")).text();
     const tierWords = SLOT_KEYS.flatMap((k) => {
